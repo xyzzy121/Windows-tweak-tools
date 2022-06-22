@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+	<meta name="description" content="Rainmeter allows you to display customizable skins on your desktop, from hardware usage meters to fully functional audio visualizers. You are only limited by your imagination and creativity.">
+	<meta itemprop="name" content="Rainmeter, desktop customization tool">
+	<meta itemprop="description" content="Rainmeter allows you to display customizable skins on your desktop, from hardware usage meters to fully functional audio visualizers. You are only limited by your imagination and creativity.">
+	<meta name="og:title" content="Rainmeter, desktop customization tool">
+	<meta name="og:description" content="Rainmeter allows you to display customizable skins on your desktop, from hardware usage meters to fully functional audio visualizers. You are only limited by your imagination and creativity.">
+	<meta name="og:image" content="https://www.rainmeter.net/img/media_image.png">
+	<meta name="og:url" content="https://www.rainmeter.net">
+	<meta name="og:site_name" content="Rainmeter">
+	<meta name="og:type" content="website">
+	<title>Rainmeter 4.5 Changes - Rainmeter, desktop customization tool</title>
+	
+<link rel="stylesheet" href="../css/style.css">
+
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:200,300,400,700">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous" />
+	<link rel="shortcut icon" href="/favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+	<!-- Lazyload images to reduce initial loading time -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.min.js" integrity="sha256-BYIGSlPqLS5NrndoMKMp7EpW8tbOfXbjiNkN3uATdH8=" crossorigin="anonymous"></script>
+	
+	<div id="hero" class="hero--flat">
+  <div id="navbar" class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="https://www.rainmeter.net"><img src="\img\logo_nav.png" alt="" /></a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+            <ul class="navbar-nav order-12">
+                
+					
+                		<li class="nav-item>">
+                    		<a class="nav-link" href="//www.rainmeter.net">Home</a>
+                		</li>
+					
+                
+					
+                		<li class="nav-item>">
+                    		<a class="nav-link" href="//docs.rainmeter.net">Documentation</a>
+                		</li>
+					
+                
+					
+						<li class="nav-item ">
+                    		<a class="nav-link" href="../discover/">Discover</a>
+                		</li>
+					
+                
+					
+                		<li class="nav-item>">
+                    		<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+                		</li>
+					
+                
+                <div class="dropdown-divider"></div>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+</div>
+<div id="content" class="container content">
+  <div class="post">
+  <div class="release-notes">
+	<div class="description">
+		<h1 class="text-center">Rainmeter 4.5</h1>
+		<hr>
+		<p>The following are the changes for the 4.5 version of Rainmeter.</p>
+		<p>Changes from 4.3 to 4.5 can be found at <a href="https://www.rainmeter.net/release-4-5-0/">4.5.0 Release Notes</a>.</p>
+	</div>
+	<div class="changelog">
+		<h2>Changes in Rainmeter 4.5</h2>
+		<hr>
+		<p><b>Additional details on important changes can be found at <a href="https://forum.rainmeter.net/viewforum.php?f=142">Change Announcements</a>.</b></p>
+
+		<p class="revision"><b>March 23, 2022 - 4.5.13 - Revision 3632</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>About dialog / Plugins tab:</b> Fix Unicode issue in the path when gathering plugin information.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Rainmeter:</b> Stop Rainmeter from crashing with ALT+Enter "full screen" hotkey.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Installer:</b> Enable "Back" button on standard installation options page.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Context menus:</b> Rearranged some skin context menu items for consistency.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Settings:</b> Deprecated "HideOnMouseOver" and replaced with "OnHover" in Rainmeter.ini.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Serbian and Indonesian.</li>
+		</ul>
+		
+		<p class="revision"><b>March 2, 2022 - 4.5.12 - Revision 3616</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>Custom Plugin functions:</b> Matching leading and trailing quotes (double and single) will now be stripped from each parameter before being sent to the plugin.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Inline Lua:</b> Corrected a rare parsing issue when using the measure/meter <code>GetOption</code>.</li>
+			<li><span class="badge badge-added">Added</span><b>Lua GetOption:</b> The <code>GetOption</code> function for <a href="https://docs.rainmeter.net/manual/lua-scripting/#GetOption">measure</a> / <a href="https://docs.rainmeter.net/manual/lua-scripting/#GetOptionMeter">meter</a> objects will now accept an additional optional boolean parameter called <code>bReplaceMeasures</code>, that when <code>false</code> will not replace any section variables before retrieving that option.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Inline Lua:</b> Allow for parameter types <code>true</code>, <code>false</code>, and <code>nil</code> to be case-insensitive in the skin ini file (does not apply to the lua script).</li>
+			<li><span class="badge badge-added">Added</span><b>Inline Lua:</b> Added the parameter type <code>nil</code>.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Inline Lua:</b> Numeric parameters starting with <code>(</code> are now run through the Rainmeter math parser before being sent to the lua script.</li>
+			<li><span class="badge badge-changed">Changed</span><b>VS2022:</b> Updated the project to use the latest Visual Studio 2022 for development</li>
+			<li><span class="badge badge-added">Added</span><b>MouseActionCursorName:</b> Added various cursor options. See <a href="https://forum.rainmeter.net/viewtopic.php?t=40127#p204976">Change Announcements</a> for details.</li>
+			<li><span class="badge badge-removed">Removed</span><b>NowPlaying:</b> Removed LyricWikia parsing from <code>Lyrics</code> option.</li>
+		</ul>
+
+		<p class="revision"><b>February 12, 2022 - 4.5.11 - Revision 3607</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>Variables:</b> Corrected some anomalies when parsing complex nested variables.</li>
+			<li><span class="badge badge-added">Added</span><b>Built-in Variables:</b> Added <code>#CURRENTCONFIGZPOS#</code> variable</li>
+			<li><span class="badge badge-changed">Changed</span><b>PLAY:</b> When Rainmeter is exited, immediately stop all .wav file sounds currently being output with the <code>PLAY</code> / <code>PLAYLOOP</code> functionality.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Greek and German.</li>
+		</ul>
+
+		<p class="revision"><b>February 1, 2022 - 4.5.10 - Revision 3597</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>NowPlaying:</b> Fixed issue where two (or more) separate skins using the same player would not update properly when they were using DynamicVariables=1 on the measures.</li>
+			<li><span class="badge badge-added">Added</span><b>Registry:</b> Added <code>OutputType</code> and <code>OutputDelimiter</code> options to allow retrieving lists of subkeys or value names from a target key. See <a href="https://docs.rainmeter.net/manual/measures/registry/#AlternativeBehavior">Alternate Behavior</a> for details.</li>
+		</ul>
+
+		<p class="revision"><b>January 29, 2022 - 4.5.9 - Revision 3592</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>Rainmeter:</b> Fixes issue with certain builds of Windows 7 where the skin window would disappear when returning from the Windows "Switch user" screen.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Context menu:</b> Removed duplicate / redundant separator line in the context menu when no skins are loaded.</li>
+			<li><span class="badge badge-added">Added</span><b>SysInfo:</b> Added <code>SysInfoType</code> of <code>USER_SID</code> to return the security identifier associated with the active user account.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Finnish.</li>
+		</ul>
+
+		<p class="revision"><b>December 30, 2021 - 4.5.8 - Revision 3587</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>Registry:</b> Corrected a problem when the registry returned a string longer than 4096 characters.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Installer:</b> Fixed an issue when the user's locale language was not able to be detected, and Arabic was being selected by default.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>Script:</b> Improved error logging when an invalid Lua script is used in a disabled Script measure.</li>
+			<li><span class="badge badge-added">Added</span><b>Skin/Meter:</b> Added <code>BevelColor</code> and <code>BevelColor2</code> to allow definition of colors when a bevel is set on the skin background or a meter.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Swedish.</li>
+		</ul>
+
+		<p class="revision"><b>December 9, 2021 - 4.5.7 - Revision 3581</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>WiFiStatus:</b> Corrected an error condition when the winlanapi.dll file used by WiFiStatus is not installed in Windows, as with recent Windows Server versions.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>NowPlaying:</b> Corrected a range-check issue that allowed the volume value for the CAD plugin to fall outside of 0-100.</li>
+			<li><span class="badge badge-changed">Changed</span><b>SysInfo:</b> Take into account the connection/operational status for finding the "best" interface when specifying the name of the adapter. This will also correct an issue with duplicate interface "names" in Windows.</li>
+		</ul>
+
+		<p class="revision"><b>November 29, 2021 - 4.5.6 - Revision 3573</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>SysInfo:</b> Corrected an issue with the <code>NUM_MONITORS</code> value for <code>SysInfoType</code>.</li>
+			<li><span class="badge badge-changed">Changed</span><b>WiFiStatus:</b> WiFiStatus was converted from a plugin to a measure.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Serbian (Latin and Cyrillic).</li>
+			<li><span class="badge badge-added">Added</span><b>WiFiStatus:</b> Added [Quality] values to information returned by <code>WiFiListStyle</code> when <code>WiFiInfoType</code> is set to <code>List</code>.</li>
+			<li><span class="badge badge-added">Added</span><b>WiFiStatus:</b> Added detection of <code>WPA3-Enterprise</code> and <code>WPA3-Personal</code> authentication methods.</li>
+			<li><span class="badge badge-added">Added</span><b>WiFiStatus:</b> Added detection of <code>BIP</code> and <code>GCMP</code> encryption methods.</li>
+			<li><span class="badge badge-added">Added</span><b>WiFiStatus:</b> Added <code>WiFiInfoType</code> of <code>TXRATE</code> to measure the theoretical maximum transmit speed in bits per second of the connection.</li>
+			<li><span class="badge badge-added">Added</span><b>WiFiStatus:</b> Added <code>WiFiInfoType</code> of <code>RXRATE</code> to measure the theoretical maximum receive speed in bits per second of the connection.</li>
+		</ul>
+
+		<p class="revision"><b>November 17, 2021 - 4.5.5 - Revision 3565</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>NowPlaying:</b> Corrected some issues with <code>WinAmp</code> and <code>AIMP</code> media players.<br/>Thanks to community members <b>deathcrafter</b> for AIMP code and <b>dr0biwan</b> for WinAmp code.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Dialogs:</b> When a Rainmeter dialog is moved to a second monitor, the Taskbar icon will follow to the correct monitor.</li>
+			<li><span class="badge badge-added">Added</span><b>String meter:</b> Added <code>TrailingSpaces</code> option. When set to <code>1</code>, any <code>Text</code> option enclosed in "&nbsp;&nbsp;&nbsp;&nbsp;quotes&nbsp;&nbsp;&nbsp;&nbsp;" will display leading and trailing spaces.</li>
+		</ul>
+
+		<p class="revision"><b>October 4, 2021 - 4.5.4 - Revision 3550</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>Auto Update:</b> Corrected an issue with Auto Update with Windows 7.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Auto Update:</b> Improved error logging when there are problems with Auto Update.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Manage:</b> Disable Active Skins pull-down when no configs/skins are loaded.</li>
+		</ul>
+
+		<p class="revision"><b>September 24, 2021 - 4.5.3 - Revision 3546</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>Measures:</b> Corrected potential errors in <code>IfCondition</code> and <code>Formula</code> when the name of a measure started with characters other than the ASCII alphanumeric a-z/A-Z/0-9. Measures names can now safely start with or contain any printable letter, number or <b>non-math</b> punctuation or symbol from the ASCII / Extended ASCII character set, and any Unicode "letter/word" character from any language.</li>
+			<li><span class="badge badge-changed">Changed</span><b>Net measures:</b> Changed the default value for the <code>Interface</code> option from "0" to "Best".</li>
+			<li><span class="badge badge-changed">Changed</span><b>Languages:</b> Updated localization strings for Indonesian, Polish and Vietnamese.</li>
+		</ul>
+
+		<p class="revision"><b>September 12, 2021 - 4.5.2 - Revision 3541</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>Section variables:</b> Fixed an issue with the <a href="https://docs.rainmeter.net/manual/variables/section-variables/#EscapeRegExp">EscapeRegExp</a> and <a href="https://docs.rainmeter.net/manual/variables/section-variables/#EncodeURL">EncodeUrl</a> section variable measure parameters.</li>
+		</ul>
+
+		<p class="revision"><b>September 11, 2021 - 4.5.1 - Revision 3540</b></p>
+		<ul>
+			<li><span class="badge badge-fixed">Fixed</span><b>ToolTip:</b> Fixed a mouse detection issue with ToolTip inside a Container meter.</li>
+			<li><span class="badge badge-fixed">Fixed</span><b>SysInfo:</b> Fixed an inconsistency with how an empty string value is returned for <code>SysInfoType=IP_ADDRESS</code>.</li>
+			<li><span class="badge badge-changed">Changed</span><b>SysInfo:</b> SysInfo is now a "measure" instead of a "plugin".</li>
+			<li><span class="badge badge-added">Added</span><b>SysInfo:</b> Added several new <code>SysInfoType</code> values:<br/><br/>
+			ADAPTER_ALIAS<br/>
+			ADAPTER_GUID<br/>
+			ADAPTER_STATE<br/>
+			ADAPTER_STATUS<br/>
+			ADAPTER_TRANSMIT_SPEED<br/>
+			ADAPTER_RECEIVE_SPEED<br/>
+			GATEWAY_ADDRESS_V4<br/>
+			GATEWAY_ADDRESS_V6<br/>
+			INTERNET_CONNECTIVITY_V4<br/>
+			INTERNET_CONNECTIVITY_V6<br/>
+			LAN_CONNECTIVITY_V4<br/>
+			LAN_CONNECTIVITY_V6<br/>
+			MAC_ADDRESS<br/><br/>
+			See <a href="https://docs.rainmeter.net/manual/plugins/sysinfo/">SysInfo Measure</a> for details.</li>
+		</ul>
+
+	</div>
+</div>
+
+  </div>
+</div>
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">Made with ❤ by the community.</div>
+      <div class="col-6 text-right text-md-right"></div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js" integrity="sha256-wzoq0P7w2qLzRcJsF319y6G9Oilk3nU5CZ8tnY9TjFI=" crossorigin="anonymous"></script>
+  
+<script src="../js/main.js"></script>
+
+
+</body>
+</html>
