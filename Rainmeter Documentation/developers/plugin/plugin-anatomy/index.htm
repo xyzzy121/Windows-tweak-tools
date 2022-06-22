@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Anatomy of a Plugin - Rainmeter Docs">
+<meta property="og:title" content="Anatomy of a Plugin - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Anatomy of a Plugin - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\index.htm"><img src="..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\index.htm">Developers</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="index.htm">Anatomy of a Plugin</a>
+<li><a href="..\cpp\index.htm">C++ Overview</a>
+<ul>
+<li><a href="..\cpp\api\index.htm">C++ API Reference</a>
+</li></ul>
+<li><a href="..\csharp\index.htm">C# Overview</a>
+<ul>
+<li><a href="..\csharp\api\index.htm">C# API Reference</a>
+</li></ul>
+<li><a href="..\guidelines\index.htm">Plugin Guidelines</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Anatomy of a Plugin</h1>
+<hr>
+
+<p>Rainmeter's functionality can be expanded with the use of external plugins. Anyone with knowledge of C++ or C# can make a plugin for Rainmeter.</p>
+<h2 id="TheSkinWindow">Exported functions</h2>
+<div>Rainmeter plugins have a general list of functions that they must export and a few optional ones for additional functionality.<br>
+<p>
+<h3 id="Initialize"><i>Initialize</i></h3>
+Called before anything on measures first load.<br>
+Initialize your object you want to store in the data pointer here, as well as any other setup your plugin will need to do. You should also store the measure refernce here if you are going to make use of it outside Initialize or Reload.
+
+<p>
+<h3 id="Reload"><i>Reload</i></h3>
+Called right after Initialize and on every update cycle of the measure if <code>DynamicVariables=1</code>.<br>
+Read any options from the measure in here and then doing any remaining setup that your plugin needed to do based on them.
+
+<p>
+<h3 id="Update"><i>Update</i></h3>
+Called on every update cycle of the measure.<br>
+Return the value you want to use as the number value of the measure here. You should do anything that requires being run regularly here
+
+<p>
+<h3 id="Finalize"><i>Finalize</i></h3>
+Called whenever a measure is unloaded.<br>
+Deallocate anything here to prevent memory leaks. Note that on skin reload finalize and initalize will both be called right after each other.
+
+<p>
+<h3 id="GetString"><i>GetString</i> (Optional)</h3>
+Called as the string value of the measure is used in any meters or measures.<br>
+Return the value you want to use as the string value of the measure here. You should do absolutely no processing here as it is possible to have this called multiple times an update. Instead calculate any values in update and just return them here.
+
+<p>
+<h3 id="ExecuteBang"><i>ExecuteBang</i> (Optional)</h3>
+Called whenever a !CommandMeasure bang is used.<br>
+Incredibly useful for interacting with your plugin. Media playback plugins are a good example of using this, so then a skin could have a button to pause the music on command.
+
+<p>
+<h3 id="SectionVariables"><i>SectionVariables</i> (Optional)</h3>
+Called whenever a section variables is used ex. <code>[pluginMeasure:func(arg1, arg2)]</code>.<br>
+While similar to ExecuteBang this has the added nicety of being able to return a value. Note that Rainmeter prevents these from being called before Initialization so data will be setup.
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\js\main.js"></script>
+<script src="..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

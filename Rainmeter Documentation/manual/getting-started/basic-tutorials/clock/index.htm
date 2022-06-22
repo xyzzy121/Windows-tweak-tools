@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Clock - Rainmeter Docs">
+<meta property="og:title" content="Clock - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Clock - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\..\index.htm"><img src="..\..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\..\setting-up\index.htm">Setting Up</a>
+<li><a href="..\..\using-rainmeter\index.htm">Using Rainmeter</a>
+<li><a href="..\..\customizing\index.htm">Customizing</a>
+<li><a href="..\..\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\..\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\launcher\index.htm">Launcher</a>
+<li><a href="index.htm">Clock</a>
+<li><a href="..\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\..\installing-rainmeter\index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="..\..\..\installing-rainmeter\auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\..\..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\..\..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\..\..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\..\..\user-interface\about\index.htm">About</a>
+<li><a href="..\..\..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\..\..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\..\..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\..\..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\..\..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\..\..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\..\..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\..\..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\..\..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\..\..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\..\..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<ul>
+<li><a href="..\..\..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\..\..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\..\..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\..\..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\..\..\meters\index.htm">Meters</a>
+<ul>
+<li><a href="..\..\..\meters\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\..\meters\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\..\..\meters\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\..\..\meters\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\..\..\meters\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\..\..\meters\bar\index.htm">Bar</a>
+<li><a href="..\..\..\meters\bitmap\index.htm">Bitmap</a>
+<li><a href="..\..\..\meters\button\index.htm">Button</a>
+<li><a href="..\..\..\meters\histogram\index.htm">Histogram</a>
+<li><a href="..\..\..\meters\image\index.htm">Image</a>
+<li><a href="..\..\..\meters\line\index.htm">Line</a>
+<li><a href="..\..\..\meters\rotator\index.htm">Rotator</a>
+<li><a href="..\..\..\meters\roundline\index.htm">Roundline</a>
+<li><a href="..\..\..\meters\shape\index.htm">Shape</a>
+<li><a href="..\..\..\meters\string\index.htm">String</a>
+<ul>
+<li><a href="..\..\..\meters\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\..\measures\index.htm">Measures</a>
+<ul>
+<li><a href="..\..\..\measures\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\..\measures\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\..\..\measures\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\..\..\measures\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\..\..\measures\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\..\..\measures\calc\index.htm">Calc</a>
+<li><a href="..\..\..\measures\cpu\index.htm">CPU</a>
+<li><a href="..\..\..\measures\freediskspace\index.htm">FreeDiskSpace</a>
+<li><a href="..\..\..\measures\loop\index.htm">Loop</a>
+<li><a href="..\..\..\measures\mediakey\index.htm">MediaKey</a>
+<li><a href="..\..\..\measures\memory\index.htm">Memory</a>
+<li><a href="..\..\..\measures\net\index.htm">Net</a>
+<li><a href="..\..\..\measures\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\..\..\measures\plugin\index.htm">Plugin</a>
+<li><a href="..\..\..\measures\process\index.htm">Process</a>
+<li><a href="..\..\..\measures\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\..\..\measures\registry\index.htm">Registry</a>
+<li><a href="..\..\..\measures\script\index.htm">Script</a>
+<li><a href="..\..\..\measures\string\index.htm">String</a>
+<li><a href="..\..\..\measures\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\..\..\measures\time\index.htm">Time</a>
+<li><a href="..\..\..\measures\uptime\index.htm">Uptime</a>
+<li><a href="..\..\..\measures\webparser\index.htm">WebParser</a>
+<li><a href="..\..\..\measures\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\..\..\plugins\index.htm">Plugins</a>
+<ul>
+<li><a href="..\..\..\plugins\actiontimer\index.htm">ActionTimer</a>
+<li><a href="..\..\..\plugins\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\..\..\plugins\coretemp\index.htm">CoreTemp</a>
+<li><a href="..\..\..\plugins\fileview\index.htm">FileView</a>
+<li><a href="..\..\..\plugins\folderinfo\index.htm">FolderInfo</a>
+<li><a href="..\..\..\plugins\inputtext\index.htm">InputText</a>
+<li><a href="..\..\..\plugins\ping\index.htm">Ping</a>
+<li><a href="..\..\..\plugins\power\index.htm">Power</a>
+<li><a href="..\..\..\plugins\quote\index.htm">Quote</a>
+<li><a href="..\..\..\plugins\resmon\index.htm">ResMon</a>
+<li><a href="..\..\..\plugins\runcommand\index.htm">RunCommand</a>
+<li><a href="..\..\..\plugins\speedfan\index.htm">SpeedFan</a>
+<li><a href="..\..\..\plugins\usagemonitor\index.htm">UsageMonitor</a>
+<li><a href="..\..\..\plugins\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\..\..\plugins\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\..\..\plugins\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\..\..\plugins\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\..\..\plugins\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\..\..\plugins\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\..\bangs\index.htm">Bangs</a>
+<li><a href="..\..\..\formulas\index.htm">Formulas</a>
+<li><a href="..\..\..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\..\..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\..\..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\..\..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\..\..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\..\..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\..\..\groups\index.htm">Groups</a>
+<li><a href="..\..\..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\..\..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\..\..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Clock</h1>
+<hr>
+
+<h2>Creating your second tutorial skin</h2>
+<p>In the previous tutorial, you should have already created a folder under Skins called <b>Tutorials</b>. We are going to add a new folder under that one to create our new skin. Under <b>Skins\Tutorials\</b> create a new folder called <b>Clock</b>.
+<p>In that <b>Tutorials\Clock</b> folder, create a new empty text file. In Windows explorer, you can simply right-click in the folder and say "New / Text document". Give it the name <b>Clock.ini</b>.</p>
+<p>Now, left-click the Rainmeter icon in the Windows notification area on your taskbar, to open the <a href="..\..\..\user-interface\manage\index.htm#SkinsTab">Manage</a> dialog. Click on the <b>Refresh all</b> button on the bottom left, and you should see your new <b>Tutorials / Clock</b> config in the list. Find <b>Clock.ini</b> in the list, right-click it and say "Edit". This will open the new skin file in your default text editor. Don't load the skin just yet, we need to add some code first...</p>
+<h2>Building the Clock skin</h2>
+<p>This tutorial will introduce using <a href="..\..\..\measures\index.htm">Measures</a> in a skin. Measures are used to obtain some information in Rainmeter, from your computer's system, text files, web sites, and other sources. In addition, we will be using some more features of the <a href="..\..\..\meters\string\index.htm">String meter</a> and dip our toes a little deeper into using <a href="..\..\..\skins\option-types\index.htm#Action">action options</a> and <a href="..\..\..\bangs\index.htm">Bangs</a> in your skin.</p>
+<p>First, as we did in our earlier tutorial, let's add the [Rainmeter] section to control the Update speed of the skin.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br></pre></td></tr></table></figure>
+<p>Now let's add our first <a href="..\..\..\measures\index.htm">Measure</a>, in this case a <a href="..\..\..\measures\time\index.htm">Time</a> measure to retrieve information about the system time from your computer.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureTime]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%<span class="comment">#I:%M</span></span><br></pre></td></tr></table></figure>
+<p>Do check out the manual entry for the <a href="..\..\..\measures\time\index.htm#FormatCodes">Time</a> measure to see how that <a href="..\..\..\measures\time\index.htm#Format">Format</a> option is used to obtain the time information you want. We are using a format of <b>"hour in 12 hour time:minutes"</b> for this measure.</p>
+<p>So let's add a meter to display this value we obtained with our measure. First, we are going to use the <a href="..\..\..\meters\general-options\meterstyles\index.htm">MeterStyle</a> option by creating a <b>[TextStyle]</b> section to set up some common string formatting options. This way we won't have to repeat them in every meter we create. Then add the new <b>[MeterTime]</b> meter.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[TextStyle]</span></span><br><span class="line"><span class="attr">FontFace</span>=Trebuchet MS</span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">245</span>,<span class="number">207</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="attr">StringStyle</span>=Bold</span><br><span class="line"><span class="attr">StringAlign</span>=Right</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTime]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureTime</span><br><span class="line"><span class="attr">X</span>=<span class="number">165</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">40</span></span><br></pre></td></tr></table></figure>
+<p>The key to using measures and meters together is using the <a href="..\..\..\meters\general-options\index.htm#MeasureName">MeasureName</a> option to "bind" the measure <b>[MeasureTime]</b> to the meter. What that means is that this meter will display the value returned by the measure on each <a href="..\..\..\..\tips\update-guide\index.htm">Update</a>.</p>
+<p>So let's load our new skin and take a look at where we stand. From the <a href="..\..\..\user-interface\manage\index.htm#SkinsTab">Manage</a> dialog, find the <b>Clock.ini</b> entry in the list and click on the <b>Load</b> button on the upper right.</p>
+<div class="exampleprev float-left thumbnail">
+<a href="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage01.jpg" data-fancybox=""><img src="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage01.jpg"></a>
+</div>
+<p>Drag the skin anywhere on the screen you like. Rainmeter will remember the position any time you load this skin in the future. You can also right-click the skin to change other <a href="..\..\..\user-interface\context-menus\index.htm">skin options</a> as desired.</p>
+<h2 style="clear: both;">Adding more measures and meters</h2>
+<p>We are going to use various elements of the system time in different meters in our skin, so let's create some more measures to gather different types of information. Go back up to just under our [MeasureTime] section and add some new measures.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureSeconds]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%S</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureAMPM]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%p</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureMonthName]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%B</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureDayOfMonth]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%<span class="comment">#d</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureYear]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%Y</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureDayOfWeek]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%A</span><br></pre></td></tr></table></figure>
+<p>Now, start building meters to display all these different measure values. Let's start with the first one, so we can look at a new meter positioning concept. Head back down to the bottom of your skin and add this new meter.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeterSeconds]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureSeconds</span><br><span class="line"><span class="attr">X</span>=<span class="number">204</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">8</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">18</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">231</span>,<span class="number">135</span>,<span class="number">255</span></span><br></pre></td></tr></table></figure>
+<p>Note that we are using the <code>MeasureName=MeasureSeconds</code> option to bind this meter to the appropriate measure.</p>
+<p>Now, if you look above, you will see that in the MeterStyle section <b>[TextStyle]</b> we have defined many format options for our string meters that we want to share with the meters rather than repeating them in each one. One of these is the <a href="..\..\..\meters\string\index.htm#StringAlign">StringAlign</a> option, which will allow us to align the text in the meter based on the <a href="..\..\..\meters\general-options\index.htm#XY">X and Y</a> options for the meter. In this case, we are going to right-align all of our meters. You will see why as we continue with the layout. In the previous <b>[MeterTime]</b> meter, we aligned the meter so the right-most edge was at the <b>X</b> position of <b>165</b> in the skin. For this meter, we are aligning the right-most edge at the <b>X</b> position of <b>204</b>.</p>
+In addition, we want this meter to have a different color. So, we are "overriding" the <code>FontColor=255,245,207,255</code> option we set in the <b>[TextStyle]</b> MeterStyle, by specifically setting <code>FontColor=255,231,135,255</code> for this meter.
+<div class="exampleprev float-left thumbnail">
+<a href="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage02.jpg" data-fancybox=""><img src="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage02.jpg"></a>
+</div>
+<p>Save and refresh the skin to see the changes.</p>
+<p style="clear: both;">Continue creating the meters at the bottom of your skin, to display the information from the various measures.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeterAMPM]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureAMPM</span><br><span class="line"><span class="attr">X</span>=<span class="number">204</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">30</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">16</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">231</span>,<span class="number">135</span>,<span class="number">255</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterMonthDayYear]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureMonthName</span><br><span class="line"><span class="attr">MeasureName2</span>=MeasureDayOfMonth</span><br><span class="line"><span class="attr">MeasureName3</span>=MeasureYear</span><br><span class="line"><span class="attr">X</span>=<span class="number">204</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>R</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">13</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span> %<span class="number">2</span>, %<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterDayOfWeek]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureDayOfWeek</span><br><span class="line"><span class="attr">X</span>=<span class="number">204</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>R</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">13</span></span><br></pre></td></tr></table></figure>
+<p>As you can see, there is a different approach to binding measures to meters in the <b>[MeterMonthDayYear]</b> meter above.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeterMonthDayYear]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureMonthName</span><br><span class="line"><span class="attr">MeasureName2</span>=MeasureDayOfMonth</span><br><span class="line"><span class="attr">MeasureName3</span>=MeasureYear</span><br><span class="line"><span class="attr">X</span>=<span class="number">204</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>R</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">13</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span> %<span class="number">2</span>, %<span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>Since we want to use the value of three different measures in this meter, we use the <a href="..\..\..\meters\string\index.htm#MeasureName">MeasureName</a> option to define all three measures as being bound to this meter. Then we can use the <a href="..\..\..\meters\string\index.htm#Text">Text</a> option with <b>%1 %2, %3</b> to display each of the three measure values, including adding a hard coded comma for formatting.</p>
+<div class="exampleprev float-left thumbnail">
+<a href="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage03.jpg" data-fancybox=""><img src="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage03.jpg"></a>
+</div>
+<p>Save and refresh the skin to see the changes.</p>
+<p style="clear: both;">Now you can see why we wanted to right-align our string meters. As the time changes and becomes longer and shorter, we don't want the position of the meters to change. We want to keep things lined up and tidy. The following image demonstrates how it looks when the time is much longer.</p>
+<div class="exampleprev float-left thumbnail">
+<a href="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage04.jpg" data-fancybox=""><img src="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage04.jpg"></a>
+</div>
+<p style="clear: both;">Let's add a background image like we did in the earlier tutorial, by going up above all the existing meters and adding a new Image meter.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeterBackground]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">W</span>=<span class="number">210</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">107</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">60</span>,<span class="number">60</span>,<span class="number">60</span>,<span class="number">255</span></span><br><span class="line"></span><br><span class="line"><span class="section">[TextStyle]</span></span><br><span class="line"><span class="attr">FontFace</span>=Trebuchet MS</span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">245</span>,<span class="number">207</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="attr">StringStyle</span>=Bold</span><br><span class="line"><span class="attr">StringAlign</span>=Right</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<div class="exampleprev float-left thumbnail">
+<a href="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage05.jpg" data-fancybox=""><img src="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage05.jpg"></a>
+</div>
+<p>Save and refresh the skin to see the changes. Congratulations! Nice looking clock skin.</p>
+<h2 style="clear: both;">Some extra credit work</h2>
+<p>We are going to add a couple more features to our clock, so we can touch again on using <a href="..\..\..\skins\option-types\index.htm#Action">Action options</a> and <a href="..\..\..\bangs\index.htm">Bangs</a> in your skins.</p>
+<p>First, let's add the ability to toggle the display of the time between 12-hour and 24-hour when we hover the mouse over the <b>[MeterTime]</b> meter. Find that meter, and add a couple of lines.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeterTime]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureTime</span><br><span class="line"><span class="attr">X</span>=<span class="number">165</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">40</span></span><br><span class="line"><span class="attr">MouseOverAction</span>=[!SetOption MeasureTime Format <span class="string">&quot;%H:%M&quot;</span>][!UpdateMeasure MeasureTime][!UpdateMeter *][!Redraw]</span><br><span class="line"><span class="attr">MouseLeaveAction</span>=[!SetOption MeasureTime Format <span class="string">&quot;%#I:%M&quot;</span>][!UpdateMeasure MeasureTime][!UpdateMeter *][!Redraw]</span><br></pre></td></tr></table></figure>
+<p>This is using a <a href="..\..\..\mouse-actions\index.htm">Mouse action</a> and a handful of <a href="..\..\..\bangs\index.htm">Bangs</a>.</p>
+<p>What we are doing when we move the mouse over the meter is to use the <a href="..\..\..\bangs\index.htm#SetOption">!SetOption</a> bang to change the <code>Format</code> option of the <b>[MeasureTime]</b> measure to obtain the time from the system using the code for 24-hour time (%H) instead of 12-hour time (%I). Then we are using the <a href="..\..\..\bangs\index.htm#UpdateMeasure">!UpdateMeasure</a>, <a href="..\..\..\bangs\index.htm#UpdateMeter">!UpdateMeter</a>, and <a href="..\..\..\bangs\index.htm#Redraw">!Redraw</a> bangs to have the change take place as soon as we move the mouse over, and not wait for the next update of the skin.</p>
+<p>When we move the mouse away from the meter, we are using the same combination of bangs to set the format back to 12-Hour time and update things.</p>
+<div class="exampleprev float-left thumbnail full-mobile">
+<a href="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage06.jpg" data-fancybox=""><img src="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage06.jpg"></a>
+<p>Mouse Off</p>
+</div>
+<div class="exampleprev float-left thumbnail full-mobile">
+<a href="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage07.jpg" data-fancybox=""><img src="..\..\..\img\getting-started\basic-tutorials\clock\ClockImage07.jpg"></a>
+<p>Mouse Over</p>
+</div>
+<h2 style="clear: both;">"It tolls for thee"</h2>
+<p>Next, we can add some sound to our clock. What we will do is have the skin play a .wav file of a grandfather clock striking when the time is exactly on the hour.</p>
+<p>First, we need get the sound file and put it in the right location in your skin folders. Right-click the link below and save the file <b>HourChime.wav</b> to your computer. Put it in a new <b>Sounds</b> folder in our <b>Skins\Tutorials\@Resources</b> folder we created before. So it will be <b>Skins\Tutorials\@Resources\Sounds\HourChime.wav</b></p>
+<p><a href="..\..\..\img\getting-started\basic-tutorials\clock\HourChime.wav">Download HourChime.wav</a></p>
+<p>Now we can add a new measure to control when the sound is played. Let's go up to the top of the skin, right after the <b>[MeasureTime]</b> measure we already have, and add a new one.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureTime]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%<span class="comment">#I:%M</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureChimeHour]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%M</span><br><span class="line"><span class="attr">IfEqualValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">IfEqualAction</span>=[Play <span class="string">&quot;#@#Sounds\HourChime.wav&quot;</span>]</span><br></pre></td></tr></table></figure>
+<p>This <b>[MeasureChimeHour]</b> measure is getting the number of <b>minutes</b> (%M) from the system time, and then using an <a href="..\..\..\measures\general-options\ifactions\index.htm">IfAction</a> to check the value of the measure on each update. If the value is equal to zero <code>IfEqualValue=0</code>, then the associated <code>IfEqualAction=[Play "#@#Sounds\HourChime.wav"]</code> is executed. This uses the <a href="..\..\..\bangs\index.htm#Play">Play</a> bang to load and play the <b>HourChime.wav</b> file.</p>
+<p>After making the changes, save and refresh the skin. Congratulations! You now have a beautiful, functional AND annoying skin!</p>
+<p>We have jumped around a bit, so here is the entire completed skin so you can check that your code is the same.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureTime]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%<span class="comment">#I:%M</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureChimeHour]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%M</span><br><span class="line"><span class="attr">IfEqualValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">IfEqualAction</span>=[Play <span class="string">&quot;#@#Sounds\HourChime.wav&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureSeconds]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%S</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureAMPM]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%p</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureMonthName]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%B</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureDayOfMonth]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%<span class="comment">#d</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureYear]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%Y</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureDayOfWeek]</span></span><br><span class="line"><span class="attr">Measure</span>=Time</span><br><span class="line"><span class="attr">Format</span>=%A</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterBackground]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">W</span>=<span class="number">210</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">107</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">60</span>,<span class="number">60</span>,<span class="number">60</span>,<span class="number">255</span></span><br><span class="line"></span><br><span class="line"><span class="section">[TextStyle]</span></span><br><span class="line"><span class="attr">FontFace</span>=Trebuchet MS</span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">245</span>,<span class="number">207</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="attr">StringStyle</span>=Bold</span><br><span class="line"><span class="attr">StringAlign</span>=Right</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTime]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureTime</span><br><span class="line"><span class="attr">X</span>=<span class="number">165</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">40</span></span><br><span class="line"><span class="attr">MouseOverAction</span>=[!SetOption MeasureTime Format <span class="string">&quot;%H:%M&quot;</span>][!UpdateMeasure MeasureTime][!UpdateMeter *][!Redraw]</span><br><span class="line"><span class="attr">MouseLeaveAction</span>=[!SetOption MeasureTime Format <span class="string">&quot;%#I:%M&quot;</span>][!UpdateMeasure MeasureTime][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterSeconds]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureSeconds</span><br><span class="line"><span class="attr">X</span>=<span class="number">204</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">8</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">18</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">231</span>,<span class="number">135</span>,<span class="number">255</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterAMPM]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureAMPM</span><br><span class="line"><span class="attr">X</span>=<span class="number">204</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">30</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">16</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">231</span>,<span class="number">135</span>,<span class="number">255</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterMonthDayYear]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureMonthName</span><br><span class="line"><span class="attr">MeasureName2</span>=MeasureDayOfMonth</span><br><span class="line"><span class="attr">MeasureName3</span>=MeasureYear</span><br><span class="line"><span class="attr">X</span>=<span class="number">204</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>R</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">13</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span> %<span class="number">2</span>, %<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterDayOfWeek]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=TextStyle</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureDayOfWeek</span><br><span class="line"><span class="attr">X</span>=<span class="number">204</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>R</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">13</span></span><br></pre></td></tr></table></figure>
+<div class="docs-pagination">
+<hr class="mt-4">
+<a class="btn btn-outline-primary float-right" href="..\system\index.htm">Continue to: System &raquo;</a>
+<a class="btn btn-outline-secondary float-left" href="..\launcher\index.htm">&laquo; Back to: Launcher</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\..\js\main.js"></script>
+<script src="..\..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

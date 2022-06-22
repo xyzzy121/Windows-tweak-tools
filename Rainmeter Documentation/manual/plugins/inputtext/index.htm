@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="InputText plugin - Rainmeter Docs">
+<meta property="og:title" content="InputText plugin - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>InputText plugin - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\index.htm"><img src="..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\getting-started\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\..\getting-started\setting-up\index.htm">Setting Up</a>
+<li><a href="..\..\getting-started\using-rainmeter\index.htm">Using Rainmeter</a>
+<li><a href="..\..\getting-started\customizing\index.htm">Customizing</a>
+<li><a href="..\..\getting-started\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\..\getting-started\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\..\getting-started\basic-tutorials\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\..\getting-started\basic-tutorials\launcher\index.htm">Launcher</a>
+<li><a href="..\..\getting-started\basic-tutorials\clock\index.htm">Clock</a>
+<li><a href="..\..\getting-started\basic-tutorials\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\installing-rainmeter\index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="..\..\installing-rainmeter\auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\..\user-interface\about\index.htm">About</a>
+<li><a href="..\..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<ul>
+<li><a href="..\..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\..\meters\index.htm">Meters</a>
+<ul>
+<li><a href="..\..\meters\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\meters\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\..\meters\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\..\meters\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\..\meters\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\..\meters\bar\index.htm">Bar</a>
+<li><a href="..\..\meters\bitmap\index.htm">Bitmap</a>
+<li><a href="..\..\meters\button\index.htm">Button</a>
+<li><a href="..\..\meters\histogram\index.htm">Histogram</a>
+<li><a href="..\..\meters\image\index.htm">Image</a>
+<li><a href="..\..\meters\line\index.htm">Line</a>
+<li><a href="..\..\meters\rotator\index.htm">Rotator</a>
+<li><a href="..\..\meters\roundline\index.htm">Roundline</a>
+<li><a href="..\..\meters\shape\index.htm">Shape</a>
+<li><a href="..\..\meters\string\index.htm">String</a>
+<ul>
+<li><a href="..\..\meters\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\measures\index.htm">Measures</a>
+<ul>
+<li><a href="..\..\measures\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\measures\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\..\measures\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\..\measures\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\..\measures\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\..\measures\calc\index.htm">Calc</a>
+<li><a href="..\..\measures\cpu\index.htm">CPU</a>
+<li><a href="..\..\measures\freediskspace\index.htm">FreeDiskSpace</a>
+<li><a href="..\..\measures\loop\index.htm">Loop</a>
+<li><a href="..\..\measures\mediakey\index.htm">MediaKey</a>
+<li><a href="..\..\measures\memory\index.htm">Memory</a>
+<li><a href="..\..\measures\net\index.htm">Net</a>
+<li><a href="..\..\measures\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\..\measures\plugin\index.htm">Plugin</a>
+<li><a href="..\..\measures\process\index.htm">Process</a>
+<li><a href="..\..\measures\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\..\measures\registry\index.htm">Registry</a>
+<li><a href="..\..\measures\script\index.htm">Script</a>
+<li><a href="..\..\measures\string\index.htm">String</a>
+<li><a href="..\..\measures\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\..\measures\time\index.htm">Time</a>
+<li><a href="..\..\measures\uptime\index.htm">Uptime</a>
+<li><a href="..\..\measures\webparser\index.htm">WebParser</a>
+<li><a href="..\..\measures\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\index.htm">Plugins</a>
+<ul>
+<li><a href="..\actiontimer\index.htm">ActionTimer</a>
+<li><a href="..\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\coretemp\index.htm">CoreTemp</a>
+<li><a href="..\fileview\index.htm">FileView</a>
+<li><a href="..\folderinfo\index.htm">FolderInfo</a>
+<li><a href="index.htm">InputText</a>
+<li><a href="..\ping\index.htm">Ping</a>
+<li><a href="..\power\index.htm">Power</a>
+<li><a href="..\quote\index.htm">Quote</a>
+<li><a href="..\resmon\index.htm">ResMon</a>
+<li><a href="..\runcommand\index.htm">RunCommand</a>
+<li><a href="..\speedfan\index.htm">SpeedFan</a>
+<li><a href="..\usagemonitor\index.htm">UsageMonitor</a>
+<li><a href="..\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\bangs\index.htm">Bangs</a>
+<li><a href="..\..\formulas\index.htm">Formulas</a>
+<li><a href="..\..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\..\groups\index.htm">Groups</a>
+<li><a href="..\..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">InputText plugin</h1>
+<hr>
+
+<p><code>Plugin=InputText</code> executes bangs with user input.</p>
+<p>InputText works by defining a series of commands, which can be triggered by any "action" string (this includes mouse actions, conditional actions in a Calc measure, and other commands in an InputText measure, including the same measure). When triggered, a free-floating text input box is created to gather user input at the specified points in the command series. When all input has been submitted, the commands are carried out.</p>
+<p>Additional help and examples for InputText can be found on the Rainmeter forums at <a href="//forum.rainmeter.net/viewtopic.php?p=98462#p98462">Working with InputText</a>.</p>
+<p><b>Note:</b> InputText is incompatible with skins set to <a href="..\..\settings\skin-sections\index.htm#AlwaysOnTop">Stay Topmost</a>, or <code>AlwaysOnTop=2</code>, as the conflict between the input field, which requires "focus", and the constant attempts by the skin to stay on "top", in front of the input field, will not allow InputText to function correctly.</p>
+<h2>Options</h2>
+<dl>
+<dt id="Command"><code>Command1</code>, <code>Command2</code>, ..., <code>Command<em>N</em></code></dt>
+<dd>
+<p><a href="..\..\skins\option-types\index.htm#Action">Actions</a> to execute when the plugin is triggered. The macro string <code>$UserInput$</code> will be replaced by whatever the user types into it.</p>
+<p><code>Command1=[!SetVariable SomeVar "$UserInput$"]</code></p>
+<p>If the macro string <code>$UserInput$</code> is repeated in a command series, multiple input boxes will be created in sequence. However, a single value input by the user can be used multiple times in different bangs in the same command series by using the string value of the InputText [MeasureName] as a <a href="..\..\variables\section-variables\index.htm#MeasureParameters">section variable</a>.</p>
+<p><code>Command1=[!WriteKeyValue Variables SomeVar "$UserInput$"]</code><br>
+<code>Command2=[!SetVariable SomeVar "[MeasureName]"]</code></p>
+<p>In addition, a command can override the values of options in this measure when an option="value" pair is added as a parameter to a <code>Command</code> option.</p>
+<p><code>Command1=[!SetVariable SomeVar "[MeasureName]"] FontColor="255,0,0,255"</code></p>
+<p><b>Note:</b> The macro string <code>$UserInput$</code> and the section variable [MeasureName] must be enclosed in quotes in the <code>Command</code> option if the user input may contain spaces.</p>
+</dd>
+<dt id="DefaultValue"><code>DefaultValue</code></dt>
+<dd>
+<p>Default text that will appear in the input box.</p>
+</dd>
+<dt id="Password"><code>Password</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>If set to <code>1</code>, the input will be displayed as asterisks.</p>
+</dd>
+<dt id="InputLimit"><code>InputLimit</code> <small>Default: <code>0</code> <em>unlimited</em></small></dt>
+<dd>
+<p>If defined, this will limit the number of characters allowed in the input field. Note that if a new line is entered with <code>CTRL-Enter</code>, this will be two characters, <code>/r/n</code>, toward the limit.</p>
+</dd>
+<dt id="InputNumber"><code>InputNumber</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>If set to <code>1</code>, only numeric input will be allowed. A single <code>-</code> can be the first character, and a single <code>.</code> can be at any position in the input.</p>
+</dd>
+<dt id="XY"><code>X</code>, <code>Y</code></dt>
+<dd>
+<p>Position of the input box.</p>
+<p><b>Note:</b> Relative positioning with "r" and "R" is not supported.</p>
+</dd>
+<dt id="WH"><code>W</code>, <code>H</code></dt>
+<dd>
+<p>Size of the input box.</p>
+<p><b>Note:</b> <code>H</code> should be large enough to accommodate the font.</p>
+</dd>
+<dt id="SolidColor"><code>SolidColor</code> <small>Default: <code>255,255,255,255</code></small></dt>
+<dd>
+<p><a href="..\..\skins\option-types\index.htm#Color">Color</a> of the input field background.</p>
+<p><b>Note:</b> The alpha channel changes the opacity of the entire input box including the text, not just the background.</p>
+</dd>
+<dt id="FontColor"><code>FontColor</code> <small>Default: <code>0,0,0</code></small></dt>
+<dd>
+<p><a href="..\..\skins\option-types\index.htm#Color">Color</a> of the input text.</p>
+<p><b>Note:</b> Any alpha channel setting of FontColor is entirely ignored. The transparency of the input control is set by <code>SolidColor</code>, which will effect both the input box and text transparency.</p>
+</dd>
+<dt id="FontFace"><code>FontFace</code></dt>
+<dd>
+<p>Family name of the input text font.</p>
+<p><b>Note:</b> Only fonts actually installed in Windows can be used.</p>
+</dd>
+<dt id="FontSize"><code>FontSize</code></dt>
+<dd>
+<p>Size of the input text font.</p>
+</dd>
+<dt id="StringStyle"><code>StringStyle</code></dt>
+<dd>
+ <p>Style of the input text. Valid values are <code>Normal</code>, <code>Bold</code>, <code>Italic</code>, and <code>BoldItalic</code>.</p>
+</dd>
+<dt id="StringAlign"><code>StringAlign</code> <small>Default: <code>Left</code></small></dt>
+<dd>
+<p>Alignment of the input text. Valid values are <code>Left</code>, <code>Right</code>, <code>Center</code>.</p>
+<p><b>Note:</b> With right-aligned text, the cursor will move from left to right as text is typed. This is advised for skins using languages such as Arabic, which read right-to-left.</p>
+</dd>
+<dt id="TopMost"><code>TopMost</code></dt>
+<dd>
+<p>Sets the Z-position of the input field. If set to <code>1</code> then the input field will stay on top of all windows while active. If set to <code>0</code> then other windows can be dragged in front of the input field while it is active. If not set at all (default) then the Z-position of the input field will follow the <a href="..\..\settings\skin-sections\index.htm#AlwaysOnTop">TopMost</a> setting of the overall skin.</p>
+<p><b>Note:</b> This option should not be used when <code>FocusDismiss=1</code> is set.</p>
+</dd>
+<dt id="FocusDismiss"><code>FocusDismiss</code> <small>Default: <code>1</code></small></dt>
+<dd>
+<p>If set to <code>1</code> (default), clicking anywhere other than on the input field will dismiss the input without taking action. If set to <code>0</code>, the mouse is disabled until Enter or Escape is pressed.</p>
+</dd>
+<dt id="OnDismissAction"><code>OnDismissAction</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>A <a href="..\..\bangs\index.htm">bang</a> or <a href="..\..\skins\option-types\index.htm#Action">action</a> that is executed when an active InputText field is dismissed without hitting Enter to execute the plugin commands.</p>
+</dd>
+</dl>
+<h2 id="Bangs">Bangs</h2>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">LeftMouseUpAction</span>=[!CommandMeasure MeasureInputText <span class="string">&quot;ExecuteBatch ALL&quot;</span>]</span><br><span class="line"><span class="attr">IfAboveAction</span>=[!CommandMeasure MeasureInputText <span class="string">&quot;ExecuteBatch 3&quot;</span>]</span><br><span class="line"><span class="attr">OnRefreshAction</span>=[!CommandMeasure MeasureInputText <span class="string">&quot;ExecuteBatch 1-4&quot;</span>]</span><br></pre></td></tr></table></figure>
+<p>The <code>ExecuteBatch</code> parameter supports the following syntax: <code>"ExecuteBatch All / # / #-#"</code></p>
+<ul>
+<li><b>All</b> : All commands in the measure</li>
+<li><b>#</b> : Only a single command in the measure</li>
+<li><b>#-#</b> : A specific range of commands in the measure</li>
+</ul>
+<h2>Example</h2>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">FirstVar</span>=!WriteKeyValue</span><br><span class="line"><span class="attr">SecondVar</span>=!SetVariable</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">14</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterBackground]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">1</span>E3A69FF</span><br><span class="line"><span class="attr">W</span>=<span class="number">250</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">105</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureInput]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=InputText</span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">76</span>A0E8FF</span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">FontFace</span>=Seqoe UI</span><br><span class="line"><span class="attr">StringStyle</span>=Italic</span><br><span class="line">FontSize=<span class="comment">#FontSize#</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">25</span></span><br><span class="line"><span class="attr">W</span>=<span class="number">240</span></span><br><span class="line"><span class="attr">DefaultValue</span>=<span class="string">&quot;Change Me!&quot;</span></span><br><span class="line"><span class="attr">Command1</span>=!WriteKeyValue Variables FirstVar <span class="string">&quot;$UserInput$&quot;</span> <span class="string">&quot;#CURRENTPATH#InputText.inc&quot;</span></span><br><span class="line"><span class="attr">Command2</span>=!Refresh <span class="comment">#CURRENTCONFIG#</span></span><br><span class="line"><span class="attr">Command3</span>=!SetVariable SecondVar <span class="string">&quot;$UserInput$&quot;</span> Y=<span class="number">40</span> DefaultValue=<span class="string">&quot;Change Me Too!&quot;</span></span><br><span class="line"><span class="attr">Command4</span>=[<span class="string">&quot;$UserInput$&quot;</span>] Y=<span class="number">75</span> DefaultValue=<span class="string">&quot;Text file path and name&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterWriteKeyValue]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">X</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">15</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line">Text=<span class="comment">#FirstVar#</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=!CommandMeasure <span class="string">&quot;MeasureInput&quot;</span> <span class="string">&quot;ExecuteBatch 1-2&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterSetVariable]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">X</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">10</span>R</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">15</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line">Text=<span class="comment">#SecondVar#</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=!CommandMeasure <span class="string">&quot;MeasureInput&quot;</span> <span class="string">&quot;ExecuteBatch 3&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterOpenEditor]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">X</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">10</span>R</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">15</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=Open Text File</span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=!CommandMeasure <span class="string">&quot;MeasureInput&quot;</span> <span class="string">&quot;ExecuteBatch 4&quot;</span></span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\js\main.js"></script>
+<script src="..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

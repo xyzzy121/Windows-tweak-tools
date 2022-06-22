@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="FileView plugin - Rainmeter Docs">
+<meta property="og:title" content="FileView plugin - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>FileView plugin - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\index.htm"><img src="..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\getting-started\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\..\getting-started\setting-up\index.htm">Setting Up</a>
+<li><a href="..\..\getting-started\using-rainmeter\index.htm">Using Rainmeter</a>
+<li><a href="..\..\getting-started\customizing\index.htm">Customizing</a>
+<li><a href="..\..\getting-started\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\..\getting-started\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\..\getting-started\basic-tutorials\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\..\getting-started\basic-tutorials\launcher\index.htm">Launcher</a>
+<li><a href="..\..\getting-started\basic-tutorials\clock\index.htm">Clock</a>
+<li><a href="..\..\getting-started\basic-tutorials\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\installing-rainmeter\index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="..\..\installing-rainmeter\auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\..\user-interface\about\index.htm">About</a>
+<li><a href="..\..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<ul>
+<li><a href="..\..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\..\meters\index.htm">Meters</a>
+<ul>
+<li><a href="..\..\meters\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\meters\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\..\meters\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\..\meters\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\..\meters\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\..\meters\bar\index.htm">Bar</a>
+<li><a href="..\..\meters\bitmap\index.htm">Bitmap</a>
+<li><a href="..\..\meters\button\index.htm">Button</a>
+<li><a href="..\..\meters\histogram\index.htm">Histogram</a>
+<li><a href="..\..\meters\image\index.htm">Image</a>
+<li><a href="..\..\meters\line\index.htm">Line</a>
+<li><a href="..\..\meters\rotator\index.htm">Rotator</a>
+<li><a href="..\..\meters\roundline\index.htm">Roundline</a>
+<li><a href="..\..\meters\shape\index.htm">Shape</a>
+<li><a href="..\..\meters\string\index.htm">String</a>
+<ul>
+<li><a href="..\..\meters\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\measures\index.htm">Measures</a>
+<ul>
+<li><a href="..\..\measures\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\measures\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\..\measures\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\..\measures\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\..\measures\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\..\measures\calc\index.htm">Calc</a>
+<li><a href="..\..\measures\cpu\index.htm">CPU</a>
+<li><a href="..\..\measures\freediskspace\index.htm">FreeDiskSpace</a>
+<li><a href="..\..\measures\loop\index.htm">Loop</a>
+<li><a href="..\..\measures\mediakey\index.htm">MediaKey</a>
+<li><a href="..\..\measures\memory\index.htm">Memory</a>
+<li><a href="..\..\measures\net\index.htm">Net</a>
+<li><a href="..\..\measures\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\..\measures\plugin\index.htm">Plugin</a>
+<li><a href="..\..\measures\process\index.htm">Process</a>
+<li><a href="..\..\measures\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\..\measures\registry\index.htm">Registry</a>
+<li><a href="..\..\measures\script\index.htm">Script</a>
+<li><a href="..\..\measures\string\index.htm">String</a>
+<li><a href="..\..\measures\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\..\measures\time\index.htm">Time</a>
+<li><a href="..\..\measures\uptime\index.htm">Uptime</a>
+<li><a href="..\..\measures\webparser\index.htm">WebParser</a>
+<li><a href="..\..\measures\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\index.htm">Plugins</a>
+<ul>
+<li><a href="..\actiontimer\index.htm">ActionTimer</a>
+<li><a href="..\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\coretemp\index.htm">CoreTemp</a>
+<li><a href="index.htm">FileView</a>
+<li><a href="..\folderinfo\index.htm">FolderInfo</a>
+<li><a href="..\inputtext\index.htm">InputText</a>
+<li><a href="..\ping\index.htm">Ping</a>
+<li><a href="..\power\index.htm">Power</a>
+<li><a href="..\quote\index.htm">Quote</a>
+<li><a href="..\resmon\index.htm">ResMon</a>
+<li><a href="..\runcommand\index.htm">RunCommand</a>
+<li><a href="..\speedfan\index.htm">SpeedFan</a>
+<li><a href="..\usagemonitor\index.htm">UsageMonitor</a>
+<li><a href="..\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\bangs\index.htm">Bangs</a>
+<li><a href="..\..\formulas\index.htm">Formulas</a>
+<li><a href="..\..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\..\groups\index.htm">Groups</a>
+<li><a href="..\..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">FileView plugin</h1>
+<hr>
+
+<p><code>Plugin=FileView</code> retrieves information about folders and files.</p>
+<p>The plugin gathers all the folder and file names, sizes, dates and icons in the selected folder. It counts the number of files and folders and obtains the combined size. It can also search recursively through all the subfolders of the selected folder to obtain the totals for count and size.</p>
+<p>FileView operates with a "parent / child" approach. A main "parent" FileView measure is used to obtain all the information for a selected folder, and then "child" measures are used to read individual entries from the parent using the <code>Path=</code> option.
+<h2>Usage</h2>
+<p>FileView measures take the form:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureFolder]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=FileView</span><br><span class="line"><span class="attr">Path</span>=<span class="string">&quot;C:\Program Files\Rainmeter&quot;</span></span><br><span class="line"><span class="attr">ShowDotDot</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">ShowFolder</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Count</span>=<span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p id="ParentChild">In this example, this "parent" measure will obtain name, size, date and icon information about all files in the selected folder, then create three <a href="#Index">Index</a> values for the first three files. The information is used in subsequent "child" FileView measures:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureChild1]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=FileView</span><br><span class="line"><span class="attr">Path</span>=[MeasureFolder]</span><br><span class="line"><span class="attr">Type</span>=FileName</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureChild2]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=FileView</span><br><span class="line"><span class="attr">Path</span>=[MeasureFolder]</span><br><span class="line"><span class="attr">Type</span>=FileName</span><br><span class="line"><span class="attr">Index</span>=<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureChild3]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=FileView</span><br><span class="line"><span class="attr">Path</span>=[MeasureFolder]</span><br><span class="line"><span class="attr">Type</span>=FileName</span><br><span class="line"><span class="attr">Index</span>=<span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>The values of the three <a href="#ParentChild">child</a> measures are now the FileName information parsed into Indexes 1 through 3 by the <a href="#ParentChild">parent</a> measure. These can then be used with <a href="..\..\meters\general-options\index.htm#MeasureName">MeasureName</a> and other options in <a href="..\..\meters\index.htm">meters</a>.</p>
+<p>Another way to use the information in child measures is:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureChild1]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=FileView</span><br><span class="line"><span class="attr">Path</span>=[MeasureFolder]</span><br><span class="line"><span class="attr">Type</span>=FileName</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureChild2]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=FileView</span><br><span class="line"><span class="attr">Path</span>=[MeasureFolder]</span><br><span class="line"><span class="attr">Type</span>=FileSize</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureChild3]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=FileView</span><br><span class="line"><span class="attr">Path</span>=[MeasureFolder]</span><br><span class="line"><span class="attr">Type</span>=FileDate</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>The values of the three child measures are now the FileName, FileSize and FileDate information from the first file (Index 1) of the parent measure.</p>
+<p>In these examples, three indexes are created due to the <code>Count=3</code> option on the parent measure. However, the information for all files and / or folders are obtained by the plugin, and subsequent or previous entries can be assigned to the three indexes by using !CommandMeasure statements described below. This will allow a skin to "scroll" through the files and / or folders in a dynamic way.</p>
+<p><b>Important Note:</b> A FileView measure will not re-read the disk information on a normal update cycle or using <a href="..\..\..\tips\update-guide\index.htm">UpdateDivider</a> on the measure, nor when the <a href="..\..\bangs\index.htm#Update">!Update</a> / <a href="..\..\bangs\index.htm#UpdateMeasure">!UpdateMeasure</a> bangs are used. If the options on the parent measure are changed dynamically with <a href="..\..\bangs\index.htm#SetVariable">!SetVariable</a> or <a href="..\..\bangs\index.htm#SetOption">!SetOption</a>, the <a href="#Update">Update plugin command</a> will need to be used to update the values.<p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureFolder]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=FileView</span><br><span class="line"><span class="attr">Path</span>=<span class="string">&quot;C:\ImageFolder&quot;</span></span><br><span class="line"><span class="attr">Count</span>=<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterChangeFolder]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">W</span>=<span class="number">26</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">25</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[!SetOption MeasureFolder Path <span class="string">&quot;C:\VideoFolder&quot;</span>][!CommandMeasure MeasureFolder Update]</span><br></pre></td></tr></table></figure>
+<p>If it is desired that a folder be monitored for new or changed files, the <a href="#Update">Update plugin command</a> should be used in conjunction with an <a href="..\..\measures\general-options\index.htm#OnUpdateAction">OnUpdateAction</a> statement to keep the measure current with changing disk information. Be aware that having the plugin physically access the disk has a performance cost, and care should be taken to use an appropriate <a href="..\..\..\tips\update-guide\index.htm">UpdateDivider</a>.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureFolder]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=FileView</span><br><span class="line"><span class="attr">Path</span>=<span class="string">&quot;C:\ImageFolder&quot;</span></span><br><span class="line"><span class="attr">Count</span>=<span class="number">3</span></span><br><span class="line"><span class="attr">UpdateDivider</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">OnUpdateAction</span>=!CommandMeasure MeasureFolder Update</span><br></pre></td></tr></table></figure>
+<h2>Options</h2>
+<dl>
+<dt>General measure options</dt>
+<dd>
+<p>All <a href="..\..\measures\general-options\index.htm">general measure options</a> are valid.</p>
+</dd>
+<dt id="Path"><code>Path</code></dt>
+<dd>
+<p>In a <b>parent measure</b>, defines the path of the folder to read. By default, the <b>This PC (formerly My Computer)</b> folder is used.</p>
+<p><b>Note:</b> While #Variables# can be used in the parent Path option, [SectionVariables] cannot, as this is ambiguous with the parent definition in a child measure. <a href="..\..\variables\nesting-variables\index.htm">Nested variables</a> cannot be used as well.</p>
+<p>In a <b>child measure</b>, defines the parent measure <code>[MeasureName]</code> to read values from.</p>
+</dd>
+</dl>
+<h2>Parent measure options</h2>
+<dl>
+<dt id="FinishAction"><code>FinishAction</code></dt>
+<dd>
+<p><a href="..\..\skins\option-types\index.htm#Action">Action</a> to execute when the plugin has completed reading the folders and files. This can be used to ensure that a large folder structure is fully read before other actions are taken.</p>
+</dd>
+<dt id="Recursive"><code>Recursive</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>If set to <code>1</code>, the plugin searches all sub-folders updating only the file count, folder count and overall folder size. This option does not index specific files in sub-folders.</p>
+<p>If set to <code>2</code>, the plugin indexes all files in the folder tree defined in <a href="#Path">Path</a>. Folders are not indexed. <a href="#PluginCommands">Plugin commands</a> <a href="#FollowPath">FollowPath</a> and <a href="#PreviousFolder">PreviousFolder</a> are disabled, and <a href="#ShowFile">ShowFile</a>, <a href="#ShowFolder">ShowFolder</a>, and <a href="#ShowDotDot">ShowDotDot</a> options have no effect.</p>
+</dd>
+<dt id="Count"><code>Count</code> <small>Default: <code>1</code></small></dt>
+<dd>
+<p>The number of items to be indexed at one time.</p>
+</dd>
+<dt id="ShowDotDot"><code>ShowDotDot</code> <small>Default: <code>1</code></small></dt>
+<dd>
+<p>If set to <code>1</code>, the <b>..</b> folder (representing the previous folder) will be included. Otherwise the <b>..</b> folder is ignored.</p>
+</dd>
+<dt id="ShowFolder"><code>ShowFolder</code> <small>Default: <code>1</code></small></dt>
+<dd>
+<p>If set to <code>0</code>, folders are ignored.</p>
+<p><b>Note:</b> To control the <b>..</b> folder, use <a href="#ShowDotDot">ShowDotDot</a> above.</p>
+</dd>
+<dt id="ShowFile"><code>ShowFile</code> <small>Default: <code>1</code></small></dt>
+<dd>
+<p>If set to <code>0</code>, files are ignored.</p>
+</dd>
+<dt id="ShowHidden"><code>ShowHidden</code> <small>Default: <code>1</code></small></dt>
+<dd>
+<p>If set to <code>0</code>, hidden files and folders are ignored.</p>
+</dd>
+<dt id="ShowSystem"><code>ShowSystem</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>If set to <code>1</code>, protected operating system files are included.</p>
+</dd>
+<dt id="HideExtensions"><code>HideExtensions</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>If set to <code>1</code>, file extensions are removed when used with <code>Type=FileName</code>.</p>
+</dd>
+<dt id="Extensions"><code>Extensions</code></dt>
+<dd>
+<p>Semi-colon separated list of file extensions that limits the type of files to be included.</p>
+<p><b>Example:</b> If <code>Extensions="jpg;png"</code>, only .jpg and .png files are included.</p>
+</dd>
+<dt id="SortType"><code>SortType</code> <small>Default: <code>Name</code></small></dt>
+<dd>
+<p>Type of information to sort the entries by. Valid values are: <code>Name</code>, <code>Size</code>, <code>Type</code>, <code>Date</code>.</p>
+</dd>
+<dt id="SortDateType"><code>SortDateType</code> <small>Default: <code>Modified</code></small></dt>
+<dd>
+<p>File and folder date entry to use for sorting when <code>SortType=Date</code>. Valid values are: <code>Modified</code>, <code>Created</code>, <code>Accessed</code>.</p>
+</dd>
+<dt id="SortAscending"><code>SortAscending</code> <small>Default: <code>1</code></small></dt>
+<dd>
+<p>If set to <code>1</code>, the entries are sorted in ascending order. Otherwise a descending order is used.</p>
+</dd>
+<dt id="WildcardSearch"><code>WildcardSearch</code> <small>Default: <code>*</code></small></dt>
+<dd>
+<p>Wildcards used to filter included files and/or folders. Standard <code>*</code> and <code>?</code> characters can be used.</p>
+</dd>
+</dl>
+<h2>Child measure options</h2>
+<dl>
+<dt id="Index"><code>Index</code> <small>Default: <code>1</code></small></dt>
+<dd>
+<p>Index of the file or folder from the parent measure. This should not exceed the <code>Count</code> number in the parent measure. If it does, the items will wrap around. For example, if <code>Count=8</code>, <code>Index=9</code> will be treated as <code>Index=1</code>.</p>
+</dd>
+<dt id="IgnoreCount"><code>IgnoreCount</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>If set to <code>1</code>, the Index will represent the actual index of the file or folder in the list. This is useful to display a particular file or folder at all times (like the <code>..</code> folder).</p>
+</dd>
+<dt id="Type"><code>Type</code> <small>Default: <code>FolderPath</code></small></dt>
+<dd>
+<p>Type of information to obtain from the parent measure.</p>
+<p><b>Information for path returned by the parent measure</b></p>
+<ul>
+<li><code>FolderPath</code> : Path of folder returned in parent Path, with trailing "\"</li>
+<li><code>FolderSize</code> : Size in bytes of folder returned in parent Path</li>
+<li><code>FileCount</code> : Count of files in folder returned in parent Path</li>
+<li><code>FolderCount</code> : Count of folders in folder returned in parent Path</li>
+</ul>
+<p><b>Information for object returned by the child Index number</b></p>
+<ul>
+<li><code>FileName</code> : Name of indexed object, folder or file</li>
+<li><code>FileType</code> : Extension only with no "." for indexed file. Empty with folder</li>
+<li><code>FileSize</code> : Size in bytes of indexed file. Empty with folder</li>
+<li><code>FileDate</code> : System date of indexed object, folder or file. See <code>DateType</code> for possible date types</li>
+<li><code>FilePath</code> : Full path and name of indexed object, folder or file. No trailing "\" with folders</li>
+<li><code>PathToFile</code> : Full path up to indexed object, folder or file, with trailing "\")</li>
+<li><code>Icon</code> : Full path and name of icon extracted from indexed object, folder or file</li>
+</ul>
+<p><b>Note:</b> If <code>Type=Icon</code>, the full path of the icon file is returned. See <a href="#IconPath">IconPath</a> below. This can be used with <code>MeasureName</code> or <code>ImageName</code> in an Image meter to display the icon.</p>
+</dd>
+<dt id="DateType"><code>DateType</code> <small>Default: <code>Modified</code></small></dt>
+<dd>
+<p>The date entry to retrieve from the parent measure when <code>Type=FileDate</code>. Valid values are: <code>Modified</code>, <code>Created</code>, <code>Accessed</code>.</p>
+</dd>
+<dt id="IconPath"><code>IconPath</code></dt>
+<dd>
+<p>Path and filename of the location (relative to the skin folder) to save icons when <code>Type=Icon</code>. If no path is given, the icons are saved in the skin folder and are named "iconX.ico", where "X" is the index number.</p>
+</dd>
+<dt id="IconSize"><code>IconSize</code> <small>Default: <code>Medium</code></small></dt>
+<dd>
+<p>Size of the icon to save. Valid values are: <code>Small</code> (for 16x16), <code>Medium</code> (for 32x32), <code>Large</code> (for 48x48), <code>ExtraLarge</code> (for 256x256).</p>
+</dd>
+</dl>
+<h2 id="PluginCommands">Plugin Commands</h2>
+<h3 id="ParentCommands">Parent measure commands</h3>
+<dl>
+<dt id="Update"><code>Update</code></dt>
+<dd>
+<p>Updates the measure, reading the disk and recreating all values in the parent measure.</p>
+<p><b>Example:</b> <code>LeftMouseUpAction=!CommandMeasure "ParentMeasureName" "Update"</code></p>
+</dd>
+<dt id="PageUp"><code>PageUp</code></dt>
+<dd>
+<p>Decreases the current page count.</p>
+<p>For example, if <code>Count=8</code>, and there are 25 files in the list, there is a total of 4 pages. If items 8-15 (page 2) are being displayed, the <code>PageUp</code> will decrease the page count by one changing the displayed items to items 0-7 (page 1).</p>
+<p><p><b>Example:</b> <code>LeftMouseUpAction=!CommandMeasure "ParentMeasureName" "PageUp"</code></p>
+</dd>
+<dt id="PageDown"><code>PageDown</code></dt>
+<dd>
+<p>Increases the page count.</p>
+</dd>
+<dt id="IndexUp"><code>IndexUp</code></dt>
+<dd>
+<p>Decreases the index by 1. This is useful for mouse scroll actions.</p>
+<p><b>Example:</b> <code>MouseScrollUpAction=!CommandMeasure "ParentMeasureName" "IndexUp"</code></p>
+</dd>
+<dt id="IndexDown"><code>IndexDown</code></dt>
+<dd>
+<p>Increases the index by 1. This is useful for mouse scroll actions.</p>
+</dd>
+<dt id="PreviousFolder"><code>PreviousFolder</code></dt>
+<dd>
+<p>This will change the path to the folder one higher in the folder structure. Behaves like clicking on the <b>..</b> folder.</p>
+</dd>
+</dl>
+<h3 id="ChildCommands">Child measure commands</h3>
+<dl>
+<dt id="FollowPath"><code>FollowPath</code></dt>
+<dd>
+<p>If the index referenced in the child measure is currently a folder, then the parent measure's <code>Path</code> is updated to the new path. If it is a file, then it is opened with the default Windows associated application. In order to better simulate Windows behavior, it is recommended that this command be used with a double-click action.</p>
+<p><b>Example:</b> <code>LeftMouseDoubleClickAction=!CommandMeasure "ChildMeasureName" "FollowPath"</code></p>
+</dd>
+<dt id="Open"><code>Open</code></dt>
+<dd>
+<p>This will open the file or folder that the index represents. If it is a folder, the folder is opened in Windows Explorer. If it is a file, then it is opened with the default Windows associated application. In order to better simulate Windows behavior, it is recommended that this command be used with a double-click action.</p>
+<p><b>Example:</b> <code>LeftMouseDoubleClickAction=!CommandMeasure "ChildMeasureName" "Open"</code></p>
+</dd>
+</dl>
+<h3 id="OtherCommands">Other commands</h3>
+<dl>
+<dt id="ContextMenu"><code>ContextMenu</code></dt>
+<dd>
+<p>Opens the context menu for the item represented by the measure. The context menu will appear at the current mouse location if the mouse is hovering over the skin, otherwise it will appear at the top left corner of the skin. This command can be used on a parent or child measure.</p>
+<p><b>Example:</b> <code>!CommandMeasure "MeasureName" "ContextMenu"</code></p>
+<br>
+<p><b>Parent</b> measures have the extra ability to open the context menu for a manually defined file/folder. See the example below.</p>
+<p><b>Example:</b> <code>!CommandMeasure "ParentMeasureName" "ContextMenu C:\Some Folder\Some File.exe"</code></p>
+<p><b>Note:</b> Place quotes around the entire command <b>and</b> path. Extra quotes are not needed for paths that contain spaces.</p>
+</dd>
+<dt id="Properties"><code>Properties</code></dt>
+<dd>
+<p>Opens the property dialog for the item represented by the measure. This can be a parent or child measure.</p>
+<p><b>Example:</b> <code>!CommandMeasure "MeasureName" "Properties"</code></p>
+<br>
+<p><b>Parent</b> measures have the extra ability to open the property dialog for a manually defined file/folder. See the example below.</p>
+<p><b>Example:</b> <code>!CommandMeasure "ParentMeasureName" "Properties C:\Some Folder\Some File.exe"</code></p>
+<p><b>Note:</b> Place quotes around the entire command <b>and</b> path. Extra quotes are not needed for paths that contain spaces.</p>
+</dd>
+</dl>
+<h2>Example</h2>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">MouseScrollUpAction</span>=[!CommandMeasure mPath <span class="string">&quot;IndexUp&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line"><span class="attr">MouseScrollDownAction</span>=[!CommandMeasure mPath <span class="string">&quot;IndexDown&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">IconSize</span>=Large</span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Styles</span></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="section">[TextStyle]</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[TextHighlight]</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">150</span>,<span class="number">150</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"></span><br><span class="line"><span class="section">[IconStyle]</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">Y</span>=r</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[HighlightStyle]</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">5</span>R</span><br><span class="line"><span class="attr">W</span>=<span class="number">380</span></span><br><span class="line"><span class="attr">H</span>=([Index1Icon:H] &gt; [Index1Info:H] ? [Index1Icon:H] : [Index1Info:H])</span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">MouseOverAction</span>=[!SetOption <span class="comment">#CURRENTSECTION# SolidColor &quot;50,50,255,150&quot;][!UpdateMeter #CURRENTSECTION#][!Redraw]</span></span><br><span class="line">MouseLeaveAction=[!SetOption <span class="comment">#CURRENTSECTION# SolidColor &quot;&quot;][!UpdateMeter #CURRENTSECTION#][!Redraw]</span></span><br><span class="line"></span><br><span class="line">[InfoStyle]</span><br><span class="line">X=<span class="number">5</span>R</span><br><span class="line">Y=r</span><br><span class="line">Text=<span class="string">&quot;%1 #CRLF#%2 #CRLF#%3 &quot;</span></span><br><span class="line">AutoScale=<span class="number">1</span></span><br><span class="line">AntiAlias=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Measures</span></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"></span><br><span class="line">[mPath]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=<span class="string">&quot;C:&quot;</span></span><br><span class="line">Count=<span class="number">8</span></span><br><span class="line"></span><br><span class="line">[mFolderCount]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FolderCount</span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mFileCount]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileCount</span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mFolderSize]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FolderSize</span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Index 1</span></span><br><span class="line"></span><br><span class="line">[mIndex1Name]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileName</span><br><span class="line">Index=<span class="number">1</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex1Size]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileSize</span><br><span class="line">Index=<span class="number">1</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex1Date]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileDate</span><br><span class="line">Index=<span class="number">1</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex1Icon]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=Icon</span><br><span class="line">IconSize=<span class="comment">#IconSize#</span></span><br><span class="line">Index=<span class="number">1</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Index 2</span></span><br><span class="line"></span><br><span class="line">[mIndex2Name]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileName</span><br><span class="line">Index=<span class="number">2</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex2Size]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileSize</span><br><span class="line">Index=<span class="number">2</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex2Date]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileDate</span><br><span class="line">Index=<span class="number">2</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex2Icon]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=Icon</span><br><span class="line">IconSize=<span class="comment">#IconSize#</span></span><br><span class="line">Index=<span class="number">2</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Index 3</span></span><br><span class="line"></span><br><span class="line">[mIndex3Name]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileName</span><br><span class="line">Index=<span class="number">3</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex3Size]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileSize</span><br><span class="line">Index=<span class="number">3</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex3Date]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileDate</span><br><span class="line">Index=<span class="number">3</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex3Icon]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=Icon</span><br><span class="line">IconSize=<span class="comment">#IconSize#</span></span><br><span class="line">Index=<span class="number">3</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Index 4</span></span><br><span class="line"></span><br><span class="line">[mIndex4Name]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileName</span><br><span class="line">Index=<span class="number">4</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex4Size]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileSize</span><br><span class="line">Index=<span class="number">4</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex4Date]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileDate</span><br><span class="line">Index=<span class="number">4</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex4Icon]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=Icon</span><br><span class="line">IconSize=<span class="comment">#IconSize#</span></span><br><span class="line">Index=<span class="number">4</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Index 5</span></span><br><span class="line"></span><br><span class="line">[mIndex5Name]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileName</span><br><span class="line">Index=<span class="number">5</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex5Size]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileSize</span><br><span class="line">Index=<span class="number">5</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex5Date]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileDate</span><br><span class="line">Index=<span class="number">5</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex5Icon]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=Icon</span><br><span class="line">IconSize=<span class="comment">#IconSize#</span></span><br><span class="line">Index=<span class="number">5</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Index 6</span></span><br><span class="line"></span><br><span class="line">[mIndex6Name]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileName</span><br><span class="line">Index=<span class="number">6</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex6Size]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileSize</span><br><span class="line">Index=<span class="number">6</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex6Date]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileDate</span><br><span class="line">Index=<span class="number">6</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex6Icon]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=Icon</span><br><span class="line">IconSize=<span class="comment">#IconSize#</span></span><br><span class="line">Index=<span class="number">6</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Index 7</span></span><br><span class="line"></span><br><span class="line">[mIndex7Name]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileName</span><br><span class="line">Index=<span class="number">7</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex7Size]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileSize</span><br><span class="line">Index=<span class="number">7</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex7Date]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileDate</span><br><span class="line">Index=<span class="number">7</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex7Icon]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=Icon</span><br><span class="line">IconSize=<span class="comment">#IconSize#</span></span><br><span class="line">Index=<span class="number">7</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Index 8</span></span><br><span class="line"></span><br><span class="line">[mIndex8Name]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileName</span><br><span class="line">Index=<span class="number">8</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex8Size]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileSize</span><br><span class="line">Index=<span class="number">8</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex8Date]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=FileDate</span><br><span class="line">Index=<span class="number">8</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line">[mIndex8Icon]</span><br><span class="line">Measure=Plugin</span><br><span class="line">Plugin=FileView</span><br><span class="line">Path=[mPath]</span><br><span class="line">Type=Icon</span><br><span class="line">IconSize=<span class="comment">#IconSize#</span></span><br><span class="line">Index=<span class="number">8</span></span><br><span class="line">Group=Children</span><br><span class="line"></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"><span class="comment">; Meters</span></span><br><span class="line"><span class="comment">;----------------------------------------------------</span></span><br><span class="line"></span><br><span class="line">[Background]</span><br><span class="line">Meter=Image</span><br><span class="line">SolidColor=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">200</span></span><br><span class="line">W=<span class="number">400</span></span><br><span class="line">H=<span class="number">500</span></span><br><span class="line"></span><br><span class="line">[PathTitle]</span><br><span class="line">Meter=String</span><br><span class="line">MeterStyle=TextStyle</span><br><span class="line">Text=Path:</span><br><span class="line"></span><br><span class="line">[Path]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mPath</span><br><span class="line">MeterStyle=TextStyle | TextHighlight</span><br><span class="line">Text=<span class="string">&quot;%1 &quot;</span></span><br><span class="line">X=R</span><br><span class="line"></span><br><span class="line">[FolderCountTitle]</span><br><span class="line">Meter=String</span><br><span class="line">MeterStyle=TextStyle</span><br><span class="line">X=<span class="number">0</span></span><br><span class="line">Y=R</span><br><span class="line">Text=Folders:</span><br><span class="line"></span><br><span class="line">[FolderCount]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mFolderCount</span><br><span class="line">MeterStyle=TextStyle | TextHighlight</span><br><span class="line">X=R</span><br><span class="line">Y=r</span><br><span class="line"></span><br><span class="line">[FileCountTitle]</span><br><span class="line">Meter=String</span><br><span class="line">MeterStyle=TextStyle</span><br><span class="line">X=<span class="number">10</span>R</span><br><span class="line">Y=r</span><br><span class="line">Text=Files:</span><br><span class="line"></span><br><span class="line">[FileCount]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mFileCount</span><br><span class="line">MeterStyle=TextStyle | TextHighlight</span><br><span class="line">X=R</span><br><span class="line">Y=r</span><br><span class="line"></span><br><span class="line">[FolderSizeTitle]</span><br><span class="line">Meter=String</span><br><span class="line">MeterStyle=TextStyle</span><br><span class="line">X=<span class="number">10</span>R</span><br><span class="line">Y=r</span><br><span class="line">Text=Size:</span><br><span class="line"></span><br><span class="line">[FolderSize]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mFolderSize</span><br><span class="line">MeterStyle=TextStyle | TextHighlight</span><br><span class="line">X=R</span><br><span class="line">Y=r</span><br><span class="line">AutoScale=<span class="number">1</span></span><br><span class="line"></span><br><span class="line">[Index1]</span><br><span class="line">Meter=Image</span><br><span class="line">MeterStyle=HighlightStyle</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mIndex1Name <span class="string">&quot;FollowPath&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line">[Index1Icon]</span><br><span class="line">Meter=Image</span><br><span class="line">MeasureName=mIndex1Icon</span><br><span class="line">MeterStyle=IconStyle</span><br><span class="line"></span><br><span class="line">[Index1Info]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mIndex1Name</span><br><span class="line">MeasureName2=mIndex1Size</span><br><span class="line">MeasureName3=mIndex1Date</span><br><span class="line">MeterStyle=TextStyle | InfoStyle</span><br><span class="line"></span><br><span class="line">[Index2]</span><br><span class="line">Meter=Image</span><br><span class="line">MeterStyle=HighlightStyle</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mIndex2Name <span class="string">&quot;FollowPath&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line">[Index2Icon]</span><br><span class="line">Meter=Image</span><br><span class="line">MeasureName=mIndex2Icon</span><br><span class="line">MeterStyle=IconStyle</span><br><span class="line"></span><br><span class="line">[Index2Info]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mIndex2Name</span><br><span class="line">MeasureName2=mIndex2Size</span><br><span class="line">MeasureName3=mIndex2Date</span><br><span class="line">MeterStyle=TextStyle | InfoStyle</span><br><span class="line"></span><br><span class="line">[Index3]</span><br><span class="line">Meter=Image</span><br><span class="line">MeterStyle=HighlightStyle</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mIndex3Name <span class="string">&quot;FollowPath&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line">[Index3Icon]</span><br><span class="line">Meter=Image</span><br><span class="line">MeasureName=mIndex3Icon</span><br><span class="line">MeterStyle=IconStyle</span><br><span class="line"></span><br><span class="line">[Index3Info]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mIndex3Name</span><br><span class="line">MeasureName2=mIndex3Size</span><br><span class="line">MeasureName3=mIndex3Date</span><br><span class="line">MeterStyle=TextStyle | InfoStyle</span><br><span class="line"></span><br><span class="line">[Index4]</span><br><span class="line">Meter=Image</span><br><span class="line">MeterStyle=HighlightStyle</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mIndex4Name <span class="string">&quot;FollowPath&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line">[Index4Icon]</span><br><span class="line">Meter=Image</span><br><span class="line">MeasureName=mIndex4Icon</span><br><span class="line">MeterStyle=IconStyle</span><br><span class="line"></span><br><span class="line">[Index4Info]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mIndex4Name</span><br><span class="line">MeasureName2=mIndex4Size</span><br><span class="line">MeasureName3=mIndex4Date</span><br><span class="line">MeterStyle=TextStyle | InfoStyle</span><br><span class="line"></span><br><span class="line">[Index5]</span><br><span class="line">Meter=Image</span><br><span class="line">MeterStyle=HighlightStyle</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mIndex5Name <span class="string">&quot;FollowPath&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line">[Index5Icon]</span><br><span class="line">Meter=Image</span><br><span class="line">MeasureName=mIndex5Icon</span><br><span class="line">MeterStyle=IconStyle</span><br><span class="line"></span><br><span class="line">[Index5Info]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mIndex5Name</span><br><span class="line">MeasureName2=mIndex5Size</span><br><span class="line">MeasureName3=mIndex5Date</span><br><span class="line">MeterStyle=TextStyle | InfoStyle</span><br><span class="line"></span><br><span class="line">[Index6]</span><br><span class="line">Meter=Image</span><br><span class="line">MeterStyle=HighlightStyle</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mIndex6Name <span class="string">&quot;FollowPath&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line">[Index6Icon]</span><br><span class="line">Meter=Image</span><br><span class="line">MeasureName=mIndex6Icon</span><br><span class="line">MeterStyle=IconStyle</span><br><span class="line"></span><br><span class="line">[Index6Info]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mIndex6Name</span><br><span class="line">MeasureName2=mIndex6Size</span><br><span class="line">MeasureName3=mIndex6Date</span><br><span class="line">MeterStyle=TextStyle | InfoStyle</span><br><span class="line"></span><br><span class="line">[Index7]</span><br><span class="line">Meter=Image</span><br><span class="line">MeterStyle=HighlightStyle</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mIndex7Name <span class="string">&quot;FollowPath&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line">[Index7Icon]</span><br><span class="line">Meter=Image</span><br><span class="line">MeasureName=mIndex7Icon</span><br><span class="line">MeterStyle=IconStyle</span><br><span class="line"></span><br><span class="line">[Index7Info]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mIndex7Name</span><br><span class="line">MeasureName2=mIndex7Size</span><br><span class="line">MeasureName3=mIndex7Date</span><br><span class="line">MeterStyle=TextStyle | InfoStyle</span><br><span class="line"></span><br><span class="line">[Index8]</span><br><span class="line">Meter=Image</span><br><span class="line">MeterStyle=HighlightStyle</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mIndex8Name <span class="string">&quot;FollowPath&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line">[Index8Icon]</span><br><span class="line">Meter=Image</span><br><span class="line">MeasureName=mIndex8Icon</span><br><span class="line">MeterStyle=IconStyle</span><br><span class="line"></span><br><span class="line">[Index8Info]</span><br><span class="line">Meter=String</span><br><span class="line">MeasureName=mIndex8Name</span><br><span class="line">MeasureName2=mIndex8Size</span><br><span class="line">MeasureName3=mIndex8Date</span><br><span class="line">MeterStyle=TextStyle | InfoStyle</span><br><span class="line"></span><br><span class="line">[PageUp]</span><br><span class="line">Meter=String</span><br><span class="line">MeterStyle=TextStyle</span><br><span class="line">FontSize=<span class="number">15</span></span><br><span class="line">X=<span class="number">5</span></span><br><span class="line">Y=<span class="number">10</span>R</span><br><span class="line">Text=Page Up</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mPath <span class="string">&quot;PageUp&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line">MouseOverAction=[!SetOption <span class="comment">#CURRENTSECTION# SolidColor &quot;50,50,255,150&quot;][!UpdateMeter #CURRENTSECTION#][!Redraw]</span></span><br><span class="line">MouseLeaveAction=[!SetOption <span class="comment">#CURRENTSECTION# SolidColor &quot;&quot;][!UpdateMeter #CURRENTSECTION#][!Redraw]</span></span><br><span class="line"></span><br><span class="line">[PageDown]</span><br><span class="line">Meter=String</span><br><span class="line">MeterStyle=TextStyle</span><br><span class="line">FontSize=<span class="number">15</span></span><br><span class="line">X=<span class="number">10</span>R</span><br><span class="line">Y=r</span><br><span class="line">Text=Page Down</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mPath <span class="string">&quot;PageDown&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line">MouseOverAction=[!SetOption <span class="comment">#CURRENTSECTION# SolidColor &quot;50,50,255,150&quot;][!UpdateMeter #CURRENTSECTION#][!Redraw]</span></span><br><span class="line">MouseLeaveAction=[!SetOption <span class="comment">#CURRENTSECTION# SolidColor &quot;&quot;][!UpdateMeter #CURRENTSECTION#][!Redraw]</span></span><br><span class="line"></span><br><span class="line">[PreviousFolder]</span><br><span class="line">Meter=String</span><br><span class="line">MeterStyle=TextStyle</span><br><span class="line">FontSize=<span class="number">15</span></span><br><span class="line">X=<span class="number">10</span>R</span><br><span class="line">Y=r</span><br><span class="line">Text=Previous Folder</span><br><span class="line">LeftMouseDoubleClickAction=[!CommandMeasure mPath <span class="string">&quot;PreviousFolder&quot;</span>][!UpdateMeasure mPath][!UpdateMeasureGroup Children][!UpdateMeter *][!Redraw]</span><br><span class="line">MouseOverAction=[!SetOption <span class="comment">#CURRENTSECTION# SolidColor &quot;50,50,255,150&quot;][!UpdateMeter #CURRENTSECTION#][!Redraw]</span></span><br><span class="line">MouseLeaveAction=[!SetOption <span class="comment">#CURRENTSECTION# SolidColor &quot;&quot;][!UpdateMeter #CURRENTSECTION#][!Redraw]</span></span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\js\main.js"></script>
+<script src="..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

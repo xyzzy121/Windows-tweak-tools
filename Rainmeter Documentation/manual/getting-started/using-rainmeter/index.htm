@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Using Rainmeter - Rainmeter Docs">
+<meta property="og:title" content="Using Rainmeter - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Using Rainmeter - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\index.htm"><img src="..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\setting-up\index.htm">Setting Up</a>
+<li><a href="index.htm">Using Rainmeter</a>
+<li><a href="..\customizing\index.htm">Customizing</a>
+<li><a href="..\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\basic-tutorials\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\basic-tutorials\launcher\index.htm">Launcher</a>
+<li><a href="..\basic-tutorials\clock\index.htm">Clock</a>
+<li><a href="..\basic-tutorials\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\installing-rainmeter\index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="..\..\installing-rainmeter\auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\..\user-interface\about\index.htm">About</a>
+<li><a href="..\..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<ul>
+<li><a href="..\..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\..\meters\index.htm">Meters</a>
+<ul>
+<li><a href="..\..\meters\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\meters\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\..\meters\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\..\meters\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\..\meters\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\..\meters\bar\index.htm">Bar</a>
+<li><a href="..\..\meters\bitmap\index.htm">Bitmap</a>
+<li><a href="..\..\meters\button\index.htm">Button</a>
+<li><a href="..\..\meters\histogram\index.htm">Histogram</a>
+<li><a href="..\..\meters\image\index.htm">Image</a>
+<li><a href="..\..\meters\line\index.htm">Line</a>
+<li><a href="..\..\meters\rotator\index.htm">Rotator</a>
+<li><a href="..\..\meters\roundline\index.htm">Roundline</a>
+<li><a href="..\..\meters\shape\index.htm">Shape</a>
+<li><a href="..\..\meters\string\index.htm">String</a>
+<ul>
+<li><a href="..\..\meters\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\measures\index.htm">Measures</a>
+<ul>
+<li><a href="..\..\measures\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\measures\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\..\measures\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\..\measures\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\..\measures\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\..\measures\calc\index.htm">Calc</a>
+<li><a href="..\..\measures\cpu\index.htm">CPU</a>
+<li><a href="..\..\measures\freediskspace\index.htm">FreeDiskSpace</a>
+<li><a href="..\..\measures\loop\index.htm">Loop</a>
+<li><a href="..\..\measures\mediakey\index.htm">MediaKey</a>
+<li><a href="..\..\measures\memory\index.htm">Memory</a>
+<li><a href="..\..\measures\net\index.htm">Net</a>
+<li><a href="..\..\measures\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\..\measures\plugin\index.htm">Plugin</a>
+<li><a href="..\..\measures\process\index.htm">Process</a>
+<li><a href="..\..\measures\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\..\measures\registry\index.htm">Registry</a>
+<li><a href="..\..\measures\script\index.htm">Script</a>
+<li><a href="..\..\measures\string\index.htm">String</a>
+<li><a href="..\..\measures\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\..\measures\time\index.htm">Time</a>
+<li><a href="..\..\measures\uptime\index.htm">Uptime</a>
+<li><a href="..\..\measures\webparser\index.htm">WebParser</a>
+<li><a href="..\..\measures\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\..\plugins\index.htm">Plugins</a>
+<ul>
+<li><a href="..\..\plugins\actiontimer\index.htm">ActionTimer</a>
+<li><a href="..\..\plugins\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\..\plugins\coretemp\index.htm">CoreTemp</a>
+<li><a href="..\..\plugins\fileview\index.htm">FileView</a>
+<li><a href="..\..\plugins\folderinfo\index.htm">FolderInfo</a>
+<li><a href="..\..\plugins\inputtext\index.htm">InputText</a>
+<li><a href="..\..\plugins\ping\index.htm">Ping</a>
+<li><a href="..\..\plugins\power\index.htm">Power</a>
+<li><a href="..\..\plugins\quote\index.htm">Quote</a>
+<li><a href="..\..\plugins\resmon\index.htm">ResMon</a>
+<li><a href="..\..\plugins\runcommand\index.htm">RunCommand</a>
+<li><a href="..\..\plugins\speedfan\index.htm">SpeedFan</a>
+<li><a href="..\..\plugins\usagemonitor\index.htm">UsageMonitor</a>
+<li><a href="..\..\plugins\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\..\plugins\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\..\plugins\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\..\plugins\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\..\plugins\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\..\plugins\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\bangs\index.htm">Bangs</a>
+<li><a href="..\..\formulas\index.htm">Formulas</a>
+<li><a href="..\..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\..\groups\index.htm">Groups</a>
+<li><a href="..\..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Using Rainmeter</h1>
+<hr>
+
+<p>The first time you run Rainmeter, your desktop will look something like this:</p>
+<div class="exampleprev">
+<a href="..\..\img\getting-started\ur-firstrun.png" data-fancybox=""><img src="..\..\img\getting-started\ur-firstrun.png"></a>
+<p><em>Illustro</em>, the standard "suite" that comes with Rainmeter.</p>
+</div>
+<p>Each small window on the right side of your screen ("System," "Disk," and so on) is a <a href="..\..\skins\index.htm">skin</a>. Rainmeter remembers each skin's location and settings independently. To move a skin, just click and drag it to a new location.</p>
+<h2 id="ContextMenu">Context Menu</h2>
+<div class="exampleprev float-right thumbnail full-mobile">
+<a href="..\..\img\getting-started\ur-context.png" data-fancybox=""><img src="..\..\img\getting-started\ur-context.png"></a>
+<p>A typical skin's context menu.</p>
+</div>
+<p>The easiest way to interact with Rainmeter skins is through the <a href="..\..\user-interface\context-menus\index.htm#SkinContextMenus">context menu</a>. A skin may have any number of tabs, buttons, menus, or other bells and whistles in its design&mdash;but no matter what, you can still access the context menu by right-clicking on the skin.</p>
+<blockquote><p><i>Some skins may assign some other action to right-clicking on the skin. In this case, you can still override this action and open the context menu by holding down the <code>Ctrl</code> key when you right-click.</i></p></blockquote>
+<p>All skins have the same basic context menu items that you can see in the screenshot on the right. Some skins may have <a href="..\..\skins\rainmeter-section\index.htm#Context">custom items</a> to their context menus, but these these will not replace the basic items. Instead, both types of items will appear alongside each other.</p>
+<h3 id="LoadingUnloading">Loading and Unloading</h3>
+<p>You can use the context menu to load skins from your library. Right-click on any of the <em>illustro</em> skins, and select <code>illustro</code> &rarr; <code>Google</code> &rarr; <code>Google.ini</code>. The "Google" skin will appear in the top-left corner of your desktop. You can now drag it into place alongside your other skins.</p>
+<div class="exampleprev float-left thumbnail full-mobile">
+<a href="..\..\img\getting-started\ur-google.png" data-fancybox=""><img src="..\..\img\getting-started\ur-google.png"></a>
+<p>The Google skin has been loaded.</p>
+</div>
+<p>You can also unload a skin with the context menu. Right-click the new Google skin, and select <code>Unload skin</code>. You will see the skin fade away and disappear.</p>
+<p>When a skin is unloaded, its location and settings are still saved. To see how this works, load the Google skin again. Notice that, instead of appearing in the top-left, it appears in the same location where you dragged it before.</p>
+<h3 id="Variants">Variants</h3>
+<div class="exampleprev float-right thumbnail full-mobile">
+<a href="..\..\img\getting-started\ur-variants.png" data-fancybox=""><img src="..\..\img\getting-started\ur-variants.png"></a>
+<p>"Disk" has two variants.</p>
+</div>
+<p>When you loaded the Google skin, there was only one option under the "Google" menu, <code>Google.ini</code>. This is how most skins work: each skin is saved as a "<code>SkinName.ini</code>" file in a separate folder. What happens when there is more than one skin in the same folder? The answer is that these skins become <a href="..\..\skins\index.htm#Variants">variants</a> of each other.</p>
+<p>To see an example of a skin with variants, right-click the "Disk" skin and select <code>Variants</code> in the context menu. You can see that the <code>2 Disks.ini</code> variant is already active. Click <code>1 Disk.ini</code> to switch to that variant. Notice how the new variant replaces the old variant on the desktop. Variants share the same location and settings, and only one of a skin's variants may be loaded at one time.</p>
+<h3 id="Settings">Settings</h3>
+<p>Rainmeter keeps track of a number of basic <a href="..\..\settings\skin-sections\index.htm">skin settings</a>. These settings are created automatically for each skin. They include things like <a href="..\..\settings\skin-sections\index.htm#AlwaysOnTop">position</a> (whether a skin stays on top of all windows or is pinned to the desktop), <a href="..\..\settings\skin-sections\index.htm#SnapEdges">snap to edges</a> (whether skins automatically align with other skins when they are dragged close together), and of course, the skin's <a href="..\..\settings\skin-sections\index.htm#WindowXY">coordinates</a> (location on the desktop) and which variant is loaded.</p>
+<div class="exampleprev float-left thumbnail full-mobile">
+<a href="..\..\img\getting-started\ur-transparency.png" data-fancybox=""><img src="..\..\img\getting-started\ur-transparency.png"></a>
+<p>"Welcome" is now transparent.</p>
+</div>
+<p>One of the most popular skin settings is <a href="..\..\settings\skin-sections\index.htm#AlphaValue">transparency</a>. Try changing the transparency of the "Welcome to Rainmeter!" skin in the center of your desktop. Right-click the skin to open the context menu, then select <code>Settings</code> &rarr; <code>Transparency</code> &rarr; <code>50%</code>. Now you can partially see through the skin and onto the desktop below.</p>
+<p>Rainmeter does not manage any other "settings" beyond the basic ones found here. Extra customization options&mdash;like fonts, colors, images and passwords&mdash;are all stored and managed separately by the skins themselves, as <a href="..\..\variables\index.htm">variables</a>. This means that saving and restoring your layout settings in Rainmeter will <em>not</em> affect your customizations for specific skins. (It also means that backing up your Rainmeter settings will not protect your customizations, so make sure to back up your skin files, as well.)</p>
+<h2 id="TrayIcon">Tray Icon</h2>
+<div class="exampleprev float-right thumbnail full-mobile">
+<a href="..\..\img\getting-started\ur-tray.png" data-fancybox=""><img src="..\..\img\getting-started\ur-tray.png"></a>
+<p>There are two ways to open a skin's context menu.</p>
+</div>
+<p>Rainmeter has a Windows Notification Area (formerly known as System Tray) icon. You can reach the context menu for each of your loaded skins by right-clicking on the icon. This is a handy way to access a skin when you can't right-click it for some reason (usually when the skin is <a href="..\..\settings\skin-sections\index.htm#StartHidden">hidden</a>). It's also a good place to see a complete list of all the skins that you have loaded.</p>
+<h2 id="Manage">Manage</h2>
+<p>Aside from the context menus, the most important part of Rainmeter's basic user interface is the <a href="..\..\user-interface\manage\index.htm">Manage</a> window. Open Manage by selecting <code>Manage</code> from the context menu, or by left-clicking once on the tray icon.</p>
+<div class="exampleprev float-left thumbnail full-mobile">
+<a href="..\..\img\getting-started\ur-manage.png" data-fancybox=""><img src="..\..\img\getting-started\ur-manage.png"></a>
+<p>The "Manage" window shows your whole library.</p>
+</div>
+<h3 id="Skins">Skins</h3>
+<p>The <a href="..\..\user-interface\manage\index.htm#SkinsTab">Skins</a> tab allows you to load, unload, or change settings for your entire library of skins. You can go to a specific skin's settings in the Manage window by choosing <code>Manage skin</code> from the skin's context menu, or choosing from the <code>Active skins</code> drop-down menu in Manage. You can also right-click to open any skin's folder in Windows Explorer, where you can see other resource files for that skin, such as images or <a href="..\..\lua-scripting\index.htm">scripts</a>, or delete a skin's file, from your computer.</p>
+<p>The Manage window does many of the same tasks as the context menu, but when you need to load or edit options for a number of skins at the same time, it's much easier to use the window.</p>
+<h3 id="Layouts">Layouts</h3>
+<p>Manage is also where you can load and save <a href="..\..\user-interface\manage\index.htm#LayoutsTab">layouts</a>. A <a href="..\..\settings\index.htm#Layouts">layout</a> is a permanent copy of your skin settings, including both loaded and unloaded skins. (Again, these settings do not account for changes to your skin .ini or .inc files, which include any extra customization options. Loading a layout will also not recover a skin that has been deleted from your library.) When you save a layout, you have the option of excluding settings for unloaded skins, which is a good way to "clean up" skins that you may no longer have or use. You can also associate your current wallpaper with your layout.</p>
+<h2 id="About">About</h2>
+<p>The last part of Rainmeter's interface is the <a href="..\..\user-interface\about\index.htm">About</a> window. Open About by selecting <code>About</code> from the context menu, or by clicking <code>Open log</code> in Manage.</p>
+<div class="exampleprev float-right thumbnail full-mobile">
+<a href="..\..\img\getting-started\ur-about.png" data-fancybox=""><img src="..\..\img\getting-started\ur-about.png"></a>
+<p>The "About" window shows you what Rainmeter is doing in real-time.</p>
+</div>
+<h3 id="Log">Log</h3>
+<p>The <a href="..\..\user-interface\about\index.htm#LogTab">Log</a> tab is where Rainmeter keeps a running record of what it is doing. This is also where Rainmeter reports errors related to a skin or the program itself. In addition, the <a href="..\..\user-interface\about\index.htm#SkinsTab">Skins</a> tab will show you the current values of all <a href="..\..\measures\index.htm">measures</a> and <a href="..\..\variables\index.htm">variables</a> in the skin. (You'll learn more about those later.) This makes the About window an invaluable assistant whenever you're writing, editing or troubleshooting a skin.</p>
+<h3 id="Version">Version</h3>
+<p>The other tabs show information about the version of Rainmeter you are using, as well as the versions of <a href="..\..\plugins\index.htm">plugins</a> that you have installed. If you are ever having a technical issue and need to ask for support from the Rainmeter community, the About window is where you can find a wealth of information about your Rainmeter setup that may be helpful in solving your problem.</p>
+<h2 id="ExitingRainmeter">Exiting Rainmeter</h2>
+<p>Rainmeter saves all <a href="..\..\settings\index.htm">settings</a> automatically as soon as you change them. If you exit Rainmeter, (by clicking <code>Exit</code> in the context menu) all skin settings and your current layout will be loaded automatically the next time Rainmeter is launched.</p>
+<div class="docs-pagination">
+<hr class="mt-4">
+<a class="btn btn-outline-primary float-right" href="..\customizing\index.htm">Continue to: Customizing &raquo;</a>
+<a class="btn btn-outline-secondary float-left" href="..\setting-up\index.htm">&laquo; Back to: Setting Up</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\js\main.js"></script>
+<script src="..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

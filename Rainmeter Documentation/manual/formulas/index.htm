@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Formulas - Rainmeter Docs">
+<meta property="og:title" content="Formulas - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Formulas - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\getting-started\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\getting-started\setting-up\index.htm">Setting Up</a>
+<li><a href="..\getting-started\using-rainmeter\index.htm">Using Rainmeter</a>
+<li><a href="..\getting-started\customizing\index.htm">Customizing</a>
+<li><a href="..\getting-started\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\getting-started\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\getting-started\basic-tutorials\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\getting-started\basic-tutorials\launcher\index.htm">Launcher</a>
+<li><a href="..\getting-started\basic-tutorials\clock\index.htm">Clock</a>
+<li><a href="..\getting-started\basic-tutorials\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="..\installing-rainmeter\index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="..\installing-rainmeter\auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\user-interface\about\index.htm">About</a>
+<li><a href="..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<ul>
+<li><a href="..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\meters\index.htm">Meters</a>
+<ul>
+<li><a href="..\meters\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\meters\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\meters\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\meters\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\meters\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\meters\bar\index.htm">Bar</a>
+<li><a href="..\meters\bitmap\index.htm">Bitmap</a>
+<li><a href="..\meters\button\index.htm">Button</a>
+<li><a href="..\meters\histogram\index.htm">Histogram</a>
+<li><a href="..\meters\image\index.htm">Image</a>
+<li><a href="..\meters\line\index.htm">Line</a>
+<li><a href="..\meters\rotator\index.htm">Rotator</a>
+<li><a href="..\meters\roundline\index.htm">Roundline</a>
+<li><a href="..\meters\shape\index.htm">Shape</a>
+<li><a href="..\meters\string\index.htm">String</a>
+<ul>
+<li><a href="..\meters\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\measures\index.htm">Measures</a>
+<ul>
+<li><a href="..\measures\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\measures\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\measures\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\measures\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\measures\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\measures\calc\index.htm">Calc</a>
+<li><a href="..\measures\cpu\index.htm">CPU</a>
+<li><a href="..\measures\freediskspace\index.htm">FreeDiskSpace</a>
+ <li><a href="..\measures\loop\index.htm">Loop</a>
+<li><a href="..\measures\mediakey\index.htm">MediaKey</a>
+<li><a href="..\measures\memory\index.htm">Memory</a>
+<li><a href="..\measures\net\index.htm">Net</a>
+<li><a href="..\measures\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\measures\plugin\index.htm">Plugin</a>
+<li><a href="..\measures\process\index.htm">Process</a>
+<li><a href="..\measures\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\measures\registry\index.htm">Registry</a>
+<li><a href="..\measures\script\index.htm">Script</a>
+<li><a href="..\measures\string\index.htm">String</a>
+<li><a href="..\measures\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\measures\time\index.htm">Time</a>
+<li><a href="..\measures\uptime\index.htm">Uptime</a>
+<li><a href="..\measures\webparser\index.htm">WebParser</a>
+<li><a href="..\measures\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\plugins\index.htm">Plugins</a>
+<ul>
+<li><a href="..\plugins\actiontimer\index.htm">ActionTimer</a>
+<li><a href="..\plugins\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\plugins\coretemp\index.htm">CoreTemp</a>
+<li><a href="..\plugins\fileview\index.htm">FileView</a>
+<li><a href="..\plugins\folderinfo\index.htm">FolderInfo</a>
+<li><a href="..\plugins\inputtext\index.htm">InputText</a>
+<li><a href="..\plugins\ping\index.htm">Ping</a>
+<li><a href="..\plugins\power\index.htm">Power</a>
+<li><a href="..\plugins\quote\index.htm">Quote</a>
+<li><a href="..\plugins\resmon\index.htm">ResMon</a>
+<li><a href="..\plugins\runcommand\index.htm">RunCommand</a>
+<li><a href="..\plugins\speedfan\index.htm">SpeedFan</a>
+<li><a href="..\plugins\usagemonitor\index.htm">UsageMonitor</a>
+<li><a href="..\plugins\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\plugins\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\plugins\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\plugins\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\plugins\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\plugins\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\bangs\index.htm">Bangs</a>
+<li><a href="index.htm">Formulas</a>
+<li><a href="..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\groups\index.htm">Groups</a>
+<li><a href="..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Formulas</h1>
+<hr>
+
+<p>There are many situations where formulas can be used in Rainmeter to arrive at a numerical result. These might be things like:</p>
+<ul>
+<li>In a Calc measure: <code>Formula=(2.5 + 100) * 2</code></li>
+<li>In an IFCondition option value: <code>IfCondition=MeasureName > (2.5 + 100) * 2</code></li>
+<li>In a numeric meter or measure option value: <code>W=((2.5 + 100) * 2)</code></li>
+<li>As a numeric part of an option value: <code>FontColor=(255 * 0.5),255,255,255</code></li>
+<li>In a Bang: <code>LeftMouseUpAction=[!SetOption SomeMeter W "((2.5 + 100) * 2)"]</code></li>
+</ul>
+<br><p>There are a few place where formulas are not allowed. These are primarily places where the option value is assumed to be a string and only a string. In those cases, the characters used in a formula are treated as any other string character. A few examples are:</p>
+<ul>
+<li>The <code>Text</code> option of a String meter.</li>
+<li>The <code>String</code> option of a String measure.</li>
+<li>The <code>RegExp</code> option of a WebParser measure.</li>
+<li><code>IfMatch</code> options.</li>
+<li><code>TootipText</code> or <code>TooltipTitle</code> options.</li>
+</ul>
+<br><p>While formulas can be used in the [Variables] section of a skin, be aware that the [Variables] section itself does not resolve the formula. If you have a variable <code>MyVar=(5 * 2)</code>, then the value of #MyVar# is not "10", but literally "(5 * 2)". However, if you then use the variable in an option that does allow formulas, that option itself will do the math, as in <code>X=#MyVar#</code> in a meter.</p>
+<p>Mathematical formulas must be entirely enclosed in (parentheses) to alert Rainmeter that it is a formula, unless they are being used in the <a href="..\measures\calc\index.htm#Formula">Formula</a> option of a <a href="..\measures\calc\index.htm">Calc</a> measure or in a <a href="..\measures\general-options\ifconditions\index.htm">IfCondition</a> option, where the function is always assumed to be a formula, and the enclosing parentheses are optional.</p>
+<p><b>Note:</b> While [Measures], [SectionVariables:] and #Variables# can be used in a formula, all the components of a formula must be numeric, using only numbers, operators, functions and constants. Using .5 or .25 in a formula will cause an error. It must be 0.5 or 0.25.</p>
+<h2 id="Formulas">Formula Syntax</h2>
+<h3 id="Operators">Operators</h3>
+<ul>
+<li><code>+</code>: Addition</li>
+<li><code>-</code>: Subtraction</li>
+<li><code>*</code>: Multiplication</li>
+<li><code>/</code>: Division</li>
+<li><code>**</code>: Power</li>
+<li><code>%</code>: Remainder or modulus</li>
+<li><code>&amp;</code>: Bitwise AND</li>
+<li><code>|</code>: Bitwise OR</li>
+<li><code>^</code>: Bitwise XOR</li>
+<li><code>~</code>: Bitwise NOT</li>
+</ul>
+<h3 id="Logical">Logical Operators</h3>
+<ul>
+<li><code>&lt;&gt;</code>: Not equal</li>
+<li><code>=</code>: Equal to</li>
+<li><code>&gt;</code>: Greater than</li>
+<li><code>&lt;</code>: Less than</li>
+<li><code>&lt;=</code>: Less than or equal to</li>
+<li><code>&gt;=</code>: Greater than or equal to</li>
+<li><code>&amp;&amp;</code>: Logical AND</li>
+<li><code>||</code>: Logical OR</li>
+<br><p>Conditional statements using logical operators evaluate to 1 or 0 (true / false).</p>
+<p>Logical <code>&&</code> and <code>||</code> operators must have the conditions on either side enclosed in (parentheses).<br>
+Example: <code>(MyMeasure = 5) || (MyMeasure = 10)</code></p>
+</ul>
+<h3 id="Functions">Functions</h3>
+<ul>
+<li><code>Cos(<em>x</em>)</code>: The cosine of an angle of <em>x</em> radians.</li>
+<li><code>Sin(<em>x</em>)</code>: The sine of an angle of <em>x</em> radians.</li>
+<li><code>Tan(<em>x</em>)</code>: The tangent of an angle of <em>x</em> radians.</li>
+<li><code>Acos(<em>x</em>)</code>: The principal arc cosine of <em>x</em>, in the interval [0,PI] radians. The value of <em>x</em> is between -1 and 1.</li>
+<li><code>Asin(<em>x</em>)</code>: The principal arc sine of <em>x</em>, in the interval [-PI/2,+PI/2] radians. The value of <em>x</em> is between -1 and 1.</li>
+<li><code>Atan(<em>x</em>)</code>: The principal arc tangent of x, in the interval [-PI/2,+PI/2] radians.</li>
+<li><code>Atan2(<em>y</em>, <em>x</em>)</code>: The principal arc tangent in the interval [-PI,+PI] radians between points <em>y</em> and <em>x</em> in the Cartesian plane. The sign of the elements determines the quadrant.</li>
+<li><code>Rad(<em>x</em>)</code>: Converts <em>x</em> degrees to radians.</li>
+<li><code>Deg(<em>x</em>)</code>: Converts <em>x</em> radians to degrees.</li>
+<li><code>Abs(<em>x</em>)</code>: Absolute value of <em>x</em>.</li>
+<li><code>Neg(<em>x</em>)</code>: Negative value of <em>x</em>.</li>
+<li><code>Exp(<em>x</em>)</code>: Returns <em>e</em><sup>x</sup>.</li>
+<li><code>Log(<em>x</em>)</code>: Base 10 logarithm of <em>x</em>.</li>
+<li><code>Ln(<em>x</em>)</code>: Natural logarithm of <em>x</em>.</li>
+<li><code>Sqrt(<em>x</em>)</code>: Square root of <em>x</em>.</li>
+<li><code>Sgn(<em>x</em>)</code>: Return 1 if x is positive, -1 if x is negative, or 0 if x is zero.</li>
+<li><code>Frac(<em>x</em>)</code>: Fractional, or decimal, part of <em>x</em>. (e.g. frac(1.234) = 0.234)</li>
+<li><code>Trunc(<em>x</em>)</code>: Integer part of <em>x</em>. (e.g. trunc(1.234) = 1)</li>
+<li><code>Floor(<em>x</em>)</code>: Floor of <em>x</em>.</li>
+<li><code>Ceil(<em>x</em>)</code>: Ceiling of <em>x</em>.</li>
+<li><code>Min(<em>x</em>, <em>y</em>)</code>: Minimum of <em>x</em> and <em>y</em>.</li>
+<li><code>Max(<em>x</em>, <em>y</em>)</code>: Maximum of <em>x</em> and <em>y</em>.</li>
+<li><code>Clamp(<em>x</em>, <em>low</em>, <em>high</em>)</code>: Restricts value <em>x</em> to <em>low</em> and <em>high</em> limits.</li>
+<li><code>Round(<em>x</em>, <em>precision</em>)</code>: Rounds <em>x</em> to an integer, or
+to a specified number of decimal places. <em>precision</em> is optional.<br><br></li>
+</ul>
+<h3 id="Constants">Constants</h3>
+<ul>
+<li><code>PI</code>: Mathematical constant Pi (~3.14159265...).</li>
+<li><code>E</code>: Mathematical constant e (~2.71828182...).</li>
+</ul>
+<h3 id="Conditional">Conditional Operations</h3>
+<p><code>&lt;condition&gt; ? &lt;expr. if true.&gt; : &lt;expr. if false.&gt;</code></p>
+<p>This will evaluate condition as being either true or false. If it is true, the expression to the left of the colon (:) is evaluated. If it is false, the expression to the right is evaluated. This is equivalent to the following if-then-else statement:</p>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">if (condition)</span><br><span class="line">  then</span><br><span class="line">    expr. if true</span><br><span class="line">  else</span><br><span class="line">    expr. if false</span><br><span class="line">end if</span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Measure]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=<span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Meter]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">X</span>=([Measure] &lt; <span class="number">6</span> ? <span class="number">0</span> : <span class="number">10</span>)</span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>The meter would be positioned at <code>X=0</code> since the condition <code>[Measure] &lt; 6</code> evaluates to true.</p>
+<p>Conditional operators can be nested. It should be noted that there is a maximum of 30 nested operators.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Measure]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Meter]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">X</span>=([Measure] &lt; <span class="number">1</span> ? <span class="number">99</span> : ([Measure] &lt; <span class="number">2</span> ? <span class="number">98</span> : ([Measure] &lt; <span class="number">3</span> ? <span class="number">97</span> : <span class="number">96</span>)))</span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>The meter would be positioned at <code>X=97</code>. Since the first statement of <code>[Measure] &lt; 1</code> is false, the formula begins testing the nested formulas in order until the condition becomes true . If none of the conditions are met, the final false value of 96 would be set.</p>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

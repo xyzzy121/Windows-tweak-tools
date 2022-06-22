@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[BBC News - Home]]></title>
+        <description><![CDATA[BBC News - Home]]></description>
+        <link>https://www.bbc.co.uk/news/</link>
+        <image>
+            <url>https://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+            <title>BBC News - Home</title>
+            <link>https://www.bbc.co.uk/news/</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 22 Jun 2022 15:38:52 GMT</lastBuildDate>
+        <copyright><![CDATA[Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.]]></copyright>
+        <language><![CDATA[en-gb]]></language>
+        <ttl>15</ttl>
+        <item>
+            <title><![CDATA[Afghan earthquake: At least 1,000 people killed and 1,500 injured]]></title>
+            <description><![CDATA[The country's deadliest quake in two decades strikes in the night as many people sleep in their beds.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-61890804?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-asia-61890804</guid>
+            <pubDate>Wed, 22 Jun 2022 14:25:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Polio virus detected in London sewage samples]]></title>
+            <description><![CDATA[Health officials say parents should ensure their children have been vaccinated against the disease.]]></description>
+            <link>https://www.bbc.co.uk/news/health-61896411?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/health-61896411</guid>
+            <pubDate>Wed, 22 Jun 2022 12:38:08 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Rail strike: Thursday's walkout will go ahead, says the RMT union]]></title>
+            <description><![CDATA[The RMT accuses Transport Secretary Grant Shapps of "wrecking" talks as it confirms the walkout.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-61890526?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-61890526</guid>
+            <pubDate>Wed, 22 Jun 2022 14:51:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Europe told to prepare for Russia turning off gas]]></title>
+            <description><![CDATA[The International Energy Agency warns that Russia may stop supplying gas to Europe this winter.]]></description>
+            <link>https://www.bbc.co.uk/news/science-environment-61899509?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/science-environment-61899509</guid>
+            <pubDate>Wed, 22 Jun 2022 14:51:20 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[UK inflation rises at fastest rate for 40 years as food costs jump]]></title>
+            <description><![CDATA[Food, energy and fuel price rises help drive inflation up in May at its fastest pace since 1982.]]></description>
+            <link>https://www.bbc.co.uk/news/business-61891649?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-61891649</guid>
+            <pubDate>Wed, 22 Jun 2022 13:52:42 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Windrush Day: Queen praises pioneers as Waterloo statue unveiled]]></title>
+            <description><![CDATA[The monarch says she hopes the monument will "inspire present and future generations".]]></description>
+            <link>https://www.bbc.co.uk/news/uk-61884535?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-61884535</guid>
+            <pubDate>Wed, 22 Jun 2022 14:22:52 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Kate Bush says the 'world has gone mad' over Stranger Things song]]></title>
+            <description><![CDATA[The singer gives a rare interview after going to number one thanks to the hit show Stranger Things.]]></description>
+            <link>https://www.bbc.co.uk/news/entertainment-arts-61885400?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/entertainment-arts-61885400</guid>
+            <pubDate>Wed, 22 Jun 2022 09:40:52 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Half Russian separatist force dead or wounded - UK]]></title>
+            <description><![CDATA[UK military intelligence believes the Donetsk militia in occupied Ukraine has lost 55% of its force.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-61891462?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-61891462</guid>
+            <pubDate>Wed, 22 Jun 2022 11:12:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Chancellor Rishi Sunak defends likely pensions rise]]></title>
+            <description><![CDATA[There's criticism of the move as ministers warn workers not to expect pay rises to match increasing costs.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-politics-61894368?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-politics-61894368</guid>
+            <pubDate>Wed, 22 Jun 2022 13:53:52 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Rotherham abuse scandal: Operation Linden report 'lets victims down']]></title>
+            <description><![CDATA[A long-awaited report into police failings is criticised by a woman raped by grooming gangs in the town.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-england-south-yorkshire-61881000?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-england-south-yorkshire-61881000</guid>
+            <pubDate>Wed, 22 Jun 2022 14:00:57 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Bristol slavery victims recount 'horrendous' abuse]]></title>
+            <description><![CDATA[Maros Tancos and Joanna Gomulska tricked people into coming into the UK and then used them as slaves.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-england-bristol-61880757?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-england-bristol-61880757</guid>
+            <pubDate>Wed, 22 Jun 2022 14:48:53 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Victims abused by referee Hugh Stevenson say the SFA is blocking justice]]></title>
+            <description><![CDATA[Peter Haynes and Stuart McMillan say the SFA is refusing to accept any liability for what happened to them.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-scotland-61880621?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-scotland-61880621</guid>
+            <pubDate>Wed, 22 Jun 2022 05:27:19 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The tiny mites that have sex on our faces have a problem]]></title>
+            <description><![CDATA[The 0.3mm long organisms live deep in the pores of our faces but may be about to go extinct.]]></description>
+            <link>https://www.bbc.co.uk/news/newsbeat-61894186?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/newsbeat-61894186</guid>
+            <pubDate>Wed, 22 Jun 2022 15:26:39 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Bulldozer crushes 100 seized vehicles in New York]]></title>
+            <description><![CDATA[It is illegal to ride dirt bikes and ATVs (all-terrain vehicles) on the US city's streets.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-61893748?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-us-canada-61893748</guid>
+            <pubDate>Wed, 22 Jun 2022 10:39:27 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Upskirt photos shared in Facebook groups, BBC finds]]></title>
+            <description><![CDATA[Meta says it has removed accounts and groups showing upskirting, after a BBC investigation.]]></description>
+            <link>https://www.bbc.co.uk/news/technology-61868874?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/technology-61868874</guid>
+            <pubDate>Wed, 22 Jun 2022 05:01:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Joe Lycett: PSNI received complaint after joke at Belfast show]]></title>
+            <description><![CDATA[Police in Northern Ireland received a complaint about a joke the stand-up made at a show this month.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-northern-ireland-61882056?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-northern-ireland-61882056</guid>
+            <pubDate>Wed, 22 Jun 2022 08:28:56 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Glastonbury Festival welcomes back crowds as fans deal with travel disruption]]></title>
+            <description><![CDATA[Worthy Farm will welcome more than 200,000 festival-goers, but some have had to change their plans.]]></description>
+            <link>https://www.bbc.co.uk/news/entertainment-arts-61879547?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/entertainment-arts-61879547</guid>
+            <pubDate>Wed, 22 Jun 2022 11:07:12 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The 100-year-old Edinburgh man still working three days a week]]></title>
+            <description><![CDATA[David Flucker, who recently celebrated his 100th birthday, volunteers in an Edinburgh charity shop.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-scotland-61889775?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-scotland-61889775</guid>
+            <pubDate>Wed, 22 Jun 2022 05:28:33 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ice cream and amusements at the seaside]]></title>
+            <description><![CDATA[Jon Pountney's photographs of the Welsh seaside resorts on show in Cardiff.]]></description>
+            <link>https://www.bbc.co.uk/news/in-pictures-61870261?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/in-pictures-61870261</guid>
+            <pubDate>Tue, 21 Jun 2022 23:08:50 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA['It takes two clicks to set up a business, so act on your idea' ]]></title>
+            <description><![CDATA[CEO Secrets: Tej Lalvani, boss of Vitabiotics and former Dragons' Den star, shares his advice.]]></description>
+            <link>https://www.bbc.co.uk/news/business-61880859?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-61880859</guid>
+            <pubDate>Tue, 21 Jun 2022 23:20:54 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ed Sheeran lookalike mobbed at Ed Sheeran's Manchester gig]]></title>
+            <description><![CDATA[Wes Byrne was upgraded to the posh seats after being mobbed by Ed Sheeran's fans at one of his gigs.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-england-manchester-61878631?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-england-manchester-61878631</guid>
+            <pubDate>Tue, 21 Jun 2022 14:11:26 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Which trains are running this week?]]></title>
+            <description><![CDATA[Railway workers are on strike over pay and conditions.]]></description>
+            <link>https://www.bbc.co.uk/news/business-61634959?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-61634959</guid>
+            <pubDate>Tue, 21 Jun 2022 16:27:13 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Glasgow vegan who teamed up with Kourtney Kardashian]]></title>
+            <description><![CDATA[Four years after Ross Mackay set up his company in Glasgow, he is working with Kourtney Kardashian.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-scotland-61880617?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-scotland-61880617</guid>
+            <pubDate>Wed, 22 Jun 2022 05:30:33 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ukraine war: 'My kids cried every night asking if we're going to die']]></title>
+            <description><![CDATA[Kateryna and her two sons are among 60 families in a camp set up for Ukrainian refugees fleeing war.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-wales-61864374?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-wales-61864374</guid>
+            <pubDate>Wed, 22 Jun 2022 15:37:40 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Romelu Lukaku: What went wrong for striker at Chelsea?]]></title>
+            <description><![CDATA[Romelu Lukaku was supposed to elevate Chelsea to title contenders, but returns to Inter Milan just 10 months after his £97.5m arrival - so what went wrong for the striker at the Blues?]]></description>
+            <link>https://www.bbc.co.uk/sport/football/61842030?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/61842030</guid>
+            <pubDate>Wed, 22 Jun 2022 08:59:42 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Train strikes: Why railway workers say they are going on strike]]></title>
+            <description><![CDATA[Railway workers are striking over over cuts to jobs, conditions, pay and pensions.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-61885519?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-61885519</guid>
+            <pubDate>Tue, 21 Jun 2022 17:24:21 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ukraine: Could it join the EU, and how might Russia react?]]></title>
+            <description><![CDATA[Ukraine hopes to become an official candidate for European Union (EU) membership.]]></description>
+            <link>https://www.bbc.co.uk/news/world-61844552?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-61844552</guid>
+            <pubDate>Tue, 21 Jun 2022 23:10:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Train strikes: How did passengers cope with day one?]]></title>
+            <description><![CDATA[As services ground to a halt, figures suggest commuters turned to bikes, taxis or decided to work from home.]]></description>
+            <link>https://www.bbc.co.uk/news/business-61883770?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-61883770</guid>
+            <pubDate>Tue, 21 Jun 2022 23:05:44 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Just Stop Oil: Activists says they have 'a duty to protest']]></title>
+            <description><![CDATA[Newsbeat has been finding out about the individuals involved in the divisive climate action group.]]></description>
+            <link>https://www.bbc.co.uk/news/newsbeat-61635328?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/newsbeat-61635328</guid>
+            <pubDate>Tue, 21 Jun 2022 23:30:16 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Is Dominic Raab's quest to reform human rights law almost over?]]></title>
+            <description><![CDATA[The deputy PM says a British Bill of Rights will keep people safer, but it faces angry opposition.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-politics-61886224?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-politics-61886224</guid>
+            <pubDate>Wed, 22 Jun 2022 08:08:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Gareth Bale: Wales captain's representatives hold talks with Cardiff City]]></title>
+            <description><![CDATA[Cardiff City have held talks with Gareth Bale's representatives as they step up their efforts to sign the out-of-contract Wales captain.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/61900047?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/61900047</guid>
+            <pubDate>Wed, 22 Jun 2022 13:58:07 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Eastbourne: Best shots as Katie Boulter beats Karolina Pliskova]]></title>
+            <description><![CDATA[Watch the best shots as Britain's Katie Boulter records the "biggest win of her career" with a 1-6 6-4 6-4 win over world number seven Karolina Pliskova at Eastbourne.]]></description>
+            <link>https://www.bbc.co.uk/sport/av/tennis/61886952?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/av/tennis/61886952</guid>
+            <pubDate>Tue, 21 Jun 2022 15:26:38 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Sadio Mane: Bayern Munich sign Senegal forward from Liverpool in £35m deal]]></title>
+            <description><![CDATA[Sadio Mane completes a £35m move from Liverpool to Bayern Munich on a three-year contract.]]></description>
+            <link>https://www.bbc.co.uk/sport/football/61877332?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/football/61877332</guid>
+            <pubDate>Wed, 22 Jun 2022 15:16:21 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[England in Netherlands: Jason Roy's century leads England to victory in third ODI]]></title>
+            <description><![CDATA[Jason Roy hammers 101 off 86 balls and Jos Buttler blasts 86 off 64 to help England clinch a comfortable eight-wicket victory over the Netherlands.]]></description>
+            <link>https://www.bbc.co.uk/sport/cricket/61894161?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sport/cricket/61894161</guid>
+            <pubDate>Wed, 22 Jun 2022 15:12:42 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[What is the UK's inflation rate and why is the cost of living going up?]]></title>
+            <description><![CDATA[UK inflation is rising at 9.1%, its fastest rate for 40 years, and could go even higher.]]></description>
+            <link>https://www.bbc.co.uk/news/business-12196322?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-12196322</guid>
+            <pubDate>Wed, 22 Jun 2022 10:10:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Asda says some shoppers asking cashiers to stop at £30]]></title>
+            <description><![CDATA[Rising food prices are sparking a "massive change in behaviour", the supermarket's chairman tells the BBC.]]></description>
+            <link>https://www.bbc.co.uk/news/business-61879194?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-61879194</guid>
+            <pubDate>Wed, 22 Jun 2022 11:32:15 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Three things we're cutting back on as prices rise]]></title>
+            <description><![CDATA[People in Birmingham and Kent tell the BBC how they are cutting back to cope with the cost of living crisis.]]></description>
+            <link>https://www.bbc.co.uk/news/business-61831485?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-61831485</guid>
+            <pubDate>Fri, 17 Jun 2022 12:03:30 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA['Queues down the street' in Stoke for free supermarket food]]></title>
+            <description><![CDATA[Nikki Barrett runs Affordable Food Stoke, which saves surplus food and gives it away for free.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-england-stoke-staffordshire-61893386?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-england-stoke-staffordshire-61893386</guid>
+            <pubDate>Wed, 22 Jun 2022 13:28:27 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Would you walk to another shop to save 5p on oranges?]]></title>
+            <description><![CDATA[Single mum Safina has taken an extreme approach to saving money since her events business collapsed.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-61744144?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-61744144</guid>
+            <pubDate>Sat, 11 Jun 2022 00:11:43 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Five tips for saving petrol money examined]]></title>
+            <description><![CDATA[With filling up an average car now costing £100, are drivers doing the right things to save money?]]></description>
+            <link>https://www.bbc.co.uk/news/business-61745697?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-61745697</guid>
+            <pubDate>Thu, 09 Jun 2022 14:04:30 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[People cut back on food, fuel and clothes as prices rise, BBC survey suggests]]></title>
+            <description><![CDATA[More than eight in 10 people say they are worried about the cost-of-living, a BBC survey suggests.]]></description>
+            <link>https://www.bbc.co.uk/news/business-61813857?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-61813857</guid>
+            <pubDate>Fri, 17 Jun 2022 07:22:14 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Food bills are set to soar by £380 this year]]></title>
+            <description><![CDATA[As grocery prices rise at their highest pace in 13 years, experts warn there are more hikes to come.]]></description>
+            <link>https://www.bbc.co.uk/news/business-61878062?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/business-61878062</guid>
+            <pubDate>Tue, 21 Jun 2022 10:13:13 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

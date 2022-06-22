@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Screen Position Variables - Rainmeter Docs">
+<meta property="og:title" content="Screen Position Variables - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Screen Position Variables - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Tips &amp; Tricks</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#BeyondTheBasics">Beyond the Basics</a>
+<li><a href="..\index.htm#GoodToKnow">Good To Know</a>
+<li><a href="..\index.htm#GettingThingsDone">Getting Things Done</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Screen Position Variables</h1>
+<hr>
+
+<p><em>Tip by Kaelri</em></p>
+<p>The following built-in variables in Rainmeter can help you position things on the screen even on different screen resolutions.</p>
+<p><b>#SCREENAREAHEIGHT#</b><br>
+<b>#SCREENAREAWIDTH#</b><br>
+The total dimensions of the user's screen resolution.</p>
+<p><b>#WORKAREAWIDTH#</b><br>
+<b>#WORKAREAHEIGHT#</b><br>
+The dimensions of the "work area" - the desktop as constrained by the taskbar and any "docking" or "ranging" software.</p>
+<p><b>#WORKAREAX#</b><br>
+<b>#WORKAREAY#</b><br>
+The absolute X and Y position of the work area's top-left corner.</p>
+<p>In the past, if your users wanted to change the width of something, they had to open a window full of scary code and find the appropriate line. We shall hereafter refer to these as the Dark Ages of Rainmeter. Now my Taskbar skin, for example, is nothing more than this:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Taskbar]</span></span><br><span class="line"><span class="attr">Meter</span>=IMAGE</span><br><span class="line"><span class="attr">ImageName</span>=Taskbar.jpg</span><br><span class="line">W=<span class="comment">#WORKAREAWIDTH#</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">33</span></span><br></pre></td></tr></table></figure>
+<p>These variables support mathematical transformations, too. If I wanted a bar that filled up a third of the screen, for instance, I'd write:</p>
+<code>W=(#WORKAREAWIDTH# / 3)</code>
+<p>Even more powerful, however, is that you can use these variables to set the initial positions of whole skins in a .thm file for RainThemes.</p>
+<p>Placing a skin relative to the top or left sides of the desktop area is effortless - (#WORKAREAX# + X) or (#WORKAREAY# + Y). The right or bottom sides are a bit tricker, but just as effective. For example, if I want the Taskbar to be 33 pixels from the bottom - since it's 33 pixels high - I'd type:</p>
+<code>WindowY=(#WORKAREAY# + (#WORKAREAHEIGHT# - 33))</code>
+<p>In other words, you're telling Rainmeter to start at the top of the work area, go all the way down, then back up by 33.</p>
+<p>Centering a skin is just as easy. It's a tad more complicated in that you can't just make X and Y the center of the screen - the skin has its own height and width, remember. With Enigma, I've kept a consistent format for all of my "Taskbar" skins, in which the text is center-aligned at X=60. So if I wanted to center the whole skin as part of a theme, I'd use this format:</p>
+<code>WindowX=((#SCREENAREAWIDTH# / 2) - 60)</code>
+<p>It depends on the number of skins you've got, but in general, it's pretty easy to construct an entire theme that automatically adjusts to the user's resolution when it loads. As an example, I've copied the whole of Enigma's new default state below. It's easy for me to imagine most skins being packaged with themes like this, now that you can guarantee a proper and instantaneous presentation on any screen, large or small.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Enigma\_Home]</span></span><br><span class="line"><span class="attr">Active</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">WindowX</span>=(<span class="comment">#WORKAREAX# + (#WORKAREAWIDTH# - 900) / 2)</span></span><br><span class="line"><span class="attr">WindowY</span>=(<span class="comment">#WORKAREAY# + (#WORKAREAHEIGHT# - 600) / 2)</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Enigma\Taskbar\_Taskbar]</span></span><br><span class="line"><span class="attr">WindowX</span>=(<span class="comment">#WORKAREAX#)</span></span><br><span class="line"><span class="attr">WindowY</span>=(<span class="comment">#WORKAREAY# + (#WORKAREAHEIGHT# - 33))</span></span><br><span class="line"><span class="attr">AlphaValue</span>=<span class="number">127</span></span><br><span class="line"><span class="attr">FadeDuration</span>=<span class="number">250</span></span><br><span class="line"><span class="attr">ClickThrough</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Draggable</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">HideOnMouseOver</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">SavePosition</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">SnapEdges</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">KeepOnScreen</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AlwaysOnTop</span>=-<span class="number">1</span></span><br><span class="line"><span class="attr">Active</span>=<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Enigma\Sidebar\_Sidebar]</span></span><br><span class="line"><span class="attr">Active</span>=<span class="number">2</span></span><br><span class="line"><span class="attr">WindowX</span>=(<span class="comment">#WORKAREAX# + (#WORKAREAWIDTH# - 214))</span></span><br><span class="line"><span class="attr">WindowY</span>=(<span class="comment">#WORKAREAY#)</span></span><br><span class="line"><span class="attr">AlphaValue</span>=<span class="number">76</span></span><br><span class="line"><span class="attr">FadeDuration</span>=<span class="number">250</span></span><br><span class="line"><span class="attr">ClickThrough</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Draggable</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">HideOnMouseOver</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">SavePosition</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">SnapEdges</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">KeepOnScreen</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AlwaysOnTop</span>=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Enigma\Sidebar\Clock]</span></span><br><span class="line"><span class="attr">Active</span>=<span class="number">4</span></span><br><span class="line"><span class="attr">WindowX</span>=(<span class="comment">#WORKAREAX# + (#WORKAREAWIDTH# - 283))</span></span><br><span class="line"><span class="attr">WindowY</span>=(<span class="comment">#WORKAREAY#)</span></span><br><span class="line"><span class="attr">AlphaValue</span>=<span class="number">255</span></span><br><span class="line"><span class="attr">FadeDuration</span>=<span class="number">250</span></span><br><span class="line"><span class="attr">ClickThrough</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Draggable</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">HideOnMouseOver</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">SavePosition</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">SnapEdges</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">KeepOnScreen</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AlwaysOnTop</span>=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Enigma\Sidebar\Music]</span></span><br><span class="line"><span class="attr">WindowX</span>=(<span class="comment">#WORKAREAX# + (#WORKAREAWIDTH# - 195))</span></span><br><span class="line"><span class="attr">WindowY</span>=(<span class="comment">#WORKAREAY# + (#WORKAREAHEIGHT# - 115))</span></span><br><span class="line"><span class="attr">AlphaValue</span>=<span class="number">255</span></span><br><span class="line"><span class="attr">FadeDuration</span>=<span class="number">250</span></span><br><span class="line"><span class="attr">ClickThrough</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Draggable</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">HideOnMouseOver</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">SavePosition</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">SnapEdges</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">KeepOnScreen</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AlwaysOnTop</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Active</span>=<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Enigma\Sidebar\Notes]</span></span><br><span class="line"><span class="attr">Active</span>=<span class="number">2</span></span><br><span class="line"><span class="attr">WindowX</span>=(<span class="comment">#WORKAREAX# + (#WORKAREAWIDTH# - 188))</span></span><br><span class="line"><span class="attr">WindowY</span>=(<span class="comment">#WORKAREAY# + 110)</span></span><br><span class="line"><span class="attr">AlphaValue</span>=<span class="number">255</span></span><br><span class="line"><span class="attr">FadeDuration</span>=<span class="number">250</span></span><br><span class="line"><span class="attr">ClickThrough</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Draggable</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">HideOnMouseOver</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">SavePosition</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">SnapEdges</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">KeepOnScreen</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">AlwaysOnTop</span>=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Enigma\Taskbar\Combos\Tray Systems]</span></span><br><span class="line"><span class="attr">Active</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">WindowX</span>=(<span class="comment">#WORKAREAX# + (#WORKAREAWIDTH# - 253))</span></span><br><span class="line"><span class="attr">WindowY</span>=(<span class="comment">#WORKAREAY# + (#WORKAREAHEIGHT# - 28))</span></span><br><span class="line"><span class="attr">AlphaValue</span>=<span class="number">255</span></span><br><span class="line"><span class="attr">FadeDuration</span>=<span class="number">250</span></span><br><span class="line"><span class="attr">ClickThrough</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Draggable</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">HideOnMouseOver</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">SavePosition</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">SnapEdges</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">KeepOnScreen</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AlwaysOnTop</span>=<span class="number">0</span></span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

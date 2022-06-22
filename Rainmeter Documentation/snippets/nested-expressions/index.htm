@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Nested Expressions - Rainmeter Docs">
+<meta property="og:title" content="Nested Expressions - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Nested Expressions - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Snippets</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#General">General</a>
+<li><a href="..\index.htm#Conversions">Conversions</a>
+<li><a href="..\index.htm#FileInputOutput">File Input &amp; Output</a>
+<li><a href="..\index.htm#Math">Math</a>
+<li><a href="..\index.htm#Methods">Methods</a>
+<li><a href="..\index.htm#Rainmeter">Rainmeter</a>
+<li><a href="..\index.htm#Strings">Strings</a>
+<li><a href="..\index.htm#Time">Time</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Nested Expressions</h1>
+<hr>
+
+<p>Lua can get pretty complicated, especially when you want to create strings using values based on other values. This usually also includes a lot of concatenation.</p>
+<div class="noscroll">
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;On &#x27;</span> .. <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&#x27;%A&#x27;</span>) .. <span class="string">&#x27; Jane goes to &#x27;</span> .. Locations[<span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&#x27;%a&#x27;</span>)] .. <span class="string">&#x27;.&#x27;</span></span><br></pre></td></tr></table></figure>
+</div>
+<p>Using a little ingenuity this task could get a lot simpler.</p>
+<div class="noscroll">
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;On &#123;LongDay&#125; Jane goes to &#123;&#123;ShortDay&#125;Location&#125;.&#x27;</span></span><br></pre></td></tr></table></figure>
+</div>
+<p>This is something called Nested Expressions. This could be an insurmountable task, but thankfully it's not. As long as we follow some rules we can use one of Lua's built in functions for this.</p>
+<p>The most important rule we need to follow is that our expression must begin and end with different characters. For example, let's use the curly brackets (i.e. <code>'&#123;Expression&#125;'</code>). If both characters were the same Lua wouldn't be able to tell the difference between the beginning and the end.</p>
+<p>Now we need to define a function for our needs. Yes, we really do need a function for this. Since we need to follow the same steps for each nested expression we will need to call the function inside itself.</p>
+<div class="noscroll">
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">nested</span><span class="params">(line)</span></span></span><br><span class="line">	<span class="comment">-- Do Something Here</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+</div>
+<p>Now we need to start adding the bits that do all the work. What makes this all possible is the balanced expression matching capability of Lua. This would be the <code>%b</code> pattern matching class. We use it by placing the beginning and ending characters after it. More detail can be found <a target="_blank" rel="noopener" href="https://www.lua.org/pil/20.2.html">here</a>.</p>
+<div class="noscroll">
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">nested</span><span class="params">(line)</span></span></span><br><span class="line">	<span class="keyword">return</span> (<span class="built_in">string</span>.<span class="built_in">gsub</span>(line, <span class="string">&#x27;%b&#123;&#125;&#x27;</span>, <span class="function"><span class="keyword">function</span><span class="params">(input)</span></span></span><br><span class="line">		<span class="comment">-- Do Something Here</span></span><br><span class="line">	<span class="keyword">end</span>))</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+</div>
+<p>Now that we have our expression we need to do something with it. The first thing is to call our function again so we can deal with the nested expressions first. We'll have to strip off the beginning and ending characters or we'll just create an infinite loop.</p>
+<div class="noscroll">
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">nested</span><span class="params">(line)</span></span></span><br><span class="line">	<span class="keyword">return</span> (<span class="built_in">string</span>.<span class="built_in">gsub</span>(line, <span class="string">&#x27;%b&#123;&#125;&#x27;</span>, <span class="function"><span class="keyword">function</span><span class="params">(input)</span></span></span><br><span class="line">		<span class="keyword">local</span> newline = nested(<span class="built_in">string</span>.<span class="built_in">match</span>(<span class="built_in">input</span>, <span class="string">&#x27;^&#123;(.-)&#125;$&#x27;</span>))</span><br><span class="line">		<span class="comment">-- Do Something Here</span></span><br><span class="line">	<span class="keyword">end</span>))</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+</div>
+<p>Now we need to start doing something with our expression. This requires some testing. The first thing is to make sure that what we have indeed received is a valid expression and act accordingly. If it's not a valid expression we need to return exactly what we received, including the beginning and ending characters.</p>
+<p>You can do whatever you want to your expression, just be sure you return something. It is important to remember to use the <code>newline</code> variable in whatever you do from this point on. This is the variable that has all of the nested expressions already evaluated.</p>
+<div class="noscroll">
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">nested</span><span class="params">(line)</span></span></span><br><span class="line">	<span class="keyword">return</span> (<span class="built_in">string</span>.<span class="built_in">gsub</span>(line, <span class="string">&#x27;%b&#123;&#125;&#x27;</span>, <span class="function"><span class="keyword">function</span><span class="params">(input)</span></span></span><br><span class="line">		<span class="keyword">local</span> newline = nested(<span class="built_in">string</span>.<span class="built_in">match</span>(<span class="built_in">input</span>, <span class="string">&#x27;^&#123;(.-)&#125;$&#x27;</span>))</span><br><span class="line">		<span class="keyword">if</span> newline ~= <span class="string">&#x27;&#x27;</span> <span class="keyword">then</span></span><br><span class="line">			<span class="keyword">return</span> <span class="comment">--Do Something Here</span></span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> <span class="built_in">string</span>.<span class="built_in">format</span>(<span class="string">&#x27;&#123;%s&#125;&#x27;</span>, newline)</span><br><span class="line">		<span class="keyword">end</span></span><br><span class="line">	<span class="keyword">end</span>))</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+</div>
+<p>There is one very important thing to note. Our function as written must be a global function. If you want it to be local there is a way to fix this. We must pass the function to itself. It's best not to think about this too hard.</p>
+<div class="noscroll">
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="keyword">local</span> nested = <span class="function"><span class="keyword">function</span><span class="params">(line, self)</span></span></span><br><span class="line">	<span class="keyword">return</span> (<span class="built_in">string</span>.<span class="built_in">gsub</span>(line, <span class="string">&#x27;%b&#123;&#125;&#x27;</span>, <span class="function"><span class="keyword">function</span><span class="params">(input)</span></span></span><br><span class="line">		<span class="keyword">local</span> newline = <span class="built_in">self</span>(<span class="built_in">string</span>.<span class="built_in">match</span>(<span class="built_in">input</span>, <span class="string">&#x27;^&#123;(.-)&#125;$&#x27;</span>), <span class="built_in">self</span>)</span><br><span class="line">		<span class="keyword">if</span> newline ~= <span class="string">&#x27;&#x27;</span> <span class="keyword">then</span></span><br><span class="line">			<span class="keyword">return</span> <span class="comment">-- Do Something Here</span></span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> <span class="built_in">string</span>.<span class="built_in">format</span>(<span class="string">&#x27;&#123;%s&#125;&#x27;</span>, newline)</span><br><span class="line">		<span class="keyword">end</span></span><br><span class="line">	<span class="keyword">end</span>))</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">SomeString = nested(<span class="string">&#x27;&#123;Variable&#123;AnotherVariable&#125;&#125;&#x27;</span>, nested)</span><br></pre></td></tr></table></figure>
+</div>
+<h2 id="Examples">Examples</h2>
+<p>Here's something extremely simple. We're just going to see what Jane is doing today.</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">Variables = &#123;</span><br><span class="line">	LongDay = <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&#x27;%A&#x27;</span>),</span><br><span class="line">	ShortDay = <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&#x27;%a&#x27;</span>),</span><br><span class="line">	SunLocation = <span class="string">&#x27;Church&#x27;</span>,</span><br><span class="line">	MonLocation = <span class="string">&#x27;the Grocery Store&#x27;</span>,</span><br><span class="line">	TueLocation = <span class="string">&#x27;the Salon&#x27;</span>,</span><br><span class="line">	WedLocation = <span class="string">&#x27;a PTA meeting&#x27;</span>,</span><br><span class="line">	ThuLocation = <span class="string">&#x27;a concert&#x27;</span>,</span><br><span class="line">	FriLocation = <span class="string">&#x27;the bar&#x27;</span>,</span><br><span class="line">	SatLocation = <span class="string">&#x27;the beach&#x27;</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">nested</span><span class="params">(line)</span></span></span><br><span class="line">	<span class="keyword">return</span> (<span class="built_in">string</span>.<span class="built_in">gsub</span>(line, <span class="string">&#x27;%b&#123;&#125;&#x27;</span>, <span class="function"><span class="keyword">function</span><span class="params">(input)</span></span></span><br><span class="line">		<span class="keyword">local</span> newline = nested(<span class="built_in">string</span>.<span class="built_in">match</span>(<span class="built_in">input</span>, <span class="string">&#x27;^&#123;(.-)&#125;$&#x27;</span>))</span><br><span class="line">		<span class="keyword">if</span> Variables[newline] <span class="keyword">then</span></span><br><span class="line">			<span class="keyword">return</span> Variables[newline]</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> <span class="built_in">string</span>.<span class="built_in">format</span>(<span class="string">&#x27;&#123;%s&#125;&#x27;</span>, newline)</span><br><span class="line">		<span class="keyword">end</span></span><br><span class="line">	<span class="keyword">end</span>))</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">SomeString = nested(<span class="string">&#x27;On &#123;LongDay&#125; Jane goes to &#123;&#123;ShortDay&#125;Location&#125;.&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>This one is much more complicated. It's used to replace nested Rainmeter measures and variables.</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Replace</span><span class="params">(input)</span></span></span><br><span class="line">	<span class="keyword">return</span> (<span class="built_in">string</span>.<span class="built_in">gsub</span>(<span class="built_in">input</span>, <span class="string">&#x27;(%b[])&#x27;</span>, <span class="function"><span class="keyword">function</span><span class="params">(line)</span></span></span><br><span class="line">		<span class="keyword">local</span> newline = Replace(<span class="built_in">string</span>.<span class="built_in">match</span>(line, <span class="string">&#x27;^%[(.-)]$&#x27;</span>))</span><br><span class="line">		<span class="keyword">local</span> typ, name = <span class="built_in">string</span>.<span class="built_in">match</span>(newline, <span class="string">&#x27;(.)(.+)&#x27;</span>)</span><br><span class="line">		<span class="comment">-- Establish an string to return in case we encounter an error</span></span><br><span class="line">		<span class="keyword">local</span> ErrorString = <span class="built_in">string</span>.<span class="built_in">format</span>(<span class="string">&#x27;[%s]&#x27;</span>, newline)</span><br><span class="line">		<span class="comment">-- Make allowance for escaped expression</span></span><br><span class="line">		<span class="keyword">if</span> <span class="built_in">string</span>.<span class="built_in">match</span>(newline, <span class="string">&#x27;^%*(.-)%*$&#x27;</span>) <span class="keyword">then</span></span><br><span class="line">			<span class="keyword">return</span> <span class="built_in">string</span>.<span class="built_in">gsub</span>(newline, <span class="string">&#x27;^%*(.-)%*$&#x27;</span>, <span class="string">&#x27;[%1]&#x27;</span>)</span><br><span class="line">		<span class="comment">-- Measures / Meters</span></span><br><span class="line">		<span class="keyword">elseif</span> typ == <span class="string">&#x27;&amp;&#x27;</span> <span class="keyword">then</span></span><br><span class="line">			<span class="comment">-- Make allowance for section variables</span></span><br><span class="line">			<span class="keyword">local</span> section = <span class="built_in">string</span>.<span class="built_in">match</span>(name, <span class="string">&#x27;([^:]+)&#x27;</span>)</span><br><span class="line">			<span class="comment">-- Check if Measure / Meter exists</span></span><br><span class="line">			<span class="keyword">if</span> SKIN:GetMeasure(section) <span class="keyword">or</span> SKIN:GetMeter(section) <span class="keyword">then</span></span><br><span class="line">				<span class="comment">-- Use existing function for maximum flexibility</span></span><br><span class="line">				<span class="keyword">return</span> SKIN:ReplaceVariables(<span class="built_in">string</span>.<span class="built_in">format</span>(<span class="string">&#x27;[%s]&#x27;</span>, name))</span><br><span class="line">			<span class="comment">-- Measure / Meter does not exist</span></span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">return</span> ErrorString</span><br><span class="line">			<span class="keyword">end</span></span><br><span class="line">		<span class="comment">-- Variable</span></span><br><span class="line">		<span class="keyword">elseif</span> typ == <span class="string">&#x27;#&#x27;</span> <span class="keyword">then</span></span><br><span class="line">			<span class="keyword">return</span> SKIN:GetVariable(name) <span class="keyword">or</span> ErrorString</span><br><span class="line">		<span class="comment">-- Did not define anything we are looking for</span></span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> ErrorString</span><br><span class="line">		<span class="keyword">end</span></span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line">	))</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">SomeLine = Replace(<span class="string">&#x27;[&amp;SomeMeasure[#SomeVariable[&amp;SomeMeter:X]]]&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>Here's an example that uses a wrapper function so that we can specify a table of variables when we call the function.</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SomeFunction</span><span class="params">(InputExpression, FuncTbl)</span></span></span><br><span class="line">	<span class="keyword">local</span> nested = <span class="function"><span class="keyword">function</span><span class="params">(line, self)</span></span></span><br><span class="line">		<span class="keyword">return</span> (<span class="built_in">string</span>.<span class="built_in">gsub</span>(line, <span class="string">&#x27;%b&#123;&#125;&#x27;</span>, <span class="function"><span class="keyword">function</span><span class="params">(input)</span></span></span><br><span class="line">			<span class="keyword">local</span> newline = <span class="built_in">self</span>(<span class="built_in">string</span>.<span class="built_in">match</span>(<span class="built_in">input</span>, <span class="string">&#x27;^&#123;(.-)&#125;$&#x27;</span>), <span class="built_in">self</span>)</span><br><span class="line">			<span class="keyword">if</span> FuncTbl[newline] <span class="keyword">then</span></span><br><span class="line">				<span class="keyword">return</span> FuncTbl[newline]</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">return</span> <span class="built_in">string</span>.<span class="built_in">format</span>(<span class="string">&#x27;&#123;%s&#125;&#x27;</span>, newline)</span><br><span class="line">			<span class="keyword">end</span></span><br><span class="line">		<span class="keyword">end</span>))</span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line">	 </span><br><span class="line">	<span class="keyword">return</span> nested(InputExpression, nested)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">Variables = &#123;</span><br><span class="line">	LongDay = <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&#x27;%A&#x27;</span>),</span><br><span class="line">	ShortDay = <span class="built_in">os</span>.<span class="built_in">date</span>(<span class="string">&#x27;%a&#x27;</span>),</span><br><span class="line">	SunLocation = <span class="string">&#x27;Church&#x27;</span>,</span><br><span class="line">	MonLocation = <span class="string">&#x27;the Grocery Store&#x27;</span>,</span><br><span class="line">	TueLocation = <span class="string">&#x27;the Salon&#x27;</span>,</span><br><span class="line">	WedLocation = <span class="string">&#x27;a PTA meeting&#x27;</span>,</span><br><span class="line">	ThuLocation = <span class="string">&#x27;a concert&#x27;</span>,</span><br><span class="line">	FriLocation = <span class="string">&#x27;the bar&#x27;</span>,</span><br><span class="line">	SatLocation = <span class="string">&#x27;the beach&#x27;</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">SomeString = SomeFunction(<span class="string">&#x27;On &#123;LongDay&#125; Jane goes to &#123;&#123;ShortDay&#125;Location&#125;.&#x27;</span>, Variables)</span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

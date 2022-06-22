@@ -1,0 +1,1616 @@
+Uri: http://feeds.bbci.co.uk/news/rss.xml
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\news\rss.xml
+Content Type: text/xml
+
+Uri: http://www.pcre.org/changelog.txt
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\changelog.txt
+Content Type: text/plain
+
+Uri: https://codeload.github.com/rainmeter/rainmeter/zip/refs/heads/master
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\rainmeter\rainmeter\zip\refs\heads\rainmeter-master.zip
+Content Type: application/zip
+
+Uri: https://docs.rainmeter.net/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/css/bootstrap.min.css
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://docs.rainmeter.net/css/jquery.fancybox.min.css
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\css\jquery.fancybox.min.css
+Content Type: text/css
+
+Uri: https://docs.rainmeter.net/css/rainmeter.css
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\css\rainmeter.css
+Content Type: text/css
+
+Uri: https://docs.rainmeter.net/developers/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\developers\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/developers/plugin/cpp/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\developers\plugin\cpp\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/developers/plugin/cpp/api/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\developers\plugin\cpp\api\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/developers/plugin/csharp/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\developers\plugin\csharp\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/developers/plugin/csharp/api/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\developers\plugin\csharp\api\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/developers/plugin/guidelines/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\developers\plugin\guidelines\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/developers/plugin/plugin-anatomy/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\developers\plugin\plugin-anatomy\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/history/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\history\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/img/logo_nav.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\img\logo_nav.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/index.html
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\index.html
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/js/ahk-sliding-panel.js
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\js\ahk-sliding-panel.js
+Content Type: application/javascript
+
+Uri: https://docs.rainmeter.net/js/bootstrap.min.js
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\js\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: https://docs.rainmeter.net/js/jquery-3.2.1.slim.min.js
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\js\jquery-3.2.1.slim.min.js
+Content Type: application/javascript
+
+Uri: https://docs.rainmeter.net/js/jquery.fancybox.min.js
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\js\jquery.fancybox.min.js
+Content Type: application/javascript
+
+Uri: https://docs.rainmeter.net/js/main.js
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\js\main.js
+Content Type: application/javascript
+
+Uri: https://docs.rainmeter.net/manual/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/arranging-skins/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\arranging-skins\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/bangs/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\bangs\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/distributing-skins/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\distributing-skins\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/distributing-skins/vault-folder/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\distributing-skins\vault-folder\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleAudioLevelBitmap.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleAudioLevelBitmap.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleAudioLevelSpectrum.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleAudioLevelSpectrum.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleCharacterVariables.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleCharacterVariables.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleInlineLua.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleInlineLua.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleMeterBar.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleMeterBar.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleMeterBitmap.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleMeterBitmap.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleMeterButton.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleMeterButton.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleMeterHistogram.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleMeterHistogram.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleMeterImage.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleMeterImage.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleMeterLine.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleMeterLine.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleMeterRotator.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleMeterRotator.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleMeterRoundline.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleMeterRoundline.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleMeterString.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleMeterString.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExampleNesting.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExampleNesting.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExamplesActionTimer.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExamplesActionTimer.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExamplesContainer.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExamplesContainer.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/examples/ExamplesMeterShape.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\examples\ExamplesMeterShape.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/manual/formulas/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\formulas\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/getting-started/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\getting-started\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/getting-started/basic-tutorials/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\getting-started\basic-tutorials\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/getting-started/basic-tutorials/clock/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\getting-started\basic-tutorials\clock\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/getting-started/basic-tutorials/launcher/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\getting-started\basic-tutorials\launcher\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/getting-started/basic-tutorials/system/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\getting-started\basic-tutorials\system\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/getting-started/creating-skins/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\getting-started\creating-skins\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/getting-started/customizing/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\getting-started\customizing\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/getting-started/setting-up/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\getting-started\setting-up\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/getting-started/skin-anatomy/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\getting-started\skin-anatomy\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/getting-started/using-rainmeter/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\getting-started\using-rainmeter\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/groups/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\groups\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/img/@vault-folder/@vault-folder1.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\@vault-folder\@vault-folder1.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/character-variables/ExampleCharacterVariables.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\character-variables\ExampleCharacterVariables.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/container/ExamplesContainer.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\container\ExamplesContainer.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/container/HelloWorld.gif
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\container\HelloWorld.gif
+Content Type: image/gif
+
+Uri: https://docs.rainmeter.net/manual/img/container/NiceWeather.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\container\NiceWeather.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleMeterBar.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleMeterBar.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleMeterBitmap.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleMeterBitmap.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleMeterButton.gif
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleMeterButton.gif
+Content Type: image/gif
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleMeterHistogram.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleMeterHistogram.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleMeterImage.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleMeterImage.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleMeterLine.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleMeterLine.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleMeterRotator.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleMeterRotator.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleMeterRoundline.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleMeterRoundline.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleMeterShape.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleMeterShape.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleMeterString.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleMeterString.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/example-meters/ExampleTooltip.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-meters\ExampleTooltip.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/example-plugins/ExampleAudioLevelBitmap.gif
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-plugins\ExampleAudioLevelBitmap.gif
+Content Type: image/gif
+
+Uri: https://docs.rainmeter.net/manual/img/example-plugins/ExampleAudioLevelSpectrum.gif
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\example-plugins\ExampleAudioLevelSpectrum.gif
+Content Type: image/gif
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/clock/ClockImage01.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\clock\ClockImage01.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/clock/ClockImage02.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\clock\ClockImage02.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/clock/ClockImage03.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\clock\ClockImage03.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/clock/ClockImage04.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\clock\ClockImage04.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/clock/ClockImage05.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\clock\ClockImage05.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/clock/ClockImage06.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\clock\ClockImage06.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/clock/ClockImage07.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\clock\ClockImage07.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/clock/HourChime.wav
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\clock\HourChime.wav
+Content Type: audio/wav
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/launcher/calc.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\launcher\calc.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/launcher/LauncherImage01.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\launcher\LauncherImage01.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/launcher/LauncherImage02.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\launcher\LauncherImage02.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/launcher/LauncherImage03.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\launcher\LauncherImage03.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/launcher/LauncherImage04.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\launcher\LauncherImage04.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/launcher/LauncherImage05.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\launcher\LauncherImage05.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/meters-helloworld.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\meters-helloworld.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/meters-hwformatted.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\meters-hwformatted.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/meters-myfirstskin.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\meters-myfirstskin.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage01.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage01.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage02.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage02.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage03.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage03.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage04.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage04.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage05.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage05.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage06.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage06.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage07.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage07.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage08.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage08.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage09.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage09.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage10.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage10.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/basic-tutorials/system/SystemImage11.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\basic-tutorials\system\SystemImage11.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/creating-illustro.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\creating-illustro.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/creating-newskin.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\creating-newskin.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/creating-texteditors.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\creating-texteditors.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/cs-notepad.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\cs-notepad.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/cs-refresh.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\cs-refresh.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/cs-rmskin.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\cs-rmskin.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/gs-installer.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\gs-installer.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/index-code.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\index-code.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/index-skins.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\index-skins.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/index-ui.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\index-ui.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/ur-about.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\ur-about.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/ur-config.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\ur-config.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/ur-context.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\ur-context.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/ur-firstrun.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\ur-firstrun.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/ur-google.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\ur-google.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/ur-manage.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\ur-manage.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/ur-transparency.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\ur-transparency.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/ur-tray.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\ur-tray.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/getting-started/ur-variants.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\getting-started\ur-variants.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/inline-lua/ExampleInlineLua.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\inline-lua\ExampleInlineLua.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/installing-rainmeter/AutoUpdate01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\installing-rainmeter\AutoUpdate01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/installing-rainmeter/AutoUpdate02.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\installing-rainmeter\AutoUpdate02.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/installing-rainmeter/AutoUpdate03.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\installing-rainmeter\AutoUpdate03.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/installing-rainmeter/Install01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\installing-rainmeter\Install01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/installing-rainmeter/Install02.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\installing-rainmeter\Install02.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/installing-rainmeter/Install03.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\installing-rainmeter\Install03.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/installing-skins/InstallSkins01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\installing-skins\InstallSkins01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/installing-skins/InstallSkins02.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\installing-skins\InstallSkins02.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/meters/index-positions-example.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\meters\index-positions-example.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/meters/inline/InlineExample1.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\meters\inline\InlineExample1.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/manual/img/nesting-variables/ExampleNesting.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\nesting-variables\ExampleNesting.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/publishing-skins/packager1.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\publishing-skins\packager1.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/publishing-skins/packager2.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\publishing-skins\packager2.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/publishing-skins/packager3.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\publishing-skins\packager3.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/shapes/Combine.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\shapes\Combine.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/shapes/Shapes.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\shapes\Shapes.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/shapes/StrokeDashCap.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\shapes\StrokeDashCap.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/shapes/StrokeDashes.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\shapes\StrokeDashes.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/shapes/StrokeEndCap.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\shapes\StrokeEndCap.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/shapes/StrokeLineJoin.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\shapes\StrokeLineJoin.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/shapes/StrokeStartCap.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\shapes\StrokeStartCap.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/About01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\About01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/About02.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\About02.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/About03.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\About03.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/About04.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\About04.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Context01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Context01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Context02.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Context02.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Context03.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Context03.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Context04.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Context04.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Context05.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Context05.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Context06.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Context06.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/GameMode01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\GameMode01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/GameMode02.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\GameMode02.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/GameMode03.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\GameMode03.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/GameMode04.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\GameMode04.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/GameModeContext01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\GameModeContext01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Layouts01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Layouts01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Layouts02.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Layouts02.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Layouts03.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Layouts03.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/new-skin/NewSkin01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\new-skin\NewSkin01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/new-skin/NewSkin01a.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\new-skin\NewSkin01a.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/new-skin/NewSkin02.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\new-skin\NewSkin02.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/new-skin/NewSkin03.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\new-skin\NewSkin03.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/new-skin/NewSkin04.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\new-skin\NewSkin04.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/new-skin/NewSkin05.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\new-skin\NewSkin05.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/new-skin/NewSkin06.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\new-skin\NewSkin06.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/new-skin/NewSkin07.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\new-skin\NewSkin07.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/new-skin/NewSkin08.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\new-skin\NewSkin08.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Settings01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Settings01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Skins01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Skins01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Skins02.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Skins02.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Skins03.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Skins03.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Skins04.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Skins04.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/img/user-interface/Skins05.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\img\user-interface\Skins05.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/manual/installing-rainmeter/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\installing-rainmeter\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/installing-rainmeter/auto-update/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\installing-rainmeter\auto-update\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/installing-skins/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\installing-skins\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/lua-scripting/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\lua-scripting\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/lua-scripting/inline-lua/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\lua-scripting\inline-lua\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/calc/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\calc\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/cpu/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\cpu\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/freediskspace/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\freediskspace\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/general-options/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\general-options\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/general-options/ifactions/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\general-options\ifactions\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/general-options/ifconditions/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\general-options\ifconditions\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/general-options/ifmatchactions/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\general-options\ifmatchactions\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/general-options/substitute/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\general-options\substitute\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/loop/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\loop\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/mediakey/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\mediakey\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/memory/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\memory\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/net/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\net\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/nowplaying/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\nowplaying\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/plugin/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\plugin\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/process/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\process\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/recyclemanager/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\recyclemanager\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/registry/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\registry\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/script/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\script\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/string/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\string\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/sysinfo/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\sysinfo\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/time/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\time\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/uptime/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\uptime\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/webparser/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\webparser\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/measures/wifistatus/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\measures\wifistatus\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/bar/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\bar\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/bitmap/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\bitmap\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/button/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\button\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/general-options/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\general-options\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/general-options/container/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\general-options\container\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/general-options/image-options/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\general-options\image-options\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/general-options/meterstyles/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\general-options\meterstyles\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/general-options/tooltips/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\general-options\tooltips\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/histogram/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\histogram\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/image/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\image\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/line/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\line\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/rotator/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\rotator\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/roundline/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\roundline\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/shape/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\shape\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/shape/arc.html
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\shape\arc.html
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/shape/arc.js
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\shape\arc.js
+Content Type: application/javascript
+
+Uri: https://docs.rainmeter.net/manual/meters/shape/arc.svg.xml
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\shape\arc.svg.xml
+Content Type: application/xml
+
+Uri: https://docs.rainmeter.net/manual/meters/shape/cubic.html
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\shape\cubic.html
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/shape/cubic.svg.xml
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\shape\cubic.svg.xml
+Content Type: application/xml
+
+Uri: https://docs.rainmeter.net/manual/meters/shape/curves.js
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\shape\curves.js
+Content Type: application/javascript
+
+Uri: https://docs.rainmeter.net/manual/meters/shape/quadratic.html
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\shape\quadratic.html
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/shape/quadratic.svg.xml
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\shape\quadratic.svg.xml
+Content Type: application/xml
+
+Uri: https://docs.rainmeter.net/manual/meters/string/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\string\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/meters/string/inline/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\meters\string\inline\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/mouse-actions/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\mouse-actions\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/actiontimer/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\actiontimer\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/audiolevel/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\audiolevel\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/coretemp/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\coretemp\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/deprecated/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\deprecated\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/deprecated/advancedcpu/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\deprecated\advancedcpu\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/deprecated/itunes/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\deprecated\itunes\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/deprecated/perfmon/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\deprecated\perfmon\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/fileview/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\fileview\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/folderinfo/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\folderinfo\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/inputtext/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\inputtext\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/mediakey/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\mediakey\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/nowplaying/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\nowplaying\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/ping/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\ping\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/power/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\power\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/quote/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\quote\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/resmon/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\resmon\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/runcommand/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\runcommand\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/speedfan/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\speedfan\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/sysinfo/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\sysinfo\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/usagemonitor/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\usagemonitor\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/webparser/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\webparser\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/win7audio/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\win7audio\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/plugins/windowmessage/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\plugins\windowmessage\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/publishing-skins/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\publishing-skins\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/settings/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\settings\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/settings/rainmeter-section/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\settings\rainmeter-section\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/settings/skin-sections/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\settings\skin-sections\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/settings/traymeasure-section/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\settings\traymeasure-section\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/skins/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\skins\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/skins/include-option/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\skins\include-option\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/skins/metadata-section/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\skins\metadata-section\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/skins/option-types/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\skins\option-types\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/skins/rainmeter-section/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\skins\rainmeter-section\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/skins/rainmeter-section/defaults/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\skins\rainmeter-section\defaults\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/skins/resources-folder/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\skins\resources-folder\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/user-interface/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\user-interface\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/user-interface/about/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\user-interface\about\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/user-interface/context-menus/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\user-interface\context-menus\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/user-interface/manage/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\user-interface\manage\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/user-interface/manage/new-skin/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\user-interface\manage\new-skin\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/variables/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\variables\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/variables/built-in-variables/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\variables\built-in-variables\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/variables/character-variables/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\variables\character-variables\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/variables/mouse-variables/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\variables\mouse-variables\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/variables/nesting-variables/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\variables\nesting-variables\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/manual/variables/section-variables/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\manual\variables\section-variables\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/add-commas/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\add-commas\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/add-suffix/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\add-suffix\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/autoscale/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\autoscale\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/average/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\average\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/change-case/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\change-case\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/clamp/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\clamp\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/colors/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\colors\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/convert-temperatures/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\convert-temperatures\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/convert-time/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\convert-time\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/deliminate/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\deliminate\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/detect-value-change/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\detect-value-change\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/format-time/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\format-time\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/min-max-value/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\min-max-value\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/nested-expressions/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\nested-expressions\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/parse-file-path/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\parse-file-path\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/parse-twelve-hour-time/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\parse-twelve-hour-time\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/read-ini/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\read-ini\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/read-write-file/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\read-write-file\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/root-config-name/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\root-config-name\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/round/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\round\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/set-meter-measure-options/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\set-meter-measure-options\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/sortrandom/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\sortrandom\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/switch/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\switch\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/snippets/write-ini/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\snippets\write-ini\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/advanced-rmskin-options/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\advanced-rmskin-options\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/animated-gif-files/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\animated-gif-files\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/button-images/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\button-images\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/clean-rainmeter-uninstall/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\clean-rainmeter-uninstall\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/colormatrix-guide/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\colormatrix-guide\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/control-panel-applets/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\control-panel-applets\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/counters-guide/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\counters-guide\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/dynamiccheatsheet/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\dynamiccheatsheet\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/examples/ExampleAnimatedGif.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\examples\ExampleAnimatedGif.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/tips/examples/HWiNFO_New.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\examples\HWiNFO_New.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/tips/examples/WebParserTutorial.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\examples\WebParserTutorial.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/tips/font-features/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\font-features\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/fonts-guide/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\fonts-guide\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/hwinfo/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\hwinfo\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/img/advanced-rmskin-options/Advanced.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\advanced-rmskin-options\Advanced.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/advanced-rmskin-options/AdvancedMerge.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\advanced-rmskin-options\AdvancedMerge.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/advanced-rmskin-options/AdvancedVariables.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\advanced-rmskin-options\AdvancedVariables.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/animated-gif-files/Loading.gif
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\animated-gif-files\Loading.gif
+Content Type: image/gif
+
+Uri: https://docs.rainmeter.net/tips/img/animated-gif-files/LoadingBitmap.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\animated-gif-files\LoadingBitmap.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/button-images/ButtonBitmap.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\button-images\ButtonBitmap.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/button-images/ButtonExample.gif
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\button-images\ButtonExample.gif
+Content Type: image/gif
+
+Uri: https://docs.rainmeter.net/tips/img/button-images/ButtonPhotoshop.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\button-images\ButtonPhotoshop.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/button-images/ComputerButton.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\button-images\ComputerButton.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/button-images/SeparateImages.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\button-images\SeparateImages.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrix02.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrix02.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrix03.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrix03.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrix04.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrix04.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrix05.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrix05.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrix06.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrix06.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrix07.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrix07.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrix08.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrix08.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrix09.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrix09.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrix10.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrix10.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrixOldPaper.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrixOldPaper.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/colormatrix-guide/ColorMatrixOriginal.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\colormatrix-guide\ColorMatrixOriginal.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/fonts-guide/dp4FontViewer.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\fonts-guide\dp4FontViewer.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/hwinfo/HWiNFO1.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\hwinfo\HWiNFO1.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/hwinfo/HWiNFO2.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\hwinfo\HWiNFO2.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/hwinfo/HWiNFO3.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\hwinfo\HWiNFO3.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/hwinfo/HWiNFO4.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\hwinfo\HWiNFO4.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/hwinfo/HWiNFO5.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\hwinfo\HWiNFO5.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/hwinfo/HWiNFOExample.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\hwinfo\HWiNFOExample.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/hwinfo/HWiNFOExample2.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\hwinfo\HWiNFOExample2.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/hwinfo/HWiNFOExample3.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\hwinfo\HWiNFOExample3.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/network-skin/NetTraffic.gif
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\network-skin\NetTraffic.gif
+Content Type: image/gif
+
+Uri: https://docs.rainmeter.net/tips/img/network-skin/NetTraffic.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\network-skin\NetTraffic.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/network-skin/NetTraffic.rmskin
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\network-skin\NetTraffic.rmskin
+Content Type: application/octet-stream
+
+Uri: https://docs.rainmeter.net/tips/img/network-skin/Speedtest.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\network-skin\Speedtest.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/notepad-alternatives/Atom.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\notepad-alternatives\Atom.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/notepad-alternatives/Notepad++.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\notepad-alternatives\Notepad  .png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/notepad-alternatives/Notepad.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\notepad-alternatives\Notepad.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/notepad-alternatives/Sublime.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\notepad-alternatives\Sublime.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/rotate-an-image-around-its-center/RotateImage1.gif
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\rotate-an-image-around-its-center\RotateImage1.gif
+Content Type: image/gif
+
+Uri: https://docs.rainmeter.net/tips/img/rotate-an-image-around-its-center/RotateImage2.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\rotate-an-image-around-its-center\RotateImage2.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/transformation-matrix-guide/TransformationMatrix01.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\transformation-matrix-guide\TransformationMatrix01.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/transformation-matrix-guide/TransformationMatrix02.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\transformation-matrix-guide\TransformationMatrix02.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/webparser-debugging-regexp/AboutSkins.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\webparser-debugging-regexp\AboutSkins.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/webparser-debugging-regexp/RainRegExp.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\webparser-debugging-regexp\RainRegExp.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/webparser-tutorial/WebParserAbout1.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\webparser-tutorial\WebParserAbout1.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/webparser-tutorial/WebParserAbout2.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\webparser-tutorial\WebParserAbout2.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/webparser-tutorial/WebParserSite.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\webparser-tutorial\WebParserSite.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/webparser-tutorial/WebParserSkin.png
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\webparser-tutorial\WebParserSkin.png
+Content Type: image/png
+
+Uri: https://docs.rainmeter.net/tips/img/webparser-using-stringindex2/UsingStringIndex2.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\webparser-using-stringindex2\UsingStringIndex2.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/img/wrapping-text/wrapping-text.jpg
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\img\wrapping-text\wrapping-text.jpg
+Content Type: image/jpeg
+
+Uri: https://docs.rainmeter.net/tips/include-guide/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\include-guide\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/launching-windows-special-folders/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\launching-windows-special-folders\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/measure-as-a-variable/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\measure-as-a-variable\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/netin-netout-alternative/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\netin-netout-alternative\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/network-skin/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\network-skin\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/notepad-alternatives/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\notepad-alternatives\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/radians-guide/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\radians-guide\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/rotate-an-image-around-its-center/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\rotate-an-image-around-its-center\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/rss-feed-tutorial/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\rss-feed-tutorial\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/screen-position-variables/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\screen-position-variables\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/setoption-guide/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\setoption-guide\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/substituted-values-in-a-calc/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\substituted-values-in-a-calc\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/transformation-matrix-guide/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\transformation-matrix-guide\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/unicode-in-rainmeter/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\unicode-in-rainmeter\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/update-guide/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\update-guide\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/update-with-bangs/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\update-with-bangs\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/webparser-debugging-regexp/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\webparser-debugging-regexp\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/webparser-google-apps-and-gmail/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\webparser-google-apps-and-gmail\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/webparser-local-files/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\webparser-local-files\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/webparser-lookahead-assertions-in-regexp/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\webparser-lookahead-assertions-in-regexp\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/webparser-relative-paths/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\webparser-relative-paths\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/webparser-tutorial/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\webparser-tutorial\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/webparser-updaterate/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\webparser-updaterate\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/webparser-using-stringindex2/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\webparser-using-stringindex2\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/webparser-weather-skin-translations/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\webparser-weather-skin-translations\index.htm
+Content Type: text/html
+
+Uri: https://docs.rainmeter.net/tips/wrapping-text/
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\tips\wrapping-text\index.htm
+Content Type: text/html
+
+Uri: https://fonts.googleapis.com/css?family=Nunito:400,700
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\css-2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\css-1
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTQ3ig.ttf
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\s\nunito\v24\XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3ig.ttf
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\s\nunito\v24\XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3ig.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\s\sourcesanspro\v21\6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\s\sourcesanspro\v21\6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\s\sourcesanspro\v21\6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf
+Content Type: font/ttf
+
+Uri: https://rainmeter.net/RainRegExp.zip
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\RainRegExp.zip
+Content Type: application/zip
+
+Uri: https://www.rainmeter.net/favicon.ico
+File Name: C:\Users\ls356\Downloads\New folder (2)\Rainmeter Documentation\favicon.ico
+Content Type: image/vnd.microsoft.icon
+

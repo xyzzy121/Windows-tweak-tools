@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="ActionTimer plugin - Rainmeter Docs">
+<meta property="og:title" content="ActionTimer plugin - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>ActionTimer plugin - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\index.htm"><img src="..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\getting-started\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\..\getting-started\setting-up\index.htm">Setting Up</a>
+<li><a href="..\..\getting-started\using-rainmeter\index.htm">Using Rainmeter</a>
+<li><a href="..\..\getting-started\customizing\index.htm">Customizing</a>
+<li><a href="..\..\getting-started\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\..\getting-started\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\..\getting-started\basic-tutorials\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\..\getting-started\basic-tutorials\launcher\index.htm">Launcher</a>
+<li><a href="..\..\getting-started\basic-tutorials\clock\index.htm">Clock</a>
+<li><a href="..\..\getting-started\basic-tutorials\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\installing-rainmeter\index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="..\..\installing-rainmeter\auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\..\user-interface\about\index.htm">About</a>
+<li><a href="..\..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<ul>
+<li><a href="..\..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\..\meters\index.htm">Meters</a>
+<ul>
+<li><a href="..\..\meters\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\meters\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\..\meters\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\..\meters\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\..\meters\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\..\meters\bar\index.htm">Bar</a>
+<li><a href="..\..\meters\bitmap\index.htm">Bitmap</a>
+<li><a href="..\..\meters\button\index.htm">Button</a>
+<li><a href="..\..\meters\histogram\index.htm">Histogram</a>
+<li><a href="..\..\meters\image\index.htm">Image</a>
+<li><a href="..\..\meters\line\index.htm">Line</a>
+<li><a href="..\..\meters\rotator\index.htm">Rotator</a>
+<li><a href="..\..\meters\roundline\index.htm">Roundline</a>
+<li><a href="..\..\meters\shape\index.htm">Shape</a>
+<li><a href="..\..\meters\string\index.htm">String</a>
+<ul>
+<li><a href="..\..\meters\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\measures\index.htm">Measures</a>
+<ul>
+<li><a href="..\..\measures\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\measures\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\..\measures\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\..\measures\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\..\measures\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\..\measures\calc\index.htm">Calc</a>
+<li><a href="..\..\measures\cpu\index.htm">CPU</a>
+<li><a href="..\..\measures\freediskspace\index.htm">FreeDiskSpace</a>
+<li><a href="..\..\measures\loop\index.htm">Loop</a>
+<li><a href="..\..\measures\mediakey\index.htm">MediaKey</a>
+<li><a href="..\..\measures\memory\index.htm">Memory</a>
+<li><a href="..\..\measures\net\index.htm">Net</a>
+<li><a href="..\..\measures\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\..\measures\plugin\index.htm">Plugin</a>
+<li><a href="..\..\measures\process\index.htm">Process</a>
+<li><a href="..\..\measures\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\..\measures\registry\index.htm">Registry</a>
+<li><a href="..\..\measures\script\index.htm">Script</a>
+<li><a href="..\..\measures\string\index.htm">String</a>
+<li><a href="..\..\measures\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\..\measures\time\index.htm">Time</a>
+<li><a href="..\..\measures\uptime\index.htm">Uptime</a>
+<li><a href="..\..\measures\webparser\index.htm">WebParser</a>
+<li><a href="..\..\measures\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\index.htm">Plugins</a>
+<ul>
+<li><a href="index.htm">ActionTimer</a>
+<li><a href="..\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\coretemp\index.htm">CoreTemp</a>
+<li><a href="..\fileview\index.htm">FileView</a>
+<li><a href="..\folderinfo\index.htm">FolderInfo</a>
+<li><a href="..\inputtext\index.htm">InputText</a>
+<li><a href="..\ping\index.htm">Ping</a>
+<li><a href="..\power\index.htm">Power</a>
+<li><a href="..\quote\index.htm">Quote</a>
+<li><a href="..\resmon\index.htm">ResMon</a>
+<li><a href="..\runcommand\index.htm">RunCommand</a>
+<li><a href="..\speedfan\index.htm">SpeedFan</a>
+<li><a href="..\usagemonitor\index.htm">UsageMonitor</a>
+<li><a href="..\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\bangs\index.htm">Bangs</a>
+<li><a href="..\..\formulas\index.htm">Formulas</a>
+<li><a href="..\..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\..\groups\index.htm">Groups</a>
+<li><a href="..\..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">ActionTimer plugin</h1>
+<hr>
+
+<p><code>Plugin=ActionTimer</code></p>
+<p>Executes a series of Rainmeter actions independent of the normal skin Update cycle. This can allow the series of actions to be executed faster (or slower) than the rate defined in Update in [Rainmeter] and can be executed as fast as 1 millisecond apart.
+</p>
+<h2 id="OverView">Overview</h2>
+<p>To understand the purpose of ActionTimer, it helps to have some understanding of how Rainmeter runs a skin. On each skin <a href="..\..\skins\rainmeter-section\index.htm#Update">Update</a>, the value set in the [Rainmeter] section of the skin, Rainmeter does the following:</p>
+<ul>
+<li>Update all measures</li>
+<li>Execute measure actions</li>
+<li>Update all meters</li>
+<li>Redraw the skin</li>
+</ul>
+<p>Update has a lower limit of 16, or once every 16 milliseconds. This means that any series of separate actions can only execute every 16 milliseconds. In addition, setting a very low Update rate in [Rainmeter] can cause the entire skin to use a lot of CPU resources, when you may only need it to be "fast" for a specific purpose, perhaps some animation or transition effect. Finally, any series of actions you take in the context of the Update cycle are "blocking", in the sense that Rainmeter must complete them before it is able to continue with other normal skin processing.</p>
+<p>While you can "stack up" actions in a single action option:</p>
+<p><code>IfTrueAction=[!SetOption SomeMeter X "5"][!SetOption SomeMeter X "10"]</code></p>
+<p>Rainmeter will run both of the actions in the same Update cycle, before it updates the meters and redraws the skin, and so in effect they both visibly happen "at once". The meter won't visibly move to "5" and then "10", but will just jump straight to "10". The only current solution is to have the two actions take place in two Update cycles, and thus the fastest the series can ever execute is every 16 milliseconds.</p>
+<p>Now 16 milliseconds seems pretty fast, and it is. However, if you have some animation with 100 "frames" or want to do some "transition" of a meter; fading the opacity, shifting the color or sliding the position, it is in fact visibly quite slow.</p>
+<p>Don't forget as well, that that 16 millisecond lower limit is the time Rainmeter will have to do everything in the skin. Update all measures, take all actions, update all meters, and redraw the skin. In reality, even a moderately complicated skin isn't really going to update every 16 milliseconds in any case, it will at best "try to".</p>
+<p>What ActionTimer does is execute the list of actions defined in ActionList<em>N</em>, one after the other, in a separate thread outside the normal Update cycle, as fast as it possibly can. This is REALLY fast. The <em>Wait N</em> values that you put in between each action in the list is what stops them from appearing to just happen all at once, and allows you to completely control the speed of the series of actions. <em>Wait</em> can be any number, from 1 (one millisecond) to whatever you need.</p>
+<p>Since the actions in ActionList<em>N</em> are executed in a separate thread from the main Rainmeter process, the skin will carry on updating normally, while the ActionTimer plugin will control the actions in the list.</p>
+<h2 id="ImportantNote">Important Note</h2>
+<p>While ActionTimer is very CPU efficient, it is not "free". The actions are executed by the plugin in a separate thread from the rest of the Rainmeter skin, allowing the skin to continue to process normally while the plugin actions are executing, with the plugin communicating with the skin via window "messages" to the Rainmeter message queue. This allows the plugin to instruct the skin to "do this now", much as a MouseOverAction is recognized and acted upon immediately.</p>
+<p>Some care must be taken however, not to overwhelm the message queue. Things done with ActionTimer in general should be short targeted actions, like a meter transition or short animation. Ensure that there is at least some "wait" time between actions, so Rainmeter has time to handle other messages in the message queue. In addition, keep in mind that <code>!Redraw</code> actions can be relatively CPU expensive, particularly if a lot of image resizing is involved.</p>
+<p>ActionTimer does not support, and should not be used, to do anything "endless" or otherwise of a very long duration combined with a very rapid update. If the Rainmeter message queue becomes overwhelmed, the skin can get laggy and unresponsive to mouse actions you might take.</p>
+<h2>Options</h2>
+<dl>
+<dt>General measure options</dt>
+<dd>
+<p>All <a href="..\..\measures\general-options\index.htm">general measure options</a> are valid.</p>
+</dd>
+<dt id="ActionList"><code>ActionList1, ActionList2 .. ActionList<em>N</em></code></dt>
+<dd>
+<p>A numbered option, starting with ActionList1.</p>
+<p>Each ActionList<em>N</em> will execute one or more <code>Actions</code> separated by the pipe <code>|</code> character. In addition there are two list commands, Repeat and Wait, that can be used in the ActionList. In a sense, this option is a "script" of what you want the plugin to do when the ActionList is triggered. In its most simple expression, it is</p>
+<p><code>ActionList1=<em>Do this</em> | <em>Wait this long</em> | <em>Do that</em></code></p>
+<p><b>ActionList components</b></p>
+<ul>
+<li><em>Action name</em><br>
+The plugin will execute what is defined in the named <em>Action</em> option. The action name can be anything. This is simply the name of the <em>Action</em> option, and should never be actual bangs or commands itself. The actual skin bangs or commands to be executed are defined in the <a href="#Action">Action</a> option.</li>
+<li><b>Repeat</b> <em>Action name</em>, <em>Wait time number</em>, <em>Repeat count number</em><br>
+This will repeat the named <em>Action</em> option <em>Repeat count</em> times, with a wait of <em>Wait time</em> milliseconds between each. Note that <em>Wait time</em> is not applied after the last execution of <em>Action name</em>, only between each.</li>
+<li><b>Wait</b> <em>number of milliseconds</em><br>
+This is used to create a pause or wait in milliseconds between each named <em>Action</em> or other component in the ActionList. There should always be a Wait of at least 1 millisecond between each ActionList component.</li>
+<li>The pipe <code><b>|</b></code> character is used to separate each of the ActionList components.</li>
+</ul>
+<p><b>Examples:</b></p>
+<p><code>ActionList1=FirstAction | Wait 5 | SecondAction</code><br>
+Execute everything defined in the <em>FirstAction</em> option, wait 5 milliseconds, and execute everything defined in the <em>SecondAction</em> option.</p>
+<p><code>ActionList1=Repeat FirstAction, 5, 20 | Wait 5 | SecondAction</code><br>
+Execute everything defined in the <em>FirstAction</em> option 20 times, with a wait of 5 milliseconds between each execution of <em>FirstAction</em>. Wait 5 milliseconds, and execute everything defined in the <em>SecondAction</em> option.</p>
+<br><p><b>Note:</b> You can't use any (formulas) in an ActionList<em>[N]</em>.</p>
+</dd>
+<dt id="Action"><code><em>Action</em></code> <small><code>Any unique name=[!bang or command]</code></small></dt>
+<dd>
+<p>These can be any unique name, in any order. They will contain the skin bangs or other actions that will be executed by the plugin when the named action is called by an <a href="#ActionList">ActionList</a>.</p>
+<p>They are defined and executed exactly the same as any other <a href="..\..\skins\option-types\index.htm#Action">Action option</a> in Rainmeter, for instance <code>LeftMouseUpAction</code> or <code>OnChangeAction</code>.</p>
+<p><b>Examples:</b></p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureChangeFont]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=ActionTimer</span><br><span class="line"><span class="attr">ActionList1</span>=SetFontSmall | Wait <span class="number">1000</span> | SetFontBig</span><br><span class="line"><span class="attr">SetFontSmall</span>=[!SetOption SomeMeter FontSize <span class="string">&quot;10&quot;</span>][!UpdateMeter SomeMeter][!Redraw]</span><br><span class="line"><span class="attr">SetFontBig</span>=[!SetOption SomeMeter FontSize <span class="string">&quot;15&quot;</span>][!UpdateMeter SomeMeter][!Redraw]</span><br></pre></td></tr></table></figure>
+<p><b>Notes:</b></p>
+<ul>
+<li>Since the actions are being done independent of the <code>Update</code> cycle of the skin, you must explicitly do any <code>!UpdateMeter</code> and <code>!Redraw</code> commands needed to have the skin actually reflect any changes to meters made in the action.</li>
+<li>If you are using <code>!SetVariable</code> to change and use any dynamic #Variables# in the action, you will need to <code>!UpdateMeasure</code> the plugin measure between each execution of the action option, to ensure the measure has the most current value for the #Variable#.</li>
+</ul>
+<p>This can be simplified by setting and using a #Variable# that will take the appropriate update actions, and then just execute that #Variable# at the end of each action option.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">U</span>=[!UpdateMeasure MeasureChangeFont][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureChangeFont]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=ActionTimer</span><br><span class="line"><span class="attr">ActionList1</span>=SetFontSmall | Wait <span class="number">1000</span> | SetFontBig</span><br><span class="line"><span class="attr">SetFontSmall</span>=[!SetOption SomeMeter FontSize <span class="string">&quot;10&quot;</span>]<span class="comment">#U#</span></span><br><span class="line"><span class="attr">SetFontBig</span>=[!SetOption SomeMeter FontSize <span class="string">&quot;15&quot;</span>]<span class="comment">#U#</span></span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="IgnoreWarnings"><code>IgnoreWarnings</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>Any ActionList<em>N</em> must completely finish all actions in the list before it can be executed again. Any command to execute the list while it is still performing actions will be ignored, and a warning message will be generated in the log. There may be occasions where this is in fact desired behavior, and the log error messages can be suppressed.<p>
+<ul>
+<li><b>0</b> - Warnings in the log are produced. (default)</li>
+<li><b>1</b> - Warnings in the log are suppressed.</li>
+</ul>
+</dd>
+</dl>
+<h2 id="PluginCommands">Plugin Commands</h2>
+<p><b>The plugin will take no action unless triggered with one of these commands.</b></p>
+<dl>
+<dt id="Execute"><code>Execute <em>ActionList number</em></code></dt>
+<dd>
+<p>Execute the correspondingly numbered <code>ActionList<em>N</em></code>.</p>
+<p><b>Example:</b></p>
+<p><code>LeftMouseUpAction=[!CommandMeasure MeasureName "Execute 1"]</code></p>
+</dd>
+<dt id="Stop"><code>Stop <em>ActionList number</em></code></dt>
+<dd>
+<p>Stop the correspondingly numbered <code>ActionList<em>N</em></code>.</p>
+<p>As noted above, Any ActionList<em>N</em> must completely finish all actions in the list before it can be executed again. Any command to execute the list while it is still performing actions will be ignored, and a warning message will be generated in the log.</p>
+<p>The <code>Stop <em>N</em></code> command will immediately terminate and reset the corresponding running ActionList<em>N</em>, so it may be executed again.
+<p><b>Example:</b></p>
+<p><code>LeftMouseUpAction=[!CommandMeasure SomeMeasure "Stop 1"][!CommandMeasure SomeMeasure "Execute 1"]</code></p>
+</dd>
+</dl>
+<h2>Examples</h2>
+<div><p>Several example skins are included in the .rmskin download. Take a look at the code to see some different ways you might use the plugin.</p></div>
+<a href="..\..\examples\ExamplesActionTimer.rmskin" class="download"></a>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AccurateText</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">W</span>=<span class="number">15</span></span><br><span class="line"><span class="attr">U</span>=[!UpdateMeasureGroup Sizers][!UpdateMeter MeterText][!Redraw]</span><br><span class="line"><span class="attr">Size</span>=<span class="number">8</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureSizeUp]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=ActionTimer</span><br><span class="line"><span class="attr">Group</span>=Sizers</span><br><span class="line"><span class="attr">ActionList1</span>=ChangeSizeStart|Wait <span class="comment">#W#|Repeat ChangeSizeCalc,#W#,11</span></span><br><span class="line"><span class="attr">ChangeSizeStart</span>=[!SetVariable Size <span class="string">&quot;#Size#&quot;</span>]<span class="comment">#U#</span></span><br><span class="line"><span class="attr">ChangeSizeCalc</span>=[!SetVariable Size <span class="string">&quot;(Clamp(#Size#+5,8,60))&quot;</span>]<span class="comment">#U#</span></span><br><span class="line">IfCondition=<span class="comment">#Size# = 8</span></span><br><span class="line"><span class="attr">IfTrueAction</span>=[!SetOption MeterText Text <span class="string">&quot;small&quot;</span>]<span class="comment">#U#</span></span><br><span class="line"><span class="attr">IfCondition2</span>=(<span class="comment">#Size# &gt; 8) &amp;&amp; (#Size# &lt; 60)</span></span><br><span class="line"><span class="attr">IfTrueAction2</span>=[!SetOption MeterText Text <span class="string">&quot;Changing&quot;</span>]<span class="comment">#U#</span></span><br><span class="line">IfCondition3=<span class="comment">#Size# = 60</span></span><br><span class="line"><span class="attr">IfTrueAction3</span>=[!SetOption MeterText Text <span class="string">&quot;BIG&quot;</span>]<span class="comment">#U#</span></span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureSizeDown]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=ActionTimer</span><br><span class="line"><span class="attr">Group</span>=Sizers</span><br><span class="line"><span class="attr">ActionList1</span>=ChangeSizeStart|Wait <span class="comment">#W#|Repeat ChangeSizeCalc,#W#,11</span></span><br><span class="line"><span class="attr">ChangeSizeStart</span>=[!SetVariable Size <span class="string">&quot;#Size#&quot;</span>]<span class="comment">#U#</span></span><br><span class="line"><span class="attr">ChangeSizeCalc</span>=[!SetVariable Size <span class="string">&quot;(Clamp(#Size#-5,8,60))&quot;</span>]<span class="comment">#U#</span></span><br><span class="line">IfCondition=<span class="comment">#Size# = 8</span></span><br><span class="line"><span class="attr">IfTrueAction</span>=[!SetOption MeterText Text <span class="string">&quot;small&quot;</span>]<span class="comment">#U#</span></span><br><span class="line"><span class="attr">IfCondition2</span>=(<span class="comment">#Size# &gt; 8) &amp;&amp; (#Size# &lt; 60)</span></span><br><span class="line"><span class="attr">IfTrueAction2</span>=[!SetOption MeterText Text <span class="string">&quot;Changing&quot;</span>]<span class="comment">#U#</span></span><br><span class="line">IfCondition3=<span class="comment">#Size# = 60</span></span><br><span class="line"><span class="attr">IfTrueAction3</span>=[!SetOption MeterText Text <span class="string">&quot;BIG&quot;</span>]<span class="comment">#U#</span></span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterText]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">W</span>=<span class="number">400</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">90</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">200</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">45</span></span><br><span class="line"><span class="attr">StringAlign</span>=CenterCenter</span><br><span class="line">FontSize=<span class="comment">#Size#</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=Small</span><br><span class="line"><span class="attr">UpdateDivider</span>=-<span class="number">1</span></span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">MouseOverAction</span>=[!CommandMeasure MeasureSizeDown <span class="string">&quot;Stop 1&quot;</span>][!CommandMeasure MeasureSizeUp <span class="string">&quot;Execute 1&quot;</span>]</span><br><span class="line"><span class="attr">MouseLeaveAction</span>=[!CommandMeasure MeasureSizeUp <span class="string">&quot;Stop 1&quot;</span>][!CommandMeasure MeasureSizeDown <span class="string">&quot;Execute 1&quot;</span>]</span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\js\main.js"></script>
+<script src="..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

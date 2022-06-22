@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="UsageMonitor plugin - Rainmeter Docs">
+<meta property="og:title" content="UsageMonitor plugin - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>UsageMonitor plugin - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\index.htm"><img src="..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\getting-started\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\..\getting-started\setting-up\index.htm">Setting Up</a>
+<li><a href="..\..\getting-started\using-rainmeter\index.htm">Using Rainmeter</a>
+<li><a href="..\..\getting-started\customizing\index.htm">Customizing</a>
+<li><a href="..\..\getting-started\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\..\getting-started\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\..\getting-started\basic-tutorials\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\..\getting-started\basic-tutorials\launcher\index.htm">Launcher</a>
+<li><a href="..\..\getting-started\basic-tutorials\clock\index.htm">Clock</a>
+<li><a href="..\..\getting-started\basic-tutorials\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\installing-rainmeter\index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="..\..\installing-rainmeter\auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\..\user-interface\about\index.htm">About</a>
+<li><a href="..\..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<ul>
+<li><a href="..\..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\..\meters\index.htm">Meters</a>
+<ul>
+<li><a href="..\..\meters\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\meters\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\..\meters\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\..\meters\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\..\meters\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\..\meters\bar\index.htm">Bar</a>
+<li><a href="..\..\meters\bitmap\index.htm">Bitmap</a>
+<li><a href="..\..\meters\button\index.htm">Button</a>
+<li><a href="..\..\meters\histogram\index.htm">Histogram</a>
+<li><a href="..\..\meters\image\index.htm">Image</a>
+<li><a href="..\..\meters\line\index.htm">Line</a>
+<li><a href="..\..\meters\rotator\index.htm">Rotator</a>
+<li><a href="..\..\meters\roundline\index.htm">Roundline</a>
+<li><a href="..\..\meters\shape\index.htm">Shape</a>
+<li><a href="..\..\meters\string\index.htm">String</a>
+<ul>
+<li><a href="..\..\meters\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\measures\index.htm">Measures</a>
+<ul>
+<li><a href="..\..\measures\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\measures\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\..\measures\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\..\measures\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\..\measures\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\..\measures\calc\index.htm">Calc</a>
+<li><a href="..\..\measures\cpu\index.htm">CPU</a>
+<li><a href="..\..\measures\freediskspace\index.htm">FreeDiskSpace</a>
+<li><a href="..\..\measures\loop\index.htm">Loop</a>
+<li><a href="..\..\measures\mediakey\index.htm">MediaKey</a>
+<li><a href="..\..\measures\memory\index.htm">Memory</a>
+<li><a href="..\..\measures\net\index.htm">Net</a>
+<li><a href="..\..\measures\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\..\measures\plugin\index.htm">Plugin</a>
+<li><a href="..\..\measures\process\index.htm">Process</a>
+<li><a href="..\..\measures\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\..\measures\registry\index.htm">Registry</a>
+<li><a href="..\..\measures\script\index.htm">Script</a>
+<li><a href="..\..\measures\string\index.htm">String</a>
+<li><a href="..\..\measures\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\..\measures\time\index.htm">Time</a>
+<li><a href="..\..\measures\uptime\index.htm">Uptime</a>
+<li><a href="..\..\measures\webparser\index.htm">WebParser</a>
+<li><a href="..\..\measures\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\index.htm">Plugins</a>
+<ul>
+<li><a href="..\actiontimer\index.htm">ActionTimer</a>
+<li><a href="..\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\coretemp\index.htm">CoreTemp</a>
+<li><a href="..\fileview\index.htm">FileView</a>
+<li><a href="..\folderinfo\index.htm">FolderInfo</a>
+<li><a href="..\inputtext\index.htm">InputText</a>
+<li><a href="..\ping\index.htm">Ping</a>
+<li><a href="..\power\index.htm">Power</a>
+<li><a href="..\quote\index.htm">Quote</a>
+<li><a href="..\resmon\index.htm">ResMon</a>
+<li><a href="..\runcommand\index.htm">RunCommand</a>
+<li><a href="..\speedfan\index.htm">SpeedFan</a>
+<li><a href="index.htm">UsageMonitor</a>
+<li><a href="..\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\bangs\index.htm">Bangs</a>
+<li><a href="..\..\formulas\index.htm">Formulas</a>
+<li><a href="..\..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\..\groups\index.htm">Groups</a>
+<li><a href="..\..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">UsageMonitor plugin</h1>
+<hr>
+
+<p><code>Plugin=UsageMonitor</code> retrieves infromation from the <a target="_blank" rel="noopener" href="https://technet.microsoft.com/en-us/library/dd744567.aspx">Windows Performance Monitor</a>.</p>
+<p>The Windows Performance Monitor exposes counters, which monitor various kinds of system metrics in different categories, and tracks their usage. All available counters can be viewed using the Performance Monitor application. To open it, run Perfmon.exe.</p>
+<p>Counters in Windows Performance Monitor have the following hierarchy:</p>
+<ul>
+<li><b>Category</b> - Counters are organized into related <em>categories</em> like "Process" or "PhysicalDisk". This is also referred to as Object in Perfmon.exe</li>
+<li><b>Counter</b> - Categories have individual <em>counters</em> like "% Processor Time" or "Bytes Read/sec"</li>
+<li><b>Instance</b> - Counters may have individual <em>instances</em> like "Rainmeter" or "C:"</li>
+</ul>
+<p>The UsageMonitor plugin will allow you to define <em>instance</em> in the measure in one of two ways:</p>
+<ul>
+<li><b>Name</b><br>This will be the specific (case sensitive) text name of a single given instance, and will return the current value for that specific instance of a counter.</li>
+<li><b>Index</b><br>This will be either <code>Index=0</code>, which will always return the current total of all instances for a given counter, <code>Index=-1</code>, which will always return the current average of all instances for a given counter,or <code>Index=N</code>, which will return the instance at the defined point in a sorted list of all instances, with their values ordered from most to least. So for example, <code>Index=1</code> would return the current value and name of the instance with the highest value for that counter.</li>
+</ul>
+<br>
+<p>The measure will return the current <em>number</em> value of the instance, and the current <em>string</em> value of the name of the instance. So each measure will have distinct number and string values.</p>
+<p>The UsageMonitor plugin will optionally allow you to select common counters with a single <b>Alias</b>, rather than the specific, case-sensitive Category and Counter names. <em>Additional Alias values may be supported over time.</em></p>
+<h2>Options</h2>
+<dl>
+<dt>General measure options</dt>
+<dd>
+<p>All <a href="..\..\measures\general-options\index.htm">general measure options</a> are valid.</p>
+</dd>
+<dt id="Alias"><code>Alias</code><small>Default: <em>None</em></small></dt>
+<dd>
+<p>Alias or "shortcut" for a particular Category and Counter combination. This may optionally be used in place of specific Category and Counter options on the measure.</p>
+<br>
+<p>The currently supported Alias names and what they reference are:</p><br>
+<p>Alias=<b>CPU</b><br>Category: <em>Process</em> | Counter: <em>% Processor Time</em><br>CPU usage of each process, across all cores, as a percentage of total CPU.</p>
+<p>Alias=<b>RAM</b><br>Category: <em>Process</em> | Counter: <em>Working Set - Private</em><br>Bytes of Private Working Set RAM used by each process.</p>
+<p>Alias=<b>RAMSHARED</b><br>Category: <em>Process</em> | Counter: <em>Working Set</em><br>Bytes of shared Working Set RAM used by each process.</p>
+<p>Alias=<b>IO</b><br>Category: <em>Process</em> | Counter: <em>IO Data Bytes/sec</em><br>Bytes per second of read and write usage by each process, across all disks.</p>
+<p>Alias=<b>IOREAD</b><br>Category: <em>Process</em> | Counter: <em>IO Read Bytes/sec</em><br>Bytes per second of read usage by each process, across all disks.</p>
+<p>Alias=<b>IOWRITE</b><br>Category: <em>Process</em> | Counter: <em>IO Write Bytes/sec</em><br>Bytes per second of write usage by each process, across all disks.</p>
+<p>Alias=<b>GPU</b><br>Category: <em>GPU Engine</em> | Counter: <em>Utilization Percentage</em><br>Percentage of GPU usage of each process, across all GPU engines.<br><b>Note:</b> Requires Windows 10 Fall Creators Update or later.</p>
+<p>Alias=<b>VRAM</b><br>Category: <em>GPU Process Memory</em> | Counter: <em>Dedicated Usage</em><br>Bytes of private video RAM usage of each process, across all GPU engines.<br><b>Note:</b> Requires Windows 10 Fall Creators Update or later.</p>
+<p>Alias=<b>VRAMSHARED</b><br>Category: <em>GPU Process Memory</em> | Counter: <em>Shared Usage</em><br>Bytes of shared video RAM usage of each process, across all GPU engines.<br><b>Note:</b> Requires Windows 10 Fall Creators Update or later.</p>
+</dd>
+<dt id="Category"><code>Category</code><small>Default: <em>None</em></small></dt>
+<dd>
+<p>The Category name from Perfmon.exe for the desired counter. This is case-sensitive.</p>
+<p><b>Note:</b> If Category is defined, then Counter must also be defined, and any Alias is ignored.</p>
+<br><p><b>Examples:</b> <code>Category=Process</code>, <code>Category=PhysicalDisk</code></p>
+</dd>
+<dt id="Counter"><code>Counter</code><small>Default: <em>None</em></small></dt>
+<dd>
+<p>The Counter name from Perfmon.exe for the desired counter. This is case-sensitive.</p>
+<p><b>Note:</b> If Counter is defined, then Category must also be defined, and any Alias is ignored.</p>
+<br><p><b>Examples:</b> <code>Counter=% Processor Time</code>, <code>Counter=Bytes Read/sec</code></p>
+</dd>
+<dt id="Index"><code>Index</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>All instances for the counter are evaluated, totaled and sorted in an indexed list from highest value to lowest value. Index is used to return the total, or one of these indexed values based on the position in the list. This list will include all instances that are not excluded by a Blacklist on the measure.</p>
+<br><p><code>Index=0</code><br>This will always return the total of all instances, and the string "Total". This is the default for Index.</p>
+<p><code>Index=-1</code><br>This will always return the average of all instances, and the string "Average".</p>
+<p><code>Index=1</code>, <code>Index=2</code> etc.<br>This will return the value of the instance in that position in the sorted list, and the name of the corresponding instance as the string value.</p>
+<br><p><b>Note:</b> Any Index which returns a current value of <code>0</code> will return an empty string as the string value. An instance without a value can't be sorted, and can't exist in this indexed list, as it is indistinguishable from all other instances that are <code>0</code>.
+</p></dd>
+<dt id="Name"><code>Name</code> <small>Default: <em>None</em></small></dt>
+<dd>
+<p>Returns the current value of a specifically named instance in the counter. This is case-sensitive.</p>
+<p><b>Note:</b> If Name is defined, then any Index option is ignored.</p>
+<br><p><b>Examples:</b> <code>Name=Rainmeter</code>, <code>Name=chrome</code></p>
+</dd>
+<dt id="Blacklist"><code>Blacklist</code> <small>Default: <code>_Total|Idle</code></small></dt>
+<dd>
+<p>A list of specific instance names to be ignored by the measure. Instance names are separated with the | (pipe) character. All other instances will be used. This is case-sensitive.</p>
+<p><b>Note:</b> The instance names <code>_Total</code> and <code>Idle</code> are in the Blacklist by default. If you want to define other names, be sure to add these back in as well. Setting any Blacklist replaces the default.</p>
+<br><p><b>Example:</b> <code>Blacklist=_Total|Idle|dwm|csrss|svchost|lsass|system|spoolsv</code></p>
+</dd>
+<dt id="Whitelist"><code>Whitelist</code> <small>Default: <em>None</em></small></dt>
+<dd>
+<p>A list of specific instance names to be used by the measure. Instance names are separated with the | (pipe) character. All other instances will be ignored. This is case-sensitive.</p>
+<p><b>Note:</b> If Whitelist is defined, then any Blacklist option is ignored.</p>
+<br><p><b>Example:</b> <code>Whitelist=Rainmeter|firefox|hexchat</code></p>
+</dd>
+<dt id="Rollup"><code>Rollup</code> <small>Default: <code>1</code></small></dt>
+<dd>
+<p>When set to the default <code>1</code>, this will cause a process that spawns multiple copies of itself to be rolled-up into a single process, rather than the individual processName#1, processName#2 etc. If set to <code>0</code>, the separate processes are treated an individuals.</p>
+<br><p>This will be common with applications like chrome, firefox, or dropbox, and some internal Windows processes like explorer, RunTimeBroker, or svchost.</p>
+</dd>
+<dt id="Percent"><code>Percent</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>This should be set to <code>1</code> when the counter you are getting does not return the value as a percentage from 0-100, and it has a _Total instance, and you want to return the value as a percentage of the _Total instance.</p>
+<br><p>It will not work, and should not be used, if the counter has no _Total instance, or already returns the value as a percentage value from 0-100 in the perfmon GUI.</p>
+<br><p><b>Note:</b> This is automatically set to <code>1</code> when <code>Alias=CPU</code> is used, but may be manually forced to <code>0</code> if desired.</p>
+</dd>
+<dt id="RawValue"><code>RawValue</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>When set to <code>1</code>, this will return the raw value from the Perfmon database, instead of the "human readable" format shown in the Perfmon.exe GUI.</p>
+</dd>
+<dt id="PIDToName"><code>PIDToName</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>When set to <code>1</code>, this will lookup and return the text name of the process associated with any PID returned as the value of an instance.</p>
+<br><p><b>Note:</b> This is automatically set to <code>1</code> when <code>Alias=GPU</code>, <code>Alias=VRAM</code>, or <code>Alias=VRAMSHARED</code> is used, but may be manually forced to <code>0</code> if desired.</p>
+</dd>
+</dl>
+<h2 id="NumberVsString">A note on number value vs. string value</h2>
+<p>UsageMonitor will return both the current number value of the instance, and the string value of the name of the instance. There will always be distinct number and string values for the measure.</p>
+<p>This should be kept in mind when you use the values in a String meter, as the <code>MeasureName</code> option on a String meter will always use the string value of the measure in the meter.</p>
+<p>If you want to use the number value in the meter, you can use <code>[MyMeasure:]</code> as a section variable to display the number value in the Text option. Be sure to set <code>DynamicVariables=1</code> on the meter.</p>
+<p>Be aware though, that when <code>[MyMeasure:]</code> is used in the Text option, number formatting options on the meter like NumOfDecimals or AutoScale are not used. Those only apply to values obtained by <code>MeasureName</code>, and used with <code>%1</code> in the Text option.</p>
+<p>NumOfDecimals can be obtained by defining the number of decimals you want in the section variable. <code>[MyMeasure:2]</code> will display the number value with two decimal places.</p>
+<p>AutoScale can be obtained by creating a second Calc measure that uses the number value of the measure in question, with that measure name as the <code>Formula</code> option of the Calc measure. Then you can use <code>MeasureName</code> on the String meter, and AutoScale (and NumOfDecimals) will be obeyed.
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureHighestUsedRAM]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=RAM</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureRAMforScaling]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=MeasureHighestUsedRAM</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterHighestUsedRAM]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureHighestUsedRAM</span><br><span class="line"><span class="attr">MeasureName2</span>=MeasureRAMforScaling</span><br><span class="line"><span class="attr">AutoScale</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">NumOfDecimals</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span> : %<span class="number">2</span>B</span><br></pre></td></tr></table></figure>
+<p>Note that other meter types, like Bar, Line, Roundline, Rotator, and other math-based meters will always use the number value of the measure, and nothing special needs to be done with those.</p>
+<h2 id="Performance">A note on performance</h2>
+<p>UsageMonitor is very much more efficient in its use of CPU than the PerfMon and AdvancedCPU plugins. It is strongly recommended that this plugin be used exclusively in place of them. The difference in the CPU used, and how smoothly other things in Rainmeter work when this is running, is dramatic.</p>
+<p>The way UsageMonitor works is to spawn a single separate thread, independent of Rainmeter, for each <b>Category</b> that is asked for by any measures in any skin, in all of Rainmeter. The plugin is then gathering information for that Category, once a second, and is not dependent on, nor reacts to, any setting for Update on the skin, or UpdateDivider on the measure. UpdateDivider should only be used on the measure if you want to control how often actions like OnChangeAction or OnUpdateAction are executed, or how often comparisons like IfCondition or IfMatch are done.</p>
+<p>The plugin is always gathering data, and the measure is simply used to retrieve a single element of data from it. The plugin is not told "when to do its work" by the measure.</p>
+<p>Individual Category threads are disposed of when no plugin measures in any skins are using them, and the plugin is entirely unloaded when no running skins have measures using it.</p>
+<h2 id="Localization">A note on localization</h2>
+<p>UsageMonitor is fully localized for Category and Counter names, and should work without problems on any language used by Windows.</p>
+<p><b>However</b>, the way this works is that if you define the names of Category and Counter in English, they will automatically work with those names, no matter what language Perfmon is in on your system. This should be done with any skin you expect to distribute, so it will work without issue on any user's computer. If you define the names for Category and Counter in your language other than English, it will only work on your computer, or another computer using your language.</p>
+<p>If you need a reference to the Category and Counter names in English, it can be found on any Windows system in the Windows Registry, at:</p>
+<p><code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib\009\Counter</code></p>
+<h2>Examples</h2>
+<p>Some common uses for the UsageMonitor plugin might be:</p>
+<p><b>Total CPU used</b></p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureCPU]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=CPU</span><br><span class="line"><span class="attr">Index</span>=<span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p><b>Top process CPU usage and name</b></p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureTop]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=CPU</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p><b>CPU usage for a given process name</b></p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureRainmeter]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=CPU</span><br><span class="line"><span class="attr">Name</span>=Rainmeter</span><br></pre></td></tr></table></figure>
+<p><b>Various other examples</b></p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AccurateText</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">SkinWidth</span>=<span class="number">360</span></span><br><span class="line"><span class="attr">BackgroundMode</span>=<span class="number">2</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">Browser</span>=firefox</span><br><span class="line"><span class="comment">;Browser=chrome</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPU]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=CPU</span><br><span class="line"><span class="attr">Index</span>=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureMyApps]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=CPU</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Whitelist</span>=Rainmeter|<span class="comment">#Browser#|hexchat|CCleaner64</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureTop1byAlias]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=CPU</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Blacklist</span>=_Total|Idle|dwm|wmpnetwk|csrss|svchost|lsass|System|system|Memory Compression|wininit|RemindersServer|spoolsv|IpOverUsbSvc</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureTop1byCounter]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Category</span>=Process</span><br><span class="line"><span class="attr">Counter</span>=% Processor Time</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Percent</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Blacklist</span>=_Total|Idle|dwm|wmpnetwk|csrss|svchost|lsass|System|system|Memory Compression|wininit|RemindersServer|spoolsv|IpOverUsbSvc</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureRainmeter]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=CPU</span><br><span class="line"><span class="attr">Name</span>=Rainmeter</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureBrowser]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=CPU</span><br><span class="line">Name=<span class="comment">#Browser#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[TotalThreads]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Category</span>=System</span><br><span class="line"><span class="attr">Counter</span>=Threads</span><br><span class="line"><span class="attr">Index</span>=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Core0Usage]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Category</span>=Processor</span><br><span class="line"><span class="attr">Counter</span>=% Processor Time</span><br><span class="line"><span class="attr">Name</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">MinValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">MaxValue</span>=<span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Core1Usage]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Category</span>=Processor</span><br><span class="line"><span class="attr">Counter</span>=% Processor Time</span><br><span class="line"><span class="attr">Name</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">MinValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">MaxValue</span>=<span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="section">[TopGPU]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=GPU</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">MinValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">MaxValue</span>=<span class="number">100</span></span><br><span class="line"><span class="attr">Blacklist</span>=dwm|csrss</span><br><span class="line"></span><br><span class="line"><span class="section">[TotalVRAM]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=VRAM</span><br><span class="line"><span class="attr">Index</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">MinValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">MaxValue</span>=<span class="number">4831838208</span></span><br><span class="line"></span><br><span class="line"><span class="section">[TotalVRAMScaled]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=TotalVRAM</span><br><span class="line"></span><br><span class="line"><span class="section">[RainmeterIO]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=IO</span><br><span class="line"><span class="attr">Name</span>=Rainmeter</span><br><span class="line"></span><br><span class="line"><span class="section">[RainmeterIOScaled]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=RainmeterIO</span><br><span class="line"></span><br><span class="line"><span class="section">[TopIORead]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=IO</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[TopIOReadScaled]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=TopIORead</span><br><span class="line"></span><br><span class="line"><span class="section">[BrowserIOWrite]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=IOWrite</span><br><span class="line">Name=<span class="comment">#Browser#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[BrowserIOWriteScaled]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=BrowserIOWrite</span><br><span class="line"></span><br><span class="line"><span class="section">[BrowserRAM]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Alias</span>=RAM</span><br><span class="line">Name=<span class="comment">#Browser#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[BrowserRAMScaled]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=BrowserRAM</span><br><span class="line"></span><br><span class="line"><span class="section">[NetworkIn]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Category</span>=Network Adapter</span><br><span class="line"><span class="attr">Counter</span>=Bytes Received/sec</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[NetworkInScaled]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=NetworkIn</span><br><span class="line"><span class="attr">IfAboveValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">IfAboveAction</span>=[!SetOption MeterNetworkName Text <span class="string">&quot;[NetworkIn]&quot;</span>][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line"><span class="section">[NetworkOut]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=UsageMonitor</span><br><span class="line"><span class="attr">Category</span>=Network Adapter</span><br><span class="line"><span class="attr">Counter</span>=Bytes Sent/sec</span><br><span class="line"><span class="attr">Index</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[NetworkOutScaled]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=NetworkOut</span><br><span class="line"><span class="attr">IfAboveValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">IfAboveAction</span>=[!SetOption MeterNetworkName Text <span class="string">&quot;[NetworkOut]&quot;</span>][!UpdateMeter *][!Redraw]</span><br><span class="line"></span><br><span class="line"><span class="comment">; Meters</span></span><br><span class="line"></span><br><span class="line"><span class="section">[AllStyle]</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">FontWeight</span>=<span class="number">400</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[RightStyle]</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">360</span></span><br><span class="line"><span class="attr">StringAlign</span>=Right</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCPULabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Text</span>=Total CPU Usage</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCPUValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">Text</span>=[MeasureCPU] : [MeasureCPU:<span class="number">1</span>]%</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterMyAppsLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Top MyApps</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterMyAppsValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">Text</span>=[MeasureMyApps] : [MeasureMyApps:<span class="number">1</span>]%</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTop1byAliasLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Top Process by Alias</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTop1byAliasValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">Text</span>=[MeasureTop1byAlias] : [MeasureTop1byAlias:<span class="number">1</span>]%</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTop1byCounterLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Top Process by Counter</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTop1byCounterValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">Text</span>=[MeasureTop1byCounter] : [MeasureTop1byCounter:<span class="number">1</span>]%</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterRainmeterLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Rainmeter CPU</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterRainmeterValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">Text</span>=[MeasureRainmeter] : [MeasureRainmeter:<span class="number">1</span>]%</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterBrowserLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Browser CPU</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterBrowserValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">Text</span>=[MeasureBrowser] : [MeasureBrowser:<span class="number">1</span>]%</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTotalThreadsLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Total Threads</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTotalThreadsValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">Text</span>=[TotalThreads] : [TotalThreads:<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCore0UsageLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=CPU Core <span class="number">0</span> Usage</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCore0UsageValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">Text</span>=[Core0Usage] : [Core0Usage:<span class="number">1</span>]%</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCore1UsageLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=CPU Core <span class="number">1</span> Usage</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCore1UsageValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">Text</span>=[Core1Usage] : [Core1Usage:<span class="number">1</span>]%</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTopGPULabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Top GPU Usage</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTopGPUValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">Text</span>=[TopGPU] : [TopGPU:<span class="number">1</span>]%</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTotalVRAMLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Total VRAM Usage</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTotalVRAMValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">MeasureName</span>=TotalVRAMScaled</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">AutoScale</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">NumOfDecimals</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=[TotalVRAM] : %<span class="number">1</span>B</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterRainmeterIOLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Rainmeter IO</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterRainmeterIOValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">MeasureName</span>=RainmeterIOScaled</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">AutoScale</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">NumOfDecimals</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=[RainmeterIO] : %<span class="number">1</span>B</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTopIOReadLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Top IO Read</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterTopIOReadValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">MeasureName</span>=TopIOReadScaled</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">AutoScale</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">NumOfDecimals</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=[TopIORead] : %<span class="number">1</span>B</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterBrowserIOWriteLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Browser IO Write</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterBrowserIOWriteValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">MeasureName</span>=BrowserIOWriteScaled</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">AutoScale</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">NumOfDecimals</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=[BrowserIOWrite] : %<span class="number">1</span>B</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterBrowserRAMLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Browser RAM Usage</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterBrowserRAMValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">MeasureName</span>=BrowserRAMScaled</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">AutoScale</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">NumOfDecimals</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=[BrowserRAM] : %<span class="number">1</span>B</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetworkInLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">15</span>R</span><br><span class="line"><span class="attr">Text</span>=Net IN</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetworkInValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">MeasureName</span>=NetworkInScaled</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">AutoScale</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">NumOfDecimals</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span>B</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetworkOutLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Text</span>=Net OUT</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetworkOutValues]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle | RightStyle</span><br><span class="line"><span class="attr">MeasureName</span>=NetworkOutScaled</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">AutoScale</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">NumOfDecimals</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span>B</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetworkName]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeterStyle</span>=AllStyle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">ClipString</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h2 id="RebuildCounters">Rebuilding Counters Database</h2>
+<p>While rare, it is possible for the database of counters that is maintained by Performance Monitor in Windows to become damaged, which will cause the UsageMonitor plugin to stop functioning correctly.</p>
+<p>In many cases, this can be corrected by "rebuilding" the database from the Windows command line.</p>
+<p>Run cmd.exe, being sure to run "As administrator". At the command line, enter the following commands in order:</p>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> c:\windows\system32</span><br><span class="line">lodctr /R</span><br><span class="line"><span class="built_in">cd</span> c:\windows\sysWOW64</span><br><span class="line">lodctr /R</span><br></pre></td></tr></table></figure>
+<p>You should see the following results:</p>
+<p><code>Info: Successfully rebuilt performance counter setting from system backup store</code></p>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\js\main.js"></script>
+<script src="..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

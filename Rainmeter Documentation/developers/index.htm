@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Developers - Rainmeter Docs">
+<meta property="og:title" content="Developers - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Developers - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\css\rainmeter.css">
+<link rel="stylesheet" href="..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\index.htm"><img src="..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="index.htm">Developers</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="plugin\plugin-anatomy\index.htm">Anatomy of a Plugin</a>
+<li><a href="plugin\cpp\index.htm">C++ Overview</a>
+<ul>
+<li><a href="plugin\cpp\api\index.htm">C++ API Reference</a>
+</li></ul>
+<li><a href="plugin\csharp\index.htm">C# Overview</a>
+<ul>
+<li><a href="plugin\csharp\api\index.htm">C# API Reference</a>
+</li></ul>
+<li><a href="plugin\guidelines\index.htm">Plugin Guidelines</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\manual\index.htm">Manual</a>
+<li><a href="..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\snippets\index.htm">Snippets</a>
+<li><a href="..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Developers</h1>
+<hr>
+
+<p>This page is intended for people who want to work with the source code for Rainmeter. This can be to make or suggest changes to the project C++ source code, or to create plugins for Rainmeter in C++ or C#. In addition, there is information on interacting with Rainmeter from external applications.</p>
+<p><em>Note: Documentation for creating or modifying skins in Rainmeter can be found at <a href="..\index.htm">Rainmeter Documentation</a>.</em></p>
+<p>The Rainmeter project is primarily written in <b>C++</b> using <b>Microsoft Visual Studio 2019</b>. In addition, custom plugins can be written and distributed separately from the official Rainmeter project using C++ or C#. This page assumes familiarity with Visual Studio and either C++ or C#.</p>
+<h2 id="ProjectSourceCode">Project Source Code</h2>
+<p>The source code for the Rainmeter project is maintained at <a target="_blank" rel="noopener" href="https://github.com/rainmeter/rainmeter">Rainmeter Repository on GitHub</a>.</p>
+<p>If you simply wish to obtain the source code to examine it or make a local change to how something works for your own use, you can simply download a .zip file from <a target="_blank" rel="noopener" href="..\rainmeter\rainmeter\zip\refs\heads\rainmeter-master.zip">Download ZIP</a>.</p>
+<p>The only software you will need is <b>Microsoft Visual Studio 2019</b> or the free <b>Microsoft Visual Community</b> which can be obtained at <a target="_blank" rel="noopener" href="https://www.visualstudio.com/downloads/download-visual-studio-vs">Download Visual Studio</a>. Be sure to download and apply any Visual Studio Updates when prompted.</p>
+<p>Create a folder containing the project code from the .zip file, and open <b>Rainmeter.sln</b> in Visual Studio. You can then set the desired <em>Solution Configuration</em> and <em>Solution Platforms</em> fields and build the solution to create Debug or Release versions in x32 or x64 architectures.</p>
+<h2 id="ProjectRepository">Creating a Project Repository</h2>
+<p>To do any serious work on the project source code, or to get involved in the development of Rainmeter, you will want to create a local repository and install a couple of tools to help manage your copy of the project.</p>
+<p>First, you will want to install a local copy of the <a target="_blank" rel="noopener" href="https://git-scm.com">Git version control</a> software on your PC. This can be obtained from <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Download Git</a>.</p>
+<p>Then, unless you are a fan of the Windows cmd.exe command line, it can be useful to install a Windows front-end client to help manage your Git repositories. There are several options for that, two of the more popular are <a target="_blank" rel="noopener" href="https://code.google.com/p/tortoisegit/wiki/Download">TortoiseGit for Windows</a> and <a target="_blank" rel="noopener" href="https://windows.github.com/">GitHub for Windows</a>.
+<p>To create your repository of the project code, first create an account on <a target="_blank" rel="noopener" href="https://github.com">GitHub.com</a>. Then from the <a target="_blank" rel="noopener" href="https://github.com/rainmeter/rainmeter">Rainmeter Repository on GitHub</a> you can fork the project to your account. Now you can use either the Git command line or the Windows front-end client you installed to <a target="_blank" rel="noopener" href="https://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository">clone the repository</a> from your personal fork of the project on GitHub to a folder on your PC.</p>
+<h2 id="SubmitChanges">Submitting Code Changes</h2>
+<p>If you make changes to the project source code that you would like to suggest as changes to the official build, you can make the changes in your personal GitHub repository, then at the <a target="_blank" rel="noopener" href="https://github.com/rainmeter/rainmeter">Rainmeter repository</a>, create a pull request with your code changes. It will expedite things if you contact the Rainmeter Team either on the forums at <a href="//forum.rainmeter.net/viewforum.php?f=14">Bugs and Feature Suggestions</a> or on IRC at <a target="_blank" rel="noopener" href="https://web.libera.chat/#rainmeter">#Rainmeter on Libera.Chat</a> to discuss the desired changes.</p>
+<h2 id="CreateBuild">Creating a Full Rainmeter Build</h2>
+<p>In order to create a full build of the Rainmeter installer, you will need one additional piece of software.</p>
+<p>Get and install NSIS version 3.04 or later from <a target="_blank" rel="noopener" href="http://nsis.sourceforge.net/Download">NSIS Scriptable Install System</a> software on your PC.</p>
+<p>Now you can simply run the <b>Build.bat</b> batch file in the Build folder of your local repository. If there are any "not found" errors when you run the batch file, check the paths in the <code>Set</code> commands at the top of the file.</p>
+<p>Use <code>Build.bat RELEASE</code> to build a non-beta installer.</p>
+<p>To digitally sign the installer and the Rainmeter executables, obtain a certificate from a <a target="_blank" rel="noopener" href="http://www.certum.pl/certum/main.xml">service</a> that provides them, and create a Certificate.bat file alongside Build.bat with the following contents:</p>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> CERTFILE=/<span class="built_in">path</span>/to/PFXcert.p12</span><br><span class="line"><span class="built_in">set</span> CERTKEY=certpassword</span><br></pre></td></tr></table></figure>
+<h2 id="CreatePlugin">Creating Rainmeter Plugins</h2>
+<p>Anyone can create and distribute <a href="..\manual\plugins\index.htm#Custom">custom plugins</a> for Rainmeter.</p>
+<p><b>Note:</b> The Rainmeter Skin Installer program, which is used by end-users to install the skins containing your plugin, will not allow the same or older version of the plugin to overwrite a newer version. The means that it is critically important that every release of your plugin must have the "File version" number incremented. If you don't do this, your plugin will not be distributed.</p>
+<p>The only software you will need is <b>Microsoft Visual Studio 2019</b> or the free <b>Microsoft Visual Community</b> which can be obtained at <a target="_blank" rel="noopener" href="https://www.visualstudio.com/downloads/download-visual-studio-vs">Download Visual Studio</a>. Be sure to download and apply any Visual Studio Updates when prompted.</p>
+<p>Then you will want to download the <a target="_blank" rel="noopener" href="https://github.com/rainmeter/rainmeter-plugin-sdk">Rainmeter Plugin SDK</a> to a folder on your PC. The SDK contains the API code needed to create plugins, as well as some starting and sample plugin code for C++ and C#:</p>
+<ul>
+<li><b>PluginEmpty</b><br>
+An empty plugin template you can use as a starting point for your code.</li>
+<li><b>PluginSystemVersion</b><br>
+An example plugin that returns the Windows system version to a skin.</li>
+<li><b>PluginParentChild</b><br>
+An example plugin demonstrating how to do "parent-child" functions in your plugin.</li>
+<li><b>PluginSectionVariables</b><br>
+An example plugin demonstrating how to implement functions to use as section variables in your plugin.</li>
+</ul>
+<p>To create a plugin, the simplest approach is to make a copy of and rename the PluginEmpty example folder and files. Use GuidGen.exe from Visual Studio with <em>Format 4</em> to generate a new GUID and add this and other appropriate changes to the .vcxproj or .csproj files. Open either <b>SDK-CPP.sln</b> (C++) or <b>SDK-CS.sln</b> (C#) in Visual Studio, add your new plugin project to the solution, develop your code in this template and build your plugin. Be sure that you use the <em>Solution Configuration</em> and <em>Solution Platforms</em> fields and build both x32 and x64 architecture release versions of your plugin .dll before you distribute it.</p>
+<h2 id="APIDocumentation">Plugin API Documentation</h2>
+<ul>
+<li>Documentation for C++ plugins can be found <a href="plugin\cpp\index.htm">here</a> and the API <a href="plugin\cpp\api\index.htm">here</a>.</li>
+<li>Documentation for C# plugins can be found <a href="plugin\csharp\index.htm">here</a> and the API <a href="plugin\csharp\api\index.htm">here</a>.</li>
+</ul>
+<h2 id="SendMessage">Using SendMessage with External Applications</h2>
+<p>The Rainmeter window message API can be used to query or control Rainmeter from external applications. The examples are for C++ and <a target="_blank" rel="noopener" href="https://www.autoitscript.com/site/autoit/">AutoIt</a>, but similar functionality is available from any programming platform that can send window messages to running applications.</p>
+<h3>Query</h3>
+<p>The following sample demonstrates how to retrieve a running skin's window handle based on the skin config name. Note that the returned handle should only be used to check if the skin is active or not -- do not abuse the handle.</p>
+<p>C/C++ code:</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Usage: GetSkinWindow(L&quot;illustro\\Clock&quot;);</span></span><br><span class="line"><span class="comment">// Return value will be NULL if config not found or a valid HWND otherwise</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;Windows.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function">HWND <span class="title">GetSkinWindow</span><span class="params">(<span class="type">const</span> WCHAR* configName)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	HWND trayWnd = <span class="built_in">FindWindow</span>(<span class="string">L&quot;RainmeterTrayClass&quot;</span>, <span class="literal">NULL</span>);</span><br><span class="line">	<span class="keyword">if</span> (trayWnd)</span><br><span class="line">	&#123;</span><br><span class="line">		COPYDATASTRUCT cds;</span><br><span class="line">		cds.dwData = <span class="number">5101</span>;</span><br><span class="line">		cds.cbData = (DWORD)(<span class="built_in">wcslen</span>(configName) + <span class="number">1</span>) * <span class="built_in">sizeof</span>(WCHAR);</span><br><span class="line">		cds.lpData = (<span class="type">void</span>*)configName;</span><br><span class="line">		<span class="keyword">return</span> (HWND)<span class="built_in">SendMessage</span>(trayWnd, WM_COPYDATA, <span class="number">0</span>, (LPARAM)&amp;cds);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>AutoIT code:<br></p>
+<figure class="highlight autoit"><table><tr><td class="code"><pre><span class="line"><span class="comment">; Usage: $Return = GetSkinWindow(&quot;ConfigName&quot;)</span></span><br><span class="line"><span class="comment">; Return value will be 0 if config not found</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;SendMessage.au3&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Func</span> <span class="title function_">GetSkinWindow</span><span class="params">($szConfigName)</span></span><br><span class="line">   <span class="keyword">Local</span> <span class="keyword">Const</span> $hWnd = <span class="built_in">WinGetHandle</span>(<span class="string">&quot;[CLASS:RainmeterTrayClass]&quot;</span>)</span><br><span class="line">   <span class="keyword">If</span> $hWnd &lt;&gt; <span class="number">0</span> <span class="keyword">Then</span></span><br><span class="line">      <span class="keyword">Local</span> <span class="keyword">Const</span> $iSize = <span class="built_in">StringLen</span>($szConfigName) + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">Local</span> <span class="keyword">Const</span> $pMem = <span class="built_in">DllStructCreate</span>(<span class="string">&quot;wchar[&quot;</span> &amp; $iSize &amp; <span class="string">&quot;]&quot;</span>)</span><br><span class="line">      <span class="built_in">DllStructSetData</span>($pMem, <span class="number">1</span>, $szConfigName)</span><br><span class="line"></span><br><span class="line">      <span class="keyword">Local</span> <span class="keyword">Const</span> $pCds = <span class="built_in">DllStructCreate</span>(<span class="string">&quot;dword;dword;ptr&quot;</span>)</span><br><span class="line">      <span class="built_in">DllStructSetData</span>($pCds, <span class="number">1</span>, <span class="number">5101</span>)</span><br><span class="line">      <span class="built_in">DllStructSetData</span>($pCds, <span class="number">2</span>, ($iSize * <span class="number">2</span>))</span><br><span class="line">      <span class="built_in">DllStructSetData</span>($pCds, <span class="number">3</span>, <span class="built_in">DllStructGetPtr</span>($pMem))</span><br><span class="line"></span><br><span class="line">      <span class="keyword">Local</span> <span class="keyword">Const</span> $WM_COPYDATA = <span class="number">0x004A</span></span><br><span class="line">      <span class="keyword">Return</span> _SendMessage($hWnd, $WM_COPYDATA, <span class="number">0</span>, <span class="built_in">DllStructGetPtr</span>($pCds))</span><br><span class="line">   <span class="keyword">EndIf</span></span><br><span class="line"></span><br><span class="line">   <span class="keyword">Return</span> <span class="number">0</span></span><br><span class="line"><span class="keyword">EndFunc</span></span><br></pre></td></tr></table></figure>
+<p>The following code demonstrates how to retrieve important application path information for Rainmeter from your external application.</p>
+<p>AutoIT code:<br></p>
+<figure class="highlight autoit"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;SendMessage.au3&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;GUIConstantsEx.au3&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;WindowsConstants.au3&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;Array.au3&gt;</span></span></span><br><span class="line"></span><br><span class="line">$RAINMETER_QUERY_WINDOW = <span class="built_in">WinGetHandle</span>(<span class="string">&quot;[CLASS:RainmeterTrayClass]&quot;</span>)</span><br><span class="line">$WM_QUERY_RAINMETER = $WM_APP + <span class="number">1000</span></span><br><span class="line">$RAINMETER_QUERY_ID_SKINS_PATH = <span class="number">4101</span></span><br><span class="line">$RAINMETER_QUERY_ID_SETTINGS_PATH = <span class="number">4102</span></span><br><span class="line">$RAINMETER_QUERY_ID_PROGRAM_PATH = <span class="number">4104</span></span><br><span class="line">$RAINMETER_QUERY_ID_CONFIG_EDITOR = <span class="number">4106</span></span><br><span class="line">$WM_QUERY_RAINMETER_RETURN = <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Dim</span> $PathsArray[4]</span><br><span class="line"></span><br><span class="line">$hGUI = <span class="built_in">GUICreate</span>(<span class="string">&quot;&quot;</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">-1</span>, <span class="number">-1</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">If</span> <span class="literal">Not</span> <span class="built_in">ProcessExists</span>(<span class="string">&quot;Rainmeter.exe&quot;</span>) <span class="keyword">Then</span></span><br><span class="line">	<span class="built_in">MsgBox</span>(<span class="number">16</span>, <span class="string">&quot;GetPath Error&quot;</span>, <span class="string">&quot;Rainmeter must be running to use GetPath.&quot;</span>)</span><br><span class="line">	<span class="keyword">Exit</span></span><br><span class="line"><span class="keyword">EndIf</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">GUIRegisterMsg</span>($WM_COPYDATA, <span class="string">&quot;_ReadMessage&quot;</span>)</span><br><span class="line"></span><br><span class="line"> _SendMessage($RAINMETER_QUERY_WINDOW, $WM_QUERY_RAINMETER, $RAINMETER_QUERY_ID_PROGRAM_PATH, $hGUI)</span><br><span class="line"> $PathsArray[0] = $WM_QUERY_RAINMETER_RETURN</span><br><span class="line"></span><br><span class="line"> _SendMessage($RAINMETER_QUERY_WINDOW, $WM_QUERY_RAINMETER, $RAINMETER_QUERY_ID_SETTINGS_PATH, $hGUI)</span><br><span class="line">$PathsArray[1] = $WM_QUERY_RAINMETER_RETURN</span><br><span class="line"></span><br><span class="line"> _SendMessage($RAINMETER_QUERY_WINDOW, $WM_QUERY_RAINMETER, $RAINMETER_QUERY_ID_SKINS_PATH, $hGUI)</span><br><span class="line"> $PathsArray[2] = $WM_QUERY_RAINMETER_RETURN</span><br><span class="line"></span><br><span class="line"> _SendMessage($RAINMETER_QUERY_WINDOW, $WM_QUERY_RAINMETER, $RAINMETER_QUERY_ID_CONFIG_EDITOR, $hGUI)</span><br><span class="line"> $PathsArray[3] = $WM_QUERY_RAINMETER_RETURN</span><br><span class="line"></span><br><span class="line">_ArrayDisplay($PathsArray)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">Func</span> <span class="title function_">_ReadMessage</span><span class="params">($hWnd, $uiMsg, $wParam, $lParam)</span></span><br><span class="line"></span><br><span class="line">	$pCds = <span class="built_in">DllStructCreate</span>(<span class="string">&quot;dword;dword;ptr&quot;</span>, $lParam)</span><br><span class="line">	$pData = <span class="built_in">DllStructGetData</span>($pCds, <span class="number">3</span>)</span><br><span class="line">	$pMem = <span class="built_in">DllStructCreate</span>(<span class="string">&quot;wchar[&quot;</span> &amp; <span class="built_in">DllStructGetData</span>($pCds, <span class="number">2</span>) &amp; <span class="string">&quot;]&quot;</span>, <span class="built_in">DllStructGetData</span>($pCds, <span class="number">3</span>))</span><br><span class="line">	$WM_QUERY_RAINMETER_RETURN = <span class="built_in">DllStructGetData</span>($pMem, <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">EndFunc</span> <span class="comment">;_ReadMessage</span></span><br></pre></td></tr></table></figure>
+<h3>Bangs</h3>
+<p>The following samples demonstrate how external applications can send bangs to Rainmeter.</p>
+<p>C/C++ code:</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Usage: SendBang(L&quot;[!About]&quot;);</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;Windows.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">SendBang</span><span class="params">(<span class="type">const</span> WCHAR* bang)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	HWND rmWnd = <span class="built_in">FindWindow</span>(<span class="string">L&quot;DummyRainWClass&quot;</span>, <span class="literal">NULL</span>);</span><br><span class="line">	<span class="keyword">if</span> (rmWnd)</span><br><span class="line">	&#123;</span><br><span class="line">		COPYDATASTRUCT cds;</span><br><span class="line">		cds.dwData = <span class="number">1</span>;</span><br><span class="line">		cds.cbData = (DWORD)(<span class="built_in">wcslen</span>(bang) + <span class="number">1</span>) * <span class="built_in">sizeof</span>(WCHAR);</span><br><span class="line">		cds.lpData = (<span class="type">void</span>*)bang;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// Send bang to the Rainmeter window</span></span><br><span class="line">		<span class="built_in">SendMessage</span>(rmWnd, WM_COPYDATA, <span class="number">0</span>, (LPARAM)&amp;cds);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>AutoIT code:</p>
+<figure class="highlight autoit"><table><tr><td class="code"><pre><span class="line"><span class="comment">; Usage: SendBang(&quot;[!About]&quot;)</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;SendMessage.au3&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Func</span> <span class="title function_">SendBang</span><span class="params">($szBang)</span></span><br><span class="line">   <span class="keyword">Local</span> <span class="keyword">Const</span> $hWnd = <span class="built_in">WinGetHandle</span>(<span class="string">&quot;[CLASS:DummyRainWClass]&quot;</span>)</span><br><span class="line">   <span class="keyword">If</span> $hWnd &lt;&gt; <span class="number">0</span> <span class="keyword">Then</span></span><br><span class="line">      <span class="keyword">Local</span> <span class="keyword">Const</span> $iSize = <span class="built_in">StringLen</span>($szBang) + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">Local</span> <span class="keyword">Const</span> $pMem = <span class="built_in">DllStructCreate</span>(<span class="string">&quot;wchar[&quot;</span> &amp; $iSize &amp; <span class="string">&quot;]&quot;</span>)</span><br><span class="line">      <span class="built_in">DllStructSetData</span>($pMem, <span class="number">1</span>, $szBang)</span><br><span class="line"></span><br><span class="line">      <span class="keyword">Local</span> <span class="keyword">Const</span> $pCds = <span class="built_in">DllStructCreate</span>(<span class="string">&quot;dword;dword;ptr&quot;</span>)</span><br><span class="line">      <span class="built_in">DllStructSetData</span>($pCds, <span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">      <span class="built_in">DllStructSetData</span>($pCds, <span class="number">2</span>, ($iSize * <span class="number">2</span>))</span><br><span class="line">      <span class="built_in">DllStructSetData</span>($pCds, <span class="number">3</span>, <span class="built_in">DllStructGetPtr</span>($pMem))</span><br><span class="line"></span><br><span class="line">      <span class="keyword">Local</span> <span class="keyword">Const</span> $WM_COPYDATA = <span class="number">0x004A</span></span><br><span class="line">      _SendMessage($hWnd, $WM_COPYDATA, <span class="number">0</span>, <span class="built_in">DllStructGetPtr</span>($pCds))</span><br><span class="line">   <span class="keyword">EndIf</span></span><br><span class="line"><span class="keyword">EndFunc</span></span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\js\main.js"></script>
+<script src="..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\js\bootstrap.min.js"></script>
+<script src="..\js\ahk-sliding-panel.js"></script>
+<script src="..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

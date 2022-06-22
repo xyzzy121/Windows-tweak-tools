@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="WebParser measure - Rainmeter Docs">
+<meta property="og:title" content="WebParser measure - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>WebParser measure - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\index.htm"><img src="..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\getting-started\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\..\getting-started\setting-up\index.htm">Setting Up</a>
+<li><a href="..\..\getting-started\using-rainmeter\index.htm">Using Rainmeter</a>
+<li><a href="..\..\getting-started\customizing\index.htm">Customizing</a>
+<li><a href="..\..\getting-started\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\..\getting-started\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\..\getting-started\basic-tutorials\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\..\getting-started\basic-tutorials\launcher\index.htm">Launcher</a>
+<li><a href="..\..\getting-started\basic-tutorials\clock\index.htm">Clock</a>
+<li><a href="..\..\getting-started\basic-tutorials\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\installing-rainmeter\index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="..\..\installing-rainmeter\auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\..\user-interface\about\index.htm">About</a>
+<li><a href="..\..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<ul>
+<li><a href="..\..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\..\meters\index.htm">Meters</a>
+<ul>
+<li><a href="..\..\meters\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\meters\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\..\meters\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\..\meters\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\..\meters\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\..\meters\bar\index.htm">Bar</a>
+<li><a href="..\..\meters\bitmap\index.htm">Bitmap</a>
+<li><a href="..\..\meters\button\index.htm">Button</a>
+<li><a href="..\..\meters\histogram\index.htm">Histogram</a>
+<li><a href="..\..\meters\image\index.htm">Image</a>
+<li><a href="..\..\meters\line\index.htm">Line</a>
+<li><a href="..\..\meters\rotator\index.htm">Rotator</a>
+<li><a href="..\..\meters\roundline\index.htm">Roundline</a>
+<li><a href="..\..\meters\shape\index.htm">Shape</a>
+<li><a href="..\..\meters\string\index.htm">String</a>
+<ul>
+<li><a href="..\..\meters\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\index.htm">Measures</a>
+<ul>
+<li><a href="..\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\calc\index.htm">Calc</a>
+<li><a href="..\cpu\index.htm">CPU</a>
+<li><a href="..\freediskspace\index.htm">FreeDiskSpace</a>
+<li><a href="..\loop\index.htm">Loop</a>
+<li><a href="..\mediakey\index.htm">MediaKey</a>
+<li><a href="..\memory\index.htm">Memory</a>
+<li><a href="..\net\index.htm">Net</a>
+<li><a href="..\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\plugin\index.htm">Plugin</a>
+<li><a href="..\process\index.htm">Process</a>
+<li><a href="..\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\registry\index.htm">Registry</a>
+<li><a href="..\script\index.htm">Script</a>
+<li><a href="..\string\index.htm">String</a>
+<li><a href="..\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\time\index.htm">Time</a>
+<li><a href="..\uptime\index.htm">Uptime</a>
+<li><a href="index.htm">WebParser</a>
+<li><a href="..\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\..\plugins\index.htm">Plugins</a>
+<ul>
+<li><a href="..\..\plugins\actiontimer\index.htm">ActionTimer</a>
+<li><a href="..\..\plugins\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\..\plugins\coretemp\index.htm">CoreTemp</a>
+<li><a href="..\..\plugins\fileview\index.htm">FileView</a>
+<li><a href="..\..\plugins\folderinfo\index.htm">FolderInfo</a>
+<li><a href="..\..\plugins\inputtext\index.htm">InputText</a>
+<li><a href="..\..\plugins\ping\index.htm">Ping</a>
+<li><a href="..\..\plugins\power\index.htm">Power</a>
+<li><a href="..\..\plugins\quote\index.htm">Quote</a>
+<li><a href="..\..\plugins\resmon\index.htm">ResMon</a>
+<li><a href="..\..\plugins\runcommand\index.htm">RunCommand</a>
+<li><a href="..\..\plugins\speedfan\index.htm">SpeedFan</a>
+<li><a href="..\..\plugins\usagemonitor\index.htm">UsageMonitor</a>
+<li><a href="..\..\plugins\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\..\plugins\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\..\plugins\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\..\plugins\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\..\plugins\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\..\plugins\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\bangs\index.htm">Bangs</a>
+<li><a href="..\..\formulas\index.htm">Formulas</a>
+<li><a href="..\..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\..\groups\index.htm">Groups</a>
+<li><a href="..\..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">WebParser measure</h1>
+<hr>
+
+<p><code>Measure=WebParser</code> reads and parses information from web pages.</p>
+<p>The measure uses <a href="..\..\skins\option-types\index.htm#RegExp">Perl Compatible Regular Expressions</a> to extract information from any web page or <a href="#Local">local file</a>.</p>
+<h2>Usage</h2>
+<p>WebParser measures take the form:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureParent]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=http://SomeSite.com</span><br><span class="line"><span class="attr">RegExp</span>=(?siU)&lt;Item&gt;(.*)&lt;/Item&gt;.*&lt;Item&gt;(.*)&lt;/Item&gt;</span><br></pre></td></tr></table></figure>
+<p id="ParentChild">This example creates two <a href="#StringIndex">StringIndex</a> values in what is referred to as the "parent" WebParser measure. The information is generally used in subsequent "child" WebParser measures:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureChild1]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureParent]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureChild2]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureParent]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>The values of the two <a href="#ParentChild">child</a> measures are now the information parsed into StringIndexes 1 and 2 by the <a href="#ParentChild">parent</a> measure. These can then be used with <a href="..\..\meters\general-options\index.htm#MeasureName">MeasureName</a> and other options in <a href="..\..\meters\index.htm">meters</a>.
+<p><b>Note:</b> More information and examples for WebParser can be found at <a href="..\..\..\tips\webparser-tutorial\index.htm">WebParser Tutorial</a> and <a href="..\..\..\tips\rss-feed-tutorial\index.htm">RSS/Atom Feed Tutorial</a>.</p>
+<h2 id="NotAPlugin">Note: WebParser was previously a <em>plugin</em> measure.</h2>
+<p>In many existing skins you might see the syntax:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureParent]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=WebParser</span><br><span class="line">or</span><br><span class="line"><span class="attr">Plugin</span>=WebParser.dll</span><br><span class="line">or</span><br><span class="line"><span class="attr">Plugin</span>=Plugins\WebParser.dll</span><br></pre></td></tr></table></figure>
+<p>WebParser still works with those forms, and changing existing skins to the new <code>Measure=WebParser</code> syntax is entirely optional. However, new skins created going forward should use the correct syntax for accuracy and clarity. WebParser is a measure, and not a plugin.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureParent]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br></pre></td></tr></table></figure>
+<h2>Options</h2>
+<dl>
+<dt>General measure options</dt>
+<dd>
+<p>All <a href="..\general-options\index.htm">general measure options</a> are valid.</p>
+</dd>
+<dt id="URL"><code>URL</code></dt>
+<dd>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Uniform_resource_locator">URL</a> to the site or file to be downloaded and parsed. If the name of another WebParser measure is used, e.g. <code>URL=[SomeMeasure]</code>, then the value of the <a href="#ParentChild">parent</a> measure is used, generally by referring to a specific <a href="#StringIndex">StringIndex</a> number.</p>
+<p id="Authentication">WebParser <b>cannot</b> use cookies or other session-based authentication, so it <b>cannot</b> be used to retrieve information from web sites requiring a login. However, Webparser <b>can</b> be used on sites which support <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Basic_access_authentication">HTTP authentication</a>. E.g. <code>http://myname:mypassword@somesite.com</code>.</p>
+<p id="Local">WebParser can read and parse local files on your computer by using the <code>file://</code> <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/File_URI_scheme">URI scheme</a>. E.g. <code>URL=file://<a href="..\..\variables\built-in-variables\index.htm#CURRENTPATH">#CURRENTPATH#</a>SomeFile.txt</code>. Note that this must be a fully qualified path to the file.</p>
+<p>If you want to use the current value of a measure in a dynamic way as a <a href="..\..\variables\section-variables\index.htm">Section Variable</a>, rather than as a reference to a "parent" WebParser measure, you must prefix the name of the measure with the <code>&</code> character.</p>
+<p>Example: <code>URL=http://somesite.com/[&WebMeasure]</code></p><br>
+<p><b>A note on URL encoding:</b> WebParser will automatically <a target="_blank" rel="noopener" href="http://www.blooberry.com/indexdot/html/topics/urlencoding.htm">URL-Encode</a>, also known as Percent Encoding, any characters <em>after</em> the <code>protocol://host/path/</code> portion of the URL that are <b>not</b> one of the following:<br><br>
+Unreserved URL-safe characters:<br><code>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.~</code><br>Reserved URL-delimiter characters:<br><code>!*'();:@&amp;=+$,/?%#[]</code></p><br>
+<p>This means that a URL like:<br><code>https://somesite.com?search=I live in München</code><br>
+Would be sent as:<br>
+<code>https://somesite.com?search=I%20live%20in%20M%C3%BCnchen</code></p><br>
+<p>This encoding is transparently done before the URL is sent to the remote site. <em>This is not done when the protocol is <code>file://</code>.</em></p>
+</dd>
+<dt id="RegExp"><code>RegExp</code></dt>
+<dd>
+<p>The <a href="..\..\skins\option-types\index.htm#RegExp">Perl compatible regular expression</a> used in parsing.</p>
+</dd>
+<dt id="StringIndex"><code>StringIndex</code></dt>
+<dd>
+<p>Defines which captured string from the <code>RegExp</code> this measure returns. This option is generally used in a <a href="#ParentChild">child</a> measure to determine which of the captured values in a <a href="#ParentChild">parent</a> measure to use.</p>
+<p><b>Note:</b> There is a limit of 99 StringIndex values allowed on a single WebParser measure.</p>
+</dd>
+<dt id="StringIndex2"><code>StringIndex2</code></dt>
+<dd>
+<p>The second string index is used when using a <code>RegExp</code> in a measure that uses data from another WebParser measure (i.e. the <code>URL</code> points to a <a href="#ParentChild">parent</a> measure. In this case the <code>StringIndex</code> defines the index of the result of the parent measure's <code>RegExp</code> and the <code>StringIndex2</code> defines the index of this measure's <code>RegExp</code> (i.e. it defines the string that the measure returns).</p>
+<p>More information on using StringIndex2 can be found <a href="..\..\..\tips\webparser-using-stringindex2\index.htm">here</a>.</p>
+<p><b>Note:</b> If the <code>RegExp</code> is not defined in this measure, the <code>StringIndex2</code> has no effect.</p>
+</dd>
+<dt id="UpdateRate"><code>UpdateRate</code> <small>Default: <code>600</code></small></dt>
+<dd>
+<p>The rate in milliseconds determining how often the webpage is downloaded. This is relative to the config's main <a href="..\..\skins\index.htm#Update">Update</a> rate <b>and</b> any <a href="..\general-options\index.htm#UpdateDivider">UpdateDivider</a> on the measure. So the formula would be <code>Update</code> X <code>UpdateDivider</code> X <code>UpdateRate</code> = "how often the measure connects to the site".</p>
+<p><b>Notes:</b> Some caution should be used in determining how often to connect to a site with WebParser. Excessively accessing a site can cause your computer to be seen as an "attack" and result in being blocked. The <code>UpdateRate</code> option defaults to <code>600</code> as a safety measure. This should not be changed unless there is some reason to connect more or less often to the site.</p>
+<p>In order to override the UpdateRate set on a WebParser measure, to have it connect to the site and download the data "right now", the <a href="#CommandMeasureUpdate">!CommandMeasure</a> bang must be used, with the name of the "parent" measure as the first parameter, and "Update" as the second.</p>
+<p><code>LeftMouseUpAction=[!SetOption WebMeasure URL "http://SomeNewSite.com"][!CommandMeasure WebMeasure Update]</code></p>
+<br>
+<p>More information on <code>UpdateRate</code> is at <a href="..\..\..\tips\webparser-updaterate\index.htm">WebParser: How UpdateRate Works</a>.</p>
+</dd>
+<dt id="DecodeCharacterReference"><code>DecodeCharacterReference</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>Automatically decodes <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references">HTML Character References</a>. This will eliminate the need to use a <a href="..\general-options\substitute\index.htm"><code>Substitute</code></a> statement to translate character references like <code>&amp;quot;</code>, <code>&amp;amp;</code>, <code>&amp;lt;</code>, and <code>&amp;gt;</code> to the actual character. Valid values are:</p>
+<ul>
+<li><code>0</code>: Does nothing (default).</li>
+<li><code>1</code>: Decodes both numeric character references and character entity references.</li>
+<li><code>2</code>: Decodes only numeric character references.</li>
+<li><code>3</code>: Decodes only character entity references.</li>
+</ul>
+<p><b>Note:</b> This option is used on the <a href="#ParentChild">child</a> measures actually returning the value of a StringIndex.</p>
+</dd>
+<dt id="DecodeCodePoints"><code>DecodeCodePoints</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>When set to <code>1</code>, automatically decodes <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/List_of_Unicode_characters">Unicode Code Point</a> values in the form <code>\uXXXX</code> or <code>\UXXXXXXXX</code>. Codes from <code>\u0000</code> to <code>\uFFFF</code> are supported.</p>
+<p><b>Note:</b> This option is used on the <a href="#ParentChild">child</a> measures actually returning the value of a StringIndex.</p>
+</dd>
+<dt id="Debug"><code>Debug</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>Logs DEBUG messages to the Rainmeter <a href="..\..\user-interface\about\index.htm#LogTab">log</a> or to a file. Valid values are:</p>
+<ul>
+<li><code>0</code>: Does not log DEBUG messages from WebParser.</li>
+<li><code>1</code>: Logs DEBUG message to the log. Rainmeter must also be in <a href="..\..\settings\rainmeter-section\index.htm#Debug">Debug</a> mode.</li>
+<li><code>2</code>: Saves the downloaded webpage to <code>WebParserDump.txt</code> in the current skin folder. This can be useful since some web servers send different information depending which client requests it. Remember to remove this from your config once you have it working correctly.</li>
+</ul>
+<p><b>Hint:</b> Determining <a href="#StringIndex">StringIndex</a> values to use in a <a id="#ParentChild">child</a> measure can be done by setting <code>Debug=1</code> on a measure having the <code>RegExp</code> option, which will display matched strings and StringIndex numbers in the Rainmeter <a href="..\..\user-interface\about\index.htm#LogTab">log</a></p>
+</dd>
+<dt id="Debug2File"><code>Debug2File</code></dt>
+<dd>
+<p>If the <code>Debug</code> option is set to <code>2</code>, this option can be set to the path and name of the file to use for the downloaded webpage instead of <code>WebParserDump.txt</code> in the current skin folder.</p>
+<p><b>Note:</b> The folder for the file must already exist.</p>
+</dd>
+<dt id="Download"><code>Download</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>If <code>Download=1</code>, the <code>URL</code> is downloaded to Window's <code>TEMP</code> folder and the name to the file is returned as string value. The measure can then be used with <a href="..\..\meters\general-options\index.htm#MeasureName">MeasureName</a> on an <a href="..\..\meters\image\index.htm">Image</a> meter to download images from a site and display them.</p>
+<p><b>Note:</b> When used on a <a href="#ParentChild">child</a> measure, the download itself is treated as a <a href="#ParentChild">parent</a> function, and any <a href="#FinishAction">FinishAction</a> on the measure will be executed if the download succeeds, and any <a href="#OnDownloadErrorAction">OnDownloadErrorAction</a> on the measure will be executed if the download fails.</p>
+</dd>
+<dt id="DownloadFile"><code>DownloadFile</code></dt>
+<dd>
+<p>If the <code>Download</code> option is set to <code>1</code>, this option defines a relative path and file name where the downloaded file will be saved instead of in Windows <code>TEMP</code>.
+<p>A folder <code>DownloadFile</code> will be created in the <a href="..\..\variables\built-in-variables\index.htm#CURRENTPATH">current folder</a>, and the defined relative path and file name will be created under that. It is not possible to specify an absolute path.</p>
+<p><b>Note:</b> This file is <b>not</b> a temporary file so it is <b>not</b> deleted after unloading a skin or exiting Rainmeter.</p>
+</dd>
+<dt id="ErrorString"><code>ErrorString</code></dt>
+<dd>
+<p>The value of the measure will be set to the string defined in this option if the <code>RegExp</code> results in a regular expression parsing error.</p>
+<p><b>Note:</b> While there might be cases where this option is desirable, the <a href="#OnRegExpErrorAction">OnRegExpErrorAction</a> option might be a more flexible and robust way to deal with regular expression errors.</p>
+</dd>
+<dt id="LogSubstringErrors"><code>LogSubstringErrors</code><small>Default: <code>1</code></small></dt>
+<dd>
+<p>If set to "0", this will suppress logging of "Not enough substring" errors. This can be useful when for instance you are using <a href="..\..\..\tips\webparser-lookahead-assertions-in-regexp\index.htm">lookahead assertions</a> in a regular expression, and missing (captures) should not be treated as an "error".</p>
+<p><b>Note:</b> This option is set on the <a href="#ParentChild">parent</a> WebParser measure.</p>
+</dd>
+<dt id="CodePage"><code>CodePage</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>Specifies the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Code_page">code page</a> of the downloaded URL=http:// web page or external file read with URL=file://.</p>
+<p>Most web sites on the web today are encoded with the Unicode UTF-8 standard. This is the default for WebParser, and it will seamlessly handle the site. No CodePage option is needed.</p>
+<p>However, there may be some older web sites that are encoded in a language / character set specific way. On a web site, the encoding used can generally be determined by viewing the raw HTML source and checking the "charset" meta value in the "head" section of the page. (i.e. meta charset="UTF-8")</p>
+<p>Some Examples are:</p>
+<ul>
+<li><code>CodePage=1200</code> : Unicode UTF-16 LE (Little Endian)</li>
+<li><code>CodePage=1251</code> : ANSI Cyrillic; Cyrillic (Windows)</li>
+<li><code>CodePage=1252</code> : ANSI Latin 1; Western European (Windows)</li>
+<li><code>CodePage=28605</code> : ISO 8859-15 Latin 9</li>
+<li><code>CodePage=65001</code> : Unicode UTF-8</li>
+</ul>
+<p>In addition, there are times when an external local file to be parsed with URL=file:// will be encoded in other than the ANSI (really ASCII plus "extended ASCII" specific to the locale of the computer) encoding used as the default in most Windows-based text editors. Primarily this will be in Unicode UFT-16 LE. In this case, the <code>CodePage=1200</code> option must be used to tell WebParer how to interpret the resource being read.</p>
+<p>Codepage definitions and more information can be found at <a target="_blank" rel="noopener" href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx">Windows code pages</a>.</p>
+<p>Additional general help with Unicode encoding in Rainmeter can be found at <a href="//forum.rainmeter.net/viewtopic.php?p=92182#p92182">Character Encoding in Rainmeter</a>.</p>
+</dd>
+<dt id="ProxyServer"><code>ProxyServer</code> <small>Default: <code>/auto</code></small></dt>
+<dd>
+<p>Proxy server to use with the measure. The following settings are valid:</p>
+<ul>
+<li><b>/auto</b><br>
+This will use the proxy settings contained in the options for Internet Explorer. (default)</li>
+<li><b>/none</b><br>
+This will make a direct connection, and will not use any proxy setting.</li>
+<li><b>ServerName:Port</b><br>
+This will connect to the proxy server hostname or ip address and port defined. Port is often optional with proxy servers.</li>
+</ul>
+<p>The measure doesn't support any authentication, so <b>only</b> use proxy settings that do not require it.</p>
+<p>This setting is applied when the measure is initialized on skin load / refresh, and cannot be changed dynamically.</p>
+<p><b>Examples:</b> <code>ProxyServer=/none</code>, <code>ProxyServer=192.168.1.1:8080</code>, <code>ProxyServer=ProxyHostname.net</code></p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[WebParserParentMeasure]</span></span><br><span class="line"><span class="attr">ProxyServer</span>=localhost:<span class="number">8080</span></span><br></pre></td></tr></table></figure>
+<p>This option can also be set in the <a href="..\..\settings\index.htm#RainmeterData">Rainmeter.data</a> file. If set there, it will be used as the global setting for all WebParser measures unless overridden in an individual measure(s). This must be set in a <code>[WebParser]</code> section in Rainmeter.data.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[WebParser]</span></span><br><span class="line"><span class="attr">ProxyServer</span>=localhost:<span class="number">8080</span></span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="UserAgent"><code>UserAgent</code> <small>Default: <code>Rainmeter WebParser plugin</code></small></dt>
+<dd>
+<p>Specifies a custom <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/User_agent">User Agent String</a> to be sent when the parent WebParser measure connects to a remote resource using HTTP(S).</p>
+<p>If you want to find out what the User Agent String is for the browser you use, you can connect to <a target="_blank" rel="noopener" href="https://www.whatismybrowser.com/detect/what-is-my-user-agent">WhatIsMyBrowser</a> in your browser and copy the string it returns. Other common User Agent String values can be found at <a target="_blank" rel="noopener" href="http://www.useragentstring.com/pages/useragentstring.php">UserAgentString</a>.</p>
+<p>This setting is applied when the measure is initialized on skin load / refresh, and cannot be changed dynamically.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[WebParserParentMeasure]</span></span><br><span class="line"><span class="attr">UserAgent</span>=Mozilla/<span class="number">5.0</span> (Windows NT <span class="number">10.0</span><span class="comment">; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36 Edg/92.0.902.84</span></span><br></pre></td></tr></table></figure>
+<p>This option can also be set in the <a href="..\..\settings\index.htm#RainmeterData">Rainmeter.data</a> file. If set there, it will be used as the global setting for all WebParser measures unless overridden in an individual measure(s). This must be set in a <code>[WebParser]</code> section in Rainmeter.data.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[WebParser]</span></span><br><span class="line"><span class="attr">UserAgent</span>=Mozilla/<span class="number">5.0</span> (Windows NT <span class="number">10.0</span><span class="comment">; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36 Edg/92.0.902.84</span></span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="Header"><code>Header, Header2, Header3...</code></dt>
+<dd>
+<p>Specifies one or more custom <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields">HTTP Header Fields</a> to be sent when the parent WebParser measure connects to a remote resource using HTTP(S).</p>
+<p><b>Example:</b> <code>Header=Cache-Control: no-cache</code></p>
+</dd>
+</dl>
+<dt id="Flags"><code>Flags</code> <small>Default: <code>Resync</code></small></dt>
+<dd>
+<p>Specifies one or more flags to be used by a parent WebParser measure. These flags control some aspects of how WebParser connects to the remote resource via HTTP/HTTPS.</p>
+<br><p>Multiple flags are set by separating them with the <code>|</code> pipe character.</p>
+<br><p>Supported <code>Flags</code> are:
+<ul>
+<li><b>Resync</b><br>
+Only downloads if the resource has been modified since the last time it was downloaded. Otherwise the cache is used. This is the default if no Flags are set.</li>
+<li><b>ForceReload</b><br>
+Forces a download of the requested resource from the origin server, not from the cache.</li>
+<li><b>NoCookies</b><br>
+Does not add cookie headers to requests, and does not add any cookies set by the resource to the cookie database. Does not "send" or "accept" cookies from any resource.</li>
+<li><b>NoCacheWrite</b><br>
+Does not add the returned resource data to the cache.</li>
+<li><b>Hyperlink</b><br>
+Forces a download if there was no Expires time and no LastModified time returned from the server when determining whether to reload the item from the network.</li>
+<li><b>TempFile</b><br>
+Causes a temporary file to be created if the file cannot be cached.</li>
+<li><b>NoAuth</b><br>
+Does not attempt URL-based authentication.</li>
+<li><b>PragmaNoCache</b><br>
+Forces the request to be resolved by the origin server, even if a cached copy exists on a proxy.</li>
+<li><b>Secure</b><br>
+Uses secure transaction semantics. This translates to using Secure Sockets Layer/Private Communications Technology (SSL/PCT) and is only meaningful in HTTP requests.</li>
+<li><b>IgnoreCertName</b><br>
+Disables checking of SSL/PCT-based certificates that are returned from the server against the host name given in the request. WinINet functions use a simple check against certificates by comparing for matching host names and simple wildcarding rules. Use with caution.</li>
+<li><b>IgnoreCertDate</b><br>
+Disables checking of SSL/PCT-based certificates for proper validity dates. Use with caution.</li>
+<li><b>IgnoreHTTPRedirect</b><br>
+Disables detection of this special type of redirect. When this flag is used, WinINet transparently allows redirects from HTTPS to HTTP URLs. Use with caution.</li>
+<li><b>IgnoreHTTPSRedirect</b><br>
+Disables the detection of this special type of redirect. When this flag is used, WinINet transparently allows redirects from HTTP to HTTPS URLs. Use with caution.</li><br>
+</ul>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[WebParserParentMeasure]</span></span><br><span class="line"><span class="attr">Flags</span>=ForceReload | NoCookies</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="ForceReload"><code>ForceReload</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>WebParser reads the resource only if it has been modified since last read. This can be overridden with <code>ForceReload=1</code>.</p>
+<p><b>Note:</b> This option has been deprecated in favor of the <a href="#Flags">Flags</a> option, and should not be used in new skins.</p>
+</dd>
+<h2 id="ActionOptions">Action Options</h2>
+<p>These options are only valid on <a href="#ParentChild">parent</a> measures that connect to a site or file with <code>URL</code>, and / or have a <code>RegExp</code> or <code>Download</code> option. They are not valid on <a href="#ParentChild">child</a> measures.</p>
+<dl>
+<dt id="FinishAction"><code>FinishAction</code></dt>
+<dd>
+<p><a href="..\..\bangs\index.htm">Bangs</a> or other <a href="..\..\skins\option-types\index.htm#Action">actions</a> that are executed when the resource has been downloaded and the regular expression (PCRE) parsing is done.</p>
+<p><em>Since WebParser is a "threaded" measure, and Rainmeter does not "wait" for it to return information from the resource, FinishAction can be used to ensure that things in the skin that are dependent on the values from the measure don't generate errors or undesirable visual displays while the WebParser measure hasn't finished getting and parsing the information, or that they are immediately updated as soon as WebParser is done.</em></p>
+<p><b>Note:</b> FinishAction will be executed when the resource is connected to and the regular expression parsing is complete. It will be executed whether the parsing of the information by <code>RegExp</code> succeeds or fails. It will not be executed if the resource cannot be connected to, or if the regular expression parsing fails, AND an <code>OnRegExpErrorAction</code> option is set on the measure.</p>
+</dd>
+<dt id="OnConnectErrorAction"><code>OnConnectErrorAction</code></dt>
+<dd>
+<p><a href="..\..\bangs\index.htm">Bangs</a> or other <a href="..\..\skins\option-types\index.htm#Action">actions</a> that are executed if WebParser is unable to connect to the hostname or file resource in <code>URL</code>.</p>
+<p>This might be due to network unavailability on the local computer, or network or server problems at the remote resource. In the case of the file:// protocol, this would be triggered by not finding the defined local file.</p>
+<p><b>Note:</b> It will take some time, perhaps as long as 10-20 seconds, for WebParser to "time out" and execute this action if the resource cannot be connected to over the network.</p>
+</dd>
+<dt id="OnRegExpErrorAction"><code>OnRegExpErrorAction</code></dt>
+<dd>
+<p><a href="..\..\bangs\index.htm">Bangs</a> or other <a href="..\..\skins\option-types\index.htm#Action">actions</a> that are executed if the resource is connected to, but the regular expression defined in <code>RegExp</code> is unable to successfully parse the information. It will not be executed if the resource cannot be connected to.</p>
+<p>This might be due to an incorrectly defined <code>RegExp</code> option, a change to a web site that causes the parsing to fail, or a remote server problem where the site is accessible, but the specific page defined on the URL can't be found or causes a redirect to an HTTP error condition.</p>
+<p><b>Note:</b> If this option is defined and the parsing fails, <code>FinishAction</code> will not be executed.</p>
+</dd>
+<dt id="OnDownloadErrorAction"><code>OnDownloadErrorAction</code></dt>
+<dd>
+<p><a href="..\..\bangs\index.htm">Bangs</a> or other <a href="..\..\skins\option-types\index.htm#Action">actions</a> that are executed if a measure has a <a href="#Download">Download</a> option set to 1, and the download of the resource fails.</p>
+<p>This may be due to a missing file on the remote host, or the inability of Windows to save the file locally in either the Windows TEMP location or the location specified in a <a href="#DownloadFile">DownloadFile</a> option.</p>
+<p>The action will not be executed if the connection to or parsing of the resource in the <a href="#ParentChild">parent</a> <code>URL</code> option fails. It is executed if all else succeeds, but the specific download process fails.</p>
+<p><b>Note:</b> When <a href="#Download">Download</a> is used on a <a href="#ParentChild">child</a> measure, the download itself is treated as a <a href="#ParentChild">parent</a> function, and any <a href="#FinishAction">FinishAction</a> on the measure will be executed if the download succeeds, and any <a href="#OnDownloadErrorAction">OnDownloadErrorAction</a> on the measure will be executed if the download fails.</p>
+</dd>
+<br><p><b>Note:</b> If some condition causes the error actions to be executed, care should be taken not to create an endless loop or cause the skin to repeatedly try to access a resource in a short period of time. For instance, it would not be wise to have these actions automatically update the measure they are on, or refresh the skin.</p>
+</dl>
+<h2 id="MeasureCommands">Measure Commands</h2>
+<p>Commands that can be sent to a parent WebParser measure using the <a href="..\..\bangs\index.htm#CommandMeasure">!CommandMeasure</a> bang.</p>
+<p>These are only valid with a target <a href="#ParentChild">parent</a> measure that connects to a site or file with <code>URL</code>, and / or has a <code>RegExp</code> option. They are not valid with a <a href="#ParentChild">child</a> measure as the target.</p>
+<dl>
+<dt id="CommandMeasureUpdate"><code>Update</code></dt>
+<dd>
+<p>This will cause a WebParser parent measure to override any current <a href="#UpdateRate">UpdateRate</a> setting, and immediately access and parse the resource defined in <code>URL</code>.</p>
+<p>Example: <code>[!CommandMeasure MeasureName "Update"]</code></p>
+<br>
+<p>More information on <code>UpdateRate</code> is at <a href="..\..\..\tips\webparser-updaterate\index.htm">WebParser: How UpdateRate Works</a>.</p>
+</dd>
+<dt id="CommandMeasureReset"><code>Reset</code></dt>
+<dd>
+<p>This will cause a WebParser parent measure to reset all values for the parent and any related child measures to their initial empty values.</p>
+<p>If a WebParser measure is able to connect and parse information from a web site or file, then that information is "remembered", and is only replaced when new information is successfully received on subsequent connections to the resource. This is both to allow a seamless transition from the old data to the new, and to allow a skin to continue displaying information if it is temporarily unable to connect or parse the resource.</p>
+<p>Generally, the above behavior works best. However, this command might be used in conjunction with the <a href="#OnConnectErrorAction">OnConnectErrorAction</a> and / or <a href="#OnRegExpErrorAction">OnRegExpErrorAction</a> actions if the skin design makes it desirable that WebParser "forget" old information when some error condition is triggered on subsequent connections to the resource.</p>
+<p>Example: <code>[!CommandMeasure MeasureName "Reset"]</code></p>
+</dd>
+</dl>
+<h2 id="Dynamic">WebParser and Dynamic Variables</h2>
+<p>Dynamic variables can be used with the WebParser measure. There are some things specific to WebParser that should be kept in mind when doing things in a dynamic way in WebParser measures:</p>
+<p>WebParser uses <a href="#UpdateRate">UpdateRate</a> to determine how often the measure should actually access the site or file. While you can dynamically change any option on a WebParser measure, the measure will not use the changes and access the site again until the next UpdateRate is reached. Just using <a href="..\..\bangs\index.htm#Update">!Update</a> or <a href="..\..\bangs\index.htm#UpdateMeasure">!UpdateMeasure</a> will NOT override the UpdateRate.</p>
+<p>In order to have a dynamic change make WebParser parse the site "right now", you will use the <a href="#CommandMeasureUpdate">!CommandMeasure</a> bang with the "parent" WebParser measure as the first parameter, and "Update" as the second.</p>
+<p><code>LeftMouseUpAction=[!SetOption WebMeasure URL "http://SomeNewSite.com"][!CommandMeasure WebMeasure Update]</code></p>
+<p>If you dynamically change an option on a "child" WebParser measure that depends on a "parent" measure, (like StringIndex for instance) you MUST use !CommandMeasure with "Update", targeting the "parent" WebParser measure. The values of child WebParser measures are a function of the parent measure, and are only updated when the parent is. You should never use !CommandMeasure on a "child" measure.</p>
+<p>If you want to use the current value of a measure in a dynamic way as a <a href="..\..\variables\section-variables\index.htm">Section Variable</a>, rather than as a reference to a "parent" WebParser measure, you must prefix the name of the measure with the <code>&</code> character.</p>
+<p><code>URL=http://SomeSite.com\[&WebMeasure]</code></p>
+<h2>Examples</h2>
+<p>Retrieve the site title, first item and link from Slashdot's RSS feed.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AccurateText</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">BackgroundMode</span>=<span class="number">2</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureRSSParent]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=http://slashdot.org/slashdot.rdf</span><br><span class="line"><span class="attr">RegExp</span>=(?siU)&lt;title&gt;(.*)&lt;/title&gt;.*&lt;item&gt;.*&lt;title&gt;(.*)&lt;/title&gt;.*&lt;link&gt;(.*)&lt;/link&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureRSSTitle]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureRSSParent]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureRSSItemTitle]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureRSSParent]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureRSSItemLink]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureRSSParent]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterRSSTitle]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureRSSTitle</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">14</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">222</span>,<span class="number">255</span>,<span class="number">227</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">StringStyle</span>=Bold</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterRSSItemTitle]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureRSSItemTitle</span><br><span class="line"><span class="attr">Y</span>=<span class="number">2</span>R</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">StringStyle</span>=Bold</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[<span class="string">&quot;[MeasureRSSItemLink]&quot;</span>]</span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>Retrieve, download and display the latest four submissions from the Rainmeter area on deviantART.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AccurateText</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">Item</span>=.*&lt;item&gt;.*&lt;title&gt;(.*)&lt;/title&gt;.*&lt;link&gt;(.*)&lt;/link&gt;.*&lt;pubDate&gt;(.*)&lt;/pubDate&gt;.*role=<span class="string">&quot;author&quot;</span>.*&gt;(.*)&lt;.*&lt;media:thumbnail url=<span class="string">&quot;(.*)&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureDA]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=http://backend.deviantart.com/rss.xml?q=in%<span class="number">3</span>Acustomization%<span class="number">2</span>Fskins%<span class="number">2</span>Fsysmonitor%<span class="number">2</span>Frainmeter+sort%<span class="number">3</span>Atime&amp;type=deviation</span><br><span class="line"><span class="attr">RegExp</span>=(?siU)<span class="comment">#Item##Item##Item##Item#</span></span><br><span class="line"><span class="attr">UpdateRate</span>=<span class="number">300</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureTitle1]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureLink1]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasurePubDate1]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureAuthor1]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureImage1]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">Download</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureTitle2]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">6</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureLink2]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">7</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasurePubDate2]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">8</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureAuthor2]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">9</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureImage2]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">Download</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">10</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureTitle3]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">11</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureLink3]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">12</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasurePubDate3]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">13</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureAuthor3]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">14</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureImage3]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">Download</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">15</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureTitle4]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">16</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureLink4]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">17</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasurePubDate4]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">18</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureAuthor4]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">19</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureImage4]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureDA]</span><br><span class="line"><span class="attr">Download</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterBackground]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">W</span>=<span class="number">106</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">306</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[<span class="string">&quot;http://browse.deviantart.com/customization/skins/sysmonitor/rainmeter/?order=5&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterImage1]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureImage1</span><br><span class="line"><span class="attr">X</span>=<span class="number">6</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">17</span></span><br><span class="line"><span class="attr">W</span>=<span class="number">95</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">50</span></span><br><span class="line"><span class="attr">PreserveAspectRatio</span>=<span class="number">2</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">ToolTipTitle</span>=[MeasureTitle1]</span><br><span class="line"><span class="attr">ToolTipType</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">ToolTipText</span>=[MeasureAuthor1]<span class="comment">#CRLF#[MeasurePubDate1]</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[<span class="string">&quot;[MeasureLink1]&quot;</span>]</span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterImage2]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureImage2</span><br><span class="line"><span class="attr">X</span>=<span class="number">6</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">91</span></span><br><span class="line"><span class="attr">W</span>=<span class="number">95</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">50</span></span><br><span class="line"><span class="attr">PreserveAspectRatio</span>=<span class="number">2</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">ToolTipTitle</span>=[MeasureTitle2]</span><br><span class="line"><span class="attr">ToolTipType</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">ToolTipText</span>=[MeasureAuthor2]<span class="comment">#CRLF#[MeasurePubDate2]</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[<span class="string">&quot;[MeasureLink2]&quot;</span>]</span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterImage3]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureImage3</span><br><span class="line"><span class="attr">X</span>=<span class="number">6</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">165</span></span><br><span class="line"><span class="attr">W</span>=<span class="number">95</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">50</span></span><br><span class="line"><span class="attr">PreserveAspectRatio</span>=<span class="number">2</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">ToolTipTitle</span>=[MeasureTitle3]</span><br><span class="line"><span class="attr">ToolTipType</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">ToolTipText</span>=[MeasureAuthor3]<span class="comment">#CRLF#[MeasurePubDate3]</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[<span class="string">&quot;[MeasureLink3]&quot;</span>]</span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterImage4]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureImage4</span><br><span class="line"><span class="attr">X</span>=<span class="number">6</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">239</span></span><br><span class="line"><span class="attr">W</span>=<span class="number">95</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">50</span></span><br><span class="line"><span class="attr">PreserveAspectRatio</span>=<span class="number">2</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">ToolTipTitle</span>=[MeasureTitle4]</span><br><span class="line"><span class="attr">ToolTipType</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">ToolTipText</span>=[MeasureAuthor4]<span class="comment">#CRLF#[MeasurePubDate4]</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[<span class="string">&quot;[MeasureLink4]&quot;</span>]</span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\js\main.js"></script>
+<script src="..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

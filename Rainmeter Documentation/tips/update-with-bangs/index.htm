@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Update with Bangs - Rainmeter Docs">
+<meta property="og:title" content="Update with Bangs - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Update with Bangs - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Tips &amp; Tricks</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#BeyondTheBasics">Beyond the Basics</a>
+<li><a href="..\index.htm#GoodToKnow">Good To Know</a>
+<li><a href="..\index.htm#GettingThingsDone">Getting Things Done</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Update with Bangs</h1>
+<hr>
+
+<p>Normally, Rainmeter skins are driven by the value of the <code>Update</code> option in the [Rainmeter] section of the skin. On each update, all measures and meters are updated, obtaining current values with measures, then updating and redrawing all meters with the new values. The <code>UpdateDivider</code> option is used to have some measures or meters update less often, if the information being obtained doesn't change as often as the Update option in the skin.</p>
+<p>However, there are times when you might want all or part of a skin to update "on demand", rather than waiting for the next normal update. This is most often desired when there are mouse actions in a skin, and you want the skin to react to immediately when you hover over or click on the skin or some meter.</p>
+<p><b>For example:</b></p>
+<p>You have a Quote plugin that is obtaining random images from some folder. You have the Quote measure set with an UpdateDivider of 30, so combined with an Update of 1000, a new random image is displayed every 30 seconds. However, you might want to have a left-click on the image meter immediately go out and get a new image and display it, but you don't want to wait up to 30 seconds for the new image to display.</p>
+<p>There are several bangs that can help make your skins more responsive.</p>
+<ul>
+<li>You can use <code>!Update</code> along with the mouse action to force the entire skin to immediately update.<br><br>
+<code>LeftMouseUpAction=!Update</code><br><br>
+This is the "brute force" approach, and may be the most simple and effective if you want the entire skin to update on some action. It should be remembered that the !Update bang overrides the Update value in [Rainmeter], but does not override any UpdateDivider options in measures or meters. The design of the skin should be taken into consideration when deciding if this is best, or a more "targetted" approach with the following bangs.</li><br>
+<li>You can use <code>!UpdateMeasure</code> to force a single measure to immediately update. Any Update or UpdateDivider settings will be ignored, and the measure will immediately obtain a new current value. In our example about the Quote plugin above, this would be a good way to have the plugin go get a new image "on demand".<br><br>
+<code>LeftMouseUpAction=!UpdateMeasure MeasureRandomImage</code><br><br>
+So far so good, however the Image meter dislpaying the result will still wait for the next update to get the new value from the measure. We can address that by adding another bang, <code>!UpdateMeter</code>.<br><br>
+<code>LeftMouseUpAction=[!UpdateMeasure MeasureRandomImage][!UpdateMeter MeterImage]</code><br><br>
+Now the value of both the measure and the meter have been updated. However, the Image meter will not actually be "drawn" again with the new result until the next update. We need one more step, <code>!Redraw</code>.<br><br>
+<code>LeftMouseUpAction=[!UpdateMeasure MeasureRandomImage][!UpdateMeter MeterImage][!Redraw]</code><br><br>
+That will update both the measure and the meter, and will redraw the entire skin. The effect is that when you click on the meter, it will instantly display the new image. The advantage to this "targetted" approach is that you are using the minimum of resources to accomplish what you want, and are allowing measures and meters not involved to update normally.</li><br>
+<p><b>Note:</b> Why don't we just automatically do the "redraw" when we do !UpdateMeter? This is because the entire skin must ALWAYS be redrawn due to how Rainmeter displays meters. Keeping them separate allows you to update several meters in one "action", then at the end redraw the entire skin just one time.<br><br>
+<code>LeftMouseUpAction=[!SetOption MeterOne FontSize 12][!SetOption MeterTwo FontSize 11][!UpdateMeter MeterOne][!UpdateMeter MeterTwo][!Redraw]</code></p>
+<br><p><b>Here are the entries for these bangs from the <a href="..\..\manual\bangs\index.htm">manual</a> as a reference.</b></p>
+<p><b>Entire skins:</b></p>
+<p>!Update<br>
+Overrides the setting of the <code>Update</code> option in [Rainmeter] and immediately updates the entire skin, all measures and meters. This does not override any UpdateDivider options on measures or meters. </p>
+<p>!Redraw<br>
+Overrides the setting of the <code>Update</code> option in [Rainmeter] and immediately redraws all visible elements of the entire skin. Meters will use the last value obtained for any measures or variables referenced.</p>
+<p><b>Measures and meters within a skin:</b></p>
+<p>!UpdateMeasure<br>
+Overrides the setting of the <code>Update</code> option in [Rainmeter] or any <code>UpdateDivider</code> on the measure, and immediately updates the measure.</p>
+<p>!UpdateMeter<br>
+Overrides the setting of the <code>Update</code> option in [Rainmeter] or any <code>UpdateDivider</code> on the meter, and immediately updates the meter, obtaining new current values for any measures or variables referenced. Note that the meter is not redrawn with any new values until the next update, or if a <code>!Redraw</code> bang is used.</p>
+<p><b>There are also group versions of these bangs</b></p>
+<p><b>Entire skins:</b></p>
+<p>!UpdateGroup<br>
+Overrides the setting of the <code>Update</code> option in [Rainmeter] and immediately updates the skins in the specified group, all measures and meters. This does not override any UpdateDivider options on measures or meters. </p>
+<p>!RedrawGroup<br>
+Overrides the setting of the <code>Update</code> option in [Rainmeter] and immediately redraws all visible elements of the skins in the specified group. Meters will use the last value obtained for any measures or variables referenced.</p>
+<p><b>Measures and meters within a skin:</b></p>
+<p>!UpdateMeasureGroup<br>
+Overrides the setting of the <code>Update</code> option in [Rainmeter] or any <code>UpdateDivider</code> on the measures in the specified group, and immediately updates the measures.</p>
+<p>!UpdateMeterGroup<br>
+Overrides the setting of the <code>Update</code> option in [Rainmeter] or any <code>UpdateDivider</code> on the meters in the specified group, and immediately updates the meters, obtaining new current values for any measures or variables referenced. Note that the meters are not redrawn with any new values until the next update, or if a <code>!RedrawGroup</code> bang is used.</p>
+</ul></div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

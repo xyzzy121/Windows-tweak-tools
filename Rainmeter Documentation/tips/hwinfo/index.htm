@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Using HWiNFO with Rainmeter - Rainmeter Docs">
+<meta property="og:title" content="Using HWiNFO with Rainmeter - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Using HWiNFO with Rainmeter - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Tips &amp; Tricks</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#BeyondTheBasics">Beyond the Basics</a>
+<li><a href="..\index.htm#GoodToKnow">Good To Know</a>
+<li><a href="..\index.htm#GettingThingsDone">Getting Things Done</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Using HWiNFO with Rainmeter</h1>
+<hr>
+
+<h2>Overview</h2>
+<p>As of version 7.0 of the HWiNFO hardware sensor monitoring tool, the software has changed to require purchasing a yearly "Pro" license in order to use the Shared Memory feature of the software that allowed it to interact with the HWiNFO plugin for Rainmeter. This would make distributing Rainmeter skins to end-users problematic at best.</p>
+<p>Martin Malik, the author of HWiNFO, has graciously worked with us to find a solution that will allow the software to be used for personal, non-commercial use in Rainmeter without having to purchase a license, while keeping his ability to monetize his application when used by commercial entities.</p>
+<p>The approach consists of tweaking a feature of HWiNFO that was implemented years ago to support using the software with the now long-dead Windows Sidebar gadgets. This allows you to output the current values of one or more sensors to the Windows Registry, where it can be easily accessed using the Registry measure in Rainmeter. A distinct HWiNFO plugin for Rainmeter is no longer required.</p>
+<h2>Setting up HWiNFO</h2>
+<p>The end-user of a skin will need to do some setup work with HWiNFO before using the skin. The first thing will be to get <b>version 7.02 or later</b> of the software from <a target="_blank" rel="noopener" href="https://www.hwinfo.com/">HWiNFO Home</a>. Install the software and run it.</p>
+<p>Then using the "Settings" option from the Windows Notification Area tray icon, configure HWiNFO with these recommended options. Note that Shared Memory Support is not required and should be left turned off:</p>
+<div class="exampleprev">
+<img src="..\img\hwinfo\HWiNFO1.png" width="600">
+</div>
+<p><br>Close the Settings dialog, and again using the Windows Notification Area tray icon, select "Sensors", and then click on the "Configure Sensors" button at the bottom of the Sensor Status dialog.</p>
+<div class="exampleprev">
+<img src="..\img\hwinfo\HWiNFO2.png" width="600">
+</div>
+<p><br>Select the "HWiNFO Gadget" tab on the Sensor Settings dialog.</p>
+<p>This will list all of the sensors that HWiNFO is monitoring for your hardware. What is on this list will obviously vary from computer to computer! Be sure the checkbox for "Enable reporting to Gadget" is selected.</p>
+<div class="exampleprev">
+<img src="..\img\hwinfo\HWiNFO3.png" width="600">
+</div>
+<p><br>Now scroll through the list, and one at a time, select the sensor elements you wish to output to Rainmeter. For each one, check the box "Report value in Gadget", and make a note of the "Index" value that is created for each. More on that in a minute...</p>
+<div class="exampleprev">
+<img src="..\img\hwinfo\HWiNFO4.png" width="600">
+</div>
+<p><br>Click on "OK" and you are done! You can close the Sensor Status dialog. HWiNFO will minimize to the Windows Notification Area, and will continue to run in the background.</p>
+<h2>Using the values in a skin</h2>
+<p>The hard work is behind you! Using the values in a skin is actually really simple. What happens is that HWiNFO will output the current values for all of the sensor elements you selected to the Windows Registry. This will be done each time HWiNFO "polls" your sensors, which by default is every 2000ms or every 2 seconds. <em>This can be changed in the settings for HWiNFO, but I don't particularly recommend changing it. You don't want HWiNFO using more resources than it needs to.</em></p>
+<p>For each sensor element, four registry entries will be created and updated.</p>
+<ul>
+<li><b>Sensor<em>N</em></b> : This will contain the name of the top level sensor.</li>
+<li><b>Label<em>N</em></b> : This will contain the name of the individual sensor element.</li>
+<li><b>Value<em>N</em></b> : This will contain a formatted version of the number value.<br>
+Formatting will include commas for thousands separators, and the text value for the unit of measure.<br>
+Example: <code>4,198 MHz</code></li>
+<li><b>ValueRaw<em>N</em></b> : This will contain a raw, unformatted version of the number value.<br>
+Example: <code>4198</code></li>
+</ul>
+<p>Now for those values for <em>N</em>. That will be that "Index" number that was assigned to each sensor element when you configured HWiNFO. Those numbers can be obtained by opening a <code>cmd.exe</code> Command Prompt, and typing in:<br><br><code>reg query HKEY_CURRENT_USER\SOFTWARE\HWiNFO64\VSB</code><br><br>That will produce a listing like this:<p>
+<div class="exampleprev">
+<img src="..\img\hwinfo\HWiNFO5.png" width="600">
+</div>
+<p><br>So all you need to do is create <a href="..\..\manual\measures\registry\index.htm">Registry measures</a> to obtain each of those values you want to display in your skin.</p>
+<p>The values are stored in the registry in <code>HKEY_CURRENT_USER\SOFTWARE\HWiNFO64\VSB</code>.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Measure0Sensor]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Sensor0</span><br><span class="line"></span><br><span class="line"><span class="section">[Measure0Label]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Label0</span><br><span class="line"></span><br><span class="line"><span class="section">[Measure0ValueFormatted]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Value0</span><br><span class="line"></span><br><span class="line"><span class="section">[Measure0ValueRaw]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=ValueRaw0</span><br></pre></td></tr></table></figure>
+<p>That's really all there is to it! No plugin, no hideous and complicated hex numbers. Just go get the value you want.</p>
+<h2>Some Notes and Tips</h2>
+<p>It might occur to you that "writing" to the Windows Registry every 2 seconds might be working your hard drive a bit. This really isn't the case. Windows is very clever about how it manages the Registry and changes are actually just stored in a memory copy of the hive, and only written to the physical disk periodically, and / or when you shut down Windows. This approach is very easy indeed on your hard drive.</p>
+<p>The old Rainmeter plugin for HWiNFO allowed you to obtain distinct values for "Current", "Minimum", "Maximum" and "Average" for each sensor element. Only the "current" value is possible with this interface. These values can just as easily be calculated in the skin, which I demonstate in the <code>MinMaxAvg</code> skin in the example .rmskin below.</p>
+<p>This interface does not support monitoring "remote computers". If you need to have a computer monitor one or more other computers on a network, this is the kind of functionality that requires that you purchase the "Pro" version of HWiNFO.</p>
+<p>Many of the sensor elements HWiNFO will monitor have really bizarre, mysterious, or otherwise incomprehensible names. As you are going through the list on the main Sensor Status dialog, holding your mouse over the element will provide a really nice tooltip explanation of what the sensor means.<p>
+<p>Those names can be changed by you! Simply right click any sensor element in the Sensor Status dialog and "Rename" it to something that makes more sense to you. Those changes will be carried through into the interface and into your skins.</p>
+<h2>Example .rmskin to Download</h2>
+<a href="..\examples\HWiNFO_New.rmskin" class="download"></a>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AccurateText</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">ContextTitle</span>=Display Sensors</span><br><span class="line"><span class="attr">ContextAction</span>=[!ActivateConfig <span class="string">&quot;HWiNFO_New\ShowReg&quot;</span> <span class="string">&quot;ShowReg.ini&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="comment">; * Skin Authors</span></span><br><span class="line"><span class="comment">; The easiest way to do this is to create variables for each of the values you </span></span><br><span class="line"><span class="comment">; will be using in the skin. Give them easy to understand variable names.</span></span><br><span class="line"><span class="comment">; * Skin Users</span></span><br><span class="line"><span class="comment">; Right click this skin and select &quot;Display Sensors&quot;</span></span><br><span class="line"><span class="comment">; That will create a list of all the sensor elements you are &quot;outputting&quot; from HWiNFO in your default browser.</span></span><br><span class="line"><span class="comment">; Find the Index number for each of the elements the skin needs and set the variables accordingly.</span></span><br><span class="line"><span class="comment">; Note that if you later go back into HWiNFO and add or remove elements to &quot;output&quot;,</span></span><br><span class="line"><span class="comment">; these Index numbers will change!</span></span><br><span class="line"></span><br><span class="line"><span class="attr">CPUNameIndex</span>=<span class="number">15</span></span><br><span class="line"><span class="attr">CPU0SpeedIndex</span>=<span class="number">15</span></span><br><span class="line"><span class="attr">CPUUsageIndex</span>=<span class="number">58</span></span><br><span class="line"><span class="attr">CPUTempIndex</span>=<span class="number">102</span></span><br><span class="line"><span class="attr">CPUFanIndex</span>=<span class="number">149</span></span><br><span class="line"><span class="attr">GPUNameIndex</span>=<span class="number">198</span></span><br><span class="line"><span class="attr">GPUTempIndex</span>=<span class="number">198</span></span><br><span class="line"><span class="attr">GPUFanIndex</span>=<span class="number">207</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; Measures</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPUNameSensor]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Sensor<span class="comment">#CPUNameIndex#</span></span><br><span class="line"><span class="attr">UpdateDivider</span>=-<span class="number">1</span></span><br><span class="line"><span class="attr">RegExpSubstitute</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Substitute</span>=<span class="string">&quot;^.*]:&quot;</span>:<span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPU0SpeedLabel]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Label<span class="comment">#CPU0SpeedIndex#</span></span><br><span class="line"><span class="attr">UpdateDivider</span>=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPU0SpeedValueRaw]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=ValueRaw<span class="comment">#CPU0SpeedIndex#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPUUsageLabel]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Label<span class="comment">#CPUUsageIndex#</span></span><br><span class="line"><span class="attr">UpdateDivider</span>=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPUUsageValueRaw]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=ValueRaw<span class="comment">#CPUUsageIndex#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPUTempLabel]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Label<span class="comment">#CPUTempIndex#</span></span><br><span class="line"><span class="attr">UpdateDivider</span>=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPUTempValueRaw]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=ValueRaw<span class="comment">#CPUTempIndex#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPUFanLabel]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Label<span class="comment">#CPUFanIndex#</span></span><br><span class="line"><span class="attr">UpdateDivider</span>=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPUFanValuePretty]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Value<span class="comment">#CPUFanIndex#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureGPUNameSensor]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Sensor<span class="comment">#GPUNameIndex#</span></span><br><span class="line"><span class="attr">UpdateDivider</span>=-<span class="number">1</span></span><br><span class="line"><span class="attr">RegExpSubstitute</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Substitute</span>=<span class="string">&quot;^.*]:&quot;</span>:<span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureGPUTempLabel]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Label<span class="comment">#GPUTempIndex#</span></span><br><span class="line"><span class="attr">UpdateDivider</span>=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureGPUTempValueRaw]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=ValueRaw<span class="comment">#GPUTempIndex#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureGPUFanLabel]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Label<span class="comment">#GPUFanIndex#</span></span><br><span class="line"><span class="attr">UpdateDivider</span>=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureGPUFanValuePretty]</span></span><br><span class="line"><span class="attr">Measure</span>=Registry</span><br><span class="line"><span class="attr">RegHKey</span>=HKEY_CURRENT_USER</span><br><span class="line"><span class="attr">RegKey</span>=SOFTWARE\HWiNFO64\VSB</span><br><span class="line"><span class="attr">RegValue</span>=Value<span class="comment">#GPUFanIndex#</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; Meters</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCPUName]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">W</span>=<span class="number">390</span></span><br><span class="line"><span class="attr">MeasureName</span>=MeasureCPUNameSensor</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">12</span></span><br><span class="line"><span class="attr">FontWeight</span>=<span class="number">600</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">47</span>,<span class="number">47</span>,<span class="number">47</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">Padding</span>=<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=CPU - %<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCPU0Speed]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">W</span>=<span class="number">390</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">15</span>R</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureCPU0SpeedLabel</span><br><span class="line"><span class="attr">MeasureName2</span>=MeasureCPU0SpeedValueRaw</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">12</span></span><br><span class="line"><span class="attr">FontWeight</span>=<span class="number">400</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">47</span>,<span class="number">47</span>,<span class="number">47</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">Padding</span>=<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span> - %<span class="number">2</span> MHz : Max - [MeasureCPU0SpeedValueRaw:MaxValue] MHz</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCPUUsage]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">W</span>=<span class="number">390</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">10</span>R</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureCPUUsageLabel</span><br><span class="line"><span class="attr">MeasureName2</span>=MeasureCPUUsageValueRaw</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">12</span></span><br><span class="line"><span class="attr">FontWeight</span>=<span class="number">400</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">47</span>,<span class="number">47</span>,<span class="number">47</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">Padding</span>=<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span> - %<span class="number">2</span>%</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCPUTemp]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">W</span>=<span class="number">390</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">5</span>R</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureCPUTempLabel</span><br><span class="line"><span class="attr">MeasureName2</span>=MeasureCPUTempValueRaw</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">12</span></span><br><span class="line"><span class="attr">FontWeight</span>=<span class="number">400</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">47</span>,<span class="number">47</span>,<span class="number">47</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">Padding</span>=<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span> - %<span class="number">2</span> °C</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCPUFanSpeed]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">W</span>=<span class="number">390</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">5</span>R</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureCPUFanLabel</span><br><span class="line"><span class="attr">MeasureName2</span>=MeasureCPUFanValuePretty</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">12</span></span><br><span class="line"><span class="attr">FontWeight</span>=<span class="number">400</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">47</span>,<span class="number">47</span>,<span class="number">47</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">Padding</span>=<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span> - %<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterGPUName]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">W</span>=<span class="number">390</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">15</span>R</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureGPUNameSensor</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">12</span></span><br><span class="line"><span class="attr">FontWeight</span>=<span class="number">600</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">47</span>,<span class="number">47</span>,<span class="number">47</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">Padding</span>=<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=GPU - %<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterGPUTemp]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">W</span>=<span class="number">390</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">10</span>R</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureGPUTempLabel</span><br><span class="line"><span class="attr">MeasureName2</span>=MeasureGPUTempValueRaw</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">12</span></span><br><span class="line"><span class="attr">FontWeight</span>=<span class="number">400</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">47</span>,<span class="number">47</span>,<span class="number">47</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">Padding</span>=<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span> - %<span class="number">2</span> °C</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterGPUFanSpeed]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">W</span>=<span class="number">390</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">5</span>R</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureGPUFanLabel</span><br><span class="line"><span class="attr">MeasureName2</span>=MeasureGPUFanValuePretty</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">12</span></span><br><span class="line"><span class="attr">FontWeight</span>=<span class="number">400</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">47</span>,<span class="number">47</span>,<span class="number">47</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">Padding</span>=<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=%<span class="number">1</span> - %<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<div class="exampleprev">
+<img src="..\img\hwinfo\HWiNFOExample.png" width="600">
+</div>
+<p><br><b>Bonus Skins!</b></p>
+<p>Included with that .rmskin is a little <code>ShowReg</code> skin that will create a listing of the Registry entries for HWiNFO and open it in your default browser. Something like this might help your end-users find those Index numbers they will need.</p>
+<div class="exampleprev">
+<img src="..\img\hwinfo\HWiNFOExample3.png" width="600">
+</div>
+<p><br>Also included is an example <code>MinMaxAvg</code> skin showing how you can get and use the Minimum, Maximum, and Average values in your skins.</p>
+<div class="exampleprev">
+<img src="..\img\hwinfo\HWiNFOExample2.png" width="600">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

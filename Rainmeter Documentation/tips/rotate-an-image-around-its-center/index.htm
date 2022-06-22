@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Rotate an Image Around its Center - Rainmeter Docs">
+<meta property="og:title" content="Rotate an Image Around its Center - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Rotate an Image Around its Center - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Tips &amp; Tricks</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#BeyondTheBasics">Beyond the Basics</a>
+<li><a href="..\index.htm#GoodToKnow">Good To Know</a>
+<li><a href="..\index.htm#GettingThingsDone">Getting Things Done</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Rotate an Image Around its Center</h1>
+<hr>
+
+<p><em>Tip by Smurfier and JSMorley</em></p>
+<p>There may be a time when you want to rotate an image around its own center, as demonstrated below:</p>
+<div class="exampleprev">
+<img src="..\img\rotate-an-image-around-its-center\RotateImage1.gif">
+</div>
+<p>Probably the easiest approach is to use a <a href="..\..\manual\meters\rotator\index.htm">Rotator</a> meter. What you will need to do is set the <code>OffsetX</code> and <code>OffsetY</code> to the middle
+of the image based on the width and height of the original. Then you will need to find the total width and height of the container needed to rotate the image, which will be the length
+of a line from the upper left to the bottom right corners. These will be used to set the <code>W</code> and <code>H</code> of the Rotator meter.</p>
+<p>Then you can use any measure that returns a value between 0% and 100% (with any number of "steps") as the <code>MeasureName</code> of the meter, and the image will rotate around its own center based on the current value of that measure.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">50</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">ImageW</span>=<span class="number">128</span></span><br><span class="line"><span class="attr">ImageH</span>=<span class="number">64</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureRotate]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=(MeasureRotate % <span class="number">360</span>) + <span class="number">1</span></span><br><span class="line"><span class="attr">MaxValue</span>=<span class="number">360</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterRotate]</span></span><br><span class="line"><span class="attr">Meter</span>=Rotator</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureRotate</span><br><span class="line"><span class="attr">ImageName</span>=Rectangle.png</span><br><span class="line"><span class="attr">OffsetX</span>=(<span class="comment">#ImageW# / 2)</span></span><br><span class="line"><span class="attr">OffsetY</span>=(<span class="comment">#ImageH# / 2)</span></span><br><span class="line"><span class="attr">W</span>=(SQRT(<span class="comment">#ImageW# ** 2 + #ImageH# ** 2))</span></span><br><span class="line"><span class="attr">H</span>=(SQRT(<span class="comment">#ImageW# ** 2 + #ImageH# ** 2))</span></span><br></pre></td></tr></table></figure>
+The only complicated bit are those <a href="..\..\manual\measures\calc\index.htm#Forumlas">formulas</a> to obtain the <code>W</code> and <code>H</code> settings for the meter. The formula <code>(SQRT(ImageWidth ** 2 + ImageHeight ** 2))</code> <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Pythagorean_theorem">[Reference]</a> will measure the length from the top left to bottom right of the image, which is the size the meter will need to be to rotate the image in place without cutting off corners.
+<div class="exampleprev">
+<img src="..\img\rotate-an-image-around-its-center\RotateImage2.png">
+</div><br><br>
+<p><b>Note:</b> If the visible part of the image being used is "round", then you will not need the formula to set the width and height of the meter. In fact, doing so will make the overall size of the meter container unnecessarily large. Simply use the full size of the image when specifying the <code>W</code> and <code>H</code> options in the meter.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">50</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">ImageW</span>=<span class="number">128</span></span><br><span class="line"><span class="attr">ImageH</span>=<span class="number">128</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureRotate]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=(MeasureRotate % <span class="number">360</span>) + <span class="number">1</span></span><br><span class="line"><span class="attr">MaxValue</span>=<span class="number">360</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterRotate]</span></span><br><span class="line"><span class="attr">Meter</span>=Rotator</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureRotate</span><br><span class="line"><span class="attr">ImageName</span>=Circle.png</span><br><span class="line"><span class="attr">OffsetX</span>=(<span class="comment">#ImageW# / 2)</span></span><br><span class="line"><span class="attr">OffsetY</span>=(<span class="comment">#ImageH# / 2)</span></span><br><span class="line">W=<span class="comment">#ImageW#</span></span><br><span class="line">H=<span class="comment">#ImageH#</span></span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

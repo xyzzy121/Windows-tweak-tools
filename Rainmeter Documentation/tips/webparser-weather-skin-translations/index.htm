@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="WebParser: Weather Skin Translations - Rainmeter Docs">
+<meta property="og:title" content="WebParser: Weather Skin Translations - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>WebParser: Weather Skin Translations - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Tips &amp; Tricks</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#BeyondTheBasics">Beyond the Basics</a>
+<li><a href="..\index.htm#GoodToKnow">Good To Know</a>
+<li><a href="..\index.htm#GettingThingsDone">Getting Things Done</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">WebParser: Weather Skin Translations</h1>
+<hr>
+
+<p>One of the things that is often asked is "How can I translate the weather conditions text, returned by WebParser when creating or editing a weather skin, to my own language?"</p>
+<p>This actually pretty simple to do. First find the measure or measures (often in a weather skin there will be 3 - 5 of them) which are returning the "weather conditions" text. It will look something like this:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureCurrentWeatherConditions]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureYahooWeather]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">34</span></span><br></pre></td></tr></table></figure>
+<p><em>Note that a weather skin normally works by having a first, primary measure that retrieves all the information from the weather RSS feed in one shot. Then there will be subsequent measures which will extract the individual bits of information from the large array of values returned by this first measure. So you will often see something like:</em></p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureYahooWeather]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">UpdateRate</span>=<span class="number">600</span></span><br><span class="line"><span class="attr">URL</span>=http://weather.yahooapis.com/forecastrss?p=<span class="comment">#Location#&amp;u=#Unit#</span></span><br><span class="line"><span class="attr">RegExp</span>=(?siU)&lt;title&gt;.*- (.*)&lt;/title&gt;.*&lt;link&gt;(.*)/\*(.*)&lt;/link&gt;.*&lt;description&gt;(.*)&lt;/description&gt;.*&lt;language&gt;(.*)&lt;/language&gt;.*&lt;lastBuildDate&gt;(.*)&lt;/lastBuildDate&gt;.*&lt;yweather:location city=<span class="string">&quot;(.*)&quot;</span>.*region=<span class="string">&quot;(.*)&quot;</span>.*country=<span class="string">&quot;(.*)&quot;</span>.*&lt;yweather:units temperature=<span class="string">&quot;(.*)&quot;</span>.*distance=<span class="string">&quot;(.*)&quot;</span>.* pressure=<span class="string">&quot;(.*)&quot;</span>.*speed=<span class="string">&quot;(.*)&quot;</span>.*&lt;yweather:wind chill=<span class="string">&quot;(.*)&quot;</span>.*direction=<span class="string">&quot;(.*)&quot;</span>.*speed=<span class="string">&quot;(.*)&quot;</span>.*&lt;yweather:atmosphere humidity=<span class="string">&quot;(.*)&quot;</span>.* visibility=<span class="string">&quot;(.*)&quot;</span>.*pressure=<span class="string">&quot;(.*)&quot;</span>.* rising=<span class="string">&quot;(.*)&quot;</span>.*&lt;yweather:astronomy sunrise=<span class="string">&quot;(.*)&quot;</span>.*sunset=<span class="string">&quot;(.*)&quot;</span>.*&lt;title&gt;(.*)&lt;/title&gt;.*&lt;width&gt;(.*)&lt;/width&gt;.*&lt;height&gt;(.*)&lt;/height&gt;.*&lt;link&gt;(.*)&lt;/link&gt;.*&lt;url&gt;(.*)&lt;/url&gt;.*&lt;title&gt;(.*)&lt;/title&gt;.*&lt;geo:lat&gt;(.*)&lt;/geo:lat&gt;.*&lt;geo:long&gt;(.*)&lt;/geo:long&gt;.*&lt;link&gt;(.*)/\*(.*)&lt;/link&gt;.*&lt;pubDate&gt;(.*)&lt;/pubDate&gt;.*&lt;yweather:condition text=<span class="string">&quot;(.*)&quot;</span>.*code=<span class="string">&quot;(.*)&quot;</span>.*temp=<span class="string">&quot;(.*)&quot;</span>.*date=<span class="string">&quot;(.*)&quot;</span>.*&lt;img src=<span class="string">&quot;(.*)&quot;</span>.*Current Conditions:&lt;/b&gt;&lt;br /&gt;(.*)&lt;BR /&gt;.*Forecast:&lt;/b&gt;&lt;BR /&gt;(.*)&lt;br /&gt;.*(.*)&lt;br /&gt;.*&lt;a href=<span class="string">&quot;(.*)/\*(.*)&quot;</span>&gt;.*provided by &lt;a href=<span class="string">&quot;(.*)&quot;</span> &gt;(.*)&lt;/a&gt;.*&lt;yweather:forecast day=<span class="string">&quot;(.*)&quot;</span>.*date=<span class="string">&quot;(.*)&quot;</span>.*low=<span class="string">&quot;(.*)&quot;</span>.*high=<span class="string">&quot;(.*)&quot;</span>.*text=<span class="string">&quot;(.*)&quot;</span>.*code=<span class="string">&quot;(.*)&quot;</span>.*&lt;yweather:forecast day=<span class="string">&quot;(.*)&quot;</span>.*date=<span class="string">&quot;(.*)&quot;</span>.*low=<span class="string">&quot;(.*)&quot;</span>.*high=<span class="string">&quot;(.*)&quot;</span>.*text=<span class="string">&quot;(.*)&quot;</span>.*code=<span class="string">&quot;(.*)&quot;</span>.*</span><br></pre></td></tr></table></figure>
+<p><em>Followed by something like this later on in the skin:</em></p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureCurrentWeatherConditions]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureYahooWeather]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">34</span></span><br></pre></td></tr></table></figure>
+<p><em>As you can see, the measure [MeasureCurrentWeatherConditions] is using as its "Url=" the result of [MeasureYahooWeather] (our first main RSS measure) and specifically asking for StringIndex 34, the index in the array of returned values which holds the first of the "Weather Condition" values, in this case the "Current Conditions".</em></p>
+<p>Since Weather.com / Yahoo Weather return these values in English, you may want to translate them to your native language. To do so, add a line at the end of each of the measures that specifically return "Weather Conditions" text. In our current example, after the line "StringIndex=34".</p>
+<p><b>RegExpSubstitute=1</b><br>
+<b>Substitute="(?i)^Cloudy$":"Bewölkt","^Partly Cloudy$":"Teilweise Bewölkt"</b></p>
+<p>And so on... Continuing with the pattern:</p>
+<p><b>Substitute="Thing to replace":"Thing to replace with","Thing to replace":"Thing to replace with"</b></p>
+<p>The punctuation is important. "Thing to replace" and "Thing to replace with" are enclosed in quotes. There is a colon between them. Pairs are separated with commas.</p>
+<p>We use RegExpSubstitute so a regular expression comparison is used. Then in the Substitute option, we first tell it to be case insensitive <code>(?i)</code>, and look for very specific strings by using start-of-string <code>^</code> and end-of-string <code>$</code> as boundaries.</p>
+<p>That is all there is to it. In our example above, "Cloudy" will be replaced with "Bewölkt" when the text is later displayed in a meter.</p>
+<br>
+<p><em>What "Weather Conditions" text codes are returned by Yahoo Weather so I know what to translate?"</em></p>
+<p>Here is a list with the number of the icon and the text returned:</p>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">0		tornado</span><br><span class="line">1		tropical storm</span><br><span class="line">2		hurricane</span><br><span class="line">3		severe thunderstorms</span><br><span class="line">4		thunderstorms</span><br><span class="line">5		mixed rain and snow</span><br><span class="line">6		mixed rain and sleet</span><br><span class="line">7		mixed snow and sleet</span><br><span class="line">8		freezing drizzle</span><br><span class="line">9		drizzle</span><br><span class="line">10		freezing rain</span><br><span class="line">11		showers</span><br><span class="line">12		showers</span><br><span class="line">13		snow flurries</span><br><span class="line">14		light snow showers</span><br><span class="line">15		blowing snow</span><br><span class="line">16		snow</span><br><span class="line">17		hail</span><br><span class="line">18		sleet</span><br><span class="line">19		dust</span><br><span class="line">20		foggy</span><br><span class="line">21		haze</span><br><span class="line">22		smoky</span><br><span class="line">23		blustery</span><br><span class="line">24		windy</span><br><span class="line">25		cold</span><br><span class="line">26		cloudy</span><br><span class="line">27		mostly cloudy (night, but the &quot;night&quot; text is not included)</span><br><span class="line">28		mostly cloudy (day, but the &quot;day&quot; text is not included)</span><br><span class="line">29		partly cloudy (night, but the &quot;night&quot; text is not included)</span><br><span class="line">30		partly cloudy (day, but the &quot;day&quot; text is not included)</span><br><span class="line">31		clear (night, but the &quot;night&quot; text is not included)</span><br><span class="line">32		sunny</span><br><span class="line">33		fair (night, but the &quot;night&quot; text is not included)</span><br><span class="line">34		fair (day, but the &quot;day&quot; text is not included)</span><br><span class="line">35		mixed rain and hail</span><br><span class="line">36		hot</span><br><span class="line">37		isolated thunderstorms</span><br><span class="line">38		scattered thunderstorms</span><br><span class="line">39		scattered thunderstorms</span><br><span class="line">40		scattered showers</span><br><span class="line">41		heavy snow</span><br><span class="line">42		scattered snow showers</span><br><span class="line">43		heavy snow</span><br><span class="line">44		partly cloudy</span><br><span class="line">45		thundershowers</span><br><span class="line">46		snow showers</span><br><span class="line">47		isolated thundershowers</span><br><span class="line">3200	not available</span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

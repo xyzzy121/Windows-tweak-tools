@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="C# Plugin Overview - Rainmeter Docs">
+<meta property="og:title" content="C# Plugin Overview - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>C# Plugin Overview - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\index.htm"><img src="..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\index.htm">Developers</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\plugin-anatomy\index.htm">Anatomy of a Plugin</a>
+<li><a href="..\cpp\index.htm">C++ Overview</a>
+<ul>
+<li><a href="..\cpp\api\index.htm">C++ API Reference</a>
+</li></ul>
+<li><a href="index.htm">C# Overview</a>
+<ul>
+<li><a href="api\index.htm">C# API Reference</a>
+</li></ul>
+<li><a href="..\guidelines\index.htm">Plugin Guidelines</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">C# Plugin Overview</h1>
+<hr>
+
+<p>When making a Rainmeter plugin there are a some basic functions that your code must export, as well as several optional ones you may want to export.</p>
+<p>A copy of the API with some examples can be found <a target="_blank" rel="noopener" href="https://github.com/rainmeter/rainmeter-plugin-sdk">here</a> as well as the basics of each function listed below:</p>
+<h2 id="Required">Required functions</h2>
+<dl>
+<dt id="Initialize"><code>Initialize</code> <small><code>void Initialize(ref IntPtr data, IntPtr rm)</code></small></dt>
+<dd>
+<p>Called when a measure is created (i.e. when a skin is loaded or when a skin is refreshed). Create your measure object here. Any other initialization or code that only needs to happen once should be placed here.</p>
+<p>
+<ul>
+<li><code>data</code> : You may allocate and store measure specific data to this variable. The object you save here will be passed to other functions below.</li>
+<li><code>rm</code> : Internal pointer that is passed to most <a href="api\index.htm">API functions</a>. If needed, you may save this value for later use (like for <a href="api\index.htm#Log">logging functions</a>).</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">DllExport</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Initialize</span>(<span class="params"><span class="keyword">ref</span> IntPtr data, IntPtr rm</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	Measure measure = <span class="keyword">new</span> Measure();</span><br><span class="line">	data = GCHandle.ToIntPtr(GCHandle.Alloc(measure));</span><br><span class="line">	Rainmeter.API api = (Rainmeter.API)rm;</span><br><span class="line">	<span class="comment">// Do any initialization here, saving any values you want to into data for later</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="Reload"><code>Reload</code> <small><code>void Reload(IntPtr data, IntPtr rm, ref double maxValue)</code></small></dt>
+<dd>
+<p>Called by Rainmeter when the measure settings are to be read directly after <a href="index.htm#Intialize">Initialize</a>. If <code>DynamicVariables=1</code> is set on the measure, this function is called just before every call to the <a href="index.htm#Update">Update</a> function during the update cycle.</p>
+<p>
+<ul>
+<li><code>data</code> : Pointer to the data set in <a href="index.htm#Initialize">Initialize</a>.</li>
+<li><code>rm</code> : Internal pointer that is passed to most <a href="api\index.htm">API functions</a>.</li>
+<li><code>maxValue</code> : Pointer to a double that can be assigned to the default maximum value for this measure. A value of <code>0.0</code> will make it based on the highest value returned from the <a href="index.htm#Update">Update</a> function. Do not set maxValue unless necessary.</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">DllExport</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Reload</span>(<span class="params">IntPtr data, IntPtr rm, <span class="keyword">ref</span> <span class="built_in">double</span> maxValue</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	Measure measure = (Measure)data;</span><br><span class="line">	<span class="comment">// Read measures values from the measure (see API functions)</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// The expected value returned in the Update function will not exceed 100.0</span></span><br><span class="line">	maxValue = <span class="number">100.0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="Update"><code>Update</code> <small><code>double Update(IntPtr data)</code></small></dt>
+<dd>
+<p>Called by Rainmeter when a measure value is to be updated (i.e. on each update cycle). The number returned represents the number value of the measure.</p>
+<p>
+<ul>
+<li><code>data</code> : Pointer to the data set in <a href="index.htm#Initialize">Initialize</a>.</li>
+</ul>
+
+<p><b>Returns</b>: The number value of the measure (as a double). This value will be used as the string value of the measure if the <a href="index.htm#GetString">GetString</a> function is not used or returns a null.</p>
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">DllExport</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">double</span> <span class="title">Update</span>(<span class="params">IntPtr data</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	Measure measure = (Measure)data;</span><br><span class="line">	<span class="comment">//Any processing that needs to happen during the update cycle should happen here</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0.0</span>; <span class="comment">//return whatever value you want rainmeter to display here</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="Finalize"><code>Finalize</code> <small><code>void Finalize(IntPtr data)</code></small></dt>
+<dd>
+<p>Called by Rainmeter when a measure is about to be destroyed. Perform cleanup here.</p>
+<p>
+<ul>
+<li><code>data</code> : Pointer to the data set in <a href="index.htm#Initialize">Initialize</a>.</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">DllExport</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Finalize</span>(<span class="params">IntPtr data</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	Measure measure = (Measure)data;</span><br><span class="line">	<span class="comment">// Do any cleanup here</span></span><br><span class="line">	GCHandle.FromIntPtr(data).Free();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+</dl>
+<h2 id="Optional">Optional functions</h2>
+<dl>
+<dt id="GetString"><code>GetString</code> <small><code>IntPtr GetString(IntPtr data)</code></small></dt>
+<dd>
+<p>Optional function that returns the string value of the measure. Since this function is called 'on-demand' and may be called multiple times during the update cycle, do <b>not</b> process any data or consume CPU in this function. Do as minimal processing as possible to return the desired string. It is recommended to do all processing during the <a href="index.htm#Update">Update</a> function and set a string variable there and retrieve that string variable in this function. The return value must be marshalled from a C# style string to a C style string (WCHAR*).</p>
+<p>
+<ul>
+<li><code>data</code> : Pointer to the data set in <a href="index.htm#Initialize">Initialize</a>.</li>
+</ul>
+
+<p><b>Returns</b>: The string value for the measure. If you want the number value (returned from <a href="index.htm#Update">Update</a>) to be used as the measures value, return null instead. The return value must be marshalled.</p>
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">DllExport</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> IntPtr <span class="title">GetString</span>(<span class="params">IntPtr data</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	Measure measure = (Measure)data;</span><br><span class="line">	<span class="keyword">if</span> (something)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">// Return a string value to use for this measure (must be marshalled)</span></span><br><span class="line">		<span class="keyword">return</span> Marshal.StringToHGlobalUni(<span class="string">&quot;SomeValue&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// Return null when you want to use the number</span></span><br><span class="line">	<span class="comment">//  value for this measure (the value returned from the Update function)</span></span><br><span class="line">	<span class="keyword">return</span> IntPtr.Zero;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="ExecuteBang"><code>ExecuteBang</code> <small><code>void ExecuteBang(IntPtr data, string args)</code></small></dt>
+<dd>
+<p>Optional function that will process a custom bang when called from <a href="..\..\..\manual\bangs\index.htm#CommandMeasure">!CommandMeasure</a>. This can be used to change some data within the measure, or to interact with another application.</p>
+<p>
+<ul>
+<li><code>data</code> : Pointer to the data set in <a href="index.htm#Initialize">Initialize</a>.</li>
+<li><code>args</code> : String that contains any arguments to parse. <code>args</code> is a LPCWSTR in C++ and must be marshalled to a C# style string.</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">DllExport</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">ExecuteBang</span>(<span class="params">IntPtr data, [MarshalAs(UnmanagedType.LPWStr</span>)] <span class="built_in">string</span> args)</span></span><br><span class="line">&#123;</span><br><span class="line">	Measure measure = (Measure)data;</span><br><span class="line">	<span class="comment">// !CommandMeasure was used on this measure...any arguments will be in args</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="Custom"><code>Custom function</code> <small><code>string <em>func</em>(IntPtr data, const int argc, const string[] argv)</code></small></dt>
+<dd>
+<p>You can define a custom function to be used in a section variable. The name of the function is the name to be used in the skin file as a section variable. The function <u>must</u> be exported and the function prototype must be: <code>string <em>func</em>(IntPtr data, const int argc, const string[] argv)</code>.</p>
+<p>The function name can be anything <b>except</b> the following: <code>Initialize</code>, <code>Reload</code>, <code>Update</code>, <code>Finialize</code>, <code>GetString</code>, <code>ExecuteBang</code>, <code>Update2</code>, <code>GetPluginAuthor</code>, and <code>GetPluginVersion</code>.</p>
+<p>The skin will call this function (as a section variable) like this: <code>[PluginMeasure:func(someArg1, someArg2)]</code>.</p>
+<p>
+<ul>
+<li><code>data</code> : Pointer to the data set in <a href="index.htm#Initialize">Initialize</a>.</li>
+<li><code>argc</code> : Number of arguments passed to the function.</li>
+<li><code>argv</code> : Arguments passed to the function as an array of strings. <code>argv</code> is an array of strings (LPCWSTR) in C++ and must be marshalled to a C# style string.</li>
+</ul>
+
+<p><b>Returns</b>: A string to replace the section variable with. If a null is returned, the variable will not be replaced and remain unchanged. The return value must be marshalled.</p>
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">[<span class="meta">DllExport</span>]</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> IntPtr <span class="title">ToLower</span>(<span class="params">IntPtr data, <span class="keyword">const</span> <span class="built_in">int</span> argc,</span></span></span><br><span class="line"><span class="params"><span class="function">	[MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.LPWStr, SizeParamIndex = <span class="number">2</span></span>)] <span class="keyword">const</span> <span class="built_in">string</span>[] argv)</span></span><br><span class="line">&#123;</span><br><span class="line">	Measure measure = (Measure)data;</span><br><span class="line">	<span class="keyword">if</span> (argc &gt; <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">// Do something and return a value to replace variable with (must be marshalled)</span></span><br><span class="line">		<span class="keyword">return</span> Marshal.StringToHGlobalUni(doSomething(argv));</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> IntPtr.Zero;  <span class="comment">// Do not replace the variable</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\js\main.js"></script>
+<script src="..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

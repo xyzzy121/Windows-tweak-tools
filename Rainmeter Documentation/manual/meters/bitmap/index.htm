@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Bitmap meter - Rainmeter Docs">
+<meta property="og:title" content="Bitmap meter - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Bitmap meter - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\index.htm"><img src="..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\getting-started\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\..\getting-started\setting-up\index.htm">Setting Up</a>
+<li><a href="..\..\getting-started\using-rainmeter\index.htm">Using Rainmeter</a>
+<li><a href="..\..\getting-started\customizing\index.htm">Customizing</a>
+<li><a href="..\..\getting-started\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\..\getting-started\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\..\getting-started\basic-tutorials\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\..\getting-started\basic-tutorials\launcher\index.htm">Launcher</a>
+<li><a href="..\..\getting-started\basic-tutorials\clock\index.htm">Clock</a>
+<li><a href="..\..\getting-started\basic-tutorials\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\installing-rainmeter\index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="..\..\installing-rainmeter\auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\..\user-interface\about\index.htm">About</a>
+<li><a href="..\..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<ul>
+<li><a href="..\..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\index.htm">Meters</a>
+<ul>
+<li><a href="..\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\bar\index.htm">Bar</a>
+<li><a href="index.htm">Bitmap</a>
+<li><a href="..\button\index.htm">Button</a>
+<li><a href="..\histogram\index.htm">Histogram</a>
+<li><a href="..\image\index.htm">Image</a>
+<li><a href="..\line\index.htm">Line</a>
+<li><a href="..\rotator\index.htm">Rotator</a>
+<li><a href="..\roundline\index.htm">Roundline</a>
+<li><a href="..\shape\index.htm">Shape</a>
+<li><a href="..\string\index.htm">String</a>
+<ul>
+<li><a href="..\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\measures\index.htm">Measures</a>
+<ul>
+<li><a href="..\..\measures\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\measures\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\..\measures\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\..\measures\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\..\measures\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\..\measures\calc\index.htm">Calc</a>
+<li><a href="..\..\measures\cpu\index.htm">CPU</a>
+<li><a href="..\..\measures\freediskspace\index.htm">FreeDiskSpace</a>
+<li><a href="..\..\measures\loop\index.htm">Loop</a>
+<li><a href="..\..\measures\mediakey\index.htm">MediaKey</a>
+<li><a href="..\..\measures\memory\index.htm">Memory</a>
+<li><a href="..\..\measures\net\index.htm">Net</a>
+<li><a href="..\..\measures\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\..\measures\plugin\index.htm">Plugin</a>
+<li><a href="..\..\measures\process\index.htm">Process</a>
+<li><a href="..\..\measures\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\..\measures\registry\index.htm">Registry</a>
+<li><a href="..\..\measures\script\index.htm">Script</a>
+<li><a href="..\..\measures\string\index.htm">String</a>
+<li><a href="..\..\measures\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\..\measures\time\index.htm">Time</a>
+<li><a href="..\..\measures\uptime\index.htm">Uptime</a>
+<li><a href="..\..\measures\webparser\index.htm">WebParser</a>
+<li><a href="..\..\measures\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\..\plugins\index.htm">Plugins</a>
+<ul>
+<li><a href="..\..\plugins\actiontimer\index.htm">ActionTimer</a>
+<li><a href="..\..\plugins\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\..\plugins\coretemp\index.htm">CoreTemp</a>
+<li><a href="..\..\plugins\fileview\index.htm">FileView</a>
+<li><a href="..\..\plugins\folderinfo\index.htm">FolderInfo</a>
+<li><a href="..\..\plugins\inputtext\index.htm">InputText</a>
+<li><a href="..\..\plugins\ping\index.htm">Ping</a>
+<li><a href="..\..\plugins\power\index.htm">Power</a>
+<li><a href="..\..\plugins\quote\index.htm">Quote</a>
+<li><a href="..\..\plugins\resmon\index.htm">ResMon</a>
+<li><a href="..\..\plugins\runcommand\index.htm">RunCommand</a>
+<li><a href="..\..\plugins\speedfan\index.htm">SpeedFan</a>
+<li><a href="..\..\plugins\usagemonitor\index.htm">UsageMonitor</a>
+<li><a href="..\..\plugins\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\..\plugins\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\..\plugins\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\..\plugins\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\..\plugins\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\..\plugins\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\bangs\index.htm">Bangs</a>
+<li><a href="..\..\formulas\index.htm">Formulas</a>
+<li><a href="..\..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\..\groups\index.htm">Groups</a>
+<li><a href="..\..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Bitmap meter</h1>
+<hr>
+
+<p><code>Meter=Bitmap</code> displays frame(s) of an image depending on a measure value.</p>
+<h2>Options</h2>
+<dl>
+<dt>General meter options</dt>
+<dd>
+<p>All <a href="..\general-options\index.htm">general meter options</a> are valid, <b>except</b> <code>W</code> and <code>H</code>.</p>
+<p>The size of the meter is automatically determined by the height of the bitmap image and the number of image frames displayed.</p>
+</dd>
+<dt>General image options</dt>
+<dd>
+<p>All <a href="..\general-options\image-options\index.htm">general image options</a> are valid for <code>BitmapImage</code>, <b>except</b> <code>ImageCrop</code>, and <code>ImageRotate</code>.</p>
+</dd>
+<dt id="MeasureName"><code>MeasureName</code></dt>
+<dd>
+<p>Name of the measure used to determine the frame(s) to display. There are two kinds of values that can be used:</p>
+<ul>
+<li>The measure returns a <a href="..\..\measures\index.htm#Percentage">percentual value</a>.<br><br>
+This can be used to display a single frame from the bitmap image, based on the percentage value. This can be used to create animations.<br><br>
+If for example the image contains 5 frames, the first frame is displayed when the percentual measure value is between 0% and 19%, the second frame is shown from 20% to 39% , and so on.<br><br></li>
+<li>The measure returns any integer numeric value. This is an <code>int64</code> numeric type, and can be any value up to <code>9,223,372,036,854,775,807</code>. Fractional values will be rounded to whole numbers.<br><br>
+This can be used to display a numeric value using multiple frames from the bitmap image.<br><br>
+In this case, you will use <a href="#BitmapExtend">BitmapExtend</a> with a value of 1, and set <a href="#BitmapDigits">BitmapDigits</a> with a value equal to the greatest number of digits the value can be. This will be used with a <a href="#BitmapImage">BitmapImage</a> that consists of the numbers from 0 to 9, and a <a href="#BitmapFrames">BitmapFrames</a> of 10. This will then display the entire number using the appropriate numeric (0-9) frames from the bitmap image.</li>
+</ul>
+</dd>
+<dt id="BitmapImage"><code>BitmapImage</code></dt>
+<dd>
+<p><a href="..\..\skins\option-types\index.htm#Path">Path</a> to the image. The frames in the images can be laid out either horizontally or vertically (the orientation is determined automatically from the height or the width of the image). The size of a single frame is also determined automatically, so no extra space need surround the frames.</p>
+<p>Some help with creating bitmap images to use in this meter can be found at <a href="..\..\..\tips\button-images\index.htm">Button Images</a>, as the Button and Bitmap meters use the same kind of images made of frames combined into a single image file. Think of a filmstrip.</p>
+</dd>
+<dt id="BitmapFrames"><code>BitmapFrames</code> <small>Default: <code>1</code></small></dt>
+<dd>
+<p>Number of frames in the image.</p>
+</dd>
+<dt id="BitmapTransitionFrames"><code>BitmapTransitionFrames</code></dt>
+<dd>
+<p>The number of transition frames per each actual frame. The transition frames are frames which are displayed when the measure value changes. The same number of transition frames must be used after each regular frame. The <a href="..\..\skins\rainmeter-section\index.htm#TransitionUpdate">TransitionUpdate</a> option in the [Rainmeter] section determines the rate at which the transition frames change during the transition. The total duration of the transition is therefore <code>TransitionUpdate</code> multiplied by <code>BitmapTransitionFrames</code>.</p>
+<p><b>Note:</b> <code>BitmapFrames</code> always defines the total number of frames in the bitmap, including the transition frames.</p>
+<p><b>Example:</b> If the bitmap has 10 values and each transition consists of 4 additional frames, then <code>BitmapFrames</code> should be set to <code>50</code> and <code>BitmapTransitionFrames</code> to <code>4</code>.</p>
+</dd>
+<dt id="BitmapZeroFrame"><code>BitmapZeroFrame</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>If set to <code>1</code>, a measured <em>percentual</em> value of zero is included in the calculation of the first frame. Since there are 100 percentage "points" from 0-99%, and 101 from 0-100%, BitmapZeroFrame should be used when measuring from 0-100%, or the meter will overrun the bitmap when the value is at 100%.</p>
+</dd>
+<dt id="BitmapExtend"><code>BitmapExtend</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>If set to <code>1</code> the bitmap is extended to display the whole measured value.</p>
+<p><b>Example:</b> If you define a bitmap that defines frames from 0 to 9 you can use this to display the measured value as the bitmap numbers.</p>
+</dd>
+<dt id="BitmapDigits"><code>BitmapDigits</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>Number of digits that are drawn (for <code>BitmapExtend=1</code>). The first frame is used if the value doesn't have as many digits as this defines.</p>
+</dd>
+<dt id="BitmapAlign"><code>BitmapAlign</code></dt>
+<dd>
+<p>Alignment of the bitmap value (for <code>BitmapExtend=1</code>). Valid values are <code>Left</code>, <code>Center</code>, and <code>Right</code>.</p>
+</dd>
+<dt id="BitmapSeparation"><code>BitmapSeparation</code> <small>Default: <code>0</code></small></dt>
+<dd>
+<p>Positive or negative number of pixels used as the separation between digits when <code>BitmapDigits</code> is higher than one.</p>
+</dd>
+</dl>
+<h2>Example</h2>
+<a href="..\..\examples\ExampleMeterBitmap.rmskin" class="download"></a>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">AccurateText</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Metadata]</span></span><br><span class="line"><span class="attr">Name</span>=ExampleMeterBitmap</span><br><span class="line"><span class="attr">Author</span>=The Rainmeter Team</span><br><span class="line"><span class="attr">Information</span>=Example of the Bitmap meter</span><br><span class="line"><span class="attr">License</span>=Creative Commons Attribution-Non-Commercial-Share Alike <span class="number">3.0</span></span><br><span class="line"><span class="attr">Version</span>=<span class="number">1.0</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureCPU]</span></span><br><span class="line"><span class="attr">Measure</span>=CPU</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCellBack1]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line">ImageName=<span class="comment">#@#Images\CellBack.png</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCellBack2]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line">ImageName=<span class="comment">#@#Images\CellBack.png</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCellBack3]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line">ImageName=<span class="comment">#@#Images\CellBack.png</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCPU]</span></span><br><span class="line"><span class="attr">Meter</span>=Bitmap</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureCPU</span><br><span class="line"><span class="attr">X</span>=<span class="number">8</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">8</span></span><br><span class="line">BitmapImage=<span class="comment">#@#Images\Numbers.png</span></span><br><span class="line"><span class="attr">BitmapFrames</span>=<span class="number">10</span></span><br><span class="line"><span class="attr">BitmapExtend</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">BitmapDigits</span>=<span class="number">3</span></span><br><span class="line"><span class="attr">BitmapSeparation</span>=<span class="number">12</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCellFore1]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line">ImageName=<span class="comment">#@#Images\CellFore.png</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCellFore2]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line">ImageName=<span class="comment">#@#Images\CellFore.png</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterCellFore3]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line">ImageName=<span class="comment">#@#Images\CellFore.png</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">3</span>R</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br></pre></td></tr></table></figure>
+<div class="exampleprev">
+<a href="..\..\img\example-meters\ExampleMeterBitmap.jpg" data-fancybox=""><img src="..\..\img\example-meters\ExampleMeterBitmap.jpg"></a>
+<p>An example skin demonstrating a Bitmap meter.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\js\main.js"></script>
+<script src="..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

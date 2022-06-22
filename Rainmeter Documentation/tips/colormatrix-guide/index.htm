@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="ColorMatrix Guide - Rainmeter Docs">
+<meta property="og:title" content="ColorMatrix Guide - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>ColorMatrix Guide - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Tips &amp; Tricks</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#BeyondTheBasics">Beyond the Basics</a>
+<li><a href="..\index.htm#GoodToKnow">Good To Know</a>
+<li><a href="..\index.htm#GettingThingsDone">Getting Things Done</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">ColorMatrix Guide</h1>
+<hr>
+
+<p><em>Tip by kenz0</em></p>
+<p>The <a href="..\..\manual\meters\general-options\image-options\index.htm#ColorMatrix">ColorMatrix</a> option represents a 5x5 matrix used to manipulate the color values of an image in an <a href="..\..\manual\meters\image\index.htm">Image</a> meter. It is divided into five separate parameters, one for each row, each numbered. The default matrix is as follows:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">1</span><span class="comment">; 0; 0; 0; 0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">0</span><span class="comment">; 1; 0; 0; 0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">0</span><span class="comment">; 0; 1; 0; 0</span></span><br><span class="line"><span class="attr">ColorMatrix4</span>=<span class="number">0</span><span class="comment">; 0; 0; 1; 0</span></span><br><span class="line"><span class="attr">ColorMatrix5</span>=<span class="number">0</span><span class="comment">; 0; 0; 0; 1</span></span><br></pre></td></tr></table></figure>
+<p>The values on the main diagonal are, from top-left to bottom-right: Red, Green, Blue, Alpha and a placeholder. The values represent the percentage of of the particular value present in the image, where 0.0 is none and 1.0 is normal. The remaining entries in the matrix allow a color to have its value modified in terms of another color (ex: the value of Red might have half of the Blue value added), with the entries in the final row (ColorMatrix5) determining offset values that are added directly to the color. (ex: ColorMatrix5=0.5; 0; 0; 0; 1 will add 50% to the red value)</p>
+<p>The following shows the actual matrix values of the brightness, contrast, and saturation.</p>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">Brightness Matrix    Contrast Matrix         Saturation Matrix</span><br><span class="line"></span><br><span class="line">     R G B A W           R G B A W            R   G   B   A   W</span><br><span class="line"></span><br><span class="line"> R  [1 0 0 0 0]      R  [c 0 0 0 0]      R  [sr+s sr  sr  0   0]</span><br><span class="line"> G  [0 1 0 0 0]      G  [0 c 0 0 0]      G  [ sg sg+s sg  0   0]</span><br><span class="line"> B  [0 0 1 0 0]      B  [0 0 c 0 0]      B  [ sb  sb sb+s 0   0]</span><br><span class="line"> A  [0 0 0 1 0]      A  [0 0 0 1 0]      A  [ 0   0   0   1   0]</span><br><span class="line"> W  [b b b 0 1]      W  [t t t 0 1]      W  [ 0   0   0   0   1]</span><br><span class="line"></span><br><span class="line"> b = brightness      c = contrast         s  = saturation</span><br><span class="line">                     t = (1.0 - c) / 2.0  sr = (1 - s) * lumR</span><br><span class="line"> Legend                                   sg = (1 - s) * lumG</span><br><span class="line"> R = red                                  sb = (1 - s) * lumB</span><br><span class="line"> G = green</span><br><span class="line"> B = blue                                 lumR = 0.3086  or  0.2125</span><br><span class="line"> A = alpha                                lumG = 0.6094  or  0.7154</span><br><span class="line"> W = white                                lumB = 0.0820  or  0.0721</span><br></pre></td></tr></table></figure>
+<ul>
+<li>The brightness matrix is a simple translation matrix on the RGB elements.</li>
+<li>The contrast matrix is a scaling matrix on the RGB elements. The extra translation parameters in the contrast matrix is used for shifting the base color (when c = 0)from black to gray.</li>
+<li>The saturation matrix re-adjust the RGB color distribution so that at s = 0, R = G = B = luminance brightness in grayscale).</li>
+</ul>
+<p>From the above information, we can calculate the proper color matrix to transform a given image. To use all three matrices, we need to multiply them together into one single transformation matrix (using matrix multiplication). The result of multiplication is as follows:</p>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">     R G B A W            R G B A W             R   G   B   A   W</span><br><span class="line"></span><br><span class="line"> R  [1 0 0 0 0]       R  [c 0 0 0 0]       R  [sr+s sr  sr  0   0]</span><br><span class="line"> G  [0 1 0 0 0]       G  [0 c 0 0 0]       G  [ sg sg+s sg  0   0]</span><br><span class="line"> B  [0 0 1 0 0]   X   B  [0 0 c 0 0]   X   B  [ sb  sb sb+s 0   0]</span><br><span class="line"> A  [0 0 0 1 0]       A  [0 0 0 1 0]       A  [ 0   0   0   1   0]</span><br><span class="line"> W  [b b b 0 1]       W  [t t t 0 1]       W  [ 0   0   0   0   1]</span><br><span class="line"></span><br><span class="line">Brightness Matrix     Contrast Matrix          Saturation Matrix</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">                        R      G      B      A      W</span><br><span class="line"></span><br><span class="line">                 R  [c(sr+s) c(sr)  c(sr)    0      0   ]</span><br><span class="line">                 G  [ c(sg) c(sg+s) c(sg)    0      0   ]</span><br><span class="line">         ===&gt;    B  [ c(sb)  c(sb) c(sb+s)   0      0   ]</span><br><span class="line">                 A  [   0      0      0      1      0   ]</span><br><span class="line">                 W  [  t+b    t+b    t+b     0      1   ]</span><br><span class="line"></span><br><span class="line">                           Transformation Matrix</span><br></pre></td></tr></table></figure>
+<p><em>If you want to know more about it, you can check out the <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms533809%28v=vs.85%29.aspx" target="_blank">MSDN Site</a> for an excellent explanation on this topic in relation to the usage of the ColorMatrix object. [Source from <a href="http://www.codeproject.com/KB/web-image/AsciiArt.aspx" target="_blank">Code Project</a>]</em></p>
+<h3>Apply the above method to an actual Rainmeter config</h3>
+<p>You can set the value in [Variables] arbitrarily.<br>
+Default value:<br>
+<ul>
+<li>Brightness = 0</li>
+<li>Contrast = 1</li>
+<li>Saturation = 1
+</li></ul>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">Brightness</span>=-<span class="number">0.2</span></span><br><span class="line"><span class="attr">Contrast</span>=<span class="number">1.2</span></span><br><span class="line"><span class="attr">Saturation</span>=<span class="number">1.5</span></span><br><span class="line"></span><br><span class="line"><span class="section">[b]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line">Formula=<span class="comment">#Brightness#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[c]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line">Formula=<span class="comment">#Contrast#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[s]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line">Formula=<span class="comment">#Saturation#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[t+b]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=((<span class="number">1.0</span>-c)/<span class="number">2</span>)+b</span><br><span class="line"></span><br><span class="line"><span class="section">[c(sr)]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=c*((<span class="number">1</span>-s)*<span class="number">0.3086</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">[c(sg)]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=c*((<span class="number">1</span>-s)*<span class="number">0.6094</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">[c(sb)]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=c*((<span class="number">1</span>-s)*<span class="number">0.0820</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">[c(sr+s)]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=c*(((<span class="number">1</span>-s)*<span class="number">0.3086</span>)+s)</span><br><span class="line"></span><br><span class="line"><span class="section">[c(sg+s)]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=c*(((<span class="number">1</span>-s)*<span class="number">0.6094</span>)+s)</span><br><span class="line"></span><br><span class="line"><span class="section">[c(sb+s)]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=c*(((<span class="number">1</span>-s)*<span class="number">0.0820</span>)+s)</span><br><span class="line"></span><br><span class="line"><span class="section">[Image]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">ImageName</span>=cats.jpg</span><br><span class="line"><span class="attr">ColorMatrix1</span>=[c(sr+s)]<span class="comment">;[c(sr)];[c(sr)];0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=[c(sg)]<span class="comment">;[c(sg+s)];[c(sg)];0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=[c(sb)]<span class="comment">;[c(sb)];[c(sb+s)];0;0</span></span><br><span class="line"><span class="attr">ColorMatrix4</span>=<span class="number">0</span><span class="comment">;0;0;1;0</span></span><br><span class="line"><span class="attr">ColorMatrix5</span>=[t+b]<span class="comment">;[t+b];[t+b];0;1</span></span><br><span class="line"><span class="attr">DynamicVariables</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h3>Some examples of matrix values as a color filter</h3>
+<p><b>[Original Image]</b></p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrixOriginal.jpg">
+</div>
+<br><br>
+<p><b>[Grayscale]</b></p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrix02.jpg">
+</div>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment">;GreyScale</span></span><br><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">0.33</span><span class="comment">;0.33;0.33;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">0.59</span><span class="comment">;0.59;0.59;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">0.11</span><span class="comment">;0.11;0.11;0;0</span></span><br></pre></td></tr></table></figure>
+<br><br>
+<p><b>[Invert]</b></p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrix03.jpg">
+</div>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment">;Invert</span></span><br><span class="line"><span class="attr">ColorMatrix1</span>=-<span class="number">1</span><span class="comment">;0;0;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">0</span><span class="comment">;-1;0;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">0</span><span class="comment">;0;-1;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix5</span>=<span class="number">1</span><span class="comment">;1;1;0;1</span></span><br></pre></td></tr></table></figure>
+<br><br>
+<p><b>[Swap RGB to BGR]</b></p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrix04.jpg">
+</div>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment">;Swap RGB to BGR</span></span><br><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">0</span><span class="comment">;0;1;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">0</span><span class="comment">;1;0;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">1</span><span class="comment">;0;0;0;0</span></span><br></pre></td></tr></table></figure>
+<br><br>
+<p><b>[Sepia Color]</b></p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrix05.jpg">
+</div>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment">;Sepia Color</span></span><br><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">0.393</span><span class="comment">;0.349;0.272;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">0.769</span><span class="comment">;0.686;0.534;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">0.189</span><span class="comment">;0.168;0.131;0;0</span></span><br></pre></td></tr></table></figure>
+<br><br>
+<p><b>[Black & White]</b></p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrix06.jpg">
+</div>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment">;Black &amp; White</span></span><br><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">1.5</span><span class="comment">;1.5;1.5;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">1.5</span><span class="comment">;1.5;1.5;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">1.5</span><span class="comment">;1.5;1.5;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix5</span>=-<span class="number">1</span><span class="comment">;-1;-1;0;1</span></span><br></pre></td></tr></table></figure>
+<br><br>
+<p><b>[Polaroid Color]</b></p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrix07.jpg">
+</div>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment">;Polaroid Color</span></span><br><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">1.438</span><span class="comment">;-0.062;-0.062;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=-<span class="number">0.122</span><span class="comment">;1.378;-0.122;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=-<span class="number">0.016</span><span class="comment">;-0.016;1.483;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix5</span>=-<span class="number">0.03</span><span class="comment">;0.05;-0.02;0;1</span></span><br></pre></td></tr></table></figure>
+<br><br>
+<p><b>[White to Alpha]</b></p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrix08.jpg">
+</div>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment">;White to Alpha</span></span><br><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">1</span><span class="comment">;0;0;-1;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">0</span><span class="comment">;1;0;-1;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">0</span><span class="comment">;0;1;-1;0</span></span><br></pre></td></tr></table></figure>
+<br><br>
+<h3>Additional Tips</h3>
+<p><b>Create a realistic old photo using ColorMatrix.</b></p>
+<p>First, adjust each RGB matrix values and increase contrast slightly like this.</p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrix09.jpg">
+</div>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">0.25</span><span class="comment">;0.25;0.25;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">0.5</span><span class="comment">;0.5;0.5;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">0.125</span><span class="comment">;0.125;0.125;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix5</span>=<span class="number">0.2</span><span class="comment">;0.2;0.2;0;1</span></span><br></pre></td></tr></table></figure>
+<br><br>
+<p>Next, find an image of some old paper and overlay it on the original image.</p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrixOldPaper.jpg">
+</div>
+<p>Then, increase the contrast of the old paper, and set the alpha value of the whole image to 50%.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">2</span><span class="comment">;0;0;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">0</span><span class="comment">;2;0;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">0</span><span class="comment">;0;2;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix4</span>=<span class="number">0</span><span class="comment">;0;0;0.5;0</span></span><br><span class="line"><span class="attr">ColorMatrix5</span>=-<span class="number">0.1</span><span class="comment">;-0.1;-0.1;0;1</span></span><br></pre></td></tr></table></figure>
+<br><br>
+<p>Result:</p>
+<div class="exampleprev">
+<img src="..\img\colormatrix-guide\ColorMatrix10.jpg">
+</div>
+<br><br>
+<p>Full code for this effect:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Original]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">ImageName</span>=ColorMatrixOriginal.jpg</span><br><span class="line"><span class="attr">X</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">W</span>=<span class="number">380</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">300</span></span><br><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">0.25</span><span class="comment">;0.25;0.25;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">0.5</span><span class="comment">;0.5;0.5;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">0.125</span><span class="comment">;0.125;0.125;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix5</span>=<span class="number">0.2</span><span class="comment">;0.2;0.2;0;1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[OldPaper]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">ImageName</span>=ColorMatrixOldPaper.jpg</span><br><span class="line"><span class="attr">X</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line"><span class="attr">W</span>=<span class="number">380</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">300</span></span><br><span class="line"><span class="attr">ColorMatrix1</span>=<span class="number">2</span><span class="comment">;0;0;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix2</span>=<span class="number">0</span><span class="comment">;2;0;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix3</span>=<span class="number">0</span><span class="comment">;0;2;0;0</span></span><br><span class="line"><span class="attr">ColorMatrix4</span>=<span class="number">0</span><span class="comment">;0;0;0.5;0</span></span><br><span class="line"><span class="attr">ColorMatrix5</span>=-<span class="number">0.1</span><span class="comment">;-0.1;-0.1;0;1</span></span><br></pre></td></tr></table></figure>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

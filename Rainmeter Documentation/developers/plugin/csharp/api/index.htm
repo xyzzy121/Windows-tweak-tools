@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="C# API Overview - Rainmeter Docs">
+<meta property="og:title" content="C# API Overview - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>C# API Overview - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\..\index.htm"><img src="..\..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\..\index.htm">Developers</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\plugin-anatomy\index.htm">Anatomy of a Plugin</a>
+<li><a href="..\..\cpp\index.htm">C++ Overview</a>
+<ul>
+<li><a href="..\..\cpp\api\index.htm">C++ API Reference</a>
+</li></ul>
+<li><a href="..\index.htm">C# Overview</a>
+<ul>
+<li><a href="index.htm">C# API Reference</a>
+</li></ul>
+<li><a href="..\..\guidelines\index.htm">Plugin Guidelines</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">C# API Overview</h1>
+<hr>
+
+<p>This is an overview of the functions available in the C# Rainmeter API. All the functions are behind a Rainmeter.API wrapper which is created using the <code>rm</code> IntPtr.</p>
+<dl>
+<dt id="ReadString"><code>ReadString</code> <small><code>string ReadString(string option, string defValue, bool replaceMeasures = true)</code></small></dt>
+<dd>
+<p>Returns a string representation of an option.</p>
+<p>
+<ul>
+<li><code>option</code> : Option name to be read from the measure.</li>
+<li><code>defValue</code> : Default value for the option if it is not found or invalid.</li>
+<li><code>replaceMeasures</code> : If true, replaces section variables in the returned string.</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="keyword">void</span> <span class="title">Reload</span>(<span class="params">Rainmeter.API rm, <span class="keyword">ref</span> <span class="built_in">double</span> maxValue</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// The following will replace regular variables and</span></span><br><span class="line">	<span class="comment">//  section variables in the &#x27;Value&#x27; option.</span></span><br><span class="line">	<span class="built_in">string</span> <span class="keyword">value</span> = rm.ReadString(<span class="string">&quot;Value&quot;</span>, <span class="string">&quot;DefaultValue&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// The following will only replace regular variables,</span></span><br><span class="line">	<span class="comment">//  but NOT section variables like [MeasureNames].</span></span><br><span class="line">	<span class="built_in">string</span> action = rm.ReadString(<span class="string">&quot;Action&quot;</span>, <span class="string">&quot;&quot;</span>, <span class="literal">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="ReadInt"><code>ReadInt</code> <small><code>int ReadInt(string option, int defValue)</code></small></dt>
+<dd>
+<p>Retrieves the option defined in the skin file and converts it to an integer.</p>
+<p>
+<ul>
+<li><code>option</code> : Option name to be read from the measure.</li>
+<li><code>defValue</code> : Default value for the option if it is not found, invalid, or a formula could not be parsed.</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="keyword">void</span> <span class="title">Reload</span>(<span class="params">Rainmeter.API rm, <span class="keyword">ref</span> <span class="built_in">double</span> maxValue</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">int</span> <span class="keyword">value</span> = rm.ReadInt(<span class="string">&quot;Value&quot;</span>, <span class="number">20</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="ReadDouble"><code>ReadDouble</code> <small><code>double ReadDouble(string option, double defValue)</code></small></dt>
+<dd>
+<p>Retrieves the option defined in the skin file and converts it to a double type.</p>
+<p>
+<ul>
+<li><code>option</code> : Option name to be read from the measure.</li>
+<li><code>defValue</code> : Default value for the option if it is not found, invalid, or a formula could not be parsed.</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="keyword">void</span> <span class="title">Reload</span>(<span class="params">Rainmeter.API rm, <span class="keyword">ref</span> <span class="built_in">double</span> maxValue</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">double</span> <span class="keyword">value</span> = rm.ReadDouble(<span class="string">&quot;Value&quot;</span>, <span class="number">20.0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="ReadPath"><code>ReadPath</code> <small><code>string ReadPath(string option, string defValue)</code></small></dt>
+<dd>
+<p>Retrieves the option defined in the skin file and converts a relative path to a absolute path.</p>
+<p>
+<ul>
+<li><code>option</code> : Option name to be read from the measure.</li>
+<li><code>defValue</code> : Default value for the option if it is not found or invalid.</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="keyword">void</span> <span class="title">Reload</span>(<span class="params">Rainmeter.API rm, <span class="keyword">ref</span> <span class="built_in">double</span> maxValue</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">string</span> path = rm.ReadPath(<span class="string">&quot;MyPath&quot;</span>, <span class="string">&quot;C:\\&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="Execute"><code>Execute</code> <small><code>void Execute(IntPtr skin, string command)</code></small></dt>
+<dd>
+<p>Executes an <a href="..\..\..\..\manual\skins\option-types\index.htm#Action">action</a>.</p>
+<p>
+<ul>
+<li><code>skin</code> : Pointer to current skin (see <a href="index.htm#GetSkin">GetSkin</a>).</li>
+<li><code>command</code> : Action to execute.</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="built_in">double</span> <span class="title">Update</span>(<span class="params">IntPtr data</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	Measure measure = (Measure)data;</span><br><span class="line"></span><br><span class="line">	<span class="comment">// &#x27;mySkin&#x27; stored previously in the Initialize function</span></span><br><span class="line">	API.Execute(mySkin, L<span class="string">&quot;[!SetVariable SomeVar 10]&quot;</span>);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0.0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="ReplaceVariables"><code>ReplaceVariables</code> <small><code>string ReplaceVariables(string str)</code></small></dt>
+<dd>
+<p>Returns a string, replacing any variables (or section variables) within the inputted string.</p>
+<p>
+<ul>
+<li><code>str</code> : String with unresolved variables.</li>
+</ul>
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="built_in">double</span> <span class="title">Update</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">string</span> myVar = ReplaceVariables(<span class="string">&quot;#MyVar#&quot;</span>).ToUpperInvariant();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (myVar == <span class="string">&quot;SOMETHING&quot;</span>) &#123; <span class="keyword">return</span> <span class="number">1.0</span>; &#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0.0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="GetMeasureName"><code>GetMeasureName</code> <small><code>string GetMeasureName()</code></small></dt>
+<dd>
+<p>Retrieves the name of the measure.</p>
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="keyword">void</span> <span class="title">Initialize</span>(<span class="params">Rainmeter.API rm</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	myName = GetMeasureName();  <span class="comment">// declare &#x27;myName&#x27; as a string in class scope</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="GetSkin"><code>GetSkin</code> <small><code>IntPtr GetSkin()</code></small></dt>
+<dd>
+<p>Retrieves an internal pointer to the current skin.</p>
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="keyword">void</span> <span class="title">Initialize</span>(<span class="params">Rainmeter.API rm</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	mySkin = GetSkin();  <span class="comment">// declare &#x27;mySkin&#x27; as a IntPtr in class scope</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="GetSkinName"><code>GetSkinName</code> <small><code>string GetSkinName()</code></small></dt>
+<dd>
+<p>Retrieves full path and name of the skin.</p>
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="keyword">void</span> <span class="title">Initialize</span>(<span class="params">Rainmeter.API rm</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// declare &#x27;skinName&#x27; as a string in class scope</span></span><br><span class="line">	skinName = GetSkinName();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="GetSkinWindow"><code>GetSkinWindow</code> <small><code>IntPtr GetSkinWindow()</code></small></dt>
+<dd>
+<p>Returns a pointer to the handle (HWND) of the skin window.</p>
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="keyword">void</span> <span class="title">Initialize</span>(<span class="params">Rainmeter.API rm</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// declare &#x27;skinWindow&#x27; as a IntPtr in class scope</span></span><br><span class="line">	skinWindow = GetSkinWindow();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="GetSettingsFile"><code>GetSettingsFile</code> <small><code>string GetSettingsFile()</code></small></dt>
+<dd>
+<p>Retrieves a path to the Rainmeter data file (Rainmeter.data).</p>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">internal</span> <span class="keyword">void</span> <span class="title">Initialize</span>(<span class="params">Rainmeter.API rm</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">// declare &#x27;rmDataFile&#x27; as a string in global scope</span></span><br><span class="line">	<span class="keyword">if</span> (rmDataFile == <span class="literal">null</span>) &#123; rmDataFile = GetSettingsFile(); &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="Log"><code>Log</code> <small><code>void Log(LogType type, string message)</code></small></dt>
+<dd>
+<p>Sends a message to the Rainmeter log.</p>
+<p>
+<ul>
+<li><code>type</code> : Log level (<a target="_blank" rel="noopener" href="https://github.com/rainmeter/rainmeter-plugin-sdk/blob/master/API/RainmeterAPI.cs#L80-L86">API.LogType.Error, API.LogType.Warning, API.LogType.Notice, or API.LogType.Debug</a>)</li>
+<li><code>message</code> : Message to be logged.</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line">API.Log(API.LogType.Notice, <span class="string">&quot;I am a &#x27;notice&#x27; log message with a source&quot;</span>);</span><br></pre></td></tr></table></figure>
+</dd>
+<dt id="LogF"><code>LogF</code> <small><code>void LogF(LogType type, string format, params string[] args)</code></small></dt>
+<dd>
+<p>Sends a formatted message to the Rainmeter log.</p>
+<p>
+<ul>
+<li><code>type</code> : Log level (<a target="_blank" rel="noopener" href="https://github.com/rainmeter/rainmeter-plugin-sdk/blob/master/API/RainmeterAPI.cs#L80-L86">API.LogType.Error, API.LogType.Warning, API.LogType.Notice, or API.LogType.Debug</a>)</li>
+<li><code>format</code> : Formatted message to be logged, follows <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/composite-formatting">composite formatting</a>.</li>
+<li><code>args</code> : Comma separated list of arguments referenced in the formatted message.</li>
+</ul>
+
+<h3>Example:</h3>
+<figure class="highlight cs"><table><tr><td class="code"><pre><span class="line"><span class="built_in">string</span> notice = <span class="string">&quot;notice&quot;</span>;</span><br><span class="line">API.LogF(API.LogType.Notice, <span class="string">&quot;I am a &#x27;&#123;0&#125;&#x27; log message with a source&quot;</span>, notice);</span><br></pre></td></tr></table></figure>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\..\js\main.js"></script>
+<script src="..\..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

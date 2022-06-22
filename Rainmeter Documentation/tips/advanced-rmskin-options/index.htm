@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Advanced .rmskin Options - Rainmeter Docs">
+<meta property="og:title" content="Advanced .rmskin Options - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Advanced .rmskin Options - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Tips &amp; Tricks</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#BeyondTheBasics">Beyond the Basics</a>
+<li><a href="..\index.htm#GoodToKnow">Good To Know</a>
+<li><a href="..\index.htm#GettingThingsDone">Getting Things Done</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Advanced .rmskin Options</h1>
+<hr>
+
+<p>There are times that you want to release a new version of a skin or "suite" of skins. This might be to:</p>
+<b>Completely replace the skin or suite of skins.</b><br>
+<ul>
+<li>Simply create a new .rmskin with all files.</li>
+<li>The installing user may or may not have installed the previous version of your .rmskin. It is just a "new" install if not, and a "replace" if so.</li>
+</ul>
+<b>Change only some files in a suite of skins while leaving others alone.</b><br>
+<ul>
+<li>Create a new .rmskin, with the same root config folder, but only the files you want to replace in the folder tree. You must use <b>Merge skins</b>. (See below for instructions)</li>
+<li>The installing user must have installed the previous version of your .rmskin.</li>
+</ul>
+<b>Add new skins and / or other files to an existing installation.</b><br>
+<ul>
+<li>Create a new .rmskin, with the same root config folder, but only the files you want to add in the folder tree. You must use <b>Merge skins</b>. (See below for instructions)</li>
+<li>The installing user must have installed the previous version of your .rmskin.</li>
+</ul>
+<p>With <b>any</b> of these three approaches you use, (or a combination of the second and third) one thing that needs to be kept in mind is that a user may have set the <b>variables</b> you put in to have the skin work correctly for that user. This might be variables for cosmetic colors, fonts or sizes, or variables for gmail logins, RSS feed URL's, weather location codes or other functional settings for the user.</p>
+<p><b>Variables are key=value options in a <code>[Variables]</code> section in a .inc or .ini file.</b></p>
+<p>In any case, unless you want to the user to have to "start over" with configuring your skin or suite with their personal information and cosmetic choices, You should consider using one or both of the following advanced options for your new .rmskin.</p>
+<h2>Using Advanced Options</h2>
+<p>Create your .rsmkin from the <b>Manage</b> dialog. Once you have selected the root config folder for the skin or suite of skin, click <b>Next</b>. Set any options on the <b>Options</b> tab before continuing.</p>
+<p>Select the <b>Advanced</b> tab on this dialog:<br>
+<div class="exampleprev">
+<a href="..\img\advanced-rmskin-options\Advanced.jpg" data-fancybox=""><img src="..\img\advanced-rmskin-options\Advanced.jpg"></a>
+</div>
+
+<h3>Advanced option - Variables files:</h3>
+<div class="exampleprev">
+<a href="..\img\advanced-rmskin-options\AdvancedVariables.jpg" data-fancybox=""><img src="..\img\advanced-rmskin-options\AdvancedVariables.jpg"></a>
+</div>
+<p>Specify the file location starting with the root config folder. Multiple files can be added by separating them with the pipe <code>|</code> symbol.</p>
+<p><b>Format:</b> <code>RootConfigFolder\Folder\MyVars.inc | RootConfigFolder\Folder\MySkin.ini</code><br>
+<b>Example:</b> <code>MySuite\@Resources\Includes\SuiteVars.inc | MySuite\Clock\AnalogClock.ini</code></p>
+<p><b>Result:</b><br>
+<ul>
+<li>Any existing variables that are in both the current file(s) and the .rmskin are left unchanged.</li>
+<li>Any existing lines that are in both the current file(s) and the .rmskin and are not variables are replaced.</li>
+<li>Any lines of any type that are in the .rmskin and not in the current file(s) are added.</li>
+<li>Any lines of any type that are in the current file(s) and not in the .rmskin are removed.</li>
+</ul>
+
+<p><b>Note:</b> If the user chooses to not backup the skin prior to installation, the "Variables files" option will not be executed.</p>
+<h3>Advanced option - Merge skins:</h3>
+<div class="exampleprev">
+<a href="..\img\advanced-rmskin-options\AdvancedMerge.jpg" data-fancybox=""><img src="..\img\advanced-rmskin-options\AdvancedMerge.jpg"></a>
+</div>
+<p><b>Result:</b><br>
+<ul>
+<li>The root config folder is not removed or backed up.</li>
+<li>Any new files in the .rmskin are added.</li>
+<li>Any changed files in the .rmskin are completely replaced.</li>
+<li>Any files that are in the root config folder but not in the .rmskin are left unchanged.</li>
+<li>Merge skins cannot be used to remove any files.</li>
+</ul>
+
+<h3>Both Variables files and Merge skins:</h3>
+<p>One or more .ini (or .inc) files are listed in Variables files, and Merge skins is checked.</p>
+<p><b>Result:</b><br>
+<ul>
+<li>These options are not compatible with each other.</li>
+<li>The "Merge skins" option is executed (see above).</li>
+<li>The "Variables files" option is <u>not</u> executed.</li>
+</ul>
+
+<h3>Neither advanced option:</h3>
+<p><b>Result:</b><br>
+<ul>
+<li>The root config folder is backed up and removed.</li>
+<li>All files are completely replaced.</li>
+</ul>
+
+<h3>What won't work:</h3>
+<ul>
+<li>The installing user can't have added any new files that are not in the .rmskin, unless Merge skins was used.</li>
+<li>The installing user can't have added any new lines of any type in any file if that file exists in the .rmskin.</li>
+</ul>
+<p><b>Final note:</b> It wouldn't do any harm, and might even make you a friend, if you just add files that contains variables to the "Variables files" option in "Advanced" even if it ISN'T a new version of your skin. Just always do it... Why? If an end-user installs your suite, does all the setting up of all the variables for his personal information and all that, then screws up one or more skins trying to customize something, they will thank you when you tell them they can just "re-install" your .rsmkin again and get back to square one without losing all the variables they set.</p>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

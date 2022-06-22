@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="WebParser: Debugging RegExp - Rainmeter Docs">
+<meta property="og:title" content="WebParser: Debugging RegExp - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>WebParser: Debugging RegExp - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Tips &amp; Tricks</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#BeyondTheBasics">Beyond the Basics</a>
+<li><a href="..\index.htm#GoodToKnow">Good To Know</a>
+<li><a href="..\index.htm#GettingThingsDone">Getting Things Done</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">WebParser: Debugging RegExp</h1>
+<hr>
+
+<p>One of the keys to using <a href="..\..\manual\measures\webparser\index.htm">WebParser</a> in Rainmeter is the all-important <a href="..\..\manual\measures\webparser\index.htm#RegExp">RegExp</a> option.</p>
+<p>It is not the intention of this guide to teach WebParser or regular expressions. There is a lot of help to get you started at:</p>
+<ul>
+<li><a href="..\webparser-tutorial\index.htm">WebParser Tutorial</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.regular-expressions.info/tutorial.html">Regular-Expressions.com Tutorial</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.rexegg.com/">RexEgg Tutorial</a></li>
+</ul>
+<p>What we are going to focus on is the methods you can use to debug your <code>RegExp</code> (regular expression) option in Rainmeter, to build, test and find problems when parsing a web site or local file.</p>
+<h2>Overview</h2>
+<p>Just as a quick overview, WebParser is used with a parent measure to connect to a resource, a web site or local file, and parse the text that is returned into <a href="..\..\manual\measures\webparser\index.htm#StringIndex">StringIndex</a> values that can be used in child measures to extract the individual elements of information you want. You can then display the information in String, Image or other meters.</p>
+<p>At its simplest, you use WebParser like this:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">AccurateText</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureSite]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=http://www.tell-my-ip.com/index.html</span><br><span class="line"><span class="attr">RegExp</span>=(?siU)&lt;td.*&gt;Your IP Address.*&lt;td&gt;(.*)&lt;/td&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureIP]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureSite]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterIP]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureIP</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">12</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>Where you provide a <code>URL</code> to connect to, and a <code>RegExp</code> to parse the text, finding and capturing the information you want with <code>(.*)</code> into <code>StringIndex</code> numbers. You then use the information in those StringIndexes to display the data.</p>
+<p>Generally, you are going to be capturing multiple bits of information from the site, so you can use multiple child measures and meters to create your skin.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureSite]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=http://www.tell-my-ip.com/index.html</span><br><span class="line"><span class="attr">RegExp</span>=(?siU)&lt;td.*&gt;Your IP Address.*&lt;td&gt;(.*)&lt;/td&gt;.*&lt;td.*&gt;Country:.*&lt;img src=<span class="string">&quot;(.*)&quot;</span>&gt; (.*)&lt;/td&gt;.*&lt;td&gt;Region.*&lt;td&gt;(.*)&lt;/td&gt;.*&lt;td&gt;City.*&lt;td&gt;(.*)&lt;/td&gt;.*&lt;td&gt;ISP:.*&lt;td&gt;(.*)&lt;/td&gt;.*&lt;td&gt;Latitude:.*&lt;td&gt;(.*)&lt;/td&gt;.*&lt;td&gt;Longitude:.*&lt;td&gt;(.*)&lt;/td&gt;</span><br></pre></td></tr></table></figure>
+<p>In the above, we have eight captures <code>(.*)</code>, creating eight StringIndex numbers. So we would create eight child WebParser measures to pick off each one, and we can then display the data any way we like in meters. Again, refer to <a href="..\webparser-tutorial\index.htm">WebParser Tutorial</a> for a full explanation of how WebParser works.</p>
+<h2>Starting our RegExp</h2>
+<p>To create that <code>RegExp</code> option, what you will generally want to do is get a copy of the text / HTML that the website is returning to WebParser, and use that as a reference to iteratively build your regular expression. In our example above, this is part of the text that the site returns, which we use to create our <code>RegExp</code>.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span> <span class="attr">colspan</span>=<span class="string">&quot;2&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background-color: #ccc&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">b</span>&gt;</span>IP Address Location<span class="tag">&lt;/<span class="name">b</span>&gt;</span><span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span> <span class="attr">width</span>=<span class="string">&quot;100&quot;</span>&gt;</span>Your IP Address:<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>72.205.25.79<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Country:<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span> <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;flags/us.png&quot;</span>&gt;</span> United States<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Region:<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Virginia<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>City:<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Great Falls<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>ISP:<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Cox Communications<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Latitude:<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>38.9981689453<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Longitude:<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>-77.2883224487<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Host:<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>ip72-205-25-79.dc.dc.cox.net<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Anonymity Level:<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Elite (or no proxy)<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Map:<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&#x27;detailed.html&#x27;</span>&gt;</span>View your IP on satellite map (Big)<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>We then start building our <code>RegExp</code>, using <code>&lt;td.*&gt;Your IP Address.*&lt;td&gt;(.*)&lt;/td&gt;</code> to search for <code>&lt;td.*&gt;Your IP Address.*&lt;td&gt;</code>, then capture that IP address into a <code>StringIndex</code> with <code>(.*)</code> until we hit <code>&lt;/td&gt;</code>.
+<p>So we would start with:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureSite]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=http://www.tell-my-ip.com/index.html</span><br><span class="line"><span class="attr">RegExp</span>=(?siU)&lt;td.*&gt;Your IP Address.*&lt;td&gt;(.*)&lt;/td&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureIP]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=[MeasureSite]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>And add on to the <code>RegExp</code>, saving and refreshing the skin as we go to ensure it is working as we want.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureSite]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=http://www.tell-my-ip.com/index.html</span><br><span class="line"><span class="attr">RegExp</span>=(?siU)&lt;td.*&gt;Your IP Address.*&lt;td&gt;(.*)&lt;/td&gt;.*&lt;td.*&gt;Country:.*&lt;img src=<span class="string">&quot;(.*)&quot;</span>&gt; (.*)&lt;/td&gt;.*&lt;td&gt;Region.*&lt;td&gt;(.*)&lt;/td&gt;.*&lt;td&gt;City.*&lt;td&gt;(.*)&lt;/td&gt;.*&lt;td&gt;ISP:.*&lt;td&gt;(.*)&lt;/td&gt;.*&lt;td&gt;Latitude:.*&lt;td&gt;(.*)&lt;/td&gt;.*&lt;td&gt;Longitude:.*&lt;td&gt;(.*)&lt;/td&gt;</span><br></pre></td></tr></table></figure>
+<p>Use <a href="..\..\manual\user-interface\about\index.htm#SkinsTab">About / Skins</a> to check that our measures are returning the correct values.</p>
+<div class="exampleprev">
+<a href="..\img\webparser-debugging-regexp\AboutSkins.jpg" data-fancybox=""><img src="..\img\webparser-debugging-regexp\AboutSkins.jpg"></a>
+</div>
+<h2>Getting the HTML / text</h2>
+<p>So what is the best way to get a copy of the text the site is returning to WebParser, so we can use that to create our <code>RegExp</code>? There are a few options...</p>
+<h2>View page source</h2>
+<p>If you connect to the site in your web browser, (Internet Explorer, Google Chrome, Firefox, whatever you use) you can right click and select "View page source" from the context menu. That will open a tab with the HTML code that the site is sending to the browser displayed as text. You can copy and paste that into a local text file on your PC, to use while you are working on your skin.</p>
+<p><b>However...</b> There is an issue that can cause this approach to give you some problems. Many websites will tailor the code that is output based on detecting the browser you are using. This is generally to ensure compatibility in many different browsers, not all of which support the standards for HTML / CSS / Javascript in quite the same way. The upshot of this is that what is returned to your Google Chrome browser <em>may be different</em> than what is returned to the WebParser measure. This can cause a lot of confusion and frustration. We recommend that you <b>don't use "View page source"</b> in your browser. There are more reliable methods...</p>
+<h2 id="Debug">Debug=2</h2>
+<p>If you set <a href="..\..\manual\measures\webparser\index.htm#Debug">Debug=2</a> on the parent WebParser measure, (the one with the <code>RegExp</code> on it) and load the skin, it will create a text file <b>WebParserDump.txt</b> in the same folder as your skin .ini file. WebParserDump.txt is simply an exact copy of what the site sent to WebParser, and is an excellent resource when building your <code>RegExp</code> option.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureSite]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">URL</span>=http://www.tell-my-ip.com/index.html</span><br><span class="line"><span class="attr">RegExp</span>=</span><br><span class="line"><span class="attr">Debug</span>=<span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>As you can see, we don't even have a <code>RegExp</code> option yet, just a WebParser measure that connects to the site and downloads the HTML to our WebParserDump.txt text file.</p> Open that file in your favorite text editor, and it can be used as a reference as you continue.
+<p><b>Note:</b> When you are done building and testing your <code>RegExp</code> option, be sure to remove the <code>Debug=2</code> line, so it isn't constantly downloading and writing that file as you actually use your skin.</p>
+<p>This is a good approach. It ensures that you have exactly the same output from the site that WebParer gets, and if you "refresh" the skin from time to time you can be sure that it is also the most current version of the information from the site. However there is one more method that can be even more useful...</p>
+<h2 id="RainRegExp">RainRegExp</h2>
+<p>RainRexExp is an add-on utility you can use with WebParser / Rainmeter to create, test and debug your <code>RegExp</code> regular expression options. The way the tool works is to actually connect to the site you are using in your <code>URL</code> option, download the text exactly as WebParser would see it, (it basically tells the site it IS WebParser) and give you a way to build and test your <code>RegExp</code> while seeing exactly what is being set in the <code>StringIndex</code> values.</p>
+<p>Get the tool here: <a href="..\..\RainRegExp.zip">RainRegExp.zip</a>. Simply unzip the files into any folder you desire, and run the <b>RainRegExp.exe</b> executable.</p>
+<div class="exampleprev">
+<a href="..\img\webparser-debugging-regexp\RainRegExp.jpg" data-fancybox=""><img src="..\img\webparser-debugging-regexp\RainRegExp.jpg"></a>
+</div>
+<p><b>(1)</b>: Type or paste in the URL to connect to and press "Connect".</p>
+<p><b>(2)</b>: The HTML / text returned by the site will be in this panel. You can scroll through it or use the "Search" capability to find the text you want to search for.</p>
+<p><b>(3)</b>: Create your <code>RegExp</code> statement here. Click on "Parse" to test as you go. Once you are happy that your expression is working correctly, click on "Copy" to copy the entire <code>RegExp</code> to the Windows clipboard, so you can paste it in your skin.</p>
+<p><b>(4)</b>: The output of the "Parse" test will be here. It will consist of the <code>StringIndex</code> number that will be assigned in WebParser and the current value based on the text from the site.</p>
+<p>Hope this helps with creating and debugging those pesky <code>RegExp</code> statements.</p>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

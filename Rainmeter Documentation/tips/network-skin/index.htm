@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Network Skin - Rainmeter Docs">
+<meta property="og:title" content="Network Skin - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Network Skin - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Tips &amp; Tricks</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#BeyondTheBasics">Beyond the Basics</a>
+<li><a href="..\index.htm#GoodToKnow">Good To Know</a>
+<li><a href="..\index.htm#GettingThingsDone">Getting Things Done</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Network Skin</h1>
+<hr>
+
+<p>One of the things folks like to have on their desktop is a skin to monitor the behavior and traffic of their network.</p>
+<p>The <a href="..\..\manual\measures\net\index.htm">NetIn / NetOut / NetTotal</a> measures in Rainmeter can be used to monitor all traffic in and out of the NIC (Network Interface Card) on your computer.</p>
+<p>However, there are a few considerations you should keep in mind to have a skin that is useful, accurate and informative.</p>
+<h2>The Interface option</h2>
+<p>One of the options that can be set on the Net measures is <a href="..\..\manual\measures\net\index.htm#Interface">Interface</a>. It will almost always be correct to set this to <code>Interface=Best</code>.</p>
+<h2>Smoothing out the traffic values</h2>
+<p>The network measures in Rainmeter measure the average number of <b>Bytes</b> sent through the interface every second. However, the nature of network traffic is that it can be very "spiky". Many people find that a network skin has a more useful behavior if we "smooth out" these spikes a bit. So the traffic values "ramp up" and "ramp down" as the values change, rather than having a very jerky behavior.</p>
+<p>This can be done by using the <a href="..\..\manual\measures\general-options\index.htm#AverageSize">AverageSize</a> option on the measure(s). This will cause the measure(s) to average the returned values over the number of skin updates specified in the <code>AverageSize</code> option.</p>
+<p>e.g: <code>AverageSize=5</code></p>
+<h2>Using Network values as a percentage</h2>
+<p>While it is simple enough to just display the number of Bytes / kBytes / MBytes from the measures in a <a href="..\..\manual\meters\string\index.htm">String</a> meter using <a href="..\..\manual\meters\string\index.htm#AutoScale">AutoScale</a> to format the numbers, you may want to display the traffic in a meter that requires a <a href="..\..\manual\measures\index.htm#Percentage">percentage</a>. This would include the <a href="..\..\manual\meters\bar\index.htm">Bar</a>, <a href="..\..\manual\meters\bitmap\index.htm">Bitmap</a>, <a href="..\..\manual\meters\histogram\index.htm">Histogram</a>, <a href="..\..\manual\meters\line\index.htm">Line</a>, <a href="..\..\manual\meters\rotator\index.htm">Rotator</a> and <a href="..\..\manual\meters\roundline\index.htm">Roundline</a> meters.</p>
+<p>As discussed in the <a href="..\..\manual\measures\index.htm#Percentage">percentage</a> manual entry, these meters will require that a "range" of values is provided, so the meter knows where in the scale of 0% to 100% the current value of the measure lies.</p>
+<p>Some measures, like <a href="..\..\manual\measures\freediskspace\index.htm">FreeDiskSpace</a> for instance, automatically set this "range", based on examining the resource being measured. The Network measures also attempt to do this, but with some serious limitations. What the measures do is dynamically set the maximum value for the range to the highest value the measure has been since the skin was loaded or refreshed. This can cause really undesirable behavior on these "percentage" meters until your skin has been running for a while and you have done things to use a large percentage of your total bandwidth. </p>
+<p><b>Note:</b> The Net measures internally measure the traffic data in bits per second. The measures automatically divide both this internal measurement, and any MinValue / MaxValue options by 8, in order to use and display the values as bytes in meters. This means that any MinValue and MaxValue options should be set in bits, not bytes. Rainmeter will do the conversion to bytes automatically when the value(s) are used.</p>
+<h3>Setting the MinValue / MaxValue options:</h3>
+<p>The way to correct this behavior is to manually set the <a href="..\..\manual\measures\general-options\index.htm#MinValue">MinValue</a> and <a href="..\..\manual\measures\general-options\index.htm#MaxValue">MaxValue</a> options on the network measure(s). This will explicitly set the possible "range" of values for the measure so that meters requiring a percentage will immediately and correctly know where in the range of 0% to 100% the current value lies.</p>
+<h3>Finding your maximum download and upload bandwidth:</h3>
+<p>What we want to do is find and enter the maximum bandwidth your network connection supports. There are a couple of things to keep in mind:<br>
+<ul>
+<li>The maximum bandwidth your ISP told you is a baldfaced lie.</li>
+<li>Rainmeter measures network traffic in <b>bytes</b> per second, while most descriptions of network traffic in other contexts (Wikipedia articles about network traffic, the amount your ISP advertises, many online testing sites, etc.) describe network traffic in <b>bits</b>, or generally <b>Megabits / Mbps</b> per second. A <b>byte</b> is <b>8 bits</b>. The good news is that Rainmeter will handle this conversion for you.</li>
+</ul>
+
+<h3>speedtest.net</h3>
+<p>One of the better places to get a reasonably accurate measurement of your maximum download and upload bandwidth is the <a target="_blank" rel="noopener" href="https://speedtest.net">SpeedTest</a> site. Simply go to this site, click on <b>Begin Test</b>, and wait. In less than a minute, you will be given the maximum speeds the site sees for your computer.</p>
+<p>An alternative, so you can test at more than one place and compare is <a target="_blank" rel="noopener" href="https://speedof.me/">speedof.me</a>.</p>
+<div class="exampleprev">
+<a href="..\img\network-skin\Speedtest.png" data-fancybox=""><img src="..\img\network-skin\Speedtest.png"></a>
+</div>
+<p>As you can see from the image, the values returned by SpeedTest are in <b>Mbps</b> or Megabits per second. This is just what we need for Rainmeter.</p>
+<p>So to use these values in your skin, you simply need to plug them into the <code>MaxValue</code> options for your measures.</p>
+<p>There is one more little calculation you need to do though. Remember that Rainmeter measures network traffic in <b>bytes</b>, and although it will handle any conversion from <b>bits</b> (the Mbps from SpeedTest) to <b>bytes</b>, we are talking about <b>Mega</b> or million bits/bytes. Simple enough, a <b>Megabyte</b> is <b>1048576 bytes</b>.</p>
+<h3>Let's put it together:</h3>
+<p>I set my Interface to "Best", my maximum download speed from SpeedTest is "33.12" and my maximum upload speed is "11.71" I want to smooth out the traffic by averaging the results every "5" skin updates:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureNetIn]</span></span><br><span class="line"><span class="attr">Measure</span>=NetIn</span><br><span class="line"><span class="attr">Interface</span>=Best</span><br><span class="line"><span class="attr">MinValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">MaxValue</span>=(<span class="number">33.12</span> * <span class="number">1048576</span>)</span><br><span class="line"><span class="attr">AverageSize</span>=<span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureNetOut]</span></span><br><span class="line"><span class="attr">Measure</span>=NetOut</span><br><span class="line"><span class="attr">Interface</span>=Best</span><br><span class="line"><span class="attr">MinValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">MaxValue</span>=(<span class="number">11.71</span> * <span class="number">1048576</span>)</span><br><span class="line"><span class="attr">AverageSize</span>=<span class="number">5</span></span><br></pre></td></tr></table></figure>
+<h3>Sample Skin:</h3>
+<p>I have put all this together in a reasonably simple little skin that:<br>
+<ul>
+<li>Tests your network connection to be sure it is active.</li>
+<li>Gets and displays both your LAN (local) IP address and WAN (Internet) IP address. Simply move the mouse over the skin to toggle the value between them. Click the skin to copy your WAN IP address to the Windows clipboard.</li>
+<li>Displays an image that dynamically indicates Downloading/Uploading/Both/Neither/Error as appropriate.</li>
+<li>Displays the current download and upload traffic in bytes/kbytes/Mbytes, scaling automatically.</li>
+<li>Displays a Bar meter for download and upload values, as a percentage of the total bandwidth your connection supports.</li>
+</ul>
+<p>I have put some things in <code>[Variables]</code> to make them easy to change. Be SURE to change the values for your maximum download and upload bandwidth. Feel free to either use this skin as is, or tear it apart to make it your own.</p>
+<a href="..\img\network-skin\NetTraffic.rmskin" class="download"></a>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">AccurateText</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[!SetClip <span class="string">&quot;[MeasureIPWeb]&quot;</span>][Play <span class="string">&quot;#@#Sounds\Copy.wav&quot;</span>]</span><br><span class="line"><span class="attr">MouseOverAction</span>=[!SetOption MeterWANIPText Text <span class="string">&quot;[MeasureIPLan]&quot;</span>][!UpdateMeter MeterWANIPText][!Redraw]</span><br><span class="line"><span class="attr">MouseLeaveAction</span>=[!SetOption MeterWANIPText Text <span class="string">&quot;&quot;</span>][!UpdateMeter MeterWANIPText][!Redraw]</span><br><span class="line"></span><br><span class="line"><span class="section">[Metadata]</span></span><br><span class="line"><span class="attr">Name</span>=NetTraffic</span><br><span class="line"><span class="attr">Author</span>=JSMorley</span><br><span class="line"><span class="attr">Information</span>=Description:|Network Information</span><br><span class="line"><span class="attr">Version</span>=Aug <span class="number">31</span>, <span class="number">2013</span></span><br><span class="line"><span class="attr">License</span>=Creative Commons Attribution-Non-Commercial-Share Alike <span class="number">3.0</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="comment">;Set these for sure</span></span><br><span class="line"><span class="comment">;http://speedtest.net</span></span><br><span class="line"><span class="attr">MaxDownloadMbits</span>=<span class="number">33.82</span></span><br><span class="line"><span class="attr">MaxUploadMbits</span>=<span class="number">4.85</span></span><br><span class="line"></span><br><span class="line"><span class="comment">;Set this if needed</span></span><br><span class="line"><span class="attr">Interface</span>=Best</span><br><span class="line"></span><br><span class="line"><span class="attr">Font</span>=Trebuchet MS</span><br><span class="line"><span class="attr">LabelColor</span>=<span class="number">220</span>,<span class="number">220</span>,<span class="number">220</span></span><br><span class="line"><span class="attr">ValueColor</span>=<span class="number">255</span>,<span class="number">254</span>,<span class="number">222</span>,<span class="number">255</span></span><br><span class="line">ImagePath=<span class="comment">#@#Images\</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterAllBackground]</span></span><br><span class="line"><span class="attr">Meter</span>=Image</span><br><span class="line"><span class="attr">W</span>=<span class="number">170</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">78</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">20</span>,<span class="number">20</span>,<span class="number">20</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor2</span>=<span class="number">23</span>,<span class="number">46</span>,<span class="number">29</span>,<span class="number">255</span></span><br><span class="line"></span><br><span class="line"><span class="comment">;[GATHER Network]=================================</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureNetwork]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=WebParser.dll</span><br><span class="line"><span class="attr">Url</span>=http://www.msftncsi.com/ncsi.txt</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;^(.*)$&quot;</span></span><br><span class="line"><span class="attr">UpdateRate</span>=<span class="number">30</span></span><br><span class="line"><span class="attr">ForceReload</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">FinishAction</span>=!EnableMeasure MeasureNetworkLua <span class="comment">#CURRENTCONFIG#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureNetIn]</span></span><br><span class="line"><span class="attr">Measure</span>=NetIn</span><br><span class="line">Interface=<span class="comment">#Interface#</span></span><br><span class="line"><span class="attr">MinValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">MaxValue</span>=(<span class="comment">#MaxDownloadMbits# * 1048576)</span></span><br><span class="line"><span class="attr">AverageSize</span>=<span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureInDelay]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=MeasureNetIn</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureNetOut]</span></span><br><span class="line"><span class="attr">Measure</span>=NetOut</span><br><span class="line">Interface=<span class="comment">#Interface#</span></span><br><span class="line"><span class="attr">MinValue</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">MaxValue</span>=(<span class="comment">#MaxUploadMbits# * 1048576)</span></span><br><span class="line"><span class="attr">AverageSize</span>=<span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureOutDelay]</span></span><br><span class="line"><span class="attr">Measure</span>=Calc</span><br><span class="line"><span class="attr">Formula</span>=MeasureNetOut</span><br><span class="line"></span><br><span class="line"><span class="comment">;[Network WEB IP]=================================</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureIPLan]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=Plugins\SysInfo.dll</span><br><span class="line"><span class="attr">SysInfoType</span>=IP_ADDRESS</span><br><span class="line"><span class="attr">SysInfoData</span>=Best</span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureIPWeb]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=Plugins\WebParser.dll</span><br><span class="line"><span class="attr">Url</span>=http://checkip.dyndns.org</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)Address: (.*)&lt;/body&gt;&quot;</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">UpdateRate</span>=-<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterIPLabel]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">X</span>=<span class="number">10</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">7</span></span><br><span class="line">FontFace=<span class="comment">#Font#</span></span><br><span class="line">FontColor=<span class="comment">#LabelColor#</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">StringStyle</span>=Normal</span><br><span class="line"><span class="attr">StringAlign</span>=Left</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=<span class="string">&quot;IP:&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterWANIPText]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureIPWeb</span><br><span class="line"><span class="attr">X</span>=<span class="number">160</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line">FontFace=<span class="comment">#Font#</span></span><br><span class="line">FontColor=<span class="comment">#ValueColor#</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">StringStyle</span>=Normal</span><br><span class="line"><span class="attr">StringAlign</span>=Right</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">;[Network TRAFFIC IMAGE]========================</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetworkImage]</span></span><br><span class="line"><span class="attr">Meter</span>=IMAGE</span><br><span class="line">ImageName=<span class="comment">#ImagePath#NetworkError.png</span></span><br><span class="line"><span class="attr">X</span>=<span class="number">10</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">26</span>r</span><br><span class="line"><span class="attr">W</span>=<span class="number">30</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">30</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureNetworkLua]</span></span><br><span class="line"><span class="attr">Measure</span>=Script</span><br><span class="line"><span class="attr">ScriptFile</span>=NetTraffic.lua</span><br><span class="line"><span class="attr">Disabled</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">;[Network INBOUND TRAFFIC]========================</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetInPre]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">X</span>=<span class="number">50</span></span><br><span class="line"><span class="attr">Y</span>=-<span class="number">6</span>r</span><br><span class="line">FontFace=<span class="comment">#Font#</span></span><br><span class="line">FontColor=<span class="comment">#LabelColor#</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">StringStyle</span>=Normal</span><br><span class="line"><span class="attr">StringAlign</span>=Left</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=<span class="string">&quot;DN:&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetInText]</span></span><br><span class="line"><span class="attr">MeasureName</span>=MeasureInDelay</span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">X</span>=<span class="number">160</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line">FontFace=<span class="comment">#Font#</span></span><br><span class="line">FontColor=<span class="comment">#ValueColor#</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">StringStyle</span>=Normal</span><br><span class="line"><span class="attr">StringAlign</span>=Right</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AutoScale</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">NumOfDecimals</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=<span class="string">&quot;%1B&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetInBar]</span></span><br><span class="line"><span class="attr">Meter</span>=Bar</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureNetIn</span><br><span class="line"><span class="attr">X</span>=<span class="number">50</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>R</span><br><span class="line"><span class="attr">W</span>=<span class="number">110</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">2</span></span><br><span class="line"><span class="attr">BarColor</span>=<span class="number">104</span>,<span class="number">199</span>,<span class="number">128</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">60</span>,<span class="number">60</span>,<span class="number">60</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">BarOrientation</span>=Horizontal</span><br><span class="line"></span><br><span class="line"><span class="comment">;[Network OUTBOUND TRAFFIC]=======================</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetOUTPre]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">X</span>=<span class="number">50</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">5</span>r</span><br><span class="line">FontFace=<span class="comment">#Font#</span></span><br><span class="line">FontColor=<span class="comment">#LabelColor#</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">StringStyle</span>=Normal</span><br><span class="line"><span class="attr">StringAlign</span>=Left</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=<span class="string">&quot;UP:&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetOutText]</span></span><br><span class="line"><span class="attr">MeasureName</span>=MeasureOutDelay</span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">X</span>=<span class="number">160</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>r</span><br><span class="line">FontFace=<span class="comment">#Font#</span></span><br><span class="line">FontColor=<span class="comment">#ValueColor#</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">StringStyle</span>=Normal</span><br><span class="line"><span class="attr">StringAlign</span>=Right</span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AutoScale</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">NumOfDecimals</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=<span class="string">&quot;%1B&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterNetOutBar]</span></span><br><span class="line"><span class="attr">Meter</span>=Bar</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureNetOut</span><br><span class="line"><span class="attr">X</span>=<span class="number">50</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span>R</span><br><span class="line"><span class="attr">W</span>=<span class="number">110</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">2</span></span><br><span class="line"><span class="attr">BarColor</span>=<span class="number">104</span>,<span class="number">199</span>,<span class="number">128</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">60</span>,<span class="number">60</span>,<span class="number">60</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">BarOrientation</span>=Horizontal</span><br></pre></td></tr></table></figure>
+<div class="exampleprev">
+<a href="..\img\network-skin\NetTraffic.png" data-fancybox=""><img src="..\img\network-skin\NetTraffic.png"></a>
+</div>
+<div class="exampleprev">
+<a href="..\img\network-skin\NetTraffic.gif" data-fancybox=""><img src="..\img\network-skin\NetTraffic.gif"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

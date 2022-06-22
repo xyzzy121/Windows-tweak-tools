@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Rainmeter Docs">
+<meta property="og:title" content="Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="css\bootstrap.min.css">
+<link rel="stylesheet" href="css\rainmeter.css">
+<link rel="stylesheet" href="css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="css-1?family=Source+Sans+Pro:300,400,600">
+<link href="css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div id="panel">
+<div id="hero" class="flat">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="index.htm"><img src="img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+</div>
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 mt-3 docs-index">
+<h2 class="mt-0">Rainmeter Documentation</h2>
+<hr>
+<a href="manual\index.htm" class="card card-manual">
+<div class="card-body">
+<h4 class="card-title">Manual</h4>
+<p>Reference and tutorial material for the current release version of Rainmeter.</p>
+</div>
+</a>
+<a href="tips\index.htm" class="card">
+<div class="card-body">
+<h4 class="card-title">Tips &amp; Tricks</h4>
+<p>Suggested methods and solutions for using Rainmeter in the field.</p>
+</div>
+</a>
+<a href="snippets\index.htm" class="card">
+<div class="card-body">
+<h4 class="card-title">Snippets</h4>
+<p>Useful code fragments for running Lua scripts in Rainmeter.</p>
+</div>
+</a>
+<a href="developers\index.htm" class="card">
+<div class="card-body">
+<h4 class="card-title">Developers</h4>
+<p>Information for working with the Rainmeter project source code, creating custom plugins, and interacting with Rainmeter from external applications.</p>
+</div>
+</a>
+<a href="history\index.htm" class="card">
+<div class="card-body">
+<h4 class="card-title">Version History</h4>
+<p>Complete record of changes in each version of Rainmeter.</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4">
+<h2 class="mt-0">Info</h2>
+<hr>
+<h3>Help</h3>
+<p>Help is available on <a href="//forum.rainmeter.net/">the forum</a>. Members of the development team and the Rainmeter community offer support and advice on a volunteer basis.
+<p>For shorter questions, join the discussion in our IRC chat room. Click <a target="_blank" rel="noopener" href="https://web.libera.chat/#rainmeter">here</a> to chat in your browser, or use your own IRC client to connect to #rainmeter at irc.libera.chat/6697.
+<h3>Contact</h3>
+<p>For press inquiries or technical problems with the site or forums, email the development team at <a href="mailto:team@rainmeter.net">team&#64;rainmeter.net</a>. Please do not send Rainmeter or skin support requests to this address; use the forum or chat room instead. Support requests sent to this address will not be answered.
+</p></div>
+</div>
+</div>
+</div>
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+</div>
+
+<script src="js\main.js"></script>
+<script src="js\jquery-3.2.1.slim.min.js"></script>
+<script src="js\bootstrap.min.js"></script>
+<script src="js\ahk-sliding-panel.js"></script>
+<script src="js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

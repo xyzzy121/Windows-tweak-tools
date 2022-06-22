@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="RunCommand plugin - Rainmeter Docs">
+<meta property="og:title" content="RunCommand plugin - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>RunCommand plugin - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\..\index.htm"><img src="..\..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\getting-started\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\..\getting-started\setting-up\index.htm">Setting Up</a>
+<li><a href="..\..\getting-started\using-rainmeter\index.htm">Using Rainmeter</a>
+<li><a href="..\..\getting-started\customizing\index.htm">Customizing</a>
+<li><a href="..\..\getting-started\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\..\getting-started\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\..\getting-started\basic-tutorials\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\..\getting-started\basic-tutorials\launcher\index.htm">Launcher</a>
+<li><a href="..\..\getting-started\basic-tutorials\clock\index.htm">Clock</a>
+<li><a href="..\..\getting-started\basic-tutorials\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\installing-rainmeter\index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="..\..\installing-rainmeter\auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\..\user-interface\about\index.htm">About</a>
+<li><a href="..\..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+ <ul>
+<li><a href="..\..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\..\meters\index.htm">Meters</a>
+<ul>
+<li><a href="..\..\meters\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\meters\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\..\meters\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\..\meters\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\..\meters\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\..\meters\bar\index.htm">Bar</a>
+<li><a href="..\..\meters\bitmap\index.htm">Bitmap</a>
+<li><a href="..\..\meters\button\index.htm">Button</a>
+<li><a href="..\..\meters\histogram\index.htm">Histogram</a>
+<li><a href="..\..\meters\image\index.htm">Image</a>
+<li><a href="..\..\meters\line\index.htm">Line</a>
+<li><a href="..\..\meters\rotator\index.htm">Rotator</a>
+<li><a href="..\..\meters\roundline\index.htm">Roundline</a>
+<li><a href="..\..\meters\shape\index.htm">Shape</a>
+<li><a href="..\..\meters\string\index.htm">String</a>
+<ul>
+<li><a href="..\..\meters\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\measures\index.htm">Measures</a>
+<ul>
+<li><a href="..\..\measures\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\..\measures\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\..\measures\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\..\measures\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\..\measures\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\..\measures\calc\index.htm">Calc</a>
+<li><a href="..\..\measures\cpu\index.htm">CPU</a>
+<li><a href="..\..\measures\freediskspace\index.htm">FreeDiskSpace</a>
+<li><a href="..\..\measures\loop\index.htm">Loop</a>
+<li><a href="..\..\measures\mediakey\index.htm">MediaKey</a>
+<li><a href="..\..\measures\memory\index.htm">Memory</a>
+<li><a href="..\..\measures\net\index.htm">Net</a>
+<li><a href="..\..\measures\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\..\measures\plugin\index.htm">Plugin</a>
+<li><a href="..\..\measures\process\index.htm">Process</a>
+<li><a href="..\..\measures\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\..\measures\registry\index.htm">Registry</a>
+<li><a href="..\..\measures\script\index.htm">Script</a>
+<li><a href="..\..\measures\string\index.htm">String</a>
+<li><a href="..\..\measures\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\..\measures\time\index.htm">Time</a>
+<li><a href="..\..\measures\uptime\index.htm">Uptime</a>
+<li><a href="..\..\measures\webparser\index.htm">WebParser</a>
+<li><a href="..\..\measures\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\index.htm">Plugins</a>
+<ul>
+<li><a href="..\actiontimer\index.htm">ActionTimer</a>
+<li><a href="..\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\coretemp\index.htm">CoreTemp</a>
+<li><a href="..\fileview\index.htm">FileView</a>
+<li><a href="..\folderinfo\index.htm">FolderInfo</a>
+<li><a href="..\inputtext\index.htm">InputText</a>
+<li><a href="..\ping\index.htm">Ping</a>
+<li><a href="..\power\index.htm">Power</a>
+<li><a href="..\quote\index.htm">Quote</a>
+<li><a href="..\resmon\index.htm">ResMon</a>
+<li><a href="index.htm">RunCommand</a>
+<li><a href="..\speedfan\index.htm">SpeedFan</a>
+<li><a href="..\usagemonitor\index.htm">UsageMonitor</a>
+<li><a href="..\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\..\bangs\index.htm">Bangs</a>
+<li><a href="..\..\formulas\index.htm">Formulas</a>
+<li><a href="..\..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\..\groups\index.htm">Groups</a>
+<li><a href="..\..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">RunCommand plugin</h1>
+<hr>
+
+<p><code>Plugin=RunCommand</code></p>
+<p>Executes an external command or program in Windows, allowing the skin to obtain and use any output from the program.</p>
+<p>There are several important differences between this and just executing a command with something like:</p>
+<p><code>LeftMouseUpAction=["SomePath\SomeProgram.exe" "SomeParameters"]</code></p>
+<ul>
+<li>The command can be run with a <em>hidden</em> initial state, to eliminate the cmd.exe (DOS) Command Prompt window that is created when an external command-line command or program is executed normally from Rainmeter.</li>
+<li>Any output of the command to STDOUT (the "Standard Out" string output of a program in a cmd.exe Command Prompt window) can be captured, either directly, as the the value of the plugin measure, or piped to a text file for additional processing as needed.</li>
+<li>The plugin can detect that a command is "finished", and your skin can in effect wait for the command to be done before taking some action and using any returned value.</li>
+<li>The plugin can detect that a command caused a set of "error" return codes, and the skin can take some action based on success or failure of the command and the type of error.</li>
+<li>The plugin can be set with a "timeout" value, which will automatically end the external command or program when the timeout value is reached.</li>
+</ul>
+<p><b>Overview</b></p>
+<p>What the plugin does when triggered with <code>[!CommandMeasure MeasureName "Run"]</code> is to execute what is defined in the measure's <code>Program</code> option, appending any program parameters defined in the <code>Parameter</code> option.</p>
+<p>In most cases, the purpose of the plugin is to execute a Command Line Interface (CLI) program that takes some action or returns some value. Command-line programs by their nature always run in a cmd.exe Command Prompt window.</p>
+<p>The plugin will monitor the program defined in the <code>Program</code> option, and when it ends, when the executable terminates, any string output the program did to STDOUT (Standard Out) will be captured and set as the string value of the plugin measure.</p>
+<p><b>The string value of the measure</b></p>
+<p>The string value of the measure will be any output that the program writes to STDOUT. In effect, what you would see if you manually ran the command in a cmd.exe Command Prompt window will become the string value of the measure.</p>
+<p><b>The number value of the measure</b></p>
+<p>The number value of the measure will indicate if the command finished with or without any errors. You can get the number value of the measure by using <a href="..\..\variables\section-variables\index.htm#MeasureParameters">Section Variables</a> (e.g. [MeasureName:]). Before the command has first run, the number value of the measure will be -1. While the command is running, the number value of the measure will be 0. If an error occurs, the number value of the measure will indicate the type of error that has occurred. If the program finishes without error, the number value of the measure will be 1, meaning "success". These can be used to take different skin actions depending on the numeric return value.</p>
+<h2>Options</h2>
+<dl>
+<dt>General measure options</dt>
+<dd>
+<p>All <a href="..\..\measures\general-options\index.htm">general measure options</a> are valid.</p>
+</dd>
+<dt id="Program"><code>Program</code> <small>Default: <code>%ComSpec% \U \C</code></small></dt>
+<dd>
+<p>The program to run. If not specified, the default value is the %ComSpec% environment variable (normally cmd.exe) with the parameters "\U" for Unicode pipe output and "\C" to close the Command Prompt window and exit the cmd.exe shell when finished.</p>
+<p>Generally it is best to leave this undefined and use the <code>Parameter</code> option to define the command and parameters to be executed. Command-line program will simply cause Windows to first execute cmd.exe anyway, to create the Command Prompt environment the program must run in. <em>Basic "DOS" commands like "dir" or "copy" don't have any .exe "program" to run in any case, and are simply internal functions of cmd.exe.</em></p>
+<p>Information on <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Cmd.exe">cmd.exe</a>.</p>
+</dd>
+<dt id="Parameter"><code>Parameter</code> <small>Default: <code>None</code></small></dt>
+<dd>
+<p>Command-line parameters. If no <code>Program</code> is specified, this option represents the entire command-line, which will be executed in the context of the default cmd.exe Command Prompt window as described above.</p>
+<p><b>Note:</b> Care should be taken to properly "quote" commands with a path or parameters having spaces in values.</p>
+<p><b>Example:</b> <code>Parameter=wmic os get lastbootuptime</code>.</p>
+</dd>
+<dt id="State"><code>State</code> <small>Default: <code>Hide</code></small></dt>
+<dd>
+<p>Initial "visible state" of the program.</p>
+<ul>
+<li>Hide (default)<br>
+Attempts to hide the program's window from being visible. This option is not recommended for GUI programs and/or programs that expect any form of input.</li>
+<li>Show<br>
+Shows the program's normal window.</li>
+<li>Minimized<br>
+Attempts to start the program minimized.</li>
+<li>Maximized<br>
+Attempts to start the program maximized.</li>
+</ul>
+<p><b>Notes:</b> If <code>State=Hide</code>, the plugin will automatically "kill" any program it executed, when either the skin is refreshed or unloaded, or Rainmeter is exited.</p>
+<p>A few programs with a windowed GUI user-interface (for instance Calc.exe) explicitly show themselves and will not respond to initial state requests like Hidden or Minimized. This will be a rare problem, as normally there is no useful reason to use this plugin to execute GUI programs from the command line. They will likely take no desirable independent action, and will have no STDOUT "output" in any case.</p>
+</dd>
+<dt id="FinishAction"><code>FinishAction</code> <small>Default: <code>None</code></small></dt>
+<dd>
+<p><a href="..\..\bangs\index.htm">Bangs</a> or other <a href="..\..\skins\option-types\index.htm#Action">actions</a> that are executed when the program has finished / exited.</p>
+</dd>
+<dt id="OutputFile"><code>OutputFile</code> <small>Default: <code>None</code></small></dt>
+<dd>
+<p>Optional path and file name where the STDOUT output will be saved. The file's encoding is controlled by the <code>OutputType</code> option. The default path will be the skin folder.</p>
+</dd>
+<dt id="OutputType"><code>OutputType</code> <small>Default: <code>UTF16</code></small></dt>
+<dd>
+<p>Type of output to be <em>expected</em> from the program. Any <code>OutputFile</code> will also be encoded with these values. You must be sure that what you tell it here matches what is actually output by the program you run. This option does not "control" what is output by the program.</p>
+<ul>
+<li>UTF16 (default)</li>
+<li>UTF8</li>
+<li>ANSI</li>
+</ul>
+<p><b>Note:</b> Although by default cmd.exe will be executed with the \U (UTF-16 Unicode) parameter, that does not mean that any program executed in the Command Prompt window will necessarily produce output in UTF-16. While most internal Windows commands like "dir" will produce UTF-16 output, a great many command-line programs will produce ANSI output. If you get gibberish characters returned by the measure, setting <code>OutputType=ANSI</code> will often correct the issue.</p>
+</dd>
+<dt id="StartInFolder"><code>StartInFolder</code> <small>Default: <code>Skin folder</code></small></dt>
+<dd>
+<p>Optional path which will be used as the "Start in" folder for the executed program. The default path will be the skin folder.</p>
+</dd>
+<dt id="Timeout"><code>Timeout</code> <small>Default: <code>-1</code></small></dt>
+<dd>
+<p>Timeout value in milliseconds. If positive, RunCommand will either "Close" the program if the <code>State</code> is other than <code>Hide</code> or "Kill" the program if the <code>State</code> is <code>Hide</code>. The default is -1, which means no timeout. Any <code>FinishAction</code> will run even if the program does not actually terminate (e.g. if closing "Notepad" and clicking "Cancel" when asked to save the document). It should be noted that this value is independent of any <code>Update</code> or <code>UpdateDivider</code> values in the skin.</p>
+</dd>
+</dl>
+<p><b>Note:</b> Because Rainmeter strips any quotes from the start and end of an option if both exist, it is important to double double-quote the Program and Parameter options If the overall command or parameter requires both starting and ending quotes.</p>
+<p><b>Example:</b> Program=""C:\Program Files\Some Program\Something with a space.exe""</p>
+<h2 id="PluginCommands">Plugin Commands</h2>
+<dl>
+<dt id="Run"><code>Run</code></dt>
+<dd>
+<p>Runs the program. <b>The plugin will take no action unless triggered with this command.</b></p>
+<p><b>Example:</b> <code>LeftMouseUpAction=[!CommandMeasure MeasureName "Run"]</code></p>
+</dd>
+<dt id="Close"><code>Close</code></dt>
+<dd>
+<p>Sends a normal "close" message to the program.</p>
+<p>The program may produce an "are you sure?" prompt before closing. Some programs can cancel the closing of the program, in which case the plugin will continue to gather any output.</p>
+<p><b>Example:</b> <code>LeftMouseUpAction=[!CommandMeasure MeasureName "Close"]</code></p>
+</dd>
+<dt id="Kill"><code>Kill</code></dt>
+<dd>
+<p>Terminates the program without notice. This should generally be used when ending a program that was run with <code>State=Hide</code>.</p>
+<p><b>Example:</b> <code>LeftMouseUpAction=[!CommandMeasure MeasureName "Kill"]</code></p>
+</dd>
+</dl>
+<h2 id="ErrorCodes">Error codes</h2>
+<p>Here is a list of possible error codes returned by the plugin:<p>
+<ul>
+<li><b>100</b> Unknown command. This happens when an invalid !CommandMeasure command was sent to the plugin.</li>
+<li><b>101</b> Program still running. This happens when trying to Run the program again before it has finished running.</li>
+<li><b>102</b> Program not running. This happens when trying to Close or Kill a program that is not running.</li>
+<li><b>103</b> Cannot start program. This happens when the Program option is invalid. Usually a wrong path or typo in the Program option is the cause. Note that cmd.exe may start perfectly well but be unable to execute a command or program passed as a Parameter option. That will not trigger this error code.</li>
+<li><b>104</b> Cannot save file. This happens when there is an error saving the file. This could happen if writing to a locked location or file. The string value of the plugin will still contain any output of the program.</li>
+<li><b>105</b> Cannot terminate process. There was an error when attempting to close or kill the program. This should rarely happen. If so, it might be necessary to open the Windows Task Manager and manually close the program.</li>
+<li><b>106</b> Cannot create pipe. This happens when the plugin cannot create a pipe to the program trying to run. The program will not run if this error happens. This error should rarely happen.</li>
+</ul>
+<p><b>Note:</b> These error codes are produced by the plugin, and have nothing to do with any error encountered by the executed program itself. Errors from the program will generally be displayed in the STDOUT output, and can be tested for and reacted to there.</p>
+<h2>Example</h2>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">AccurateText</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureRun]</span></span><br><span class="line"><span class="attr">Measure</span>=Plugin</span><br><span class="line"><span class="attr">Plugin</span>=RunCommand</span><br><span class="line"><span class="attr">Program</span>=PowerShell</span><br><span class="line"><span class="attr">Parameter</span>=(Get-CimInstance -ClassName Win32_Processor -Property Name).Name</span><br><span class="line"><span class="attr">State</span>=Hide</span><br><span class="line"><span class="attr">OutputType</span>=ANSI</span><br><span class="line">OutputFile=<span class="comment">#CURRENTPATH#CPUName.txt</span></span><br><span class="line"><span class="attr">RegExpSubstitute</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Substitute</span>=<span class="string">&quot;\s+#CRLF#&quot;</span>:<span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterRun]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">47</span>,<span class="number">47</span>,<span class="number">47</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">Padding</span>=<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">Text</span>=Click to Run</span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[!CommandMeasure MeasureRun <span class="string">&quot;Run&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterResult]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureRun</span><br><span class="line"><span class="attr">Y</span>=<span class="number">10</span>R</span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">14</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">AntiAlias</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>This example will run the program powershell.exe, which is in the Windows %PATH% and thus needs no path on the command itself.</p>
+<p>PowerShell will use the parameter of "(Get-CimInstance -ClassName Win32_Processor -Property Name).Name". The program will be run in a "hidden" PowerShell Command Prompt window, and nothing visible will happen.</p>
+<p>The output of the PowerShell program (the "name" of your CPU in this case) will be written to STDOUT in the hidden PowerShell window, which will be captured by the plugin and set as the string value of the [MeasureRun] measure.</p>
+<p><em>The Substitute option is being used to strip off some trailing spaces and a linefeed in the output.</em></p>
+<p>Additionally, the file defined in OutputFile will contain the entire output of the command, which in this example might be:</p>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">Name</span><br><span class="line">AMD Ryzen 7 2700X Eight-Core Processor</span><br></pre></td></tr></table></figure>
+<p>Additional parsing of this file could be done with the WebParser plugin or String measures if you wanted for instance to obtain multiple separate values from the single command output.</p>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\..\js\main.js"></script>
+<script src="..\..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\..\js\bootstrap.min.js"></script>
+<script src="..\..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

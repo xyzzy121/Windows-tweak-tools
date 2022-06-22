@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="Installing Rainmeter - Rainmeter Docs">
+<meta property="og:title" content="Installing Rainmeter - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>Installing Rainmeter - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Manual</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a href="..\getting-started\index.htm">Getting Started</a>
+<ul>
+<li><a href="..\getting-started\setting-up\index.htm">Setting Up</a>
+<li><a href="..\getting-started\using-rainmeter\index.htm">Using Rainmeter</a>
+<li><a href="..\getting-started\customizing\index.htm">Customizing</a>
+<li><a href="..\getting-started\creating-skins\index.htm">Creating Skins</a>
+<li><a href="..\getting-started\skin-anatomy\index.htm">Anatomy of a Skin</a>
+<li><a href="..\getting-started\basic-tutorials\index.htm">Basic Tutorials</a>
+<ul>
+<li><a href="..\getting-started\basic-tutorials\launcher\index.htm">Launcher</a>
+<li><a href="..\getting-started\basic-tutorials\clock\index.htm">Clock</a>
+<li><a href="..\getting-started\basic-tutorials\system\index.htm">System</a>
+</li></ul>
+</li></ul>
+<li><a href="index.htm">Installing Rainmeter</a>
+<ul>
+<li><a href="auto-update\index.htm">Auto Update</a>
+</li></ul>
+<li><a href="..\user-interface\index.htm">User Interface</a>
+<ul>
+<li><a href="..\user-interface\manage\index.htm">Manage</a>
+<ul>
+<li><a href="..\user-interface\manage\new-skin\index.htm">New Skin</a>
+</li></ul>
+<li><a href="..\user-interface\about\index.htm">About</a>
+<li><a href="..\user-interface\context-menus\index.htm">Context Menus</a>
+</li></ul>
+<li><a href="..\installing-skins\index.htm">Installing Skins</a>
+<li><a href="..\arranging-skins\index.htm">Arranging Skins</a>
+<li><a href="..\distributing-skins\index.htm">Distributing Skins</a>
+<ul>
+<li><a href="..\distributing-skins\vault-folder\index.htm">@Vault Folder</a>
+</li></ul>
+</li></ul>
+<h4>Reference</h4>
+<ul class="docs-nav-block">
+<li><a href="..\settings\index.htm">Settings</a>
+<ul>
+<li><a href="..\settings\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<li><a href="..\settings\traymeasure-section\index.htm">[TrayMeasure] Section</a>
+<li><a href="..\settings\skin-sections\index.htm">[Skin] Sections</a>
+</li></ul>
+<li><a href="..\skins\index.htm">Skins</a>
+<ul>
+<li><a href="..\skins\option-types\index.htm">Option Types</a>
+<li><a href="..\skins\rainmeter-section\index.htm">[Rainmeter] Section</a>
+<ul>
+<li><a href="..\skins\rainmeter-section\defaults\index.htm">Default Settings
+</a></li></ul>
+<li><a href="..\skins\metadata-section\index.htm">[Metadata] Section</a>
+<li><a href="..\skins\include-option\index.htm">@Include Options</a>
+<li><a href="..\skins\resources-folder\index.htm">@Resources Folder</a>
+</li></ul>
+<li><a href="..\meters\index.htm">Meters</a>
+<ul>
+<li><a href="..\meters\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\meters\general-options\image-options\index.htm">Image Options</a>
+<li><a href="..\meters\general-options\meterstyles\index.htm">MeterStyles</a>
+<li><a href="..\meters\general-options\tooltips\index.htm">Tooltips</a>
+<li><a href="..\meters\general-options\container\index.htm">Container</a>
+</li></ul>
+<li><a href="..\meters\bar\index.htm">Bar</a>
+<li><a href="..\meters\bitmap\index.htm">Bitmap</a>
+<li><a href="..\meters\button\index.htm">Button</a>
+<li><a href="..\meters\histogram\index.htm">Histogram</a>
+<li><a href="..\meters\image\index.htm">Image</a>
+<li><a href="..\meters\line\index.htm">Line</a>
+<li><a href="..\meters\rotator\index.htm">Rotator</a>
+<li><a href="..\meters\roundline\index.htm">Roundline</a>
+<li><a href="..\meters\shape\index.htm">Shape</a>
+<li><a href="..\meters\string\index.htm">String</a>
+<ul>
+<li><a href="..\meters\string\inline\index.htm">Inline Options</a>
+</li></ul>
+</li></ul>
+<li><a href="..\measures\index.htm">Measures</a>
+<ul>
+<li><a href="..\measures\general-options\index.htm">General Options</a>
+<ul>
+<li><a href="..\measures\general-options\ifactions\index.htm">IfActions</a>
+<li><a href="..\measures\general-options\ifconditions\index.htm">IfConditions</a>
+<li><a href="..\measures\general-options\ifmatchactions\index.htm">IfMatchActions</a>
+<li><a href="..\measures\general-options\substitute\index.htm">Substitute</a>
+</li></ul>
+<li><a href="..\measures\calc\index.htm">Calc</a>
+<li><a href="..\measures\cpu\index.htm">CPU</a>
+<li><a href="..\measures\freediskspace\index.htm">FreeDiskSpace</a>
+<li><a href="..\measures\loop\index.htm">Loop</a>
+<li><a href="..\measures\mediakey\index.htm">MediaKey</a>
+<li><a href="..\measures\memory\index.htm">Memory</a>
+<li><a href="..\measures\net\index.htm">Net</a>
+<li><a href="..\measures\nowplaying\index.htm">NowPlaying</a>
+<li><a href="..\measures\plugin\index.htm">Plugin</a>
+<li><a href="..\measures\process\index.htm">Process</a>
+<li><a href="..\measures\recyclemanager\index.htm">RecycleManager</a>
+<li><a href="..\measures\registry\index.htm">Registry</a>
+<li><a href="..\measures\script\index.htm">Script</a>
+<li><a href="..\measures\string\index.htm">String</a>
+<li><a href="..\measures\sysinfo\index.htm">SysInfo</a>
+<li><a href="..\measures\time\index.htm">Time</a>
+<li><a href="..\measures\uptime\index.htm">Uptime</a>
+<li><a href="..\measures\webparser\index.htm">WebParser</a>
+<li><a href="..\measures\wifistatus\index.htm">WiFiStatus</a>
+</li></ul>
+<li><a href="..\plugins\index.htm">Plugins</a>
+<ul>
+<li><a href="..\plugins\actiontimer\index.htm">ActionTimer</a>
+<li><a href="..\plugins\audiolevel\index.htm">AudioLevel</a>
+<li><a href="..\plugins\coretemp\index.htm">CoreTemp</a>
+<li><a href="..\plugins\fileview\index.htm">FileView</a>
+<li><a href="..\plugins\folderinfo\index.htm">FolderInfo</a>
+<li><a href="..\plugins\inputtext\index.htm">InputText</a>
+<li><a href="..\plugins\ping\index.htm">Ping</a>
+<li><a href="..\plugins\power\index.htm">Power</a>
+<li><a href="..\plugins\quote\index.htm">Quote</a>
+<li><a href="..\plugins\resmon\index.htm">ResMon</a>
+<li><a href="..\plugins\runcommand\index.htm">RunCommand</a>
+<li><a href="..\plugins\speedfan\index.htm">SpeedFan</a>
+<li><a href="..\plugins\usagemonitor\index.htm">UsageMonitor</a>
+<li><a href="..\plugins\win7audio\index.htm">Win7Audio</a>
+<li><a href="..\plugins\windowmessage\index.htm">WindowMessage</a>
+<li><a href="..\plugins\deprecated\index.htm">Deprecated Plugins</a>
+<ul>
+<li><a href="..\plugins\deprecated\advancedcpu\index.htm">AdvancedCPU</a>
+<li><a href="..\plugins\deprecated\itunes\index.htm">iTunes</a>
+<li><a href="..\plugins\deprecated\perfmon\index.htm">PerfMon</a>
+</li></ul>
+</li></ul>
+<li><a href="..\bangs\index.htm">Bangs</a>
+<li><a href="..\formulas\index.htm">Formulas</a>
+<li><a href="..\variables\index.htm">Variables</a>
+<ul>
+<li><a href="..\variables\nesting-variables\index.htm">Nesting Variables</a>
+<li><a href="..\variables\built-in-variables\index.htm">Built-In Variables</a>
+<li><a href="..\variables\section-variables\index.htm">Section Variables</a>
+<li><a href="..\variables\character-variables\index.htm">Character Variables</a>
+<li><a href="..\variables\mouse-variables\index.htm">Mouse Variables</a>
+</li></ul>
+<li><a href="..\groups\index.htm">Groups</a>
+<li><a href="..\mouse-actions\index.htm">Mouse Actions</a>
+<li><a href="..\lua-scripting\index.htm">Lua Scripting</a>
+<ul>
+<li><a href="..\lua-scripting\inline-lua\index.htm">Inline Lua</a>
+</li></ul>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\tips\index.htm">Tips &amp; Tricks</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">Installing Rainmeter</h1>
+<hr>
+
+<p>Rainmeter will run on Windows 7 (<a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/download/details.aspx?id=5842">Service Pack 1</a> and <a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/download/details.aspx?id=36805">Platform Update</a> required) and above.</p>
+<p>To install Rainmeter, download the latest version from <a href="http://www.rainmeter.net">rainmeter.net</a>, then follow the instructions below.</p>
+<p>If you are reinstalling or updating Rainmeter, you do not need to uninstall your existing copy before continuing. Your settings, skins and plugins will be preserved.</p>
+<h2 id="StandardInstallation">Standard Installation</h2>
+<p>The standard installation is recommended for most users. Simply run the installer and follow the instructions.</p>
+<div class="exampleprev">
+<a href="..\img\installing-rainmeter\Install01.png" data-fancybox=""><img src="..\img\installing-rainmeter\Install01.png"></a>
+</div>
+<div class="exampleprev">
+<a href="..\img\installing-rainmeter\Install02.png" data-fancybox=""><img src="..\img\installing-rainmeter\Install02.png"></a>
+</div>
+<div class="exampleprev">
+<a href="..\img\installing-rainmeter\Install03.png" data-fancybox=""><img src="..\img\installing-rainmeter\Install03.png"></a>
+</div>
+<p>The installation will do the following:</p>
+<ul>
+<li>Install the program to the default or selected <b>Destination folder</b>.</li>
+<li>Create a Windows file association for the .rmskin file extension and the <a href="..\installing-skins\index.htm">Rainmeter Skin Installer</a>.</li>
+<li>Create Windows Start menu item for Rainmeter.</li>
+<li>Create Windows Start menu item for Startup/Rainmeter, so Rainmeter starts with Windows. This may be disabled by unchecking <b>Launch Rainmeter on startup</b>.</li>
+<li>Launch Rainmeter at the end of the installation.</li>
+</ul>
+<p>Skins and settings folders will be created in the <a href="#DefaultFileLocations">default file locations</a> when Rainmeter is first run.</p>
+<p><b>Note:</b> Rainmeter can be uninstalled using the <b>Add or Remove programs</b> function in Windows.</p>
+<h2 id="DefaultFileLocations">Default File Locations</h2>
+<p><b>Program folder:</b><br>
+<code>C:\Program Files\Rainmeter</code></p>
+<p><b>Skins folder:</b><br>
+<code>C:\Users\YourName\Documents\Rainmeter\Skins</code></p>
+<p><b>Settings and Layouts folder:</b><br>
+<code>C:\Users\YourName\Appdata\Roaming\Rainmeter</code></p>
+<h2 id="PortableInstallation">Portable Installation</h2>
+<p>To run Rainmeter from a single folder, so it can be copied to another computer or run directly from a removable drive, select <b>Portable installation</b> during the install process and browse to the desired installation folder. No changes to the Windows Registry or Start menu will be made. All program, skins and settings folders and files will remain in the selected program folder.</p>
+<h2 id="SilentInstallation">Silent Installation</h2>
+<p>Rainmeter can be installed "silently" from a command prompt, either a <b>cmd.exe</b> command window or a <b>PowerShell</b> window.</p>
+<h3 id="Notes">Notes</h3>
+<p><b>Important!</b> In order to have the installation be entirely "silent", the command prompt window must be run "As Administrator". If not, the installer will open a UAC confirmation dialog when run.<br><br>
+If an error occurs, a file named "Rainmeter.SilentInstall.log" is created on the desktop with information on the problem. If the desktop cannot be written to, the log file will be written to the user folder i.e. <code>C:\Users\YourName</code>.<br><br>
+Rainmeter will restart after the installation if it was running when the installation was started.</p>
+<h3 id="Parameters">Parameters</h3>
+<p>In order to install or update Rainmeter from the command line, execute the installer .exe using one or more of the following case-sensitive parameters on the command line:</p>
+<ul>
+<li><code>/S</code> : Required - This tells the installer to execute without opening the normal installation dialog. This is the "silent" in "Silent Install".</li>
+</ul>
+<p></p>
+<ul>
+<li><code>/PORTABLE=</code> : Optional - This can be set to either the default <code>/PORTABLE=0</code> or <code>/PORTABLE=1</code>. If a "portable" installation is done, the <code>/D=</code> destination folder must be set.</li>
+<li><code>/AUTOSTARTUP=</code> : Optional - This will tell the installer whether or not to add a shortcut to Rainmeter in the Startup folder for your Windows account. On a new installation, this will default to <code>/AUTOSTARTUP=1</code>. On an upgrade of an existing installation, it will default to the current setting, but may be overridden.<br>
+<i>This setting is ignored on a "portable" install, as no registry changes are made and no icons are created with a portable installation.</i></li>
+<li><code>/RESTART=</code> : Optional - By default, Rainmeter will restart after the installation if it was running when the installation was started. This option can override this behavior with <code>/RESTART=1</code> (restart Rainmeter when done), or <code>/RESTART=0</code> (do not restart Rainmeter when done).</li>
+<li><code>/VERSION=</code> : Optional - This should be set to either <code>/VERSION=64</code> or <code>/VERSION=32</code>, depending on the architecture of the Windows version you are running. On a new installation, this will default to <code>/VERSION=64</code> on 64-bit Windows and <code>/VERSION=32</code> on 32-bit Windows. On an upgrade installation, it will default to the current setting, but may be overridden.</li>
+<li><code>/LANGUAGE=</code> : Optional - If defined as a <a href="https://www.rainmeter.net/localization/#Status">4-digit numeric code</a>, this sets the installer language and saves it to the registry. Any subsequent non-silent GUI installations will use this language for the installer. Also, on new installations, this language will be saved to Rainmeter.ini as the installed language - but ONLY on new installations. This will default to <code>/LANGUAGE=1033</code> (English) on new installations.</li>
+</ul>
+<p></p>
+<ul>
+<li><code>/D=</code> : Defines the installation folder.<br>
+<ul>
+<li>This is <em>required</em> for "portable" installations. It is <em>ignored</em> on "normal" installations.</li>
+<li>When installing in "normal" mode this is ignored, and will be forced to the <code>%PROGRAMFILES%</code> (generally C:\Program Files) folder for the account, in a \Rainmeter subfolder.</li>
+<li>When installing in "portable" mode, the full path to the desired location is required.</li>
+<li><b>Important!</b> If defined, <code>/D=</code> must be the LAST parameter on the command line.</li>
+</ul>
+</li></ul>
+<p></p>
+<h3 id="SilentExamples">Examples</h3>
+<pre>
+Rainmeter-4.5.0.exe /S /AUTOSTARTUP=0 /VERSION=32
+Rainmeter-4.5.0.exe /S /RESTART=0
+Rainmeter-4.5.0.exe /S /PORTABLE=1 /D=E:\MyRainmeter
+</pre><br>
+<h2 id="WinGetInstallation">WinGet Installation</h2>
+<p>You can install or upgrade to the latest version of Rainmeter from a <b>cmd.exe</b> or <b>PowerShell</b> command prompt window using the <a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/windows/package-manager/winget/">Windows Package Manager</a> with the <code>WinGet</code> command.</p>
+<p>If the <b>cmd.exe</b> or <b>PowerShell</b> command prompt window is run "As Administrator", the installation will be entirely "silent". If not, Windows will display a UAC (User Account Control) confirmation dialog when executed.</p>
+<p>WinGet comes with Windows 11, but must be downloaded and installed from <a target="_blank" rel="noopener" href="https://github.com/microsoft/winget-cli/releases">WinGet Releases</a> on Windows 10.</p>
+<h3 id="Usage">Usage</h3>
+<p><code>winget install Rainmeter</code><br>
+This will force a new or overlay install of Rainmeter. It will use the currently defined or default <a href="#SilentInstallation">Silent Installation</a> parameters listed above.</p>
+<p><code>winget upgrade Rainmeter</code><br>
+This will only install Rainmeter if a newer version than what is currently installed is available. It will use the currently defined or default <a href="#SilentInstallation">Silent Installation</a> parameters listed above.</p>
+<p><code>winget install Rainmeter --override "/S /PORTABLE=1 /D=E:\MyRainmeter"</code><br>
+Using the <code>--override</code> parameter on the WinGet command line will allow setting any of the <a href="#SilentInstallation">Silent Installation</a> parameters listed above. Enclose the string of parameters in "quotes". <em>Don't forget to use the <code>/S</code> parameter when overriding the default behavior.</em></p>
+<p><b>Note:</b> The "upgrade" command is not supported with a "portable" installation of Rainmeter. Always use "install" and the <code>--override</code> parameter with a "portable" installation of Rainmeter.</p>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=0.9, maximum-scale=0.9">
+<meta itemprop="name" content="WebParser: Using StringIndex2 - Rainmeter Docs">
+<meta property="og:title" content="WebParser: Using StringIndex2 - Rainmeter Docs">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rainmeter.net">
+<meta property="og:image" content="https://www.rainmeter.net/img/media_image.png">
+<meta property="og:site_name" content="Rainmeter">
+<meta property="og:locale" content="en_US">
+
+<title>WebParser: Using StringIndex2 - Rainmeter Documentation</title>
+
+<link rel="stylesheet" href="..\..\css\bootstrap.min.css">
+<link rel="stylesheet" href="..\..\css\rainmeter.css">
+<link rel="stylesheet" href="..\..\css\jquery.fancybox.min.css">
+<link rel="stylesheet" href="..\..\css-1?family=Source+Sans+Pro:300,400,600">
+<link href="..\..\css-2?family=Nunito:400,700" rel="stylesheet">
+
+<link rel="shortcut icon" href="..\..\favicon.ico">
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="..\..\index.htm"><img src="..\..\img\logo_nav.png" alt=""></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+<ul class="navbar-nav order-12">
+<li class="nav-item>">
+<a class="nav-link" href="//www.rainmeter.net/">Home</a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="..\..\index.html">Documentation</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//rainmeter.net/discover">Discover</a>
+</li>
+<li class="nav-item>">
+<a class="nav-link" href="//forum.rainmeter.net/">Community</a>
+</li>
+<div class="dropdown-divider"></div>
+</ul></div>
+</div>
+</nav>
+<div id="content">
+<div id="nav-button" class="docs-nav-button">
+<div class="container d-flex flex-row align-items-center">
+<svg onclick="openNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+<a onclick="openNavMenu()">Open navigation</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+
+<div id="menu" class="docs-nav col-12 col-lg-3">
+<h4 id="category"><a href="..\index.htm">Tips &amp; Tricks</a></h4>
+<svg class="closeButton" onclick="closeNavMenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+<form id="search-form" method="get" action="https://www.google.com/search">
+<input name="sitesearch" value="docs.rainmeter.net" type="hidden">
+<input class="form-control" id="search" name="q" maxlength="255" size="16" placeholder="Search" type="text">
+</form>
+<hr>
+<nav id="sidenav" class="sidenav">
+<h4>Contents</h4>
+<ul class="docs-nav-block">
+<li><a class="active" href="..\index.htm#BeyondTheBasics">Beyond the Basics</a>
+<li><a href="..\index.htm#GoodToKnow">Good To Know</a>
+<li><a href="..\index.htm#GettingThingsDone">Getting Things Done</a>
+</li></ul>
+<h4>More</h4>
+<ul class="docs-nav-block">
+<li><a href="..\..\manual\index.htm">Manual</a>
+<li><a href="..\..\snippets\index.htm">Snippets</a>
+<li><a href="..\..\developers\index.htm">Developers</a>
+<li><a href="..\..\history\index.htm">Version History</a>
+</li></ul>
+</nav>
+</div>
+
+<div class="docs-content col-12 col-lg-9">
+<h1 class="page-title">WebParser: Using StringIndex2</h1>
+<hr>
+
+<p>One of the less obvious features of the WebParser measure is the capability that the option <code>StringIndex2=</code> brings to simplify skins retrieving repetitive data like an RSS or weather feed.</p>
+<p>From the <a href="..\..\manual\measures\webparser\index.htm#StringIndex2">Manual</a>:</p>
+<p><b>StringIndex2</b><br>
+The second string index is used when using a <code>RegExp</code> in a measure that uses data from another WebParser measure (i.e. the <code>URL</code> points to a parent measure. In this case the <code>StringIndex</code> defines the index of the result of the parent measure's <code>RegExp</code> and the <code>StringIndex2</code> defines the index of this measure's <code>RegExp</code> (i.e. it defines the string that the measure returns).</p>
+<p>First, here is the entire code of a little skin to demonstrate how to use this feature. Go ahead and create this and run it to see it in action:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Rainmeter]</span></span><br><span class="line"><span class="attr">Update</span>=<span class="number">1000</span></span><br><span class="line"><span class="attr">DynamicWindowSize</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">Item</span>=.*&lt;item&gt;(.*)&lt;/item&gt;</span><br><span class="line"><span class="attr">Sub</span>=<span class="string">&quot;&lt;![CDATA[&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;]]&gt;&quot;</span>:<span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureSite]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=http://feeds.gawker.com/lifehacker/full</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;title&gt;(.*)&lt;/title&gt;.*&lt;link&gt;(.*)&lt;/link&gt;#Item##Item##Item#&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureMainTitle]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">1</span></span><br><span class="line">Substitute=<span class="comment">#Sub#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureMainLink]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureItem1Title]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;title&gt;(.*)&lt;/title&gt;&quot;</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">3</span></span><br><span class="line"><span class="attr">StringIndex2</span>=<span class="number">1</span></span><br><span class="line">Substitute=<span class="comment">#Sub#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureItem1Link]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;link&gt;(.*)&lt;/link&gt;&quot;</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">3</span></span><br><span class="line"><span class="attr">StringIndex2</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureItem2Title]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;title&gt;(.*)&lt;/title&gt;&quot;</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">4</span></span><br><span class="line"><span class="attr">StringIndex2</span>=<span class="number">1</span></span><br><span class="line">Substitute=<span class="comment">#Sub#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureItem2Link]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;link&gt;(.*)&lt;/link&gt;&quot;</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">4</span></span><br><span class="line"><span class="attr">StringIndex2</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureItem3Title]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;title&gt;(.*)&lt;/title&gt;&quot;</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">StringIndex2</span>=<span class="number">1</span></span><br><span class="line">Substitute=<span class="comment">#Sub#</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeasureItem3Link]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;link&gt;(.*)&lt;/link&gt;&quot;</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">5</span></span><br><span class="line"><span class="attr">StringIndex2</span>=<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="section">[MeterMainTitle]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureMainTitle</span><br><span class="line"><span class="attr">X</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">13</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="attr">StringStyle</span>=Bold</span><br><span class="line"><span class="attr">Antialias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[<span class="string">&quot;[MeasureMainLink]&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterItem1Title]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureItem1Title</span><br><span class="line"><span class="attr">X</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">5</span>R</span><br><span class="line"><span class="attr">W</span>=<span class="number">300</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">35</span></span><br><span class="line"><span class="attr">ClipString</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="attr">Antialias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[<span class="string">&quot;[MeasureItem1Link]&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterItem2Title]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureItem2Title</span><br><span class="line"><span class="attr">X</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">5</span>R</span><br><span class="line"><span class="attr">W</span>=<span class="number">300</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">35</span></span><br><span class="line"><span class="attr">ClipString</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="attr">Antialias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[<span class="string">&quot;[MeasureItem2Link]&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="section">[MeterItem3Title]</span></span><br><span class="line"><span class="attr">Meter</span>=String</span><br><span class="line"><span class="attr">MeasureName</span>=MeasureItem3Title</span><br><span class="line"><span class="attr">X</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">Y</span>=<span class="number">5</span>R</span><br><span class="line"><span class="attr">W</span>=<span class="number">300</span></span><br><span class="line"><span class="attr">H</span>=<span class="number">35</span></span><br><span class="line"><span class="attr">ClipString</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">FontSize</span>=<span class="number">11</span></span><br><span class="line"><span class="attr">FontColor</span>=<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span></span><br><span class="line"><span class="attr">SolidColor</span>=<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="attr">Antialias</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">LeftMouseUpAction</span>=[<span class="string">&quot;[MeasureItem3Link]&quot;</span>]</span><br></pre></td></tr></table></figure>
+<div class="exampleprev">
+<img src="..\img\webparser-using-stringindex2\UsingStringIndex2.jpg">
+</div>
+<p>So let's tear this apart and see what it is doing:</p>
+<p>First, we set a variable that simply gets everything in between &lt;item&gt; and &lt;/item&gt; from the site.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[Variables]</span></span><br><span class="line"><span class="attr">Item</span>=.*&lt;item&gt;(.*)&lt;/item&gt;</span><br></pre></td></tr></table></figure>
+<p>Then we use WebParser to go get the information from the site.</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureSite]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=http://feeds.gawker.com/lifehacker/full</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;title&gt;(.*)&lt;/title&gt;.*&lt;link&gt;(.*)&lt;/link&gt;#Item##Item##Item#&quot;</span></span><br></pre></td></tr></table></figure>
+<p>Notice we are doing something a bit different here. Instead of fully parsing the site into many, many StringIndexes on the main measure, we are just getting the main title and link for the site into StringIndexes 1 and 2, then getting the <em>entire</em> contents of each &lt;item&gt; into StringIndexes 3, 4 and 5.</p>
+<p>Now let's skip the measures for the main title and link, they are done the normal way. Let's move down to this measure:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureItem1Title]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;title&gt;(.*)&lt;/title&gt;&quot;</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">3</span></span><br><span class="line"><span class="attr">StringIndex2</span>=<span class="number">1</span></span><br><span class="line">Substitute=<span class="comment">#Sub#</span></span><br></pre></td></tr></table></figure>
+<p>What we are doing is using the StringIndex2= feature to get the &lt;title&gt; of the first &lt;item&gt; from the feed. We define <code>StringIndex=3</code>, which will return the entire first &lt;item&gt; from the main WebParser measure at the top. Then, unlike a normal "child" measure in WebParser, we use a RegExp= to parse the information in that <code>StringIndex=3</code> and return the single bit of information we want from that &lt;item&gt; in a <code>StringIndex2=1</code> on this measure.</p>
+<p>Remember, the way StringIndex2 works is that IF a WebParser measure is using an earlier WebParser measure as the Url= AND the measure has a RegExp= on it, then the RegExp= is applied to the data in StringIndex, and the result is returned in StringIndex2.</p>
+<p><em>The "value" of the measure, when used for instance in a MeasureName= option in a meter, is what is returned in StringIndex2.</em></p>
+<p>We can repeat this process to get the link of the first item:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureItem1Link]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;link&gt;(.*)&lt;/link&gt;&quot;</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">3</span></span><br><span class="line"><span class="attr">StringIndex2</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>Note that once again we are getting the entire &lt;item&gt; data from <code>StringIndex=3</code> of the main measure, then using a RegExp= to get just the link from that information into <code>StringIndex2=1</code> on this measure.</p>
+<p>It might be obvious by now, but when we want to carry on with the second &lt;item&gt; from the feed, we use:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[MeasureItem2Title]</span></span><br><span class="line"><span class="attr">Measure</span>=WebParser</span><br><span class="line"><span class="attr">Url</span>=[MeasureSite]</span><br><span class="line"><span class="attr">RegExp</span>=<span class="string">&quot;(?siU)&lt;title&gt;(.*)&lt;/title&gt;&quot;</span></span><br><span class="line"><span class="attr">StringIndex</span>=<span class="number">4</span></span><br><span class="line"><span class="attr">StringIndex2</span>=<span class="number">1</span></span><br><span class="line">Substitute=<span class="comment">#Sub#</span></span><br></pre></td></tr></table></figure>
+<p>So now we are getting the information for the entire second &lt;item&gt; from the main measure, which is in <code>StringIndex=4</code> on that measure. Then we parse it with a RegExp= and the result is returned in the <code>StringIndex2=1</code> on this measure.</p>
+<p>Play with this a bit, and you might find that it can save a lot of extra parsing and creating huge RegExp= options to parse absolutely everything out of a site all at once up front. Get the main site in big chunks, then deal with the chunks as if they were sites in and of themselves.</p>
+<p><em>Hint: This can be a nice way to get around the limit of 99 StringIndex numbers on any single WebParser measure...</em></p>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-6">Made with ❤ by the community.</div>
+<div class="col-6 text-right text-md-right">Icons by <a target="_blank" rel="noopener" href="http://www.freepik.com" alt="Freepik">Freepik</a> and <a target="_blank" rel="noopener" href="https://feathericons.com/" alt="feathericons">feathericons.com</a></div>
+</div>
+</div>
+</footer>
+
+<script src="..\..\js\main.js"></script>
+<script src="..\..\js\jquery-3.2.1.slim.min.js"></script>
+<script src="..\..\js\bootstrap.min.js"></script>
+<script src="..\..\js\ahk-sliding-panel.js"></script>
+<script src="..\..\js\jquery.fancybox.min.js"></script>
+
+<script>
+		// set slideout menu variables
+		var docsnav = new ahk_slideout({
+		  id: "menu",
+		  side: "left",
+		  width: "18rem",
+		  touch_boundary: "50",
+		  slide_time: "0.2"
+		})
+
+		// function to toggle menu
+		function openNavMenu() {
+		  docsnav.openMenu()
+		}
+		// function to close menu
+		function closeNavMenu() {
+		  docsnav.closeMenu()
+		}
+
+		// when scrolling below 90, add sticky class to nav-button
+		$(function() {
+		  var header = $("#nav-button");
+		  $(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >= 90) {
+		      header.addClass("sticky");
+		    } else {
+		      header.removeClass("sticky");
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>
